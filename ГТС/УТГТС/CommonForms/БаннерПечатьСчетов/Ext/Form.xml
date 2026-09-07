@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<PictureField name="Реквизит1" id="14">
+			<DataPath>Реквизит1</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<PictureSize>AutoSize</PictureSize>
+			<Hyperlink>true</Hyperlink>
+			<ContextMenu name="Реквизит1КонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="Реквизит1РасширеннаяПодсказка" id="16"/>
+		</PictureField>
+		<UsualGroup name="Группа1" id="19">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<Button name="ЗагрузитьКартинку" id="4">
+					<Type>UsualButton</Type>
+					<Representation>Text</Representation>
+					<CommandName>Form.Command.ЗагрузитьКартинку</CommandName>
+					<ExtendedTooltip name="ЗагрузитьКартинкуРасширеннаяПодсказка" id="5"/>
+				</Button>
+				<Button name="Очистить" id="17">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Очистить</CommandName>
+					<ExtendedTooltip name="ОчиститьРасширеннаяПодсказка" id="18"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Товары" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ТоварыРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<UsualGroup name="ТоварИВидЦены1" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар и вид цены1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товар и вид цены1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ТоварИВидЦены1РасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<InputField name="БаннерТовар1" id="21">
+							<DataPath>НаборКонстант.БаннерТовар1</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товар №1</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="БаннерТовар1КонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="БаннерТовар1РасширеннаяПодсказка" id="23"/>
+						</InputField>
+						<InputField name="БаннерВидЦены1" id="46">
+							<DataPath>НаборКонстант.БаннерВидЦены1</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="БаннерВидЦены1КонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="БаннерВидЦены1РасширеннаяПодсказка" id="48"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ТовариВидЦены2" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товари вид цены2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товари вид цены2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ТовариВидЦены2РасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<InputField name="БаннерТовар2" id="24">
+							<DataPath>НаборКонстант.БаннерТовар2</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товар №2</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="БаннерТовар2КонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="БаннерТовар2РасширеннаяПодсказка" id="26"/>
+						</InputField>
+						<InputField name="БаннерВидЦены2" id="43">
+							<DataPath>НаборКонстант.БаннерВидЦены2</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="БаннерВидЦены2КонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="БаннерВидЦены2РасширеннаяПодсказка" id="45"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Ссылки" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СсылкиРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<InputField name="БаннерСсылкаНаТовар1" id="29">
+					<DataPath>НаборКонстант.БаннерСсылкаНаТовар1</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на товар №1</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БаннерСсылкаНаТовар1КонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="БаннерСсылкаНаТовар1РасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="БаннерСсылкаНаАкцию" id="37">
+					<DataPath>НаборКонстант.БаннерСсылкаНаАкцию</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на акцию</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БаннерСсылкаНаАкциюКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="БаннерСсылкаНаАкциюРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="БаннерСсылкаНаТовар2" id="34">
+					<DataPath>НаборКонстант.БаннерСсылкаНаТовар2</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка на товар №2</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БаннерСсылкаНаТовар2КонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="БаннерСсылкаНаТовар2РасширеннаяПодсказка" id="36"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Реквизит1" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьКартинку" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьКартинку</Action>
+		</Command>
+		<Command name="Очистить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Очистить</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="DataProcessor.УправлениеПереданнойВозвратнойТарой.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеВозвратовПоставщикам">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПриобретения">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:0104e4a2-fd60-4ede-ba84-063607d4d8a3">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеВозвратовПоставщикам">
+			<CommandGroup>CommandGroup.РазделГлавное040_Закупки</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.ВозвратТоваровОтКлиента.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеВозвратовПоставщикам">
+			<CommandGroup>CommandGroup.РазделГлавное040_Закупки</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаявкаНаВозвратТоваровОтКлиента.Command.ЗаявкиНаВозвратТоваровОтКлиентов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:821b9783-1274-4ef5-91eb-4c41c07581c8">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.КорректировкаРеализации.Command.КорректировкиРеализаций">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеОтгрузки.Command.АктыОРасхожденияхПослеРеализацийКлиентам">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеПереданнойВозвратнойТарой.Command.УправлениеПереданнойВозвратнойТарой">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеВозвратовОтКлиентов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.АктОРасхожденияхПослеПриемки.Command.АктыОРасхожденияхПослеПриобретения">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:0104e4a2-fd60-4ede-ba84-063607d4d8a3">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>CommandGroup.РазделГлавное040_Закупки</Group>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

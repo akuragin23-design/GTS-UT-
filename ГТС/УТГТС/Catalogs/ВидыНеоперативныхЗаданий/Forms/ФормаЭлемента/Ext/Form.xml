@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Регистр" id="4">
+			<DataPath>Объект.Регистр</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РегистрКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="РегистрРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<UsualGroup name="ГруппаПараметры" id="60">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="61"/>
+			<ChildItems>
+				<InputField name="МаксимальнаяПорция" id="7">
+					<DataPath>Объект.МаксимальнаяПорция</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="МаксимальнаяПорцияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="МаксимальнаяПорцияРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="НомерОчереди" id="10">
+					<DataPath>Объект.НомерОчереди</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерОчередиКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="НомерОчередиРасширеннаяПодсказка" id="12"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<Page name="ГруппаЧитаемыеРегистры" id="18">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Читаемые регистры</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаЧитаемыеРегистрыРасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<Table name="ЧитаемыеРегистры" id="20">
+							<Representation>List</Representation>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ЧитаемыеРегистры</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЧитаемыеРегистрыКонтекстноеМеню" id="21"/>
+							<AutoCommandBar name="ЧитаемыеРегистрыКоманднаяПанель" id="22">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЧитаемыеРегистрыРасширеннаяПодсказка" id="23"/>
+							<SearchStringAddition name="ЧитаемыеРегистрыСтрокаПоиска" id="24">
+								<AdditionSource>
+									<Item>ЧитаемыеРегистры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЧитаемыеРегистрыСтрокаПоискаКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="ЧитаемыеРегистрыСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЧитаемыеРегистрыСостояниеПросмотра" id="27">
+								<AdditionSource>
+									<Item>ЧитаемыеРегистры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЧитаемыеРегистрыСостояниеПросмотраКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="ЧитаемыеРегистрыСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЧитаемыеРегистрыУправлениеПоиском" id="30">
+								<AdditionSource>
+									<Item>ЧитаемыеРегистры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЧитаемыеРегистрыУправлениеПоискомКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ЧитаемыеРегистрыУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЧитаемыеРегистрыНомерСтроки" id="33">
+									<DataPath>Объект.ЧитаемыеРегистры.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЧитаемыеРегистрыНомерСтрокиКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ЧитаемыеРегистрыНомерСтрокиРасширеннаяПодсказка" id="35"/>
+								</LabelField>
+								<InputField name="ЧитаемыеРегистрыРегистр" id="36">
+									<DataPath>Объект.ЧитаемыеРегистры.Регистр</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЧитаемыеРегистрыРегистрКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ЧитаемыеРегистрыРегистрРасширеннаяПодсказка" id="38"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаИзменяемыеРегистры" id="39">
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменяемые регистры</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаИзменяемыеРегистрыРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<Table name="ИзменяемыеРегистры" id="41">
+							<Representation>List</Representation>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ИзменяемыеРегистры</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИзменяемыеРегистрыКонтекстноеМеню" id="42"/>
+							<AutoCommandBar name="ИзменяемыеРегистрыКоманднаяПанель" id="43">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИзменяемыеРегистрыРасширеннаяПодсказка" id="44"/>
+							<SearchStringAddition name="ИзменяемыеРегистрыСтрокаПоиска" id="45">
+								<AdditionSource>
+									<Item>ИзменяемыеРегистры</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИзменяемыеРегистрыСтрокаПоискаКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="ИзменяемыеРегистрыСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИзменяемыеРегистрыСостояниеПросмотра" id="48">
+								<AdditionSource>
+									<Item>ИзменяемыеРегистры</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИзменяемыеРегистрыСостояниеПросмотраКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="ИзменяемыеРегистрыСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИзменяемыеРегистрыУправлениеПоиском" id="51">
+								<AdditionSource>
+									<Item>ИзменяемыеРегистры</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИзменяемыеРегистрыУправлениеПоискомКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="ИзменяемыеРегистрыУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИзменяемыеРегистрыНомерСтроки" id="54">
+									<DataPath>Объект.ИзменяемыеРегистры.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИзменяемыеРегистрыНомерСтрокиКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ИзменяемыеРегистрыНомерСтрокиРасширеннаяПодсказка" id="56"/>
+								</LabelField>
+								<InputField name="ИзменяемыеРегистрыРегистр" id="57">
+									<DataPath>Объект.ИзменяемыеРегистры.Регистр</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ИзменяемыеРегистрыРегистрКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ИзменяемыеРегистрыРегистрРасширеннаяПодсказка" id="59"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="13">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВидыНеоперативныхЗаданий</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

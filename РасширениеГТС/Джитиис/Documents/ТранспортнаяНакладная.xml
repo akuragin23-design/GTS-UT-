@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="06e14e54-80f7-4760-9d5c-7c8664e16ead">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ТранспортнаяНакладная" category="Object">
+				<xr:TypeId>0e277558-3257-4473-92cb-2a6c6aadc129</xr:TypeId>
+				<xr:ValueId>5b18f0e9-9135-4146-b834-aab8bf878f1d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ТранспортнаяНакладная" category="Ref">
+				<xr:TypeId>87692640-069a-436e-826b-48c65c19ab56</xr:TypeId>
+				<xr:ValueId>e24adf56-ce44-406e-b5c5-a8220ddaf199</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ТранспортнаяНакладная" category="Selection">
+				<xr:TypeId>b6ae26ea-939d-4ac0-ae59-b3f72b7d9a84</xr:TypeId>
+				<xr:ValueId>018cd962-b015-485d-93b6-9c0ec160595a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ТранспортнаяНакладная" category="List">
+				<xr:TypeId>2a4210ff-03a5-42b8-8cad-7a0dfea38fea</xr:TypeId>
+				<xr:ValueId>d76bd680-5529-4c48-9e8f-631cdd6eaa6b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ТранспортнаяНакладная" category="Manager">
+				<xr:TypeId>52f03c53-91b5-483f-b071-0d766bcf298f</xr:TypeId>
+				<xr:ValueId>3063f065-374d-45a5-a59e-5d04e5f78d4d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТранспортнаяНакладная</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>22163f5e-b24b-429b-a671-2b293a8a2f80</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="29b40efd-5791-4863-840c-d77cbc442c8f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Грузополучатель</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a1b86984-469f-4c72-896a-e6399d13d746</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="639b8786-411b-4752-b46d-513499143518">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Отпустил</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>51dfa370-46f3-45ba-a447-fbd437c4bd7f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="1ed1790f-c6f2-47af-bcb8-7f2677a4eeb6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bd719277-e48b-40d2-a2d3-afdf51545ef6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="167e7e86-528c-485c-8685-2e83aa5f25e7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЗаданиеНаПеревозку</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d987a8fa-940a-4456-8dd5-c9d49c91d730</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаданиеНаПеревозку</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="04755bbf-6ddc-479f-9423-a9a42ee72766">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Водитель</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>54cccddb-36b6-4bc8-bdcd-2dce15e1f0f2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="df81e02b-f565-4690-b713-10f189f5b7a2">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ТранспортнаяНакладная.ДокументыОснования" category="TabularSection">
+						<xr:TypeId>f2c3580e-f5c7-4a37-b52a-5e69acfb6fb3</xr:TypeId>
+						<xr:ValueId>81593306-43ae-4243-b622-a3c5f257ee5c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ТранспортнаяНакладная.ДокументыОснования" category="TabularSectionRow">
+						<xr:TypeId>e2169af8-ec34-4596-b085-be7494eba101</xr:TypeId>
+						<xr:ValueId>2d100de8-155c-46cd-b65e-fd9a76d7813b</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументыОснования</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e11552e4-4181-40c3-8c96-f16694186067</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

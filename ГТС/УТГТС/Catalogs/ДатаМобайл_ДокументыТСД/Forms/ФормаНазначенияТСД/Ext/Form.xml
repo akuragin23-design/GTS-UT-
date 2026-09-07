@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ИсходныйДокумент" id="1">
+			<DataPath>Объект.ИсходныйДокумент</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИсходныйДокументКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИсходныйДокументExtendedTooltip" id="5"/>
+		</InputField>
+		<InputField name="ТСД" id="3">
+			<DataPath>Объект.ТСД</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Отбор.ПометкаУдаления</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Объект.DeletionMark</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<ChoiceParameters>
+				<app:item name="Отбор.ПометкаУдаления">
+					<app:value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</app:value>
+				</app:item>
+				<app:item name="Отбор.ЭтотУзел">
+					<app:value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</app:value>
+				</app:item>
+			</ChoiceParameters>
+			<ContextMenu name="ТСДКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ТСДExtendedTooltip" id="6"/>
+		</InputField>
+		<Table name="СписокТерминалов" id="7">
+			<Visible>false</Visible>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СписокТерминалов</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокТерминаловКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="СписокТерминаловКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="СписокТерминаловРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="СписокТерминаловСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>СписокТерминалов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТерминаловСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокТерминаловСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокТерминаловСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>СписокТерминалов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТерминаловСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокТерминаловСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокТерминаловУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>СписокТерминалов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокТерминаловУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписокТерминаловУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокТерминаловНомерСтроки" id="20">
+					<DataPath>Объект.СписокТерминалов.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокТерминаловНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокТерминаловНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="СписокТерминаловТСД" id="23">
+					<DataPath>Объект.СписокТерминалов.ТСД</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceParameters>
+						<app:item name="Отбор.ПометкаУдаления">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:boolean">false</Value>
+							</app:value>
+						</app:item>
+						<app:item name="Отбор.ЭтотУзел">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:boolean">false</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="СписокТерминаловТСДКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокТерминаловТСДРасширеннаяПодсказка" id="25"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ДатаМобайл_ДокументыТСД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

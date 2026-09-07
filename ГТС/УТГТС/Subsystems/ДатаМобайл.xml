@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="cbab5c0d-2b60-4aba-9912-3fafcd3b72d2">
+		<Properties>
+			<Name>ДатаМобайл</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>DataMobile</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>CommonPicture.ДатаМобайл_Картинка</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:TransparentPixel x="27" y="30"/>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДатаМобайл_Администратор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.ДатаМобайл_СписокТСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.DMDateTypes</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.DataMobileExch</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДатаМобайл_ДокументыТСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДатаМобайл_ШаблоныДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ДатаМобайл_АРМДиспетчера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДатаМобайл_НовыеТовары</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_НовыеШтрихкоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДатаМобайл_УпаковочныйЛист</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_СтрокиГрупповыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_ТСДГрупповыхДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДатаМобайл_ОбщийМодуль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДатаМобайл_Служебная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ДатаМобайл_СозданиеНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДатаМобайл_Автообработка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДатаМобайл_Картинка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_МаркиДляПроверки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДатаМобайл_СтатусыПроверкиМарок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаМобайл_FrontolAlcoUnit</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаМобайл_ПроверятьDataMatrix</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаМобайл_ОрганизацияПроверкиМарок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ДатаМобайл_ПроверкаМарок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДатаМобайл_МодульПроверкиМарок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_ДопускиВесовыхТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_ПроверкаСерий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ДатаМобайл_Аналитика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_ФлагиДляОбменаТСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_Логирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДатаМобайл_Маркировка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДатаМобайл_ЧтениеПланаОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ДатаМобайл_Маркировка_НастройкаСертификатов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_СвязиДополнительныхФормИШаблонов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_ЗначенияДополнительныхФорм</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДатаМобайл_ДополнительныеФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.DataMobileLoad</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.DataMobileUpload</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДатаМобайл_МДЛП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_ДопускиОСГ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_ВСДПоТовару</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДатаМобайл_HTTP_Логика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.DataMobileExch</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаМобайл_Настройки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаМобайл_ЗначенияУзлаОбменаТСД</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

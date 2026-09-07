@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Комплекты" id="3">
+			<Representation>List</Representation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Комплекты</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КомплектыКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="КомплектыКоманднаяПанель" id="5">
+				<ChildItems>
+					<Button name="ФормаУстановитьФлажки" id="79">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.УстановитьФлажки</CommandName>
+						<ExtendedTooltip name="ФормаУстановитьФлажкиРасширеннаяПодсказка" id="80"/>
+					</Button>
+					<Button name="ФормаСнятьФлажки" id="81">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СнятьФлажки</CommandName>
+						<ExtendedTooltip name="ФормаСнятьФлажкиРасширеннаяПодсказка" id="82"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="17"/>
+			<SearchStringAddition name="КомплектыСтрокаПоиска" id="18">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="21">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КомплектыУправлениеПоиском" id="24">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="25"/>
+				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="КомплектыВСборку" id="12">
+					<DataPath>Комплекты.ВСборку</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КомплектыВСборкуКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="КомплектыВСборкуРасширеннаяПодсказка" id="27"/>
+				</CheckBoxField>
+				<InputField name="КомплектыНоменклатура" id="6">
+					<DataPath>Комплекты.Номенклатура</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыНоменклатураКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КомплектыНоменклатураРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="КомплектыХарактеристика" id="8">
+					<DataPath>Комплекты.Характеристика</DataPath>
+					<Visible>false</Visible>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыХарактеристикаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="КомплектыХарактеристикаРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="КомплектыКоличество" id="10">
+					<DataPath>Комплекты.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыКоличествоКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КомплектыКоличествоРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="КомплектыВариантКомплектации" id="38">
+					<DataPath>Комплекты.ВариантКомплектации</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Items.Комплекты.CurrentData.Номенклатура</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="КомплектыВариантКомплектацииКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="КомплектыВариантКомплектацииРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="КомплектыСклад" id="35">
+					<DataPath>Комплекты.Склад</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыСкладКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="КомплектыСкладРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="КомплектыСборкаТовара" id="15">
+					<DataPath>Комплекты.СборкаТовара</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<MultiLine>true</MultiLine>
+					<ChoiceButton>false</ChoiceButton>
+					<OpenButton>true</OpenButton>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="КомплектыСборкаТовараКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="КомплектыСборкаТовараРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="РасчетОстатков" id="48">
+			<Representation>List</Representation>
+			<Visible>false</Visible>
+			<ChangeRowSet>false</ChangeRowSet>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>РасчетОстатков</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РасчетОстатковКонтекстноеМеню" id="49"/>
+			<AutoCommandBar name="РасчетОстатковКоманднаяПанель" id="50"/>
+			<ExtendedTooltip name="РасчетОстатковРасширеннаяПодсказка" id="51"/>
+			<SearchStringAddition name="РасчетОстатковСтрокаПоиска" id="52">
+				<AdditionSource>
+					<Item>РасчетОстатков</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасчетОстатковСтрокаПоискаКонтекстноеМеню" id="53"/>
+				<ExtendedTooltip name="РасчетОстатковСтрокаПоискаРасширеннаяПодсказка" id="54"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РасчетОстатковСостояниеПросмотра" id="55">
+				<AdditionSource>
+					<Item>РасчетОстатков</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РасчетОстатковСостояниеПросмотраКонтекстноеМеню" id="56"/>
+				<ExtendedTooltip name="РасчетОстатковСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РасчетОстатковУправлениеПоиском" id="58">
+				<AdditionSource>
+					<Item>РасчетОстатков</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РасчетОстатковУправлениеПоискомКонтекстноеМеню" id="59"/>
+				<ExtendedTooltip name="РасчетОстатковУправлениеПоискомРасширеннаяПодсказка" id="60"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="РасчетОстатковКомплектующая" id="70">
+					<DataPath>РасчетОстатков.Комплектующая</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасчетОстатковКомплектующаяКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="РасчетОстатковКомплектующаяРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="РасчетОстатковКоличествоТребуется" id="64">
+					<DataPath>РасчетОстатков.КоличествоТребуется</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасчетОстатковКоличествоТребуетсяКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="РасчетОстатковКоличествоТребуетсяРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="РасчетОстатковКоличествоДоступноВЗаказе" id="67">
+					<DataPath>РасчетОстатков.КоличествоДоступноВЗаказе</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасчетОстатковКоличествоДоступноВЗаказеКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="РасчетОстатковКоличествоДоступноВЗаказеРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="РасчетОстатковКоличествоНеХватает" id="73">
+					<DataPath>РасчетОстатков.КоличествоНеХватает</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасчетОстатковКоличествоНеХватаетКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="РасчетОстатковКоличествоНеХватаетРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="РасчетОстатковКоличествоСвободныйОстаток" id="76">
+					<DataPath>РасчетОстатков.КоличествоСвободныйОстаток</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РасчетОстатковКоличествоСвободныйОстатокКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="РасчетОстатковКоличествоСвободныйОстатокРасширеннаяПодсказка" id="78"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="СформироватьСборкиТоваров" id="14">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СформироватьСборкиТоваров</CommandName>
+			<ExtendedTooltip name="СформироватьСборкиТоваровРасширеннаяПодсказка" id="32"/>
+		</Button>
+		<Button name="СформироватьЗаявкиНаРаспил" id="33">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<CommandName>Form.Command.СформироватьЗаявкиНаРаспил</CommandName>
+			<Picture>
+				<xr:Ref>CommonPicture.ВыборОКВЭДВсе</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="СформироватьЗаявкиНаРаспилРасширеннаяПодсказка" id="34"/>
+		</Button>
+		<UsualGroup name="Группа1" id="46">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="47"/>
+			<ChildItems>
+				<InputField name="ЗаказКлиентаДляРасчетОстатков" id="41">
+					<DataPath>ЗаказКлиентаДляРасчетаОстатков</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗаказКлиентаДляРасчетОстатковКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ЗаказКлиентаДляРасчетОстатковРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<Button name="ОтчетПоРасчетуОстатков" id="44">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтчетПоРасчетуОстатков</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОтчетПоРасчетуОстатковРасширеннаяПодсказка" id="45"/>
+				</Button>
+				<Button name="СнятьРезервыПоЗаказуРасчетаОстатков" id="83">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СнятьРезервыПоЗаказуРасчетаОстатков</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Снять резервы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СнятьРезервыПоЗаказуРасчетаОстатковРасширеннаяПодсказка" id="84"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Комплекты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Номенклатура" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВСборку" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В сборку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СборкаТовара" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сборка товара</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаСборку</v8:Type>
+						<v8:Type>cfg:DocumentRef.СборкаТоваров</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Склад" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВариантКомплектации" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант комплектации</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыКомплектацииНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗаказКлиента" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказКлиента</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаказКлиентаДляРасчетаОстатков" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ клиента для расчета остатков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЗаказКлиента</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РасчетОстатков" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расчет остатков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="КоличествоТребуется" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоДоступноВЗаказе" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступно в заказе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комплектующая" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплектующая</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоНеХватает" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не хватает</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоСвободныйОстаток" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свободно</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьСборкиТоваров" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать сборки товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать сборки товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СформироватьСборкиТоваров</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СформироватьЗаявкиНаРаспил" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать заявки на распил</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать заявки на распил</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьЗаявкиНаРаспил</Action>
+		</Command>
+		<Command name="ОтчетПоРасчетуОстатков" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по расчету остатков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет по расчету остатков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетПоРасчетуОстатков</Action>
+		</Command>
+		<Command name="УстановитьФлажки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьФлажки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СнятьРезервыПоЗаказуРасчетаОстатков" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять резервы по заказу расчета остатков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять резервы по заказу расчета остатков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.АннулироватьЗаявкуГосИС</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьРезервыПоЗаказуРасчетаОстатков</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройка оповещений 1С:Сверка 2.0</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<ConversationsRepresentation>DontShow</ConversationsRepresentation>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="Пользователь" id="7">
+			<DataPath>Объект.Пользователь</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="9"/>
+		</LabelField>
+		<LabelDecoration name="ОповещенияОтключеныЦентрализовано" id="175">
+			<Visible>false</Visible>
+			<TextColor>style:ПоясняющийТекст</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оповещения сервиса "1С:Сверка 2.0" отключены администратором</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ОповещенияОтключеныЦентрализованоКонтекстноеМеню" id="176"/>
+			<ExtendedTooltip name="ОповещенияОтключеныЦентрализованоРасширеннаяПодсказка" id="177"/>
+		</LabelDecoration>
+		<CheckBoxField name="ОповещатьОРасхождениях" id="10">
+			<DataPath>Объект.ОповещатьОРасхождениях</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оповещения</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Switcher</CheckBoxType>
+			<EditFormat>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БЛ=Выключены; БИ=Включены</v8:content>
+				</v8:item>
+			</EditFormat>
+			<ContextMenu name="ОповещатьОРасхожденияхКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ОповещатьОРасхожденияхРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">ОповещатьОРасхожденияхПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаНастройки" id="152">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="153"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияРасхождения" id="194">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расхождения:</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияРасхожденияКонтекстноеМеню" id="195"/>
+					<ExtendedTooltip name="ДекорацияРасхожденияРасширеннаяПодсказка" id="196"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаРасхождения" id="165">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расхождения</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасхожденияРасширеннаяПодсказка" id="166"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРасхожденияВарианты" id="170">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расхождения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРасхожденияВариантыРасширеннаяПодсказка" id="171"/>
+							<ChildItems>
+								<CheckBoxField name="ОповещатьОРасхожденииСумм" id="81">
+									<DataPath>Объект.ОповещатьОРасхожденииСумм</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумм документов</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОповещатьОРасхожденииСуммКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="ОповещатьОРасхожденииСуммРасширеннаяПодсказка" id="83"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОповещатьОРасхожденииСчетовФактур" id="87">
+									<DataPath>Объект.ОповещатьОРасхожденииСчетовФактур</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реквизитов счетов-фактур</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОповещатьОРасхожденииСчетовФактурКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="ОповещатьОРасхожденииСчетовФактурРасширеннаяПодсказка" id="89"/>
+								</CheckBoxField>
+								<CheckBoxField name="ОповещатьОРасхожденииПервичныхДокументов" id="84">
+									<DataPath>Объект.ОповещатьОРасхожденииПервичныхДокументов</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Реквизитов первичных документов</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОповещатьОРасхожденииПервичныхДокументовКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ОповещатьОРасхожденииПервичныхДокументовРасширеннаяПодсказка" id="86"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияПрочиеСобытия" id="197">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события:</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияПрочиеСобытияКонтекстноеМеню" id="198"/>
+					<ExtendedTooltip name="ДекорацияПрочиеСобытияРасширеннаяПодсказка" id="199"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаПрочиеСобытия" id="192">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие события</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПрочиеСобытияРасширеннаяПодсказка" id="193"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОповещатьОбОтсутствии" id="108">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОповещатьОбОтсутствииРасширеннаяПодсказка" id="109"/>
+							<ChildItems>
+								<CheckBoxField name="ОповещатьОбОтсутствии" id="110">
+									<DataPath>ОповещатьОбОтсутствии</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отсутствие документа более</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОповещатьОбОтсутствииКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ОповещатьОбОтсутствииРасширеннаяПодсказка" id="112"/>
+									<Events>
+										<Event name="OnChange">ОповещатьОбОтсутствииПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="КоличествоДнейБезДокумента" id="93">
+									<DataPath>Объект.КоличествоДнейБезДокумента</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>6</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧФ='Ч дней'</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="КоличествоДнейБезДокументаКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="КоличествоДнейБезДокументаРасширеннаяПодсказка" id="95"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ОповещатьОбУстраненииРасхождений" id="105">
+							<DataPath>Объект.ОповещатьОбУстраненииРасхождений</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Устранение расхождений</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОповещатьОбУстраненииРасхожденийКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="ОповещатьОбУстраненииРасхожденийРасширеннаяПодсказка" id="107"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтборОрганизации" id="134">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отбор организации</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтборОрганизацииРасширеннаяПодсказка" id="135"/>
+					<ChildItems>
+						<RadioButtonField name="ОтборОрганизаций" id="78">
+							<DataPath>Объект.ОтборОрганизаций</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Организации</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По всем</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ОтборОрганизацийКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ОтборОрганизацийРасширеннаяПодсказка" id="80"/>
+							<Events>
+								<Event name="OnChange">ОтборОрганизацийПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="ОтборОрганизацийКроме" id="139">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор организаций кроме</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОтборОрганизацийКромеРасширеннаяПодсказка" id="140"/>
+							<ChildItems>
+								<RadioButtonField name="ОтборОрганизаций1" id="136">
+									<DataPath>Объект.ОтборОрганизаций</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По всем, кроме:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ОтборОрганизаций1КонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ОтборОрганизаций1РасширеннаяПодсказка" id="138"/>
+									<Events>
+										<Event name="OnChange">ОтборОрганизаций1ПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<LabelDecoration name="ДекорацияКромеОрганизаций" id="141">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;выбрать организации&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ДекорацияКромеОрганизацийКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ДекорацияКромеОрганизацийРасширеннаяПодсказка" id="143"/>
+									<Events>
+										<Event name="Click">ДекорацияКромеОрганизацийНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВыбранныеОрганизации" id="144">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбранные организации</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВыбранныеОрганизацииРасширеннаяПодсказка" id="145"/>
+							<ChildItems>
+								<RadioButtonField name="ОтборОрганизаций2" id="146">
+									<DataPath>Объект.ОтборОрганизаций</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По выбранным:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">2</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ОтборОрганизаций2КонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ОтборОрганизаций2РасширеннаяПодсказка" id="148"/>
+									<Events>
+										<Event name="OnChange">ОтборОрганизаций2ПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<LabelDecoration name="ДекорацияВыбранныеОрганизации" id="149">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;выбрать организации&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ДекорацияВыбранныеОрганизацииКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="ДекорацияВыбранныеОрганизацииРасширеннаяПодсказка" id="151"/>
+									<Events>
+										<Event name="Click">ДекорацияВыбранныеОрганизацииНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтборКонтрагенты" id="116">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа отбор контрагенты</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОтборКонтрагентыРасширеннаяПодсказка" id="117"/>
+					<ChildItems>
+						<RadioButtonField name="ОтборКонтрагентов" id="90">
+							<DataPath>Объект.ОтборКонтрагентов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контрагенты</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Top</TitleLocation>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ColumnsCount>1</ColumnsCount>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По всем</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ОтборКонтрагентовКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ОтборКонтрагентовРасширеннаяПодсказка" id="92"/>
+							<Events>
+								<Event name="OnChange">ОтборКонтрагентовПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
+						<UsualGroup name="ОтборКонтрагентовКроме" id="124">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отбор контрагентов кроме</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ОтборКонтрагентовКромеРасширеннаяПодсказка" id="125"/>
+							<ChildItems>
+								<RadioButtonField name="ОтборКонтрагентов1" id="118">
+									<DataPath>Объект.ОтборКонтрагентов</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По всем, кроме:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ОтборКонтрагентов1КонтекстноеМеню" id="119"/>
+									<ExtendedTooltip name="ОтборКонтрагентов1РасширеннаяПодсказка" id="120"/>
+									<Events>
+										<Event name="OnChange">ОтборКонтрагентов1ПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<LabelDecoration name="ДекорацияКромеКонтрагентов" id="126">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;выбрать контрагентов&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ДекорацияКромеКонтрагентовКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ДекорацияКромеКонтрагентовРасширеннаяПодсказка" id="128"/>
+									<Events>
+										<Event name="Click">ДекорацияКромеКонтрагентовНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВыбранныеКонтрагенты" id="129">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбранные контрагенты</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВыбранныеКонтрагентыРасширеннаяПодсказка" id="130"/>
+							<ChildItems>
+								<RadioButtonField name="ОтборКонтрагентов2" id="121">
+									<DataPath>Объект.ОтборКонтрагентов</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По выбранным:</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">2</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ОтборКонтрагентов2КонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ОтборКонтрагентов2РасширеннаяПодсказка" id="123"/>
+									<Events>
+										<Event name="OnChange">ОтборКонтрагентов2ПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<LabelDecoration name="ДекорацияВыбранныеКонтрагенты" id="131">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;выбрать контрагентов&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ДекорацияВыбранныеКонтрагентыКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ДекорацияВыбранныеКонтрагентыРасширеннаяПодсказка" id="133"/>
+									<Events>
+										<Event name="Click">ДекорацияВыбранныеКонтрагентыНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияИнформационнаяНадпись" id="162">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оповещения отправляются дважды в неделю, если обнаружены новые или устраненные расхождения. Если изменений нет, оповещения не отправляются.
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #807a59&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияИнформационнаяНадписьКонтекстноеМеню" id="163"/>
+					<ExtendedTooltip name="ДекорацияИнформационнаяНадписьРасширеннаяПодсказка" id="164"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.СервисСверкиРасчетовНастройкиОповещенийПользователей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОповещатьОбОтсутствии" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оповещать об отсутствии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Расхождения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расхождения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьНесколькоОрганизаций" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать несколько организаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПерсональнаяНастройкаДоступна" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Персональная настройка доступна</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

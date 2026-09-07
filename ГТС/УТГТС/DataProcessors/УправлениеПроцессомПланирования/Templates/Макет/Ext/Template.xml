@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидПлана</dataPath>
+			<field>ВидПлана</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид плана</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокПланирования</dataPath>
+			<field>ПорядокПланирования</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПорядокПланированияЭтапа</dataPath>
+			<field>ПорядокПланированияЭтапа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок планирования этапа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтапПланирования</dataPath>
+			<field>ЭтапПланирования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап планирования</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтоГруппа</dataPath>
+			<field>ЭтоГруппа</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаполнятьПоДефициту</dataPath>
+			<field>ЗаполнятьПоДефициту</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнять по дефициту</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВариантЗаполненияСостава</dataPath>
+			<field>ВариантЗаполненияСостава</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант заполнения состава</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерКартинки</dataPath>
+			<field>НомерКартинки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер картинки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВидыПланов.Ссылка КАК ВидПлана,
+	ВидыПланов.ПорядокПланирования КАК ПорядокПланирования,
+	ЕСТЬNULL(ВидыПланов.Родитель.ПорядокПланирования, ВидыПланов.ПорядокПланирования) КАК ПорядокПланированияЭтапа,
+	ВЫБОР
+		КОГДА ВидыПланов.Родитель.ПорядокПланирования ЕСТЬ NULL
+			ТОГДА ВидыПланов.Ссылка
+		ИНАЧЕ ВидыПланов.Родитель
+	КОНЕЦ КАК ЭтапПланирования,
+	ВидыПланов.ЭтоГруппа КАК ЭтоГруппа,
+	ЕСТЬNULL(ВидыПланов.ЗаполнятьПоДефициту, ЛОЖЬ) КАК ЗаполнятьПоДефициту,
+	ЕСТЬNULL(ВидыПланов.ВариантЗаполненияСостава, """") КАК ВариантЗаполненияСостава,
+	ВЫБОР
+		КОГДА ВидыПланов.ЭтоГруппа
+			ТОГДА ВЫБОР
+					КОГДА ВидыПланов.ПометкаУдаления
+						ТОГДА 6
+					ИНАЧЕ ВЫБОР
+							КОГДА ВидыПланов.ПланированиеПотребностей
+								ТОГДА 0
+							ИНАЧЕ 1
+						КОНЕЦ
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА ВидыПланов.ПометкаУдаления
+					ТОГДА 7
+				ИНАЧЕ ВЫБОР
+						КОГДА ВидыПланов.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыПланов.ПустаяСсылка)
+								И ВидыПланов.ТипПлана &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ТипыПланов.ПланОстатков)
+							ТОГДА 8
+						КОГДА ВидыПланов.ЗаполнятьПоДефициту
+							ТОГДА 3
+						ИНАЧЕ 2
+					КОНЕЦ
+			КОНЕЦ
+	КОНЕЦ КАК НомерКартинки
+ПОМЕСТИТЬ СтруктураПланов
+ИЗ
+	Справочник.ВидыПланов КАК ВидыПланов
+ГДЕ
+	ВидыПланов.Владелец = &amp;Сценарий
+	И НЕ ВидыПланов.ПометкаУдаления
+	И НЕ(ВидыПланов.ТипПлана &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ТипыПланов.ПланОстатков)
+				И ВидыПланов.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыПланов.ПустаяСсылка)
+				И НЕ ВидыПланов.ЭтоГруппа)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗНАЧЕНИЕ(Справочник.ВидыПланов.ПустаяСсылка),
+	999,
+	999,
+	ЗНАЧЕНИЕ(Справочник.ВидыПланов.ПустаяСсылка),
+	ИСТИНА,
+	ЛОЖЬ,
+	"",
+	5</query>
+	</dataSet>
+	<parameter>
+		<name>Сценарий</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сценарий</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СценарииТоварногоПланирования</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</settingsVariant>
+</DataCompositionSchema>

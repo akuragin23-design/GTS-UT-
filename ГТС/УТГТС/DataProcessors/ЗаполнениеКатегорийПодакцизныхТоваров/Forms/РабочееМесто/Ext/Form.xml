@@ -1,0 +1,1707 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подакцизные категории товаров</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveWindowSettings>false</SaveWindowSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛево" id="213">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="214"/>
+					<ChildItems>
+						<InputField name="Период" id="85">
+							<DataPath>Период</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Действуют на</v8:content>
+								</v8:item>
+							</Title>
+							<Width>13</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>13</MaxWidth>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="87"/>
+							<Events>
+								<Event name="OnChange">ПериодПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПодакцизныйТовар" id="163">
+							<DataPath>ПодакцизныйТовар</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товар</v8:content>
+								</v8:item>
+							</Title>
+							<Width>11</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>11</MaxWidth>
+							<ChoiceButtonRepresentation>ShowInDropList</ChoiceButtonRepresentation>
+							<ClearButton>true</ClearButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>&lt;Любой&gt;</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>&lt;Подакцизный&gt;</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>&lt;Неподакцизный&gt;</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПодакцизныйТоварКонтекстноеМеню" id="164"/>
+							<ExtendedTooltip name="ПодакцизныйТоварРасширеннаяПодсказка" id="165"/>
+							<Events>
+								<Event name="OnChange">ПодакцизныйТоварПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЦентр" id="261">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа центр</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаЦентрРасширеннаяПодсказка" id="262"/>
+					<ChildItems>
+						<InputField name="Страна" id="82">
+							<DataPath>Страна</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В стране</v8:content>
+								</v8:item>
+							</Title>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<ContextMenu name="СтранаКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="СтранаРасширеннаяПодсказка" id="84"/>
+							<Events>
+								<Event name="OnChange">СтранаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="КатегорияОтбора" id="166">
+							<DataPath>КатегорияОтбора</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Категория</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Категория подакцизных товаров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<DropListButton>true</DropListButton>
+							<ChoiceButton>false</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<OpenButton>false</OpenButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КатегорияОтбораКонтекстноеМеню" id="167"/>
+							<ExtendedTooltip name="КатегорияОтбораРасширеннаяПодсказка" id="168"/>
+							<Events>
+								<Event name="OnChange">КатегорияОтбораПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраво" id="215">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="216"/>
+					<ChildItems>
+						<InputField name="КоэффициентПересчетаОтбор" id="241">
+							<DataPath>КоэффициентПересчетаОтбор</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коэффициент</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коэффициент пересчета в единицу изменения акциза</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<DropListButton>true</DropListButton>
+							<ChoiceButton>false</ChoiceButton>
+							<ClearButton>true</ClearButton>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КоэффициентПересчетаОтборКонтекстноеМеню" id="242"/>
+							<ExtendedTooltip name="КоэффициентПересчетаОтборРасширеннаяПодсказка" id="243"/>
+							<Events>
+								<Event name="OnChange">КоэффициентПересчетаОтборПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИспользуемыхКатегорий" id="161">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используемые категории</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаИспользуемыхКатегорийРасширеннаяПодсказка" id="162"/>
+			<ChildItems>
+				<LabelField name="ИнформацияПоСтавкам" id="143">
+					<DataPath>ИнформацияПоСтавкам</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>2</Height>
+					<VerticalStretch>true</VerticalStretch>
+					<ContextMenu name="ИнформацияПоСтавкамКонтекстноеМеню" id="144"/>
+					<ExtendedTooltip name="ИнформацияПоСтавкамРасширеннаяПодсказка" id="145"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНоменклатура" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНоменклатураРасширеннаяПодсказка" id="6"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаУстановкиКатегории" id="172">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа установки категории</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаУстановкиКатегорииРасширеннаяПодсказка" id="173"/>
+					<ChildItems>
+						<InputField name="КатегорияНазначения" id="169">
+							<DataPath>КатегорияНазначения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить категорию</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Устанавливаемая категория подакцизных товаров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ClearButton>true</ClearButton>
+							<OpenButton>false</OpenButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Страна</xr:Name>
+									<xr:DataPath xsi:type="xs:string">Страна</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="КатегорияНазначенияКонтекстноеМеню" id="170"/>
+							<ExtendedTooltip name="КатегорияНазначенияРасширеннаяПодсказка" id="171"/>
+							<Events>
+								<Event name="OnChange">КатегорияНазначенияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<CommandBar name="ГруппаДействийПоНоменклатуре" id="227">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа действий по номенклатуре</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаДействийПоНоменклатуреРасширеннаяПодсказка" id="228"/>
+							<ChildItems>
+								<Popup name="СписокНоменклатурыПодменюУстановитьКатегорию" id="137">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СписокНоменклатурыПодменюУстановитьКатегориюРасширеннаяПодсказка" id="138"/>
+									<ChildItems>
+										<Button name="СписокНоменклатурыУстановитьПодакцизнуюКатегориюНоменклатурыПоВыделеннымСтрокам" id="139">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.УстановитьПодакцизнуюКатегориюНоменклатурыПоВыделеннымСтрокам</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По выделенным строкам списка</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокНоменклатурыУстановитьПодакцизнуюКатегориюНоменклатурыПоВыделеннымСтрокамРасширеннаяПодсказка" id="140"/>
+										</Button>
+										<Button name="СписокНоменклатурыУстановитьПодакцизнуюКатегориюНоменклатурыПоТекущемуОтбору" id="141">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.УстановитьПодакцизнуюКатегориюНоменклатурыПоТекущемуОтбору</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По всем строкам списка</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокНоменклатурыУстановитьПодакцизнуюКатегориюНоменклатурыПоТекущемуОтборуРасширеннаяПодсказка" id="142"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Popup name="СписокНоменклатурыПодменюУстановитьКоэффициент" id="183">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установить коэффициент</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СписокНоменклатурыПодменюУстановитьКоэффициентРасширеннаяПодсказка" id="184"/>
+									<ChildItems>
+										<Button name="СписокНоменклатурыУстановитьКоэффициентПоВыделеннымСтрокам" id="185">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.УстановитьКоэффициентПоВыделеннымСтрокам</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По выделенным строкам списка</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокНоменклатурыУстановитьКоэффициентПоВыделеннымСтрокамРасширеннаяПодсказка" id="186"/>
+										</Button>
+										<Button name="СписокНоменклатурыУстановитьКоэффициентПоТекущемуОтбору" id="187">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.УстановитьКоэффициентПоТекущемуОтбору</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По всем строкам списка</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокНоменклатурыУстановитьКоэффициентПоТекущемуОтборуРасширеннаяПодсказка" id="188"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Popup name="СписокНоменклатурыПодменюОчиститьКатегорию" id="189">
+									<ReadOnly>true</ReadOnly>
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Очистить</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="СписокНоменклатурыПодменюОчиститьКатегориюРасширеннаяПодсказка" id="190"/>
+									<ChildItems>
+										<Button name="СписокНоменклатурыОчиститьПодакцизныйПризнакПоВыделеннымСтрокам" id="191">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ОчиститьПодакцизныйПризнакПоВыделеннымСтрокам</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По выделенным строкам списка</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокНоменклатурыОчиститьПодакцизныйПризнакПоВыделеннымСтрокамРасширеннаяПодсказка" id="192"/>
+										</Button>
+										<Button name="СписокНоменклатурыОчиститьПодакцизныйПризнакПоТекущемуОтбору" id="193">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ОчиститьПодакцизныйПризнакПоТекущемуОтбору</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По всем строкам списка</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СписокНоменклатурыОчиститьПодакцизныйПризнакПоТекущемуОтборуРасширеннаяПодсказка" id="194"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="СписокНоменклатуры" id="7">
+					<ReadOnly>true</ReadOnly>
+					<HeightInTableRows>3</HeightInTableRows>
+					<MultipleChoice>true</MultipleChoice>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<DataPath>СписокНоменклатуры</DataPath>
+					<RowPictureDataPath>СписокНоменклатуры.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Create</ExcludedCommand>
+						<ExcludedCommand>CreateFolder</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>LevelDown</ExcludedCommand>
+						<ExcludedCommand>LevelUp</ExcludedCommand>
+						<ExcludedCommand>MoveItem</ExcludedCommand>
+						<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+					</CommandSet>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="СписокНоменклатурыКонтекстноеМеню" id="9"/>
+					<AutoCommandBar name="СписокНоменклатурыКоманднаяПанель" id="8">
+						<HorizontalAlign>Right</HorizontalAlign>
+						<ChildItems>
+							<ButtonGroup name="СписокНоменклатурыГруппаКомандыФормы" id="259">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Список номенклатуры группа команды формы</v8:content>
+									</v8:item>
+								</Title>
+								<CommandSource>Form</CommandSource>
+								<ExtendedTooltip name="СписокНоменклатурыГруппаКомандыФормыРасширеннаяПодсказка" id="260"/>
+							</ButtonGroup>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокНоменклатурыРасширеннаяПодсказка" id="10"/>
+					<SearchStringAddition name="СписокНоменклатурыСтрокаПоиска" id="11">
+						<AdditionSource>
+							<Item>СписокНоменклатуры</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Поиск</v8:content>
+							</v8:item>
+						</Title>
+						<ContextMenu name="СписокНоменклатурыСтрокаПоискаКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="СписокНоменклатурыСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокНоменклатурыСостояниеПросмотра" id="17">
+						<AdditionSource>
+							<Item>СписокНоменклатуры</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокНоменклатурыСостояниеПросмотраКонтекстноеМеню" id="18"/>
+						<ExtendedTooltip name="СписокНоменклатурыСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокНоменклатурыУправлениеПоиском" id="14">
+						<AdditionSource>
+							<Item>СписокНоменклатуры</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокНоменклатурыУправлениеПоискомКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="СписокНоменклатурыУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СписокНоменклатурыНоменклатура" id="146">
+							<DataPath>СписокНоменклатуры.Ссылка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокНоменклатурыНоменклатураКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="СписокНоменклатурыНоменклатураРасширеннаяПодсказка" id="148"/>
+						</InputField>
+						<CheckBoxField name="СписокНоменклатурыПодакцизныйТовар" id="219">
+							<DataPath>СписокНоменклатуры.ПодакцизныйТовар</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подакцизный товар</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокНоменклатурыПодакцизныйТоварКонтекстноеМеню" id="220"/>
+							<ExtendedTooltip name="СписокНоменклатурыПодакцизныйТоварРасширеннаяПодсказка" id="221"/>
+						</CheckBoxField>
+						<InputField name="СписокНоменклатурыЕдиницаИзмерения" id="152">
+							<DataPath>СписокНоменклатуры.ЕдиницаИзмерения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед. хранения</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокНоменклатурыЕдиницаИзмеренияКонтекстноеМеню" id="153"/>
+							<ExtendedTooltip name="СписокНоменклатурыЕдиницаИзмеренияРасширеннаяПодсказка" id="154"/>
+						</InputField>
+						<InputField name="СписокНоменклатурыКатегория" id="149">
+							<DataPath>СписокНоменклатуры.КатегорияПодакцизногоТовара</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Категория</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокНоменклатурыКатегорияКонтекстноеМеню" id="150"/>
+							<ExtendedTooltip name="СписокНоменклатурыКатегорияРасширеннаяПодсказка" id="151"/>
+						</InputField>
+						<LabelField name="СписокНоменклатурыОбъемЕдиницаИзмерения" id="174">
+							<DataPath>СписокНоменклатуры.ОбъемЕдиницаИзмерения</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед. изм. объема</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СписокНоменклатурыОбъемЕдиницаИзмеренияКонтекстноеМеню" id="175"/>
+							<ExtendedTooltip name="СписокНоменклатурыОбъемЕдиницаИзмеренияРасширеннаяПодсказка" id="176"/>
+						</LabelField>
+						<LabelField name="СписокНоменклатурыКоэффициентОбъема" id="177">
+							<DataPath>СписокНоменклатуры.КоэффициентОбъема</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коэффициент объема (м3)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СписокНоменклатурыКоэффициентОбъемаКонтекстноеМеню" id="178"/>
+							<ExtendedTooltip name="СписокНоменклатурыКоэффициентОбъемаРасширеннаяПодсказка" id="179"/>
+						</LabelField>
+						<LabelField name="СписокНоменклатурыВесЕдиницаИзмерения" id="198">
+							<DataPath>СписокНоменклатуры.ВесЕдиницаИзмерения</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед. изм. веса</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СписокНоменклатурыВесЕдиницаИзмеренияКонтекстноеМеню" id="199"/>
+							<ExtendedTooltip name="СписокНоменклатурыВесЕдиницаИзмеренияРасширеннаяПодсказка" id="200"/>
+						</LabelField>
+						<LabelField name="СписокНоменклатурыКоэффициентВеса" id="201">
+							<DataPath>СписокНоменклатуры.КоэффициентВеса</DataPath>
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коэффициент веса</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СписокНоменклатурыКоэффициентВесаКонтекстноеМеню" id="202"/>
+							<ExtendedTooltip name="СписокНоменклатурыКоэффициентВесаРасширеннаяПодсказка" id="203"/>
+						</LabelField>
+						<LabelField name="СписокНоменклатурыКатегорияЕдиницаИзмерения" id="158">
+							<DataPath>СписокНоменклатуры.КатегорияЕдиницаИзмерения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ед. категории</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СписокНоменклатурыКатегорияЕдиницаИзмеренияКонтекстноеМеню" id="159"/>
+							<ExtendedTooltip name="СписокНоменклатурыКатегорияЕдиницаИзмеренияРасширеннаяПодсказка" id="160"/>
+						</LabelField>
+						<ColumnGroup name="СписокНоменклатурыГруппаКоэффициентаПересчета" id="222">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список номенклатуры группа коэффициента пересчета</v8:content>
+								</v8:item>
+							</Title>
+							<Width>8</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="СписокНоменклатурыГруппаКоэффициентаПересчетаРасширеннаяПодсказка" id="223"/>
+							<ChildItems>
+								<LabelField name="СписокНоменклатурыКоэффициентПересчета" id="155">
+									<DataPath>СписокНоменклатуры.КоэффициентПересчета</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Коэффициент пересчета</v8:content>
+										</v8:item>
+									</Title>
+									<Width>5</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>5</MaxWidth>
+									<ContextMenu name="СписокНоменклатурыКоэффициентПересчетаКонтекстноеМеню" id="156"/>
+									<ExtendedTooltip name="СписокНоменклатурыКоэффициентПересчетаРасширеннаяПодсказка" id="157"/>
+								</LabelField>
+								<LabelField name="СписокНоменклатурыЕдиницаИзмеренияНоменклатурыВКатегорию" id="224">
+									<DataPath>СписокНоменклатуры.ЕдиницаИзмеренияНоменклатурыВКатегорию</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Единица измерения номенклатуры в категорию</v8:content>
+										</v8:item>
+									</Title>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>5</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>5</MaxWidth>
+									<ContextMenu name="СписокНоменклатурыЕдиницаИзмеренияНоменклатурыВКатегориюКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="СписокНоменклатурыЕдиницаИзмеренияНоменклатурыВКатегориюРасширеннаяПодсказка" id="226"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Страна" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страна</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтраныМира</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Страна</Field>
+			</Save>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьМногострановойУчет</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="Период" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="СписокНоменклатуры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокНоменклатуры.АвтоКоэффициентПересчета</Field>
+				<Field>СписокНоменклатуры.АвтозаполнениеКоэффициентаПересчета</Field>
+				<Field>СписокНоменклатуры.ВесИспользовать</Field>
+				<Field>СписокНоменклатуры.ЕдиницаИзмерения</Field>
+				<Field>СписокНоменклатуры.КатегорияЕдиницаИзмерения</Field>
+				<Field>СписокНоменклатуры.ОбъемИспользовать</Field>
+				<Field>СписокНоменклатуры.ПодакцизныйТовар</Field>
+				<Field>СписокНоменклатуры.Ссылка</Field>
+				<Field>СписокНоменклатуры.ЭтоТвердаяСтавка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	НоменклатураПереопределяемый.Ссылка КАК Ссылка,
+	КатегорииПереопределяемый.КатегорияПодакцизногоТовара.ЕдиницаИзмерения КАК КатегорияЕдиницаИзмерения,
+	НоменклатураПереопределяемый.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	НоменклатураПереопределяемый.ЭтоГруппа КАК ЭтоГруппа,
+	ЕСТЬNULL(КатегорииПереопределяемый.ПодакцизныйТовар, ЛОЖЬ) КАК ПодакцизныйТовар,
+	ВЫБОР
+		КОГДА НоменклатураПереопределяемый.ЭтоГруппа
+			ТОГДА ЗНАЧЕНИЕ(Справочник.КатегорииПодакцизныхТоваров.ПустаяСсылка)
+		ИНАЧЕ ЕСТЬNULL(КатегорииПереопределяемый.КатегорияПодакцизногоТовара,
+			ЗНАЧЕНИЕ(Справочник.КатегорииПодакцизныхТоваров.ПустаяСсылка))
+	КОНЕЦ КАК КатегорияПодакцизногоТовара,
+	КатегорииПереопределяемый.КоэффициентПересчета КАК КоэффициентПересчета,
+	ВЫБОР
+		КОГДА НоменклатураПереопределяемый.ОбъемИспользовать
+			ТОГДА НоменклатураПереопределяемый.ОбъемЕдиницаИзмерения
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.УпаковкиЕдиницыИзмерения.ПустаяСсылка)
+	КОНЕЦ КАК ОбъемЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА НоменклатураПереопределяемый.ОбъемИспользовать
+			ТОГДА НоменклатураПереопределяемый.ОбъемЧислитель / НоменклатураПереопределяемый.ОбъемЗнаменатель
+		ИНАЧЕ 0
+	КОНЕЦ КАК КоэффициентОбъема,
+	ВЫБОР
+		КОГДА НоменклатураПереопределяемый.ВесИспользовать
+			ТОГДА НоменклатураПереопределяемый.ВесЕдиницаИзмерения
+		ИНАЧЕ 0
+	КОНЕЦ КАК ВесЕдиницаИзмерения,
+	ВЫБОР
+		КОГДА НоменклатураПереопределяемый.ВесИспользовать
+			ТОГДА НоменклатураПереопределяемый.ВесЧислитель / НоменклатураПереопределяемый.ВесЗнаменатель
+		ИНАЧЕ 0
+	КОНЕЦ КАК КоэффициентВеса,
+	НоменклатураПереопределяемый.ОбъемИспользовать КАК ОбъемИспользовать,
+	НоменклатураПереопределяемый.ВесИспользовать КАК ВесИспользовать,
+	&amp;ТекстЗапросаКоэффициентУпаковки КАК АвтоКоэффициентПересчета
+ИЗ
+	Справочник.Номенклатура КАК НоменклатураПереопределяемый
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КатегорииПодакцизныхТоваров.СрезПоследних(&amp;Период, Страна = &amp;Страна {Номенклатура.*
+			КАК Ссылка}) КАК КатегорииПереопределяемый
+		ПО НоменклатураПереопределяемый.Ссылка = КатегорииПереопределяемый.Номенклатура</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
+					<dcssch:field>ЭтоГруппа</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это группа</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КатегорияЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>КатегорияЕдиницаИзмерения</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Категория единица измерения</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>ЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодакцизныйТовар</dcssch:dataPath>
+					<dcssch:field>ПодакцизныйТовар</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подакцизный товар</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КатегорияПодакцизногоТовара</dcssch:dataPath>
+					<dcssch:field>КатегорияПодакцизногоТовара</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Категория подакцизного товара</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоэффициентПересчета</dcssch:dataPath>
+					<dcssch:field>КоэффициентПересчета</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъемЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>ОбъемЕдиницаИзмерения</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем единица измерения</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоэффициентОбъема</dcssch:dataPath>
+					<dcssch:field>КоэффициентОбъема</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициент объема</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВесЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>ВесЕдиницаИзмерения</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вес единица измерения</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоэффициентВеса</dcssch:dataPath>
+					<dcssch:field>КоэффициентВеса</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Коэффициент веса</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъемИспользовать</dcssch:dataPath>
+					<dcssch:field>ОбъемИспользовать</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВесИспользовать</dcssch:dataPath>
+					<dcssch:field>ВесИспользовать</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АвтоКоэффициентПересчета</dcssch:dataPath>
+					<dcssch:field>АвтоКоэффициентПересчета</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авто коэффициент пересчета</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Страна</dcssch:dataPath>
+					<dcssch:field>Страна</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Артикул</dcssch:dataPath>
+					<dcssch:field>Артикул</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВариантОформленияПродажи</dcssch:dataPath>
+					<dcssch:field>ВариантОформленияПродажи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВесЗнаменатель</dcssch:dataPath>
+					<dcssch:field>ВесЗнаменатель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВесМожноУказыватьВДокументах</dcssch:dataPath>
+					<dcssch:field>ВесМожноУказыватьВДокументах</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВесЧислитель</dcssch:dataPath>
+					<dcssch:field>ВесЧислитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВестиУчетПоГТД</dcssch:dataPath>
+					<dcssch:field>ВестиУчетПоГТД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВестиУчетСертификатовНоменклатуры</dcssch:dataPath>
+					<dcssch:field>ВестиУчетСертификатовНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидАлкогольнойПродукции</dcssch:dataPath>
+					<dcssch:field>ВидАлкогольнойПродукции</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидНоменклатуры</dcssch:dataPath>
+					<dcssch:field>ВидНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппаДоступа</dcssch:dataPath>
+					<dcssch:field>ГруппаДоступа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АлкогольнаяПродукция</dcssch:dataPath>
+					<dcssch:field>АлкогольнаяПродукция</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НаименованиеПолное</dcssch:dataPath>
+					<dcssch:field>НаименованиеПолное</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕдиницаИзмеренияСрокаГодности</dcssch:dataPath>
+					<dcssch:field>ЕдиницаИзмеренияСрокаГодности</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕстьТоварыДругогоКачества</dcssch:dataPath>
+					<dcssch:field>ЕстьТоварыДругогоКачества</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмпортнаяАлкогольнаяПродукция</dcssch:dataPath>
+					<dcssch:field>ИмпортнаяАлкогольнаяПродукция</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлинаЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>ДлинаЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлинаЗнаменатель</dcssch:dataPath>
+					<dcssch:field>ДлинаЗнаменатель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлинаИспользовать</dcssch:dataPath>
+					<dcssch:field>ДлинаИспользовать</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлинаМожноУказыватьВДокументах</dcssch:dataPath>
+					<dcssch:field>ДлинаМожноУказыватьВДокументах</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлинаЧислитель</dcssch:dataPath>
+					<dcssch:field>ДлинаЧислитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользованиеХарактеристик</dcssch:dataPath>
+					<dcssch:field>ИспользованиеХарактеристик</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьИндивидуальныйШаблонЦенника</dcssch:dataPath>
+					<dcssch:field>ИспользоватьИндивидуальныйШаблонЦенника</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьИндивидуальныйШаблонЭтикетки</dcssch:dataPath>
+					<dcssch:field>ИспользоватьИндивидуальныйШаблонЭтикетки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьУпаковки</dcssch:dataPath>
+					<dcssch:field>ИспользоватьУпаковки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Качество</dcssch:dataPath>
+					<dcssch:field>Качество</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодДляПоиска</dcssch:dataPath>
+					<dcssch:field>КодДляПоиска</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Марка</dcssch:dataPath>
+					<dcssch:field>Марка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НаборУпаковок</dcssch:dataPath>
+					<dcssch:field>НаборУпаковок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппаФинансовогоУчета</dcssch:dataPath>
+					<dcssch:field>ГруппаФинансовогоУчета</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НоменклатураМногооборотнаяТара</dcssch:dataPath>
+					<dcssch:field>НоменклатураМногооборотнаяТара</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъемДАЛ</dcssch:dataPath>
+					<dcssch:field>ОбъемДАЛ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Описание</dcssch:dataPath>
+					<dcssch:field>Описание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьПодакцизныйТовар</dcssch:dataPath>
+					<dcssch:field>УдалитьПодакцизныйТовар</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПоставляетсяВМногооборотнойТаре</dcssch:dataPath>
+					<dcssch:field>ПоставляетсяВМногооборотнойТаре</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Производитель</dcssch:dataPath>
+					<dcssch:field>Производитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПроизводительИмпортерКонтрагент</dcssch:dataPath>
+					<dcssch:field>ПроизводительИмпортерКонтрагент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкладскаяГруппа</dcssch:dataPath>
+					<dcssch:field>СкладскаяГруппа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СрокГодности</dcssch:dataPath>
+					<dcssch:field>СрокГодности</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтавкаНДС</dcssch:dataPath>
+					<dcssch:field>СтавкаНДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипНоменклатуры</dcssch:dataPath>
+					<dcssch:field>ТипНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТоварнаяКатегория</dcssch:dataPath>
+					<dcssch:field>ТоварнаяКатегория</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФайлКартинки</dcssch:dataPath>
+					<dcssch:field>ФайлКартинки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФайлОписанияДляСайта</dcssch:dataPath>
+					<dcssch:field>ФайлОписанияДляСайта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъемЗнаменатель</dcssch:dataPath>
+					<dcssch:field>ОбъемЗнаменатель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъемМожноУказыватьВДокументах</dcssch:dataPath>
+					<dcssch:field>ОбъемМожноУказыватьВДокументах</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъемЧислитель</dcssch:dataPath>
+					<dcssch:field>ОбъемЧислитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ХарактеристикаМногооборотнаяТара</dcssch:dataPath>
+					<dcssch:field>ХарактеристикаМногооборотнаяТара</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлощадьЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>ПлощадьЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлощадьЗнаменатель</dcssch:dataPath>
+					<dcssch:field>ПлощадьЗнаменатель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СхемаОбеспечения</dcssch:dataPath>
+					<dcssch:field>СхемаОбеспечения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СпособОбеспеченияПотребностей</dcssch:dataPath>
+					<dcssch:field>СпособОбеспеченияПотребностей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлощадьИспользовать</dcssch:dataPath>
+					<dcssch:field>ПлощадьИспользовать</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлощадьМожноУказыватьВДокументах</dcssch:dataPath>
+					<dcssch:field>ПлощадьМожноУказыватьВДокументах</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПлощадьЧислитель</dcssch:dataPath>
+					<dcssch:field>ПлощадьЧислитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЦеноваяГруппа</dcssch:dataPath>
+					<dcssch:field>ЦеноваяГруппа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ШаблонЦенника</dcssch:dataPath>
+					<dcssch:field>ШаблонЦенника</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕдиницаДляОтчетов</dcssch:dataPath>
+					<dcssch:field>ЕдиницаДляОтчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоэффициентЕдиницыДляОтчетов</dcssch:dataPath>
+					<dcssch:field>КоэффициентЕдиницыДляОтчетов</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ШаблонЭтикетки</dcssch:dataPath>
+					<dcssch:field>ШаблонЭтикетки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СезоннаяГруппа</dcssch:dataPath>
+					<dcssch:field>СезоннаяГруппа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоллекцияНоменклатуры</dcssch:dataPath>
+					<dcssch:field>КоллекцияНоменклатуры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Принципал</dcssch:dataPath>
+					<dcssch:field>Принципал</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РейтингПродаж</dcssch:dataPath>
+					<dcssch:field>РейтингПродаж</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбособленнаяЗакупкаПродажа</dcssch:dataPath>
+					<dcssch:field>ОбособленнаяЗакупкаПродажа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппаАналитическогоУчета</dcssch:dataPath>
+					<dcssch:field>ГруппаАналитическогоУчета</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодТНВЭД</dcssch:dataPath>
+					<dcssch:field>КодТНВЭД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодОКВЭД</dcssch:dataPath>
+					<dcssch:field>КодОКВЭД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодОКП</dcssch:dataPath>
+					<dcssch:field>КодОКП</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОблагаетсяНДПИПоПроцентнойСтавке</dcssch:dataPath>
+					<dcssch:field>ОблагаетсяНДПИПоПроцентнойСтавке</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВладелецСерий</dcssch:dataPath>
+					<dcssch:field>ВладелецСерий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВладелецХарактеристик</dcssch:dataPath>
+					<dcssch:field>ВладелецХарактеристик</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВладелецТоварныхКатегорий</dcssch:dataPath>
+					<dcssch:field>ВладелецТоварныхКатегорий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Крепость</dcssch:dataPath>
+					<dcssch:field>Крепость</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОсобенностьУчета</dcssch:dataPath>
+					<dcssch:field>ОсобенностьУчета</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПродукцияМаркируемаяДляГИСМ</dcssch:dataPath>
+					<dcssch:field>ПродукцияМаркируемаяДляГИСМ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КиЗГИСМ</dcssch:dataPath>
+					<dcssch:field>КиЗГИСМ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КиЗГИСМВид</dcssch:dataPath>
+					<dcssch:field>КиЗГИСМВид</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КиЗГИСМСпособВыпускаВОборот</dcssch:dataPath>
+					<dcssch:field>КиЗГИСМСпособВыпускаВОборот</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КиЗГИСМGTIN</dcssch:dataPath>
+					<dcssch:field>КиЗГИСМGTIN</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КиЗГИСМРазмер</dcssch:dataPath>
+					<dcssch:field>КиЗГИСМРазмер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодконтрольнаяПродукцияВЕТИС</dcssch:dataPath>
+					<dcssch:field>ПодконтрольнаяПродукцияВЕТИС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АлкогольнаяПродукцияВоВскрытойТаре</dcssch:dataPath>
+					<dcssch:field>АлкогольнаяПродукцияВоВскрытойТаре</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодРаздел7ДекларацииНДС</dcssch:dataPath>
+					<dcssch:field>КодРаздел7ДекларацииНДС</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОблагаетсяНДСУПокупателя</dcssch:dataPath>
+					<dcssch:field>ОблагаетсяНДСУПокупателя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьКодОКВЭД2</dcssch:dataPath>
+					<dcssch:field>УдалитьКодОКВЭД2</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодОКПД2</dcssch:dataPath>
+					<dcssch:field>КодОКПД2</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодВидаНоменклатурнойКлассификации</dcssch:dataPath>
+					<dcssch:field>КодВидаНоменклатурнойКлассификации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НаименованиеВидаНоменклатурнойКлассификации</dcssch:dataPath>
+					<dcssch:field>НаименованиеВидаНоменклатурнойКлассификации</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕдиницаИзмеренияТНВЭД</dcssch:dataPath>
+					<dcssch:field>ЕдиницаИзмеренияТНВЭД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтранаПроисхождения</dcssch:dataPath>
+					<dcssch:field>СтранаПроисхождения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПрослеживаемыйТовар</dcssch:dataPath>
+					<dcssch:field>ПрослеживаемыйТовар</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПереноситьРНПТМатериала</dcssch:dataPath>
+					<dcssch:field>ПереноситьРНПТМатериала</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодТРУ</dcssch:dataPath>
+					<dcssch:field>КодТРУ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодПоКВПД</dcssch:dataPath>
+					<dcssch:field>КодПоКВПД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодОКВЭД2</dcssch:dataPath>
+					<dcssch:field>КодОКВЭД2</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПродаетсяПоРазрешению</dcssch:dataPath>
+					<dcssch:field>ПродаетсяПоРазрешению</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Операции0</dcssch:dataPath>
+					<dcssch:field>Операции0</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДрагоценныеМатериалы</dcssch:dataPath>
+					<dcssch:field>ДрагоценныеМатериалы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Представления</dcssch:dataPath>
+					<dcssch:field>Представления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НаименованиеЯзык1</dcssch:dataPath>
+					<dcssch:field>НаименованиеЯзык1</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НаименованиеЯзык2</dcssch:dataPath>
+					<dcssch:field>НаименованиеЯзык2</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<CalculatedField>
+					<dcssch:dataPath>ЭтоТвердаяСтавка</dcssch:dataPath>
+					<dcssch:expression>КатегорияПодакцизногоТовара.ТипСтавки = ЗНАЧЕНИЕ(Перечисление.ТипыСтавокПодакцизнойКатегории.Твердая)</dcssch:expression>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это твердая ставка</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+				</CalculatedField>
+				<CalculatedField>
+					<dcssch:dataPath>АвтозаполнениеКоэффициентаПересчета</dcssch:dataPath>
+					<dcssch:expression>ЕСТЬNULL(Ссылка.ЕдиницаИзмерения.ТипИзмеряемойВеличины, ИСТИНА) = ЕСТЬNULL(КатегорияПодакцизногоТовара.ЕдиницаИзмерения.ТипИзмеряемойВеличины, ЛОЖЬ)</dcssch:expression>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автозаполнение коэффициента пересчета</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+				</CalculatedField>
+				<CalculatedField>
+					<dcssch:dataPath>ЕдиницаИзмеренияНоменклатурыВКатегорию</dcssch:dataPath>
+					<dcssch:expression>ВЫБОР
+	КОГДА КоэффициентПересчета &gt; 0
+	ТОГДА ПРЕДСТАВЛЕНИЕ(КатегорияПодакцизногоТовара.ЕдиницаИзмерения) + "/" +
+		ПРЕДСТАВЛЕНИЕ(ЕдиницаИзмерения)
+	ИНАЧЕ ""
+КОНЕЦ</dcssch:expression>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Единица измерения номенклатуры в категорию</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+					<dcssch:valueType>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</dcssch:valueType>
+				</CalculatedField>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТекстЗапросаКоэффициентУпаковки</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст запроса коэффициент упаковки</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Страна</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страна</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.СтраныМира</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Catalog.Номенклатура</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТипНоменклатуры</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ТипыНоменклатуры.Товар</dcsset:right>
+							<dcsset:viewMode>Inaccessible</dcsset:viewMode>
+						</dcsset:item>
+						<dcsset:userSettingID>64b94aab-8d31-41e4-b779-bc6b4339448a</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:userSettingID>bf459d7e-1cbd-430c-8a1c-db228cc646b3</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:userSettingID>cee7843c-a4e9-4572-b053-bbf63a7aee49</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsUserSettingID>25c5f402-fa64-4d2d-8da6-e3cd64fed6cd</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущаяДатаСеанса" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая дата сеанса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнформацияПоСтавкам" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация по ставкам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодакцизныйТовар" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подакцизный товар</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КатегорияОтбора" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КатегорияНазначения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория назначения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.КатегорииПодакцизныхТоваров</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗапрашиватьКоэффициент" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запрашивать коэффициент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыборВариантаКатегории" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор категории</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипИзмеряемойВеличины" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип измеряемой величины</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыИзмеряемыхВеличин</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоэффициентПересчетаОтбор" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициент пересчета отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КатегорияОтбораДо" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория отбора до</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КоэффициентПересчетаОтборДо" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициент пересчета отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>6</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Объект" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗаполнениеКатегорийПодакцизныхТоваров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="МногострановойУчет" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Многострановой учет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УстановитьПодакцизнуюКатегориюНоменклатурыПоВыделеннымСтрокам" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить подакцизную категорию по выделенным строкам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить ставку НДС по выделенным строкам списка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьПодакцизнуюКатегориюНоменклатурыПоВыделеннымСтрокам</Action>
+		</Command>
+		<Command name="УстановитьПодакцизнуюКатегориюНоменклатурыПоТекущемуОтбору" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить подакцизную категорию по текущему отбору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить ставку НДС по текущему отбору списка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьПодакцизнуюКатегориюНоменклатурыПоТекущемуОтбору</Action>
+		</Command>
+		<Command name="УстановитьКоэффициентПоВыделеннымСтрокам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить коэффициент по выделенным строкам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить коэффициент по выделенным строкам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьКоэффициентПоВыделеннымСтрокам</Action>
+		</Command>
+		<Command name="УстановитьКоэффициентПоТекущемуОтбору" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить коэффициент по текущему отбору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить коэффициент по текущему отбору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьКоэффициентПоТекущемуОтбору</Action>
+		</Command>
+		<Command name="ОчиститьПодакцизныйПризнакПоВыделеннымСтрокам" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить подакцизный признак по выделенным строкам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить подакццизный признак по выделенным строкам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьПодакцизныйПризнакПоВыделеннымСтрокам</Action>
+		</Command>
+		<Command name="ОчиститьПодакцизныйПризнакПоТекущемуОтбору" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить подакцизный признак по текущему отбору</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить подакцизный признак по текущему отбору</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьПодакцизныйПризнакПоТекущемуОтбору</Action>
+		</Command>
+	</Commands>
+</Form>

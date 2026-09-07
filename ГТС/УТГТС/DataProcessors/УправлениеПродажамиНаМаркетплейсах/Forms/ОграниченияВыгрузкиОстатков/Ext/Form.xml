@@ -1,0 +1,897 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Ограничения остатков товаров</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДанные" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>80</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДанныеРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапка" id="108">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка</v8:content>
+						</v8:item>
+					</Title>
+					<Width>70</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="109"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаУчетнаяЗапись" id="106">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа учетная запись</v8:content>
+								</v8:item>
+							</Title>
+							<Width>70</Width>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУчетнаяЗаписьРасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<InputField name="УчетнаяЗапись" id="1">
+									<DataPath>УчетнаяЗапись</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>false</ChoiceButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="3"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНаименованиеИОбласть" id="117">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа Наименование и область</v8:content>
+								</v8:item>
+							</Title>
+							<Width>70</Width>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНаименованиеИОбластьРасширеннаяПодсказка" id="118"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЛевая" id="123">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа левая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа левая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛеваяРасширеннаяПодсказка" id="124"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаНаименование" id="127">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа наименование</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаНаименованиеРасширеннаяПодсказка" id="128"/>
+											<ChildItems>
+												<InputField name="Наименование" id="98">
+													<DataPath>Наименование</DataPath>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="НаименованиеКонтекстноеМеню" id="99"/>
+													<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="100"/>
+												</InputField>
+												<Button name="АвтоматическоеНаименование" id="129">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.АвтоматическоеНаименование</CommandName>
+													<ExtendedTooltip name="АвтоматическоеНаименованиеРасширеннаяПодсказка" id="130"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ОбластьДействия" id="4">
+											<DataPath>ОбластьДействия</DataPath>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ОбластьДействияКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="ОбластьДействияРасширеннаяПодсказка" id="6"/>
+											<Events>
+												<Event name="OnChange">ОбластьДействияПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПравая" id="125">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>14</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Group>Vertical</Group>
+									<VerticalSpacing>OneAndHalf</VerticalSpacing>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПраваяРасширеннаяПодсказка" id="126"/>
+									<ChildItems>
+										<InputField name="Код" id="103">
+											<DataPath>Код</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="КодКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="КодРасширеннаяПодсказка" id="105"/>
+										</InputField>
+										<LabelField name="ТипОбластиДействия" id="114">
+											<DataPath>ТипОбластиДействия</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="ТипОбластиДействияКонтекстноеМеню" id="115"/>
+											<ExtendedTooltip name="ТипОбластиДействияРасширеннаяПодсказка" id="116"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОграничениеОстатков" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ограничение остатков</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОграничениеОстатковРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияОтступ1" id="36">
+							<Width>11</Width>
+							<ContextMenu name="ДекорацияОтступ1КонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="ДекорацияОтступ1РасширеннаяПодсказка" id="38"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаНастройкиОграничения" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки ограничения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки ограничения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиОграниченияРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаОграничениеОстатковИспользование" id="39">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ограничение остатков использование</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОграничениеОстатковИспользованиеРасширеннаяПодсказка" id="40"/>
+									<ChildItems>
+										<CheckBoxField name="Используется" id="41">
+											<DataPath>Используется</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Ограничивать остаток номенклатуры к выгрузке</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:ИндивидуальнаяЦена</TitleTextColor>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="ИспользуетсяРасширеннаяПодсказка" id="43"/>
+											<Events>
+												<Event name="OnChange">ИспользуетсяПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаОграничениеОстатковДетали" id="44">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа ограничение остатков детали</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОграничениеОстатковДеталиРасширеннаяПодсказка" id="45"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОтступ2" id="46">
+													<Width>2</Width>
+													<ContextMenu name="ДекорацияОтступ2КонтекстноеМеню" id="47"/>
+													<ExtendedTooltip name="ДекорацияОтступ2РасширеннаяПодсказка" id="48"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаОграничениеОстатковДеталиЗначения" id="49">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа ограничение остатков детали значения</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<United>false</United>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОграничениеОстатковДеталиЗначенияРасширеннаяПодсказка" id="50"/>
+													<ChildItems>
+														<InputField name="ПроцентОстатка" id="51">
+															<DataPath>ПроцентОстатка</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>К выгрузке доступно</v8:content>
+																</v8:item>
+															</Title>
+															<Width>10</Width>
+															<MinValue xsi:type="xs:decimal">0</MinValue>
+															<MaxValue xsi:type="xs:decimal">100</MaxValue>
+															<ContextMenu name="ПроцентОстаткаКонтекстноеМеню" id="52"/>
+															<ExtendedTooltip name="ПроцентОстаткаРасширеннаяПодсказка" id="53"/>
+															<Events>
+																<Event name="OnChange">ПроцентОстаткаПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="СтраховойЗапас" id="54">
+															<DataPath>СтраховойЗапас</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>За исключением</v8:content>
+																</v8:item>
+															</Title>
+															<Width>10</Width>
+															<ContextMenu name="СтраховойЗапасКонтекстноеМеню" id="55"/>
+															<ExtendedTooltip name="СтраховойЗапасРасширеннаяПодсказка" id="56"/>
+															<Events>
+																<Event name="OnChange">СтраховойЗапасПриИзменении</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаОграничениеОстатковДеталиОписание" id="57">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа Ограничение остатков детали описание</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<United>false</United>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОграничениеОстатковДеталиОписаниеРасширеннаяПодсказка" id="58"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияЕдиницаОграниченияПроцентаОстатка" id="59">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>% от учетного количества остатка номенклатуры.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияЕдиницаОграниченияПроцентаОстаткаКонтекстноеМеню" id="60"/>
+															<ExtendedTooltip name="ДекорацияЕдиницаОграниченияПроцентаОстаткаРасширеннаяПодсказка" id="61"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияЕдиницаОграниченияСтраховогоЗапаса" id="62">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>единиц остатка номенклатуры, являющихся страховым запасом</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияЕдиницаОграниченияСтраховогоЗапасаКонтекстноеМеню" id="63"/>
+															<ExtendedTooltip name="ДекорацияЕдиницаОграниченияСтраховогоЗапасаРасширеннаяПодсказка" id="64"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОграничениеОстатковАвтокорректировка" id="81">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ограничение остатков автокорректировка</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ограничение остатков автокорректировка</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОграничениеОстатковАвтокорректировкаРасширеннаяПодсказка" id="82"/>
+									<ChildItems>
+										<CheckBoxField name="АвтоКорректировкаПоДиапазону" id="90">
+											<DataPath>АвтоКорректировкаПоДиапазону</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Автоматически скорректировать остаток, если он выходит за границы</v8:content>
+												</v8:item>
+											</Title>
+											<TitleTextColor>style:ИндивидуальнаяЦена</TitleTextColor>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="АвтоКорректировкаПоДиапазонуКонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="АвтоКорректировкаПоДиапазонуРасширеннаяПодсказка" id="92"/>
+											<Events>
+												<Event name="OnChange">АвтоКорректировкаПоДиапазонуПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаОграничениеОстатковДиапазон" id="93">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа ограничение остатков диапазон</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа ограничение остатков диапазон</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОграничениеОстатковДиапазонРасширеннаяПодсказка" id="94"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОтступ3" id="95">
+													<Width>2</Width>
+													<ContextMenu name="ДекорацияОтступ3КонтекстноеМеню" id="96"/>
+													<ExtendedTooltip name="ДекорацияОтступ3РасширеннаяПодсказка" id="97"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаДопустимыйДиапазонОстатка" id="77">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа Допустимый диапазон остатка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа допустимый диапазон остатка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДопустимыйДиапазонОстаткаРасширеннаяПодсказка" id="78"/>
+													<ChildItems>
+														<InputField name="МинимальныйОстаток" id="16">
+															<DataPath>МинимальныйОстаток</DataPath>
+															<Width>9</Width>
+															<ContextMenu name="МинимальныйОстатокКонтекстноеМеню" id="17"/>
+															<ExtendedTooltip name="МинимальныйОстатокРасширеннаяПодсказка" id="18"/>
+															<Events>
+																<Event name="OnChange">МинимальныйОстатокПриИзменении</Event>
+															</Events>
+														</InputField>
+														<InputField name="МаксимальныйОстаток" id="19">
+															<DataPath>МаксимальныйОстаток</DataPath>
+															<Width>9</Width>
+															<ContextMenu name="МаксимальныйОстатокКонтекстноеМеню" id="20"/>
+															<ExtendedTooltip name="МаксимальныйОстатокРасширеннаяПодсказка" id="21"/>
+															<Events>
+																<Event name="OnChange">МаксимальныйОстатокПриИзменении</Event>
+															</Events>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаДекорацийДопустимыйДиапазонОстатка" id="79">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа Декораций допустимый диапазон остатка</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа декораций допустимый диапазон остатка</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<VerticalSpacing>Double</VerticalSpacing>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДекорацийДопустимыйДиапазонОстаткаРасширеннаяПодсказка" id="80"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияЕдиницаОграниченияМинимальногоОстатка" id="74">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>единиц номенклатуры</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияЕдиницаОграниченияМинимальногоОстаткаКонтекстноеМеню" id="75"/>
+															<ExtendedTooltip name="ДекорацияЕдиницаОграниченияМинимальногоОстаткаРасширеннаяПодсказка" id="76"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияЕдиницаОграниченияМаксимальногоОстатка" id="71">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>единиц номенклатуры</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияЕдиницаОграниченияМаксимальногоОстаткаКонтекстноеМеню" id="72"/>
+															<ExtendedTooltip name="ДекорацияЕдиницаОграниченияМаксимальногоОстаткаРасширеннаяПодсказка" id="73"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПредставление" id="88">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа представление</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа представление</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПредставлениеРасширеннаяПодсказка" id="89"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияОтступ5" id="65">
+											<Width>3</Width>
+											<ContextMenu name="ДекорацияОтступ5КонтекстноеМеню" id="66"/>
+											<ExtendedTooltip name="ДекорацияОтступ5РасширеннаяПодсказка" id="67"/>
+										</LabelDecoration>
+										<LabelField name="ПредставлениеОграничения" id="68">
+											<DataPath>ПредставлениеОграничения</DataPath>
+											<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>3</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<TextColor>style:FieldSelectionBackColor</TextColor>
+											<ContextMenu name="ПредставлениеОграниченияКонтекстноеМеню" id="69"/>
+											<ExtendedTooltip name="ПредставлениеОграниченияРасширеннаяПодсказка" id="70"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПодвал" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Width>80</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Right</HorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="25"/>
+			<ChildItems>
+				<Button name="ПеренестиВНастройки" id="30">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ПеренестиВНастройки</CommandName>
+					<ExtendedTooltip name="ПеренестиВНастройкиРасширеннаяПодсказка" id="31"/>
+				</Button>
+				<Button name="Закрыть" id="32">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Width>10</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="33"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="УчетнаяЗапись" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.УчетныеЗаписиМаркетплейсов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбластьДействия" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Область действия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+				<v8:Type>cfg:CatalogRef.ТоварныеКатегории</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ПроцентОстатка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент остатка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтраховойЗапас" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страховой запас</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Используется" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МинимальныйОстаток" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимальный остаток</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="МаксимальныйОстаток" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальный остаток</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Кэш" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кэш</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПредставлениеОграничения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление ограничения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтоКорректировкаПоДиапазону" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Авто корректировка по диапазону</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Наименование" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Код" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>9</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипОбластиДействия" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип области действия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>25</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидМаркетплейса" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид маркетплейса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыМаркетплейсов</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеренестиВНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиВНастройки</Action>
+		</Command>
+		<Command name="АвтоматическоеНаименование" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическое наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗаполнитьПоШаблону</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>АвтоматическоеНаименование</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОписаниеУчетнойЗаписи">
+			<Type/>
+		</Parameter>
+		<Parameter name="Используется">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ОбластьДействия">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+				<v8:Type>cfg:CatalogRef.ТоварныеКатегории</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ПроцентОстатка">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СтраховойЗапас">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="МаксимальныйОстаток">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="МинимальныйОстаток">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Наименование">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Код">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>9</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ВидМаркетплейса">
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыМаркетплейсов</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

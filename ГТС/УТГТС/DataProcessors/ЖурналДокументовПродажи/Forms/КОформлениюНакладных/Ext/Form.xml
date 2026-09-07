@@ -1,0 +1,3412 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Документы продажи (к оформлению)</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СтраницаРаспоряженияНаОформлениеБыстрыеОтборы" id="131">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрые отборы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СтраницаРаспоряженияНаОформлениеБыстрыеОтборыРасширеннаяПодсказка" id="132"/>
+		</UsualGroup>
+		<Pages name="Страницы" id="487">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="488"/>
+			<ChildItems>
+				<Page name="СтраницаКОтгрузке" id="489">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>К отгрузке</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаКОтгрузкеРасширеннаяПодсказка" id="490"/>
+					<ChildItems>
+						<UsualGroup name="ШапкаСписокРаспоряженияНаОформление" id="535">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowLeftMargin>false</ShowLeftMargin>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ШапкаСписокРаспоряженияНаОформлениеРасширеннаяПодсказка" id="536"/>
+							<ChildItems>
+								<UsualGroup name="КоманднаяПанельСписокРаспоряженияНаОформление" id="565">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Командная панель</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="КоманднаяПанельСписокРаспоряженияНаОформлениеРасширеннаяПодсказка" id="566"/>
+									<ChildItems>
+										<CommandBar name="КомандыСписокРаспоряженияНаОформление" id="559">
+											<EnableContentChange>true</EnableContentChange>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Команды</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ExtendedTooltip name="КомандыСписокРаспоряженияНаОформлениеРасширеннаяПодсказка" id="560"/>
+											<ChildItems>
+												<Popup name="КомандыОформитьСписокРаспоряженияНаОформление" id="497">
+													<EnableContentChange>true</EnableContentChange>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Оформить</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.ОформитьПродажу</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<Representation>PictureAndText</Representation>
+													<ExtendedTooltip name="КомандыОформитьСписокРаспоряженияНаОформлениеРасширеннаяПодсказка" id="498"/>
+													<ChildItems>
+														<Button name="СписокРаспоряженияНаОформлениеОформитьПоРаспоряжениям" id="371">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьПоРаспоряжениям</CommandName>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ExtendedTooltip name="СписокРаспоряженияНаОформлениеОформитьПоРаспоряжениямРасширеннаяПодсказка" id="372"/>
+														</Button>
+														<Button name="СписокРаспоряженияНаОформлениеОформитьПоОтгрузке" id="373">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьПоОтгрузке</CommandName>
+															<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+															<ExtendedTooltip name="СписокРаспоряженияНаОформлениеОформитьПоОтгрузкеРасширеннаяПодсказка" id="374"/>
+														</Button>
+														<Button name="СписокРаспоряженияНаОформлениеОформитьОтгрузкуПоЗаказам" id="571">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьОтгрузкуПоЗаказам</CommandName>
+															<ExtendedTooltip name="СписокРаспоряженияНаОформлениеОформитьОтгрузкуПоЗаказамРасширеннаяПодсказка" id="572"/>
+														</Button>
+														<Button name="СписокРаспоряженияНаОформлениеОформитьОтгрузкуПоОрдеру" id="573">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьОтгрузкуПоОрдеру</CommandName>
+															<ExtendedTooltip name="СписокРаспоряженияНаОформлениеОформитьОтгрузкуПоОрдеруРасширеннаяПодсказка" id="574"/>
+														</Button>
+													</ChildItems>
+												</Popup>
+												<Popup name="ПодменюОтчеты" id="682">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Отчеты</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.Отчеты</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<Representation>Picture</Representation>
+													<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="683"/>
+													<ChildItems>
+														<ButtonGroup name="ПодменюОтчетыВажное" id="684">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подменю отчеты важное</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ПодменюОтчетыВажноеРасширеннаяПодсказка" id="685"/>
+															<ChildItems>
+																<Button name="СписокРаспоряженияНаОформлениеСостояниеВыполнения" id="469">
+																	<Type>CommandBarButton</Type>
+																	<Representation>PictureAndText</Representation>
+																	<CommandName>Form.Command.СостояниеВыполнения</CommandName>
+																	<Picture>
+																		<xr:Ref>StdPicture.Report</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСостояниеВыполненияРасширеннаяПодсказка" id="470"/>
+																</Button>
+																<Button name="СписокРаспоряженияНаОформлениеСостояниеСвязанныеДокументы" id="690">
+																	<Type>CommandBarButton</Type>
+																	<Representation>PictureAndText</Representation>
+																	<CommandName>Form.Command.СвязанныеДокументы</CommandName>
+																	<Picture>
+																		<xr:Ref>CommonPicture.СтруктураПодчиненности</xr:Ref>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																	</Picture>
+																	<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																	<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСостояниеСвязанныеДокументыРасширеннаяПодсказка" id="691"/>
+																</Button>
+															</ChildItems>
+														</ButtonGroup>
+														<ButtonGroup name="ПодменюОтчетыОбычное" id="686">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подменю отчеты обычное</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подменю отчеты важное</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ПодменюОтчетыОбычноеРасширеннаяПодсказка" id="687"/>
+														</ButtonGroup>
+														<ButtonGroup name="ПодменюОтчетыСмТакже" id="688">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подменю отчеты см также</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подменю отчеты важное</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ПодменюОтчетыСмТакжеРасширеннаяПодсказка" id="689"/>
+														</ButtonGroup>
+													</ChildItems>
+												</Popup>
+											</ChildItems>
+										</CommandBar>
+										<UsualGroup name="ОтборыСписокРаспоряженияНаОформление" id="561">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отборы</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ОтборыСписокРаспоряженияНаОформлениеРасширеннаяПодсказка" id="562"/>
+											<ChildItems>
+												<InputField name="Организация" id="471">
+													<DataPath>Организация</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>15</Width>
+													<MaxWidth>15</MaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ClearButton>true</ClearButton>
+													<OpenButton>false</OpenButton>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Организация</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="ОрганизацияКонтекстноеМеню" id="472"/>
+													<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="473"/>
+													<Events>
+														<Event name="OnChange">ОрганизацияПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="Склад" id="136">
+													<DataPath>Склад</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<ClearButton>true</ClearButton>
+													<OpenButton>false</OpenButton>
+													<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Склад</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="СкладКонтекстноеМеню" id="137"/>
+													<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="138"/>
+													<Events>
+														<Event name="OnChange">СкладПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="СостояниеНакладной" id="365">
+													<DataPath>СостояниеНакладной</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Оформление накладной</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<Width>17</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ClearButton>true</ClearButton>
+													<ListChoiceMode>true</ListChoiceMode>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Оформление накладной</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="СостояниеНакладнойКонтекстноеМеню" id="366"/>
+													<ExtendedTooltip name="СостояниеНакладнойРасширеннаяПодсказка" id="367"/>
+													<Events>
+														<Event name="OnChange">СостояниеНакладнойПриИзменении</Event>
+													</Events>
+												</InputField>
+												<InputField name="СостояниеОрдера" id="368">
+													<DataPath>СостояниеОрдера</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расходные ордера</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>None</TitleLocation>
+													<Width>22</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ClearButton>true</ClearButton>
+													<ListChoiceMode>true</ListChoiceMode>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расходные ордера</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="СостояниеОрдераКонтекстноеМеню" id="369"/>
+													<ExtendedTooltip name="СостояниеОрдераРасширеннаяПодсказка" id="370"/>
+													<Events>
+														<Event name="OnChange">СостояниеОрдераПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<CommandBar name="СтандартныеКомандыСписокРаспоряженияНаОформление" id="563">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стандартные команды</v8:content>
+												</v8:item>
+											</Title>
+											<CommandSource>Item.СписокРаспоряженияНаОформление</CommandSource>
+											<ExtendedTooltip name="СтандартныеКомандыСписокРаспоряженияНаОформлениеРасширеннаяПодсказка" id="564"/>
+											<ChildItems>
+												<Button name="СписокРаспоряженияНаОформлениеНастройка" id="445">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.Настройка</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="СписокРаспоряженияНаОформлениеНастройкаРасширеннаяПодсказка" id="446"/>
+												</Button>
+												<Button name="СписокРаспоряженияНаОформлениеИзменитьФорму" id="357">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+													<ExtendedTooltip name="СписокРаспоряженияНаОформлениеИзменитьФормуРасширеннаяПодсказка" id="358"/>
+												</Button>
+												<Button name="СписокРаспоряженияНаОформлениеНайти" id="452">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.СписокРаспоряженияНаОформление.StandardCommand.Find</CommandName>
+													<ExtendedTooltip name="СписокРаспоряженияНаОформлениеНайтиРасширеннаяПодсказка" id="453"/>
+												</Button>
+												<Button name="СписокРаспоряженияНаОформлениеОтменитьПоиск" id="454">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.СписокРаспоряженияНаОформление.StandardCommand.CancelSearch</CommandName>
+													<ExtendedTooltip name="СписокРаспоряженияНаОформлениеОтменитьПоискРасширеннаяПодсказка" id="455"/>
+												</Button>
+												<Button name="СписокРаспоряженияНаОформлениеСправка" id="283">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.Help</CommandName>
+													<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСправкаРасширеннаяПодсказка" id="284"/>
+												</Button>
+											</ChildItems>
+										</CommandBar>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокРаспоряженияНаОформление" id="206">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<SkipOnInput>false</SkipOnInput>
+							<DefaultItem>true</DefaultItem>
+							<MultipleChoice>true</MultipleChoice>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокРаспоряженияНаОформление</DataPath>
+							<RowPictureDataPath>СписокРаспоряженияНаОформление.НестандартнаяКартинка</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.СостоянияДокумента</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список распоряжения на оформление</v8:content>
+								</v8:item>
+							</Title>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокРаспоряженияНаОформлениеКонтекстноеМеню" id="207"/>
+							<AutoCommandBar name="СписокРаспоряженияНаОформлениеКоманднаяПанель" id="208"/>
+							<ExtendedTooltip name="СписокРаспоряженияНаОформлениеРасширеннаяПодсказка" id="209"/>
+							<SearchStringAddition name="СписокРаспоряженияНаОформлениеСтрокаПоиска" id="210">
+								<AdditionSource>
+									<Item>СписокРаспоряженияНаОформление</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРаспоряженияНаОформлениеСтрокаПоискаКонтекстноеМеню" id="213"/>
+								<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСтрокаПоискаРасширеннаяПодсказка" id="214"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокРаспоряженияНаОформлениеСостояниеПросмотра" id="215">
+								<AdditionSource>
+									<Item>СписокРаспоряженияНаОформление</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРаспоряженияНаОформлениеСостояниеПросмотраКонтекстноеМеню" id="218"/>
+								<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСостояниеПросмотраРасширеннаяПодсказка" id="219"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокРаспоряженияНаОформлениеУправлениеПоиском" id="220">
+								<AdditionSource>
+									<Item>СписокРаспоряженияНаОформление</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокРаспоряженияНаОформлениеУправлениеПоискомКонтекстноеМеню" id="223"/>
+								<ExtendedTooltip name="СписокРаспоряженияНаОформлениеУправлениеПоискомРасширеннаяПодсказка" id="224"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокРаспоряженияНаОформлениеВыбор</Event>
+							</Events>
+							<ChildItems>
+								<PictureField name="КартинкаПриоритета" id="479">
+									<DataPath>СписокРаспоряженияНаОформление.КартинкаПриоритета</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>1</Width>
+									<Height>1</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="КартинкаПриоритетаКонтекстноеМеню" id="480"/>
+									<ExtendedTooltip name="КартинкаПриоритетаРасширеннаяПодсказка" id="481"/>
+								</PictureField>
+								<LabelField name="СписокРаспоряженияНаОформлениеНомер" id="309">
+									<DataPath>СписокРаспоряженияНаОформление.Номер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеНомерКонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеНомерРасширеннаяПодсказка" id="311"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеДатаДокумента" id="291">
+									<DataPath>СписокРаспоряженияНаОформление.ДатаДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<Width>9</Width>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеДатаДокументаКонтекстноеМеню" id="292"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеДатаДокументаРасширеннаяПодсказка" id="293"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеТипРаспоряжения" id="351">
+									<DataPath>СписокРаспоряженияНаОформление.ТипРаспоряжения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Распоряжение</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеТипРаспоряженияКонтекстноеМеню" id="352"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеТипРаспоряженияРасширеннаяПодсказка" id="353"/>
+								</LabelField>
+								<PictureField name="СписокРаспоряженияНаОформлениеСостояниеНакладной" id="359">
+									<DataPath>СписокРаспоряженияНаОформление.СостояниеНакладной</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние накладной</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние оформления накладной</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HeaderPicture>
+										<xr:Ref>CommonPicture.СостояниеНакладной</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</HeaderPicture>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.РасхожденияПоОтгрузке</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеСостояниеНакладнойКонтекстноеМеню" id="360"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСостояниеНакладнойРасширеннаяПодсказка" id="361"/>
+								</PictureField>
+								<PictureField name="СписокРаспоряженияНаОформлениеСостояниеОрдера" id="362">
+									<DataPath>СписокРаспоряженияНаОформление.СостояниеОрдера</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние ордера</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Соответствие расходных ордеров накладным</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HeaderPicture>
+										<xr:Ref>CommonPicture.СоответствиеРасходногоОрдераНакладной</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</HeaderPicture>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.РасхожденияПоОтгрузке</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеСостояниеОрдераКонтекстноеМеню" id="363"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСостояниеОрдераРасширеннаяПодсказка" id="364"/>
+								</PictureField>
+								<LabelField name="СписокРаспоряженияНаОформлениеСуммаДокумента" id="348">
+									<DataPath>СписокРаспоряженияНаОформление.СуммаДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма документа</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧДЦ=2</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеСуммаДокументаКонтекстноеМеню" id="349"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСуммаДокументаРасширеннаяПодсказка" id="350"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеВалюта" id="285">
+									<DataPath>СписокРаспоряженияНаОформление.Валюта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Валюта</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеВалютаКонтекстноеМеню" id="286"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеВалютаРасширеннаяПодсказка" id="287"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеХозяйственнаяОперация" id="354">
+									<DataPath>СписокРаспоряженияНаОформление.ХозяйственнаяОперация</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хозяйственная операция</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеХозяйственнаяОперацияКонтекстноеМеню" id="355"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеХозяйственнаяОперацияРасширеннаяПодсказка" id="356"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеПартнер" id="315">
+									<DataPath>СписокРаспоряженияНаОформление.Партнер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Клиент</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеПартнерКонтекстноеМеню" id="316"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеПартнерРасширеннаяПодсказка" id="317"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеКонтрагент" id="303">
+									<DataPath>СписокРаспоряженияНаОформление.Контрагент</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контрагент</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеКонтрагентКонтекстноеМеню" id="304"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеКонтрагентРасширеннаяПодсказка" id="305"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеКасса" id="482">
+									<DataPath>СписокРаспоряженияНаОформление.Касса</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Касса</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеКассаКонтекстноеМеню" id="483"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеКассаРасширеннаяПодсказка" id="484"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеСклад" id="447">
+									<DataPath>СписокРаспоряженияНаОформление.Склад</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Склад</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеСкладКонтекстноеМеню" id="448"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСкладРасширеннаяПодсказка" id="449"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеОрганизация" id="312">
+									<DataPath>СписокРаспоряженияНаОформление.Организация</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Организация</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеОрганизацияКонтекстноеМеню" id="313"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеОрганизацияРасширеннаяПодсказка" id="314"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеСделка" id="330">
+									<DataPath>СписокРаспоряженияНаОформление.Сделка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сделка</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеСделкаКонтекстноеМеню" id="331"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСделкаРасширеннаяПодсказка" id="332"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеГрафикОплаты" id="288">
+									<DataPath>СписокРаспоряженияНаОформление.ГрафикОплаты</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>График оплаты</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеГрафикОплатыКонтекстноеМеню" id="289"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеГрафикОплатыРасширеннаяПодсказка" id="290"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеСоглашение" id="336">
+									<DataPath>СписокРаспоряженияНаОформление.Соглашение</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Соглашение</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеСоглашениеКонтекстноеМеню" id="337"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСоглашениеРасширеннаяПодсказка" id="338"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеДоговор" id="294">
+									<DataPath>СписокРаспоряженияНаОформление.Договор</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Договор</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеДоговорКонтекстноеМеню" id="295"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеДоговорРасширеннаяПодсказка" id="296"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеСпособДоставки" id="339">
+									<DataPath>СписокРаспоряженияНаОформление.СпособДоставки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способ доставки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеСпособДоставкиКонтекстноеМеню" id="340"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСпособДоставкиРасширеннаяПодсказка" id="341"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеМенеджер" id="306">
+									<DataPath>СписокРаспоряженияНаОформление.Менеджер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Менеджер</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеМенеджерКонтекстноеМеню" id="307"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеМенеджерРасширеннаяПодсказка" id="308"/>
+								</LabelField>
+								<LabelField name="СписокРаспоряженияНаОформлениеСсылка" id="342">
+									<DataPath>СписокРаспоряженияНаОформление.Ссылка</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ссылка</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокРаспоряженияНаОформлениеСсылкаКонтекстноеМеню" id="343"/>
+									<ExtendedTooltip name="СписокРаспоряженияНаОформлениеСсылкаРасширеннаяПодсказка" id="344"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаКПереходуПраваСобственности" id="491">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>К переходу права собственности</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаКПереходуПраваСобственностиРасширеннаяПодсказка" id="492"/>
+					<ChildItems>
+						<UsualGroup name="ШапкаСписокКПереходуПраваСобственности" id="637">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowLeftMargin>false</ShowLeftMargin>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ШапкаСписокКПереходуПраваСобственностиРасширеннаяПодсказка" id="638"/>
+							<ChildItems>
+								<UsualGroup name="КоманднаяПанельСписокКПереходуПраваСобственности" id="639">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Командная панель</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="КоманднаяПанельСписокКПереходуПраваСобственностиРасширеннаяПодсказка" id="640"/>
+									<ChildItems>
+										<CommandBar name="КомандыСписокКПереходуПраваСобственности" id="641">
+											<EnableContentChange>true</EnableContentChange>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Команды</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ExtendedTooltip name="КомандыСписокКПереходуПраваСобственностиРасширеннаяПодсказка" id="642"/>
+											<ChildItems>
+												<Popup name="КомандыОформитьСписокКПереходуПраваСобственности" id="521">
+													<EnableContentChange>true</EnableContentChange>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Оформить</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.ОформитьПродажу</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<Representation>PictureAndText</Representation>
+													<ExtendedTooltip name="КомандыОформитьСписокКПереходуПраваСобственностиРасширеннаяПодсказка" id="522"/>
+													<ChildItems>
+														<Button name="ОформитьПереходПраваСобственности" id="523">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьПереходПраваСобственности</CommandName>
+															<ExtendedTooltip name="ОформитьПереходПраваСобственностиРасширеннаяПодсказка" id="524"/>
+														</Button>
+														<Button name="ОформитьАктОРасхожденииПослеОтгрузки" id="525">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьАктОРасхожденииПослеОтгрузки</CommandName>
+															<ExtendedTooltip name="ОформитьАктОРасхожденииПослеОтгрузкиРасширеннаяПодсказка" id="526"/>
+														</Button>
+														<Button name="ОформитьИсправлениеОтгрузки" id="527">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьИсправлениеОтгрузки</CommandName>
+															<ExtendedTooltip name="ОформитьИсправлениеОтгрузкиРасширеннаяПодсказка" id="528"/>
+														</Button>
+														<Button name="ОформитьПоступлениеТоваров" id="529">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьПоступлениеТоваров</CommandName>
+															<ExtendedTooltip name="ОформитьПоступлениеТоваровРасширеннаяПодсказка" id="530"/>
+														</Button>
+														<Button name="ОформитьОприходованиеИзлишков" id="531">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьОприходованиеИзлишков</CommandName>
+															<ExtendedTooltip name="ОформитьОприходованиеИзлишковРасширеннаяПодсказка" id="532"/>
+														</Button>
+														<Button name="ОформитьСписаниеНедостач" id="533">
+															<Type>CommandBarButton</Type>
+															<CommandName>Form.Command.ОформитьСписаниеНедостач</CommandName>
+															<ExtendedTooltip name="ОформитьСписаниеНедостачРасширеннаяПодсказка" id="534"/>
+														</Button>
+													</ChildItems>
+												</Popup>
+											</ChildItems>
+										</CommandBar>
+										<UsualGroup name="ОтборыСписокКПереходуПраваСобственности" id="643">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Отборы</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ОтборыСписокКПереходуПраваСобственностиРасширеннаяПодсказка" id="644"/>
+											<ChildItems>
+												<InputField name="ОрганизацияСписокКПереходуПраваСобственности" id="645">
+													<DataPath>Организация</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>30</MaxWidth>
+													<ClearButton>true</ClearButton>
+													<OpenButton>false</OpenButton>
+													<InputHint>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Организация</v8:content>
+														</v8:item>
+													</InputHint>
+													<ContextMenu name="ОрганизацияСписокКПереходуПраваСобственностиКонтекстноеМеню" id="646"/>
+													<ExtendedTooltip name="ОрганизацияСписокКПереходуПраваСобственностиРасширеннаяПодсказка" id="647"/>
+													<Events>
+														<Event name="OnChange">ОрганизацияПриИзменении</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<CommandBar name="СтандартныеКомандыСписокКПереходуПраваСобственности" id="657">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Стандартные команды</v8:content>
+												</v8:item>
+											</Title>
+											<CommandSource>Item.СписокКПереходуПраваСобственности</CommandSource>
+											<ExtendedTooltip name="СтандартныеКомандыСписокКПереходуПраваСобственностиРасширеннаяПодсказка" id="658"/>
+											<ChildItems>
+												<Button name="СписокКПереходуПраваСобственностиНастройка" id="659">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.Настройка</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="СписокКПереходуПраваСобственностиНастройкаРасширеннаяПодсказка" id="660"/>
+												</Button>
+												<Button name="СписокКПереходуПраваСобственностиИзменитьФорму" id="661">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+													<ExtendedTooltip name="СписокКПереходуПраваСобственностиИзменитьФормуРасширеннаяПодсказка" id="662"/>
+												</Button>
+												<Button name="СписокКПереходуПраваСобственностиНайти" id="663">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.СписокКПереходуПраваСобственности.StandardCommand.Find</CommandName>
+													<ExtendedTooltip name="СписокКПереходуПраваСобственностиНайтиРасширеннаяПодсказка" id="664"/>
+												</Button>
+												<Button name="СписокКПереходуПраваСобственностиОтменитьПоиск" id="665">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Item.СписокКПереходуПраваСобственности.StandardCommand.CancelSearch</CommandName>
+													<ExtendedTooltip name="СписокКПереходуПраваСобственностиОтменитьПоискРасширеннаяПодсказка" id="666"/>
+												</Button>
+												<Button name="СписокКПереходуПраваСобственностиСправка" id="667">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.StandardCommand.Help</CommandName>
+													<ExtendedTooltip name="СписокКПереходуПраваСобственностиСправкаРасширеннаяПодсказка" id="668"/>
+												</Button>
+											</ChildItems>
+										</CommandBar>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СписокКПереходуПраваСобственности" id="499">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<MultipleChoice>true</MultipleChoice>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<DataPath>СписокКПереходуПраваСобственности</DataPath>
+							<RowPictureDataPath>СписокКПереходуПраваСобственности.НестандартнаяКартинка</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.СостоянияДокумента</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список к переходу права собственности</v8:content>
+								</v8:item>
+							</Title>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокКПереходуПраваСобственностиКонтекстноеМеню" id="501"/>
+							<AutoCommandBar name="СписокКПереходуПраваСобственностиКоманднаяПанель" id="500"/>
+							<ExtendedTooltip name="СписокКПереходуПраваСобственностиРасширеннаяПодсказка" id="502"/>
+							<SearchStringAddition name="СписокКПереходуПраваСобственностиСтрокаПоиска" id="503">
+								<AdditionSource>
+									<Item>СписокКПереходуПраваСобственности</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКПереходуПраваСобственностиСтрокаПоискаКонтекстноеМеню" id="504"/>
+								<ExtendedTooltip name="СписокКПереходуПраваСобственностиСтрокаПоискаРасширеннаяПодсказка" id="505"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокКПереходуПраваСобственностиСостояниеПросмотра" id="509">
+								<AdditionSource>
+									<Item>СписокКПереходуПраваСобственности</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКПереходуПраваСобственностиСостояниеПросмотраКонтекстноеМеню" id="510"/>
+								<ExtendedTooltip name="СписокКПереходуПраваСобственностиСостояниеПросмотраРасширеннаяПодсказка" id="511"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокКПереходуПраваСобственностиУправлениеПоиском" id="506">
+								<AdditionSource>
+									<Item>СписокКПереходуПраваСобственности</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокКПереходуПраваСобственностиУправлениеПоискомКонтекстноеМеню" id="507"/>
+								<ExtendedTooltip name="СписокКПереходуПраваСобственностиУправлениеПоискомРасширеннаяПодсказка" id="508"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокКПереходуПраваСобственностиВыбор</Event>
+								<Event name="OnActivateRow">СписокКПереходуПраваСобственностиПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<PictureField name="СписокКПереходуПраваСобственностиКартинкаПриоритета" id="575">
+									<DataPath>СписокКПереходуПраваСобственности.КартинкаПриоритета</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<Width>1</Width>
+									<Height>1</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ValuesPicture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+									</Border>
+									<ContextMenu name="СписокКПереходуПраваСобственностиКартинкаПриоритетаКонтекстноеМеню" id="576"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиКартинкаПриоритетаРасширеннаяПодсказка" id="577"/>
+								</PictureField>
+								<LabelField name="СписокКПереходуПраваСобственностиНомер" id="578">
+									<DataPath>СписокКПереходуПраваСобственности.Номер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиНомерКонтекстноеМеню" id="579"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиНомерРасширеннаяПодсказка" id="580"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиДатаДокумента" id="581">
+									<DataPath>СписокКПереходуПраваСобственности.ДатаДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<Width>9</Width>
+									<ContextMenu name="СписокКПереходуПраваСобственностиДатаДокументаКонтекстноеМеню" id="582"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиДатаДокументаРасширеннаяПодсказка" id="583"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиТипРаспоряжения" id="584">
+									<DataPath>СписокКПереходуПраваСобственности.ТипРаспоряжения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Распоряжение</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиТипРаспоряженияКонтекстноеМеню" id="585"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиТипРаспоряженияРасширеннаяПодсказка" id="586"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиСуммаДокумента" id="587">
+									<DataPath>СписокКПереходуПраваСобственности.СуммаДокумента</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма документа</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиСуммаДокументаКонтекстноеМеню" id="588"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиСуммаДокументаРасширеннаяПодсказка" id="589"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиВалюта" id="590">
+									<DataPath>СписокКПереходуПраваСобственности.Валюта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Валюта</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиВалютаКонтекстноеМеню" id="591"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиВалютаРасширеннаяПодсказка" id="592"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиХозяйственнаяОперация" id="593">
+									<DataPath>СписокКПереходуПраваСобственности.ХозяйственнаяОперация</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хозяйственная операция</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиХозяйственнаяОперацияКонтекстноеМеню" id="594"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиХозяйственнаяОперацияРасширеннаяПодсказка" id="595"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиПартнер" id="596">
+									<DataPath>СписокКПереходуПраваСобственности.Партнер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Клиент</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиПартнерКонтекстноеМеню" id="597"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиПартнерРасширеннаяПодсказка" id="598"/>
+								</LabelField>
+								<InputField name="СписокКПереходуПраваСобственностиКонтрагент" id="599">
+									<DataPath>СписокКПереходуПраваСобственности.Контрагент</DataPath>
+									<ContextMenu name="СписокКПереходуПраваСобственностиКонтрагентКонтекстноеМеню" id="600"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиКонтрагентРасширеннаяПодсказка" id="601"/>
+								</InputField>
+								<LabelField name="СписокКПереходуПраваСобственностиКасса" id="602">
+									<DataPath>СписокКПереходуПраваСобственности.Касса</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Касса</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиКассаКонтекстноеМеню" id="603"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиКассаРасширеннаяПодсказка" id="604"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиОрганизация" id="608">
+									<DataPath>СписокКПереходуПраваСобственности.Организация</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Организация</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиОрганизацияКонтекстноеМеню" id="609"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиОрганизацияРасширеннаяПодсказка" id="610"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиСделка" id="611">
+									<DataPath>СписокКПереходуПраваСобственности.Сделка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сделка</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиСделкаКонтекстноеМеню" id="612"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиСделкаРасширеннаяПодсказка" id="613"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиГрафикОплаты" id="614">
+									<DataPath>СписокКПереходуПраваСобственности.ГрафикОплаты</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>График оплаты</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиГрафикОплатыКонтекстноеМеню" id="615"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиГрафикОплатыРасширеннаяПодсказка" id="616"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиСоглашение" id="617">
+									<DataPath>СписокКПереходуПраваСобственности.Соглашение</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Соглашение</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиСоглашениеКонтекстноеМеню" id="618"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиСоглашениеРасширеннаяПодсказка" id="619"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиДоговор" id="620">
+									<DataPath>СписокКПереходуПраваСобственности.Договор</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Договор</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиДоговорКонтекстноеМеню" id="621"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиДоговорРасширеннаяПодсказка" id="622"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиСпособДоставки" id="623">
+									<DataPath>СписокКПереходуПраваСобственности.СпособДоставки</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Способ доставки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиСпособДоставкиКонтекстноеМеню" id="624"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиСпособДоставкиРасширеннаяПодсказка" id="625"/>
+								</LabelField>
+								<LabelField name="СписокКПереходуПраваСобственностиМенеджер" id="626">
+									<DataPath>СписокКПереходуПраваСобственности.Менеджер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Менеджер</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокКПереходуПраваСобственностиМенеджерКонтекстноеМеню" id="627"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиМенеджерРасширеннаяПодсказка" id="628"/>
+								</LabelField>
+								<InputField name="СписокКПереходуПраваСобственностиСсылка" id="629">
+									<DataPath>СписокКПереходуПраваСобственности.Ссылка</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ContextMenu name="СписокКПереходуПраваСобственностиСсылкаКонтекстноеМеню" id="630"/>
+									<ExtendedTooltip name="СписокКПереходуПраваСобственностиСсылкаРасширеннаяПодсказка" id="631"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаКОформлению" id="635">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К оформлению</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКОформлениюРасширеннаяПодсказка" id="636"/>
+			<ChildItems>
+				<LabelField name="СмТакжеВРаботе" id="672">
+					<DataPath>СмТакжеВРаботе</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="СмТакжеВРаботеКонтекстноеМеню" id="673"/>
+					<ExtendedTooltip name="СмТакжеВРаботеРасширеннаяПодсказка" id="674"/>
+					<Events>
+						<Event name="URLProcessing">СмТакжеВРаботеОбработкаНавигационнойСсылки</Event>
+					</Events>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СтруктураБыстрогоОтбора" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура быстрого отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="Склад" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+			</Type>
+			<Save>
+				<Field>Склад</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокРаспоряженияНаОформление" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список распоряжения на оформление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>СписокРаспоряженияНаОформление.ОбъединятьРеализациюПоСкладам</Field>
+				<Field>СписокРаспоряженияНаОформление.РазбиватьРеализациюПоСкладам</Field>
+				<Field>СписокРаспоряженияНаОформление.Распоряжение</Field>
+				<Field>СписокРаспоряженияНаОформление.Склад</Field>
+				<Field>СписокРаспоряженияНаОформление.СостояниеНакладной</Field>
+				<Field>СписокРаспоряженияНаОформление.СостояниеОрдера</Field>
+				<Field>СписокРаспоряженияНаОформление.СостояниеОрдераОтгрузки</Field>
+				<Field>СписокРаспоряженияНаОформление.СостояниеОтгрузки</Field>
+				<Field>СписокРаспоряженияНаОформление.Ссылка</Field>
+			</UseAlways>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьРасширенныеВозможностиЗаказаКлиента</Item>
+				<Item>FunctionalOption.ИспользоватьОрдернуюСхемуПриОтгрузке</Item>
+			</FunctionalOptions>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаПереопределяемый.Распоряжение КАК Ссылка,
+	ТаблицаПереопределяемый.Склад КАК Склад,
+	ВЫБОР
+		КОГДА НЕ ТаблицаПереопределяемый.Склад.ИспользоватьОрдернуюСхемуПриОтгрузке
+		ИЛИ ТаблицаПереопределяемый.Склад.ИспользоватьОрдернуюСхемуПриОтгрузке
+		И ТаблицаПереопределяемый.Склад.ДатаНачалаОрдернойСхемыПриОтгрузке &gt; &amp;ТекущаяДата
+			ТОГДА 4
+		ИНАЧЕ 0
+	КОНЕЦ КАК СостояниеОрдераВрем,
+	ВЫБОР
+		КОГДА СкладыПереопределяемый.ЭтоГруппа
+		И СкладыПереопределяемый.ВыборГруппы = ЗНАЧЕНИЕ(Перечисление.ВыборГруппыСкладов.РазрешитьВЗаказах)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК РазбиватьРеализациюПоСкладам,
+	ВЫБОР
+		КОГДА СкладыПереопределяемый.ЭтоГруппа
+		И СкладыПереопределяемый.ВыборГруппы = ЗНАЧЕНИЕ(Перечисление.ВыборГруппыСкладов.РазрешитьВЗаказахИНакладных)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК ОбъединятьРеализациюПоСкладам
+ПОМЕСТИТЬ ВтОстаткиПоЗаказуКлиента
+ИЗ
+	РегистрСведений.РаспоряженияНаОтгрузкуИВозвратКВыполнению КАК ТаблицаПереопределяемый
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Склады КАК СкладыПереопределяемый
+		ПО СкладыПереопределяемый.Ссылка = ТаблицаПереопределяемый.Склад
+ГДЕ
+	(ТаблицаПереопределяемый.Склад = &amp;Склад
+	ИЛИ &amp;Склад = ЗНАЧЕНИЕ(Справочник.Склады.ПустаяСсылка))
+	И (ТаблицаПереопределяемый.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+	ИЛИ ТаблицаПереопределяемый.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+	ИЛИ ТаблицаПереопределяемый.Распоряжение ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента)
+	И
+		ТаблицаПереопределяемый.СостояниеКОформлению &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СостояниеОформленияДокументовПоРаспоряжению.Оформлены)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ТаблицаПереопределяемый.Ссылка КАК ЗаказКлиента,
+	ТаблицаПереопределяемый.Склад КАК Склад
+ПОМЕСТИТЬ ВтДокументыОформления
+ИЗ
+	ВтОстаткиПоЗаказуКлиента КАК ТаблицаПереопределяемый
+
+ИНДЕКСИРОВАТЬ ПО
+	Ссылка,
+	Склад
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВтДокументыОформленияПереопределяемый.Склад КАК Склад
+ПОМЕСТИТЬ ВтДокументыОформленияСклады
+ИЗ
+	ВтДокументыОформления КАК ВтДокументыОформленияПереопределяемый
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РаспоряженияНаОтгрузкуПереопределяемый.Распоряжение КАК ЗаказКлиента,
+	РаспоряженияНаОтгрузкуПереопределяемый.Склад КАК Склад
+ПОМЕСТИТЬ ВтДокументыОтобранные
+ИЗ
+	РегистрНакопления.РаспоряженияНаОтгрузкуИВозврат КАК РаспоряженияНаОтгрузкуПереопределяемый
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВтДокументыОформленияСклады КАК ВтДокументыОформленияСкладыПереопределяемый
+		ПО ВтДокументыОформленияСкладыПереопределяемый.Склад = РаспоряженияНаОтгрузкуПереопределяемый.Склад
+ГДЕ
+	РаспоряженияНаОтгрузкуПереопределяемый.Активность
+	И РаспоряженияНаОтгрузкуПереопределяемый.Количество &gt; 0
+	И
+		РаспоряженияНаОтгрузкуПереопределяемый.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Отгружено)
+
+ИНДЕКСИРОВАТЬ ПО
+	ЗаказКлиента,
+	Склад
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаПереопределяемый.ЗаказКлиента КАК ЗаказКлиента,
+	ТаблицаПереопределяемый.Склад КАК Склад
+ПОМЕСТИТЬ ВтЕстьНакладные
+ИЗ
+	ВтДокументыОформления КАК ТаблицаПереопределяемый
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВтДокументыОтобранные КАК ДокументыОтобранныеПереопределяемый
+		ПО ТаблицаПереопределяемый.ЗаказКлиента = ДокументыОтобранныеПереопределяемый.ЗаказКлиента
+		И ТаблицаПереопределяемый.Склад = ДокументыОтобранныеПереопределяемый.Склад
+
+ИНДЕКСИРОВАТЬ ПО
+	ЗаказКлиента,
+	Склад
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаПереопределяемый.Ссылка КАК Ссылка,
+	ТаблицаПереопределяемый.Склад КАК Склад,
+	ВЫБОР
+		КОГДА НЕ ТаблицаЕстьНакладныеПереопределяемый.ЗаказКлиента ЕСТЬ NULL
+			ТОГДА 2
+		ИНАЧЕ 1
+	КОНЕЦ КАК СостояниеНакладнойВрем,
+	ТаблицаПереопределяемый.СостояниеОрдераВрем КАК СостояниеОрдераВрем,
+	ТаблицаПереопределяемый.РазбиватьРеализациюПоСкладам КАК РазбиватьРеализациюПоСкладам,
+	ТаблицаПереопределяемый.ОбъединятьРеализациюПоСкладам КАК ОбъединятьРеализациюПоСкладам
+ПОМЕСТИТЬ ВтСостояниеНакладной
+ИЗ
+	ВтОстаткиПоЗаказуКлиента КАК ТаблицаПереопределяемый
+		ЛЕВОЕ СОЕДИНЕНИЕ ВтЕстьНакладные КАК ТаблицаЕстьНакладныеПереопределяемый
+		ПО (ТаблицаЕстьНакладныеПереопределяемый.ЗаказКлиента = ТаблицаПереопределяемый.Ссылка)
+		И (ТаблицаЕстьНакладныеПереопределяемый.Склад = ТаблицаПереопределяемый.Склад)
+
+ИНДЕКСИРОВАТЬ ПО
+	Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаПереопределяемый.ДокументОтгрузки КАК ДокументОтгрузки,
+	ТаблицаПереопределяемый.Склад КАК Склад,
+	ТаблицаПереопределяемый.Номенклатура КАК Номенклатура,
+	ТаблицаПереопределяемый.Характеристика КАК Характеристика,
+	ТаблицаПереопределяемый.Серия КАК Серия,
+	ТаблицаПереопределяемый.Назначение КАК Назначение,
+	ТаблицаПереопределяемый.КОтгрузкеОстаток -
+		ТаблицаПереопределяемый.СобраноОстаток = ТаблицаПереопределяемый.КОформлениюОстаток КАК ОстаткиРавны
+ПОМЕСТИТЬ ВтОстаткиТоварыКОтгрузке
+ИЗ
+	РегистрНакопления.ТоварыКОтгрузке.Остатки(, (Склад = &amp;Склад
+	ИЛИ &amp;Склад = ЗНАЧЕНИЕ(Справочник.Склады.ПустаяСсылка))
+	И (ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+	ИЛИ ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+	ИЛИ ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг)) КАК ТаблицаПереопределяемый
+
+ИНДЕКСИРОВАТЬ ПО
+	ДокументОтгрузки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ТаблицаПереопределяемый.ДокументОтгрузки КАК ДокументОтгрузки,
+	ТаблицаПереопределяемый.Склад КАК Склад
+ПОМЕСТИТЬ ВтДокументыОтгрузки
+ИЗ
+	ВтОстаткиТоварыКОтгрузке КАК ТаблицаПереопределяемый
+
+ИНДЕКСИРОВАТЬ ПО
+	ДокументОтгрузки,
+	Склад
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВтДокументыОтгрузкиПереопределяемый.Склад КАК Склад
+ПОМЕСТИТЬ ВтДокументыОтгрузкиСклады
+ИЗ
+	ВтДокументыОтгрузки КАК ВтДокументыОтгрузкиПереопределяемый
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК ДокументОтгрузки,
+	ТоварыКОтгрузкеПереопределяемый.Склад КАК Склад
+ПОМЕСТИТЬ ВтТоварыКОтгрузкеПереопределяемый
+ИЗ
+	РегистрНакопления.ТоварыКОтгрузке КАК ТоварыКОтгрузкеПереопределяемый
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВтДокументыОтгрузкиСклады КАК ВтДокументыОтгрузкиСкладыПереопределяемый
+		ПО ВтДокументыОтгрузкиСкладыПереопределяемый.Склад = ТоварыКОтгрузкеПереопределяемый.Склад
+ГДЕ
+	ТоварыКОтгрузкеПереопределяемый.Активность
+	И ТоварыКОтгрузкеПереопределяемый.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+СГРУППИРОВАТЬ ПО
+	ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки,
+	ТоварыКОтгрузкеПереопределяемый.Склад
+ИМЕЮЩИЕ
+	СУММА(ТоварыКОтгрузкеПереопределяемый.КОтгрузке) &gt; 0
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК ДокументОтгрузки,
+	ТоварыКОтгрузкеПереопределяемый.Склад КАК Склад
+ИЗ
+	РегистрНакопления.ТоварыКОтгрузке КАК ТоварыКОтгрузкеПереопределяемый
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВтДокументыОтгрузкиСклады КАК ВтДокументыОтгрузкиСкладыПереопределяемый
+		ПО ВтДокументыОтгрузкиСкладыПереопределяемый.Склад = ТоварыКОтгрузкеПереопределяемый.Склад
+ГДЕ
+	ТоварыКОтгрузкеПереопределяемый.Активность
+	И ТоварыКОтгрузкеПереопределяемый.КОтгрузке &gt; 0
+	И ТоварыКОтгрузкеПереопределяемый.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+СГРУППИРОВАТЬ ПО
+	ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки,
+	ТоварыКОтгрузкеПереопределяемый.Склад
+ИМЕЮЩИЕ
+	СУММА(ТоварыКОтгрузкеПереопределяемый.Собрано) &gt; 0
+
+ИНДЕКСИРОВАТЬ ПО
+	ДокументОтгрузки,
+	Склад
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаПереопределяемый.ДокументОтгрузки КАК ДокументОтгрузки,
+	ТаблицаПереопределяемый.Склад КАК Склад
+ПОМЕСТИТЬ ВтЕстьОрдера
+ИЗ
+	ВтДокументыОтгрузки КАК ТаблицаПереопределяемый
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВтТоварыКОтгрузкеПереопределяемый КАК ВтТоварыКОтгрузкеПереопределяемый
+		ПО ТаблицаПереопределяемый.Склад = ВтТоварыКОтгрузкеПереопределяемый.Склад
+		И ТаблицаПереопределяемый.ДокументОтгрузки = ВтТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки
+
+ИНДЕКСИРОВАТЬ ПО
+	ДокументОтгрузки,
+	Склад
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТаблицаПереопределяемый.ДокументОтгрузки КАК Ссылка,
+	ТаблицаПереопределяемый.Склад КАК Склад,
+	ВЫБОР
+		КОГДА ТаблицаЕстьОрдераПереопределяемый.ДокументОтгрузки ЕСТЬ NULL
+		И НЕ СпрСкладыПереопределяемый.Ссылка ЕСТЬ NULL
+			ТОГДА 1
+		КОГДА ТаблицаПереопределяемый.ОстаткиРавны
+			ТОГДА 0
+		ИНАЧЕ 3
+	КОНЕЦ КАК СостояниеОрдераВрем
+ПОМЕСТИТЬ ВтСостояниеОрдера
+ИЗ
+	ВтОстаткиТоварыКОтгрузке КАК ТаблицаПереопределяемый
+		ЛЕВОЕ СОЕДИНЕНИЕ ВтЕстьОрдера КАК ТаблицаЕстьОрдераПереопределяемый
+		ПО (ТаблицаЕстьОрдераПереопределяемый.ДокументОтгрузки = ТаблицаПереопределяемый.ДокументОтгрузки)
+		И (ТаблицаЕстьОрдераПереопределяемый.Склад = ТаблицаПереопределяемый.Склад)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Склады КАК СпрСкладыПереопределяемый
+		ПО (СпрСкладыПереопределяемый.Ссылка = ТаблицаПереопределяемый.Склад)
+		И (СпрСкладыПереопределяемый.ИспользоватьОрдернуюСхемуПриОтгрузке)
+		И (СпрСкладыПереопределяемый.ДатаНачалаОрдернойСхемыПриОтгрузке &lt;= &amp;ТекущаяДата)
+ГДЕ
+	ВЫБОР
+		КОГДА ТаблицаЕстьОрдераПереопределяемый.ДокументОтгрузки ЕСТЬ NULL
+		И НЕ СпрСкладыПереопределяемый.Ссылка ЕСТЬ NULL
+			ТОГДА 1
+		КОГДА ТаблицаПереопределяемый.ОстаткиРавны
+			ТОГДА 0
+		ИНАЧЕ 3
+	КОНЕЦ &gt; 0
+
+ИНДЕКСИРОВАТЬ ПО
+	Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	ВЫБОР
+		КОГДА ВтСостояниеНакладнойПереопределяемый.Ссылка ЕСТЬ NULL
+			ТОГДА ВтСостояниеОрдераПереопределяемый.Ссылка
+		ИНАЧЕ ВтСостояниеНакладнойПереопределяемый.Ссылка
+	КОНЕЦ КАК ДокументОтгрузки,
+	ВЫБОР
+		КОГДА ВтСостояниеНакладнойПереопределяемый.Склад ЕСТЬ NULL
+			ТОГДА ВтСостояниеОрдераПереопределяемый.Склад
+		ИНАЧЕ ВтСостояниеНакладнойПереопределяемый.Склад
+	КОНЕЦ КАК Склад,
+	ЕСТЬNULL(ВтСостояниеНакладнойПереопределяемый.СостояниеНакладнойВрем, 0) КАК СостояниеНакладнойВрем,
+	ЕСТЬNULL(ВтСостояниеОрдераПереопределяемый.СостояниеОрдераВрем,
+		ВтСостояниеНакладнойПереопределяемый.СостояниеОрдераВрем) КАК СостояниеОрдераВрем,
+	ЕСТЬNULL(ВтСостояниеНакладнойПереопределяемый.РазбиватьРеализациюПоСкладам, ЛОЖЬ) КАК РазбиватьРеализациюПоСкладам,
+	ЕСТЬNULL(ВтСостояниеНакладнойПереопределяемый.ОбъединятьРеализациюПоСкладам, ЛОЖЬ) КАК ОбъединятьРеализациюПоСкладам
+ПОМЕСТИТЬ ВтНовыеОрдера
+ИЗ
+	ВтСостояниеНакладной КАК ВтСостояниеНакладнойПереопределяемый
+		ПОЛНОЕ СОЕДИНЕНИЕ ВтСостояниеОрдера КАК ВтСостояниеОрдераПереопределяемый
+		ПО ВтСостояниеНакладнойПереопределяемый.Ссылка = ВтСостояниеОрдераПереопределяемый.Ссылка
+
+ИНДЕКСИРОВАТЬ ПО
+	ДокументОтгрузки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Распоряжение,
+	ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Ссылка,
+	ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК ЗаказКлиента,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).ПометкаУдаления
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).ПометкаУдаления
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.РеализацияТоваровУслуг).ПометкаУдаления
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ОтгрузкаТоваровКлиенту).ПометкаУдаления
+	КОНЕЦ КАК ПометкаУдаления,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Номер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаявкаНаВозвратТоваровОтКлиента).Номер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Номер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Номер
+	КОНЕЦ КАК Номер,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Дата
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаявкаНаВозвратТоваровОтКлиента).Дата
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Дата
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Дата
+	КОНЕЦ КАК ДатаДокумента,
+	ТИПЗНАЧЕНИЯ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки) КАК ТипРаспоряжения,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Проведен
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Проведен
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Проведен
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Проведен
+	КОНЕЦ КАК Проведен,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Партнер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Партнер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Партнер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Партнер
+	КОНЕЦ КАК Партнер,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Контрагент
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Контрагент
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Контрагент
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Контрагент
+	КОНЕЦ КАК Контрагент,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Организация
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Организация
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Организация
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Организация
+	КОНЕЦ КАК Организация,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Соглашение
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Соглашение
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Соглашение
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Соглашение
+	КОНЕЦ КАК Соглашение,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Договор
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Договор
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Договор
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Договор
+	КОНЕЦ КАК Договор,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Сделка
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Сделка
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Сделка
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК Сделка,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Валюта
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Валюта
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Валюта
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА НЕОПРЕДЕЛЕНО
+	КОНЕЦ КАК Валюта,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).СуммаДокумента
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).СуммаЗамены
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).СуммаДокумента
+		ИНАЧЕ 0
+	КОНЕЦ КАК СуммаДокумента,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).ГрафикОплаты
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).ГрафикОплаты
+	КОНЕЦ КАК ГрафикОплаты,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Склад
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаявкаНаВозвратТоваровОтКлиента).Склад
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Склад
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Склад
+	КОНЕЦ КАК СкладШапки,
+	ТоварыКОтгрузкеПереопределяемый.Склад КАК Склад,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Статус
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Статус
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Статус
+	КОНЕЦ КАК Статус,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Менеджер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Менеджер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Менеджер
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).Менеджер
+	КОНЕЦ КАК Менеджер,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).ДокументОснование
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА НЕОПРЕДЕЛЕНО
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).ЗаказКлиента
+	КОНЕЦ КАК ДокументОснование,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Приоритет
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).Приоритет
+	КОНЕЦ КАК Приоритет,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).ХозяйственнаяОперация
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).ХозяйственнаяОперация
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.РеализацияТоваровУслуг).ХозяйственнаяОперация
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ОтгрузкаТоваровКлиенту).ХозяйственнаяОперация
+	КОНЕЦ КАК ХозяйственнаяОперация,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Касса
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаявкаНаВозвратТоваровОтКлиента).Касса
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).Касса
+	КОНЕЦ КАК Касса,
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).СпособДоставки
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+				Документ.ЗаявкаНаВозвратТоваровОтКлиента).СпособДоставки
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.РеализацияТоваровУслуг).СпособДоставки
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ОтгрузкаТоваровКлиенту).СпособДоставки
+	КОНЕЦ КАК СпособДоставки,
+	ТоварыКОтгрузкеПереопределяемый.СостояниеНакладнойВрем КАК СостояниеНакладной,
+	ТоварыКОтгрузкеПереопределяемый.СостояниеОрдераВрем КАК СостояниеОрдера,
+	0 КАК СостояниеОтгрузки,
+	0 КАК СостояниеОрдераОтгрузки,
+	ВЫБОР
+		КОГДА ВЫБОР
+			КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+				ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Приоритет
+			КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+				ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+					Документ.ЗаявкаНаВозвратТоваровОтКлиента).Приоритет
+		КОНЕЦ В
+			(ВЫБРАТЬ ПЕРВЫЕ 1
+				Приоритеты.Ссылка КАК Приоритет
+			ИЗ
+				Справочник.Приоритеты КАК Приоритеты
+
+			УПОРЯДОЧИТЬ ПО
+				Приоритеты.РеквизитДопУпорядочивания)
+			ТОГДА 0
+		КОГДА ВЫБОР
+			КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+				ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Приоритет
+			КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаявкаНаВозвратТоваровОтКлиента
+				ТОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК
+					Документ.ЗаявкаНаВозвратТоваровОтКлиента).Приоритет
+		КОНЕЦ В
+			(ВЫБРАТЬ ПЕРВЫЕ 1
+				Приоритеты.Ссылка КАК Приоритет
+			ИЗ
+				Справочник.Приоритеты КАК Приоритеты
+
+			УПОРЯДОЧИТЬ ПО
+				Приоритеты.РеквизитДопУпорядочивания УБЫВ)
+			ТОГДА 2
+		ИНАЧЕ 1
+	КОНЕЦ КАК КартинкаПриоритета,
+	
+	ВЫБОР
+		КОГДА ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА
+				ВЫБОР
+					КОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).Проведен
+						ТОГДА 0
+					КОГДА ВЫРАЗИТЬ(ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки КАК Документ.ЗаказКлиента).ПометкаУдаления
+						ТОГДА 1
+					ИНАЧЕ 2
+				КОНЕЦ
+	КОНЕЦ КАК НестандартнаяКартинка,
+	ТоварыКОтгрузкеПереопределяемый.РазбиватьРеализациюПоСкладам КАК РазбиватьРеализациюПоСкладам,
+	ТоварыКОтгрузкеПереопределяемый.ОбъединятьРеализациюПоСкладам КАК ОбъединятьРеализациюПоСкладам
+ИЗ
+	ВтНовыеОрдера КАК ТоварыКОтгрузкеПереопределяемый
+ГДЕ
+	НЕ ТоварыКОтгрузкеПереопределяемый.ДокументОтгрузки.Ссылка ЕСТЬ NULL</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Серия</dcssch:dataPath>
+					<dcssch:field>Серия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗаказКлиента</dcssch:dataPath>
+					<dcssch:field>ЗаказКлиента</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ клиента</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номенклатура</dcssch:dataPath>
+					<dcssch:field>Номенклатура</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Назначение</dcssch:dataPath>
+					<dcssch:field>Назначение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договор</dcssch:dataPath>
+					<dcssch:field>Договор</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договор</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Характеристика</dcssch:dataPath>
+					<dcssch:field>Характеристика</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДокументОтгрузки</dcssch:dataPath>
+					<dcssch:field>ДокументОтгрузки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Склад</dcssch:dataPath>
+					<dcssch:field>Склад</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Получатель</dcssch:dataPath>
+					<dcssch:field>Получатель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Распоряжение</dcssch:dataPath>
+					<dcssch:field>Распоряжение</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распоряжение</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Касса</dcssch:dataPath>
+					<dcssch:field>Касса</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Касса</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаДокумента</dcssch:dataPath>
+					<dcssch:field>ДатаДокумента</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата документа</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипРаспоряжения</dcssch:dataPath>
+					<dcssch:field>ТипРаспоряжения</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип распоряжения</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РазбиватьРеализациюПоСкладам</dcssch:dataPath>
+					<dcssch:field>РазбиватьРеализациюПоСкладам</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разбивать реализацию по складам</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГрафикОплаты</dcssch:dataPath>
+					<dcssch:field>ГрафикОплаты</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>График оплаты</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведен</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Партнер</dcssch:dataPath>
+					<dcssch:field>Партнер</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Партнер</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Организация</dcssch:dataPath>
+					<dcssch:field>Организация</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Соглашение</dcssch:dataPath>
+					<dcssch:field>Соглашение</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соглашение</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СпособДоставки</dcssch:dataPath>
+					<dcssch:field>СпособДоставки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ доставки</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сделка</dcssch:dataPath>
+					<dcssch:field>Сделка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сделка</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Валюта</dcssch:dataPath>
+					<dcssch:field>Валюта</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СуммаДокумента</dcssch:dataPath>
+					<dcssch:field>СуммаДокумента</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма документа</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СкладШапки</dcssch:dataPath>
+					<dcssch:field>СкладШапки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад шапки</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДокументОснование</dcssch:dataPath>
+					<dcssch:field>ДокументОснование</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ основание</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Статус</dcssch:dataPath>
+					<dcssch:field>Статус</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Менеджер</dcssch:dataPath>
+					<dcssch:field>Менеджер</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ХозяйственнаяОперация</dcssch:dataPath>
+					<dcssch:field>ХозяйственнаяОперация</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хозяйственная операция</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СостояниеНакладной</dcssch:dataPath>
+					<dcssch:field>СостояниеНакладной</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние накладной</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СостояниеОрдера</dcssch:dataPath>
+					<dcssch:field>СостояниеОрдера</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние ордера</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КартинкаПриоритета</dcssch:dataPath>
+					<dcssch:field>КартинкаПриоритета</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка приоритета</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъединятьРеализациюПоСкладам</dcssch:dataPath>
+					<dcssch:field>ОбъединятьРеализациюПоСкладам</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объединять реализацию по складам</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СостояниеОтгрузки</dcssch:dataPath>
+					<dcssch:field>СостояниеОтгрузки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние отгрузки</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СостояниеОрдераОтгрузки</dcssch:dataPath>
+					<dcssch:field>СостояниеОрдераОтгрузки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние ордера отгрузки</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НестандартнаяКартинка</dcssch:dataPath>
+					<dcssch:field>НестандартнаяКартинка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нестандартная картинка</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Склад</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТекущаяДата</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаДокумента</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СостояниеНакладной" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние накладной</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>СостояниеНакладной</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СостояниеОрдера" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние ордера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>СостояниеОрдера</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПечататьАктВыполненныхРабот" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать коммерческое предложение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ПечататьАктВыполненныхРабот</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПечататьРеализациюТоваровУслуг" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать коммерческое предложение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ПечататьРеализациюТоваровУслуг</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СоздаватьДокументПродажи" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать коммерческое предложение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>СоздаватьДокументПродажи</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИспользоватьАктыВыполненныхРаботПоНесколькимЗаказам" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать Акт выполненных работ по нескольким заказам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьРеализациюПоНесколькимЗаказам" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать реализацию по нескольким заказам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьРасширенныеВозможностиЗаказаКлиента" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать расширенные возможности заказа клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<Save>
+				<Field>Организация</Field>
+			</Save>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизаций</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ПоОрдерам" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По ордерам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимБезВопросов" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим без вопросов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокРаспоряжений" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список распоряжений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ссылка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</v8:Type>
+						<v8:Type>cfg:DocumentRef.РеализацияТоваровУслуг</v8:Type>
+						<v8:Type>cfg:DocumentRef.АктВыполненныхРабот</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказКлиента</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтгрузкаТоваровКлиенту</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СостояниеНакладной" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние накладной</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СостояниеОрдера" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние ордера</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Склад" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РазбиватьРеализациюПоСкладам" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разбивать реализацию по складам</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СостояниеОтгрузки" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СостояниеОрдераОтгрузки" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние ордера отгрузки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СоздаватьСчетФактуру" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать счет фактуру</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>СоздаватьСчетФактуру</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НеОткрыватьФормуСозданногоДокумента" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не открывать форму созданного документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>НеОткрыватьФормуСозданногоДокумента</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СохраненыНастройкиОформления" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки оформления сохранены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>СохраненыНастройкиОформления</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПечататьПередачуТоваровХранителю" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатать передачу товаров хранителю</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПечататьПередачуТоваровХранителю</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПечататьПриходныйКассовыйОрдер" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печатать приходный кассовый ордер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ПечататьПриходныйКассовыйОрдер</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СоздаватьПриходныйКассовыйОрдер" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать приходный кассовый ордер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>СоздаватьПриходныйКассовыйОрдер</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПробиватьФискальныйЧек" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пробивать фискальный чек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>ПробиватьФискальныйЧек</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТаблицаОборудования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица оборудования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Оборудование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оборудование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПодключаемоеОборудование</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Подключено" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВерсияФФД" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия ФФД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Организация" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Касса" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Касса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Кассы</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОтменитьПакетноеФормирование" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить пакетное формирование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтдельныеНакладныеПоТоварамСОсобенностьюУчета" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отдельные накладные по товарам с особенностью учета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтдельныеНакладныеПоТоварамСОсобенностьюУчета</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СписокКПереходуПраваСобственности" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список к переходу права собственности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокКПереходуПраваСобственности.Организация</Field>
+				<Field>СписокКПереходуПраваСобственности.Распоряжение</Field>
+				<Field>СписокКПереходуПраваСобственности.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText> ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	Таблица.Распоряжение КАК Распоряжение,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Ссылка
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).Ссылка
+    КОНЕЦ КАК Ссылка,
+	ТИПЗНАЧЕНИЯ(Таблица.Распоряжение) КАК ТипРаспоряжения,
+
+	Таблица.Организация КАК Организация,
+	Таблица.Номер КАК Номер,
+	Таблица.СуммаДокумента КАК СуммаДокумента,
+	Таблица.Валюта КАК Валюта,
+	Таблица.ХозяйственнаяОперация КАК ХозяйственнаяОперация,
+	Таблица.Партнер КАК Партнер,
+	Таблица.Контрагент КАК Контрагент,
+	Таблица.Менеджер КАК Менеджер,
+
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Дата
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).Дата
+	КОНЕЦ КАК ДатаДокумента,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).ПометкаУдаления
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).ПометкаУдаления
+	КОНЕЦ КАК ПометкаУдаления,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Проведен
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).Проведен
+	КОНЕЦ КАК Проведен,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Соглашение
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).Соглашение
+	КОНЕЦ КАК Соглашение,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Договор
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).Договор
+	КОНЕЦ КАК Договор,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Сделка
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).Сделка
+	КОНЕЦ КАК Сделка,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).ДокументОснование
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).ЗаказКлиента
+	КОНЕЦ КАК ДокументОснование,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Приоритет
+	КОНЕЦ КАК Приоритет,
+   	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).ГрафикОплаты
+	КОНЕЦ КАК ГрафикОплаты,
+
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Касса
+	КОНЕЦ КАК Касса,
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).СпособДоставки
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).СпособДоставки
+	КОНЕЦ КАК СпособДоставки,
+	ЛОЖЬ КАК РазбиватьРеализациюПоСкладам,
+	ЛОЖЬ КАК ОбъединятьРеализациюПоСкладам,	
+	ВЫБОР
+		КОГДА ВЫБОР
+			КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+				ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Приоритет
+		КОНЕЦ В
+			(ВЫБРАТЬ ПЕРВЫЕ 1
+				Приоритеты.Ссылка КАК Приоритет
+			ИЗ
+				Справочник.Приоритеты КАК Приоритеты
+			УПОРЯДОЧИТЬ ПО
+				Приоритеты.РеквизитДопУпорядочивания)
+			ТОГДА 0
+		КОГДА ВЫБОР
+			КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+				ТОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Приоритет
+		КОНЕЦ В
+			(ВЫБРАТЬ ПЕРВЫЕ 1
+				Приоритеты.Ссылка КАК Приоритет
+			ИЗ
+				Справочник.Приоритеты КАК Приоритеты
+			УПОРЯДОЧИТЬ ПО
+				Приоритеты.РеквизитДопУпорядочивания УБЫВ)
+			ТОГДА 2
+		ИНАЧЕ 1
+	КОНЕЦ КАК КартинкаПриоритета,
+	
+	ВЫБОР
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента
+			ТОГДА
+				ВЫБОР
+					КОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).Проведен
+						ТОГДА 0
+					КОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ЗаказКлиента).ПометкаУдаления
+						ТОГДА 1
+					ИНАЧЕ 2
+				КОНЕЦ
+		КОГДА Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту
+			ТОГДА
+				ВЫБОР
+					КОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).Проведен
+						ТОГДА 0
+					КОГДА ВЫРАЗИТЬ(Таблица.Распоряжение КАК Документ.ОтгрузкаТоваровКлиенту).ПометкаУдаления
+						ТОГДА 1
+					ИНАЧЕ 2
+				КОНЕЦ
+	КОНЕЦ КАК НестандартнаяКартинка
+ИЗ
+	РегистрСведений.РаспоряженияНаОтгрузкуИВозвратКВыполнению КАК Таблица
+ГДЕ
+	(Таблица.Распоряжение ССЫЛКА Документ.ЗаказКлиента ИЛИ Таблица.Распоряжение ССЫЛКА Документ.ОтгрузкаТоваровКлиенту)
+	И Таблица.СостояниеКПереходуПраваСобственности &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СостояниеОформленияДокументовПоРаспоряжению.Оформлены)
+	И (&amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка) ИЛИ Таблица.Организация = &amp;Организация)
+	
+</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Распоряжение</dcssch:dataPath>
+					<dcssch:field>Распоряжение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипРаспоряжения</dcssch:dataPath>
+					<dcssch:field>ТипРаспоряжения</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип распоряжения</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:condition>true</dcssch:condition>
+					</dcssch:useRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Организация</dcssch:dataPath>
+					<dcssch:field>Организация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаДокумента</dcssch:dataPath>
+					<dcssch:field>ДатаДокумента</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата документа</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СуммаДокумента</dcssch:dataPath>
+					<dcssch:field>СуммаДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Валюта</dcssch:dataPath>
+					<dcssch:field>Валюта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ХозяйственнаяОперация</dcssch:dataPath>
+					<dcssch:field>ХозяйственнаяОперация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Партнер</dcssch:dataPath>
+					<dcssch:field>Партнер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Менеджер</dcssch:dataPath>
+					<dcssch:field>Менеджер</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведен</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Соглашение</dcssch:dataPath>
+					<dcssch:field>Соглашение</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соглашение</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договор</dcssch:dataPath>
+					<dcssch:field>Договор</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договор</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сделка</dcssch:dataPath>
+					<dcssch:field>Сделка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сделка</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДокументОснование</dcssch:dataPath>
+					<dcssch:field>ДокументОснование</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ основание</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГрафикОплаты</dcssch:dataPath>
+					<dcssch:field>ГрафикОплаты</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>График оплаты</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Касса</dcssch:dataPath>
+					<dcssch:field>Касса</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Касса</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СпособДоставки</dcssch:dataPath>
+					<dcssch:field>СпособДоставки</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Способ доставки</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РазбиватьРеализациюПоСкладам</dcssch:dataPath>
+					<dcssch:field>РазбиватьРеализациюПоСкладам</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разбивать реализацию по складам</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъединятьРеализациюПоСкладам</dcssch:dataPath>
+					<dcssch:field>ОбъединятьРеализациюПоСкладам</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объединять реализацию по складам</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КартинкаПриоритета</dcssch:dataPath>
+					<dcssch:field>КартинкаПриоритета</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка приоритета</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НестандартнаяКартинка</dcssch:dataPath>
+					<dcssch:field>НестандартнаяКартинка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нестандартная картинка</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>
+						<dcssch:condition>true</dcssch:condition>
+						<dcssch:group>true</dcssch:group>
+						<dcssch:order>true</dcssch:order>
+					</dcssch:useRestriction>
+				</Field>
+				<Parameter>
+					<dcssch:name>Организация</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:userSettingID>f960a638-a9d4-487f-865c-7bc44e0e185c</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДатаДокумента</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:userSettingID>3b514979-cddf-4daf-b8a2-afac73f14a0e</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:userSettingID>0df36373-c398-4012-916d-17c5cf5c30ed</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОформитьОтгрузку" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить отгрузку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяКомандыОтгрузки" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя команды отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КомандыПоУсловиюВидимости" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИспользоватьОтгрузкуБезПереходаПраваСобственности2_5" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать отгрузку без перехода права собственности 2.5</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СмТакжеВРаботе" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К оформлению</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОформитьПоРаспоряжениям" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализацию по распоряжениям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализацию по распоряжениям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьПоРаспоряжениям</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьРасширенныеВозможностиЗаказаКлиента</Item>
+			</FunctionalOptions>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьПоОтгрузке" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализацию по ордеру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализацию по ордеру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьПоОтгрузке</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьОрдернуюСхемуПриОтгрузке</Item>
+			</FunctionalOptions>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Настройка" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка комплекта документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.НастройкаПродажи</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПолучитьНастройкуКомплектаДокументов</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СостояниеВыполнения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние выполнения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СостояниеВыполнения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьПереходПраваСобственности" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переход права собственности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переход права собственности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьДокументыПереходаПраваСобственности</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьАктОРасхожденииПослеОтгрузки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт о расхождениях после отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт о расхождении после отгрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьДокументыПереходаПраваСобственности</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьАктыРасхожденийПослеОтгрузки</Item>
+			</FunctionalOptions>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьИсправлениеОтгрузки" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправление отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исправление отгрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьДокументыПереходаПраваСобственности</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьПоступлениеТоваров" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступление товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьДокументыПереходаПраваСобственности</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьОприходованиеИзлишков" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оприходование излишков</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оприходование излишков</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьДокументыПереходаПраваСобственности</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьСписаниеНедостач" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание недостач</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списание недостач</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьДокументыПереходаПраваСобственности</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьОтгрузкуПоЗаказам" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузку по распоряжениям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузку по распоряжениям</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьОтгрузкуТоваров</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОформитьОтгрузкуПоОрдеру" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузку по ордеру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузку по ордеру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьОтгрузкуТоваров</Action>
+			<Representation>Text</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СвязанныеДокументы" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СвязанныеДокументы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ЗаголовокФормы">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

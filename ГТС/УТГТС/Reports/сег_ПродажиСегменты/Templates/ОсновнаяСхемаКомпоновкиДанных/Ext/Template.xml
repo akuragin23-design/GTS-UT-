@@ -1,0 +1,1162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дат</dataPath>
+			<field>Дат</field>
+			<presentationExpression>Выбор Когда &amp;ТипПериода=1 Тогда
+		Формат(НачалоПериода(Дат, "День"), "ДФ=dd.MM.yy")  Когда &amp;ТипПериода=2 Тогда Формат(НачалоПериода(Дат, "Неделя"), "ДФ=dd.MM.yy")  + " - " + Формат(КонецПериода(Дат, "Неделя"), "ДФ=dd.MM.yy")  Когда &amp;ТипПериода=3 Тогда Формат(НачалоПериода(Дат, "Месяц"), "ДФ=dd.MM.yy")  + " - " + Формат(КонецПериода(Дат, "Месяц"), "ДФ=dd.MM.yy")  Конец</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Менеджер</dataPath>
+			<field>Менеджер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Менеджер</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регион</dataPath>
+			<field>Регион</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регион</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сегмент</dataPath>
+			<field>Сегмент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сегмент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Показатель</dataPath>
+			<field>Показатель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content> </v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Выбор когда &amp;Показатель=1 Тогда "Количество" Когда &amp;Показатель=2 Тогда "Отгрузка" Когда &amp;Показатель=3 Тогда "Оплата" Конец</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднийПоказатель</dataPath>
+			<field>СреднийПоказатель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний показатель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГрупДат</dataPath>
+			<field>ГрупДат</field>
+			<presentationExpression>Выбор Когда &amp;ТипПериода=1 Тогда Формат(НачалоПериода(ГрупДат, "Неделя"), "ДФ=dd.MM.yy")  + " - " + Формат(КонецПериода(ГрупДат, "Неделя"), "ДФ=dd.MM.yy")  Когда &amp;ТипПериода=2 Тогда Формат(НачалоПериода(ГрупДат, "Месяц"), "ДФ=MMMM.yy")   Когда &amp;ТипПериода=3 Тогда Формат(НачалоПериода(ГрупДат, "Год"), "ДФ=yyyy")  Конец</presentationExpression>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСегмента</dataPath>
+			<field>ВидСегмента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БизнесРегион</dataPath>
+			<field>БизнесРегион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеФирмы</dataPath>
+			<field>ПодразделениеФирмы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение фирмы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	сег_ДвиженияПоСегментамОбороты.Партнер КАК Партнер,
+	сег_ДвиженияПоСегментамОбороты.Сегмент КАК Сегмент,
+	сег_ДвиженияПоСегментамОбороты.Подразделение КАК Подразделение,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ДЕНЬ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+			КОНЕЦ
+	КОНЕЦ КАК Дат,
+	сег_ДвиженияПоСегментамОбороты.БизнесРегион КАК Регион,
+	сег_ДвиженияПоСегментамОбороты.Менеджер КАК Менеджер,
+	сег_ДвиженияПоСегментамОбороты.Номенклатура КАК Номенклатура,
+	СУММА(ВЫБОР
+			КОГДА &amp;Показатель = 1
+				ТОГДА 0
+			ИНАЧЕ сег_ДвиженияПоСегментамОбороты.СуммаВыручкиОборот / КурсыВалютСрезПоследних.Курс
+		КОНЕЦ) КАК Показатель,
+	СУММА(ВЫБОР
+			КОГДА &amp;Показатель = 1
+				ТОГДА 0
+			ИНАЧЕ сег_ДвиженияПоСегментамОбороты.СуммаВыручкиОборот / КурсыВалютСрезПоследних.Курс
+		КОНЕЦ) КАК СреднийПоказатель,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ГОД)
+			КОНЕЦ
+	КОНЕЦ КАК ГрупДат
+ИЗ
+	РегистрСведений.КурсыВалют.СрезПоследних(, Валюта = &amp;ВыбВалюта) КАК КурсыВалютСрезПоследних,
+	РегистрНакопления.сег_ДвиженияПоСегментам.Обороты(
+			,
+			,
+			День,
+			Сегмент В ИЕРАРХИИ (&amp;ВидСегментаПартнера)
+				И ВЫБОР
+					КОГДА НЕ &amp;Показатель = 2
+						ТОГДА Партнер = ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)
+					ИНАЧЕ ИСТИНА
+				КОНЕЦ) КАК сег_ДвиженияПоСегментамОбороты
+ГДЕ
+	&amp;Показатель = 2
+	И сег_ДвиженияПоСегментамОбороты.СуммаВыручкиОборот &gt; 0
+	И ВЫБОР
+			КОГДА &amp;ФильтрПодрОрг = 1
+				ТОГДА сег_ДвиженияПоСегментамОбороты.Подразделение &lt;&gt; ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+						И НЕ сег_ДвиженияПоСегментамОбороты.Подразделение В (&amp;ПодразделениеФирма)
+			ИНАЧЕ сег_ДвиженияПоСегментамОбороты.Подразделение = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА &amp;ФильтрПодрОрг = 2
+				ТОГДА НЕ сег_ДвиженияПоСегментамОбороты.ПодразделениеФирмы В (&amp;ПодразделениеФирма)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	сег_ДвиженияПоСегментамОбороты.Партнер,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ДЕНЬ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+			КОНЕЦ
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ГОД)
+			КОНЕЦ
+	КОНЕЦ,
+	сег_ДвиженияПоСегментамОбороты.Сегмент,
+	сег_ДвиженияПоСегментамОбороты.БизнесРегион,
+	сег_ДвиженияПоСегментамОбороты.Менеджер,
+	сег_ДвиженияПоСегментамОбороты.Номенклатура,
+	сег_ДвиженияПоСегментамОбороты.Подразделение
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	сег_ДвиженияПоСегментамОбороты.Партнер,
+	сег_ДвиженияПоСегментамОбороты.Сегмент,
+	сег_ДвиженияПоСегментамОбороты.Подразделение,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ДЕНЬ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+			КОНЕЦ
+	КОНЕЦ,
+	сег_ДвиженияПоСегментамОбороты.БизнесРегион,
+	сег_ДвиженияПоСегментамОбороты.Менеджер,
+	NULL,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ сег_ДвиженияПоСегментамОбороты.Партнер),
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ сег_ДвиженияПоСегментамОбороты.Партнер),
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ГОД)
+			КОНЕЦ
+	КОНЕЦ
+ИЗ
+	РегистрСведений.КурсыВалют.СрезПоследних(, Валюта = &amp;ВыбВалюта) КАК КурсыВалютСрезПоследних,
+	РегистрНакопления.сег_ДвиженияПоСегментам.Обороты(, , День, Сегмент В ИЕРАРХИИ (&amp;ВидСегментаПартнера)) КАК сег_ДвиженияПоСегментамОбороты
+ГДЕ
+	&amp;Показатель = 1
+	И сег_ДвиженияПоСегментамОбороты.СуммаВыручкиОборот &gt; 0
+	И ВЫБОР
+			КОГДА &amp;ФильтрПодрОрг = 1
+				ТОГДА сег_ДвиженияПоСегментамОбороты.Подразделение &lt;&gt; ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+						И НЕ сег_ДвиженияПоСегментамОбороты.Подразделение В (&amp;ПодразделениеФирма)
+			ИНАЧЕ сег_ДвиженияПоСегментамОбороты.Подразделение = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА &amp;ФильтрПодрОрг = 2
+				ТОГДА НЕ сег_ДвиженияПоСегментамОбороты.ПодразделениеФирмы В (&amp;ПодразделениеФирма)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ДЕНЬ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+			КОНЕЦ
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ГОД)
+			КОНЕЦ
+	КОНЕЦ,
+	сег_ДвиженияПоСегментамОбороты.Сегмент,
+	сег_ДвиженияПоСегментамОбороты.БизнесРегион,
+	сег_ДвиженияПоСегментамОбороты.Менеджер,
+	сег_ДвиженияПоСегментамОбороты.Подразделение,
+	сег_ДвиженияПоСегментамОбороты.Партнер
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	сег_ДвиженияПоСегментамОбороты.Партнер,
+	сег_ДвиженияПоСегментамОбороты.Сегмент,
+	сег_ДвиженияПоСегментамОбороты.Подразделение,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ДЕНЬ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+			КОНЕЦ
+	КОНЕЦ,
+	сег_ДвиженияПоСегментамОбороты.БизнесРегион,
+	сег_ДвиженияПоСегментамОбороты.Менеджер,
+	NULL,
+	СУММА(сег_ДвиженияПоСегментамОбороты.СуммаОплатыОборот / КурсыВалютСрезПоследних.Курс),
+	СУММА(сег_ДвиженияПоСегментамОбороты.СуммаОплатыОборот / КурсыВалютСрезПоследних.Курс),
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ГОД)
+			КОНЕЦ
+	КОНЕЦ
+ИЗ
+	РегистрСведений.КурсыВалют.СрезПоследних(, Валюта = &amp;ВыбВалюта) КАК КурсыВалютСрезПоследних,
+	РегистрНакопления.сег_ДвиженияПоСегментам.Обороты(
+			,
+			,
+			День,
+			Сегмент В ИЕРАРХИИ (&amp;ВидСегментаПартнера)
+				И ВЫБОР
+					КОГДА НЕ &amp;Показатель = 3
+						ТОГДА Партнер = ЗНАЧЕНИЕ(Справочник.Партнеры.ПустаяСсылка)
+					ИНАЧЕ ИСТИНА
+				КОНЕЦ) КАК сег_ДвиженияПоСегментамОбороты
+ГДЕ
+	&amp;Показатель = 3
+	И сег_ДвиженияПоСегментамОбороты.СуммаОплатыОборот &gt; 0
+	И ВЫБОР
+			КОГДА &amp;ФильтрПодрОрг = 1
+				ТОГДА сег_ДвиженияПоСегментамОбороты.Подразделение &lt;&gt; ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+						И НЕ сег_ДвиженияПоСегментамОбороты.Подразделение В (&amp;ПодразделениеФирма)
+			ИНАЧЕ сег_ДвиженияПоСегментамОбороты.Подразделение = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА &amp;ФильтрПодрОрг = 2
+				ТОГДА НЕ сег_ДвиженияПоСегментамОбороты.ПодразделениеФирмы В (&amp;ПодразделениеФирма)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+
+СГРУППИРОВАТЬ ПО
+	сег_ДвиженияПоСегментамОбороты.Партнер,
+	сег_ДвиженияПоСегментамОбороты.Сегмент,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ДЕНЬ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+			КОНЕЦ
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ГОД)
+			КОНЕЦ
+	КОНЕЦ,
+	сег_ДвиженияПоСегментамОбороты.БизнесРегион,
+	сег_ДвиженияПоСегментамОбороты.Менеджер,
+	сег_ДвиженияПоСегментамОбороты.Подразделение</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подсегмент</dataPath>
+			<field>Подсегмент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсегмент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСегмента</dataPath>
+			<field>ВидСегмента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сегмент</dataPath>
+			<field>Сегмент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодПодс</dataPath>
+			<field>ПериодПодс</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период подс</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БизнесРегион</dataPath>
+			<field>БизнесРегион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Менеджер</dataPath>
+			<field>Менеджер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодразделениеФирмы</dataPath>
+			<field>ПодразделениеФирмы</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	сег_ДвиженияПоСегментамОбороты.Партнер КАК Партнер,
+	сег_ДвиженияПоСегментамОбороты.Сегмент КАК Подсегмент,
+	сег_ДвиженияПоСегментамОбороты.Подразделение КАК Подразделение,
+	ВЫБОР
+		КОГДА &amp;ТипПериода = 1
+			ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, ДЕНЬ)
+		ИНАЧЕ ВЫБОР
+				КОГДА &amp;ТипПериода = 2
+					ТОГДА НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, НЕДЕЛЯ)
+				ИНАЧЕ НАЧАЛОПЕРИОДА(сег_ДвиженияПоСегментамОбороты.Период, МЕСЯЦ)
+			КОНЕЦ
+	КОНЕЦ КАК ПериодПодс
+ИЗ
+	РегистрНакопления.сег_ДвиженияПоСегментам.Обороты(
+			,
+			,
+			День,
+			Сегмент В ИЕРАРХИИ (&amp;ДопСегмент)
+				И ВЫБОР
+					КОГДА &amp;ФильтрПодрОрг = 1
+						ТОГДА НЕ Подразделение = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+								И НЕ Подразделение В (&amp;ПодразделениеФирма)
+					ИНАЧЕ Подразделение = ЗНАЧЕНИЕ(Справочник.СтруктураПредприятия.ПустаяСсылка)
+				КОНЕЦ
+				И ВЫБОР
+					КОГДА &amp;ФильтрПодрОрг = 2
+						ТОГДА НЕ ПодразделениеФирмы В (&amp;ПодразделениеФирма)
+					ИНАЧЕ ИСТИНА
+				КОНЕЦ) КАК сег_ДвиженияПоСегментамОбороты</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>НаборДанных2</destinationDataSet>
+		<sourceExpression>Партнер</sourceExpression>
+		<destinationExpression>Партнер</destinationExpression>
+		<linkConditionExpression>&amp;ДопСегмент &lt;&gt; Значение(Справочник.сег_Сегменты.ПустаяСсылка)</linkConditionExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>НаборДанных2</destinationDataSet>
+		<sourceExpression>Подразделение</sourceExpression>
+		<destinationExpression>Подразделение</destinationExpression>
+		<linkConditionExpression>&amp;ДопСегмент &lt;&gt; Значение(Справочник.сег_Сегменты.ПустаяСсылка)</linkConditionExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>НаборДанных1</sourceDataSet>
+		<destinationDataSet>НаборДанных2</destinationDataSet>
+		<sourceExpression>Дат</sourceExpression>
+		<destinationExpression>ПериодПодс</destinationExpression>
+		<linkConditionExpression>&amp;ДопСегмент &lt;&gt; Значение(Справочник.сег_Сегменты.ПустаяСсылка)</linkConditionExpression>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>ВычисляемИтоги</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вычисляем итоги</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>СреднийРасчетный</dataPath>
+		<expression/>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Среднее</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧЦ=17; ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>Показатель</dataPath>
+		<expression>Сумма(Показатель)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднийПоказатель</dataPath>
+		<expression>Количество(Различные СреднийПоказатель)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднийРасчетный</dataPath>
+		<expression>Сумма(Показатель)/Количество(Различные Дат)</expression>
+	</totalField>
+	<parameter>
+		<name>ФильтрПодрОрг</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выводить по:</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>подразделениям</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>фирме</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>ПодразделениеФирма</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Исключать подразделение по фирме:</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтруктураПредприятия</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ВидСегментаПартнера</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид сегмента партнера</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ВыборГруппИЭлементов</dcscor:parameter>
+				<dcscor:value xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d5p1:FoldersAndItemsUse">FoldersAndItems</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Показатель</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Показатель</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">2</value>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузка</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">3</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оплата</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>ТипПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">1</value>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По дням</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По неделям</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">3</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помесячно</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>ВыбВалюта</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Валюта</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Валюты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>КонецПериода(&amp;КонецПериода,"ДЕНЬ")</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ДопСегмент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Доп сегмент</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.сег_Сегменты</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ВыборГруппИЭлементов</dcscor:parameter>
+				<dcscor:value xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d5p1:FoldersAndItemsUse">FoldersAndItems</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной 1</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной вариант</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дат</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Менеджер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Партнер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Регион</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сегмент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подсегмент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Показатель</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Регион</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>74ca4dfe-ccea-4351-8d30-59f12062fc6c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>71ef1306-b93f-4386-8150-cb08b9408550</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Менеджер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>8e90af6b-98b9-4934-94e7-1e51fa210000</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ФильтрПодрОрг</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>b8852303-686a-489c-b030-b48835432884</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПодразделениеФирма</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>ddb030a1-adca-4909-ba04-2993f26f7af5</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВидСегментаПартнера</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>5ecfc560-2d9b-4f2e-a100-5394e3a72d33</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Показатель</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>4e336e06-9972-48f5-999a-dd1b72cf0d9a</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
+					<dcsset:userSettingID>3d3ac941-711e-47be-9c9d-891f77046000</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыбВалюта</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>74bd6dcf-daf1-487a-a724-a1efa2dc26d1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>63140935-7bc4-4fae-9903-c4e24a6d0930</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>2881000c-d55f-43c3-9df4-c14a9fe4b131</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДопСегмент</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>00290609-5259-46f4-beda-303c387bd6b0</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Показатель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>СреднийРасчетный</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧЦ=17; ЧДЦ=1</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ГрупДат</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ГрупДат</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СреднийРасчетный</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>РасположениеГруппировки</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionGroupPlacement">End</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Дат</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Дат</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Показатель</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:column>
+				<dcsset:column>
+					<dcsset:name>ИТОГО</dcsset:name>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВычисляемИтоги</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Показатель</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СреднийРасчетный</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Показатель.ПроцентВИерархии</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доля %</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МакетОформления</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Яркий</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Заголовок</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ИТОГО</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сегмент</dcsset:field>
+							<dcsset:groupType>Hierarchy</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Подсегмент</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Подразделение</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Менеджер</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+								<dcsset:item>
+									<dcsset:groupItems>
+										<dcsset:item xsi:type="dcsset:GroupItemField">
+											<dcsset:field>Регион</dcsset:field>
+											<dcsset:groupType>Items</dcsset:groupType>
+											<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+											<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+											<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+										</dcsset:item>
+									</dcsset:groupItems>
+									<dcsset:order>
+										<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+									</dcsset:order>
+									<dcsset:selection>
+										<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+									</dcsset:selection>
+									<dcsset:item>
+										<dcsset:groupItems>
+											<dcsset:item xsi:type="dcsset:GroupItemField">
+												<dcsset:field>Партнер</dcsset:field>
+												<dcsset:groupType>Items</dcsset:groupType>
+												<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+												<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+												<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+											</dcsset:item>
+										</dcsset:groupItems>
+										<dcsset:order>
+											<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+										</dcsset:order>
+										<dcsset:selection>
+											<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+										</dcsset:selection>
+										<dcsset:item>
+											<dcsset:groupItems>
+												<dcsset:item xsi:type="dcsset:GroupItemField">
+													<dcsset:field>Номенклатура</dcsset:field>
+													<dcsset:groupType>Items</dcsset:groupType>
+													<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+													<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+													<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+												</dcsset:item>
+											</dcsset:groupItems>
+											<dcsset:order>
+												<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+											</dcsset:order>
+											<dcsset:selection>
+												<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+											</dcsset:selection>
+										</dcsset:item>
+									</dcsset:item>
+								</dcsset:item>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Показатель</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:rowsUserSettingID>98e47e70-5c48-4589-97ed-013ea34145ef</dcsset:rowsUserSettingID>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

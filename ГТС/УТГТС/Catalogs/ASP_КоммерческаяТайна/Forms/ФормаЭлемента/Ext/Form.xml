@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Документ" id="7">
+			<DataPath>Объект.ДокументКТ</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДокументКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДокументРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ДокументПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Контрагент" id="83">
+			<DataPath>Объект.Контрагент</DataPath>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="84"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="85"/>
+		</InputField>
+		<InputField name="НомерВходДокумента" id="77">
+			<DataPath>Объект.НомерВходДокумента</DataPath>
+			<ContextMenu name="НомерВходДокументаКонтекстноеМеню" id="78"/>
+			<ExtendedTooltip name="НомерВходДокументаРасширеннаяПодсказка" id="79"/>
+		</InputField>
+		<InputField name="ДатаВходДокумента" id="80">
+			<DataPath>Объект.ДатаВходДокумента</DataPath>
+			<ContextMenu name="ДатаВходДокументаКонтекстноеМеню" id="81"/>
+			<ExtendedTooltip name="ДатаВходДокументаРасширеннаяПодсказка" id="82"/>
+		</InputField>
+		<InputField name="ВидДокумента" id="10">
+			<DataPath>Объект.ВидДокумента</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ВидДокументаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Ячейка" id="16">
+			<DataPath>Объект.Ячейка</DataPath>
+			<ContextMenu name="ЯчейкаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЯчейкаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Хранилище" id="19">
+			<DataPath>Объект.Хранилище</DataPath>
+			<ContextMenu name="ХранилищеКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ХранилищеРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ПодразделениеСоздатель" id="22">
+			<DataPath>Объект.ПодразделениеСоздатель</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавшее подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ПодразделениеСоздательКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПодразделениеСоздательРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="СотрудникСоздатель" id="74">
+			<DataPath>Объект.СотрудникСоздатель</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавший сотрудник</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="СотрудникСоздательКонтекстноеМеню" id="75"/>
+			<ExtendedTooltip name="СотрудникСоздательРасширеннаяПодсказка" id="76"/>
+		</InputField>
+		<InputField name="ДатаВведенияКТ" id="25">
+			<DataPath>Объект.ДатаВведенияКТ</DataPath>
+			<ContextMenu name="ДатаВведенияКТКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ДатаВведенияКТРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="Инициатор" id="28">
+			<DataPath>Объект.Инициатор</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инициатор помещения в КТ</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ИнициаторКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ИнициаторРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ДатаОтменыКТ" id="31">
+			<DataPath>Объект.ДатаОтменыКТ</DataPath>
+			<ContextMenu name="ДатаОтменыКТКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ДатаОтменыКТРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="СрокДействияКТ" id="34">
+			<DataPath>Объект.СрокДействияКТ</DataPath>
+			<ContextMenu name="СрокДействияКТКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="СрокДействияКТРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Комментарий" id="13">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ПротоколСнятияКТ" id="37">
+			<DataPath>Объект.ПротоколСнятияКТ</DataPath>
+			<ContextMenu name="ПротоколСнятияКТКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ПротоколСнятияКТРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<Table name="История" id="40">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.История</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ИсторияКонтекстноеМеню" id="41"/>
+			<AutoCommandBar name="ИсторияКоманднаяПанель" id="42"/>
+			<ExtendedTooltip name="ИсторияРасширеннаяПодсказка" id="43"/>
+			<SearchStringAddition name="ИсторияСтрокаПоиска" id="44">
+				<AdditionSource>
+					<Item>История</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсторияСтрокаПоискаКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="ИсторияСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ИсторияСостояниеПросмотра" id="47">
+				<AdditionSource>
+					<Item>История</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсторияСостояниеПросмотраКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ИсторияСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ИсторияУправлениеПоиском" id="50">
+				<AdditionSource>
+					<Item>История</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ИсторияУправлениеПоискомКонтекстноеМеню" id="51"/>
+				<ExtendedTooltip name="ИсторияУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ИсторияНомерСтроки" id="53">
+					<DataPath>Объект.История.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИсторияНомерСтрокиКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ИсторияНомерСтрокиРасширеннаяПодсказка" id="55"/>
+				</LabelField>
+				<InputField name="ИсторияДата" id="56">
+					<DataPath>Объект.История.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИсторияДатаКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ИсторияДатаРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ИсторияПредоставилДоступ" id="62">
+					<DataPath>Объект.История.ПредоставилДоступ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИсторияПредоставилДоступКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ИсторияПредоставилДоступРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="ИсторияКомуПредоставлен" id="65">
+					<DataPath>Объект.История.КомуПредоставлен</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИсторияКомуПредоставленКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ИсторияКомуПредоставленРасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="ИсторияПодразделение" id="59">
+					<DataPath>Объект.История.Подразделение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИсторияПодразделениеКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ИсторияПодразделениеРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ИсторияСрокДействия" id="68">
+					<DataPath>Объект.История.СрокДействия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИсторияСрокДействияКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ИсторияСрокДействияРасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="ИсторияКемСанкционирован" id="71">
+					<DataPath>Объект.История.КемСанкционирован</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИсторияКемСанкционированКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ИсторияКемСанкционированРасширеннаяПодсказка" id="73"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ASP_КоммерческаяТайна</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сделка</dataPath>
+			<field>Сделка</field>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.СделкиСКлиентами</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусСделкиНаЭтапе</dataPath>
+			<field>СтатусНаЭтапе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус сделки на этапе</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидСделки</dataPath>
+			<field>ВидСделки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид сделки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Этап</dataPath>
+			<field>Этап</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусСделки</dataPath>
+			<field>Статус</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус сделки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КолВоСделок</dataPath>
+			<field>КолВоСделок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол во сделок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Потенциал</dataPath>
+			<field>Потенциал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Потенциал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СтатистикаСделокСКлиентами.ЭтапПроцесса КАК Этап
+ПОМЕСТИТЬ Этапы
+ИЗ
+	РегистрСведений.СтатистикаСделокСКлиентами КАК СтатистикаСделокСКлиентами
+ГДЕ
+	СтатистикаСделокСКлиентами.Сделка.ДатаНачала &lt;= &amp;КонецПериода
+	И (СтатистикаСделокСКлиентами.Сделка.ДатаОкончания &gt;= &amp;НачалоПериода
+			ИЛИ СтатистикаСделокСКлиентами.Сделка.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СтатистикаСделокСКлиентами.Сделка
+ПОМЕСТИТЬ Сделки
+ИЗ
+	РегистрСведений.СтатистикаСделокСКлиентами КАК СтатистикаСделокСКлиентами
+ГДЕ
+	СтатистикаСделокСКлиентами.Сделка.ДатаНачала &lt;= &amp;КонецПериода
+	И (СтатистикаСделокСКлиентами.Сделка.ДатаОкончания &gt;= &amp;НачалоПериода
+			ИЛИ СтатистикаСделокСКлиентами.Сделка.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	СтатистикаСделокСКлиентами.ЭтапПроцесса КАК Этап,
+	СтатистикаСделокСКлиентами.Сделка КАК Сделка,
+	СтатистикаСделокСКлиентами.Результат КАК СтатусНаЭтапе,
+	СтатистикаСделокСКлиентами.Сделка КАК КолВоСделок,
+	СтатистикаСделокСКлиентами.Сделка.ВидСделки КАК ВидСделки,
+	СтатистикаСделокСКлиентами.Ответственный КАК Ответственный,
+	СтатистикаСделокСКлиентами.Сделка.Партнер КАК Партнер,
+	СтатистикаСделокСКлиентами.Результат КАК Статус
+ПОМЕСТИТЬ Данные
+ИЗ
+	РегистрСведений.СтатистикаСделокСКлиентами КАК СтатистикаСделокСКлиентами
+ГДЕ
+	СтатистикаСделокСКлиентами.Сделка.ДатаНачала &lt;= &amp;КонецПериода
+	И (СтатистикаСделокСКлиентами.Сделка.ДатаОкончания &gt;= &amp;НачалоПериода
+			ИЛИ СтатистикаСделокСКлиентами.Сделка.ДатаОкончания = ДАТАВРЕМЯ(1, 1, 1))
+{ГДЕ
+	СтатистикаСделокСКлиентами.Сделка.*,
+	СтатистикаСделокСКлиентами.Сделка.ВидСделки.* КАК ВидСделки,
+	СтатистикаСделокСКлиентами.Ответственный.*,
+	СтатистикаСделокСКлиентами.Сделка.Партнер.* КАК Партнер}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВЫигранныеСделки.Сделка КАК Сделка,
+	ВЫигранныеСделки.Этап КАК Этап,
+	ЗНАЧЕНИЕ(Перечисление.СтатусыСделок.Выиграна) КАК СтатусНаЭтапе,
+	ВЫигранныеСделки.Сделка.ВидСделки КАК ВидСделки,
+	ВЫигранныеСделки.Сделка.Ответственный КАК Ответственный,
+	ВЫигранныеСделки.Сделка.Партнер КАК Партнер,
+	ВЫигранныеСделки.Сделка.Статус КАК Статус,
+	ВЫигранныеСделки.Сделка КАК КолВоСделок,
+	ВЫигранныеСделки.Сделка.ПотенциальнаяСуммаПродажи КАК Потенциал
+{ВЫБРАТЬ
+	Сделка.*,
+	Этап.*,
+	СтатусНаЭтапе.*,
+	ВидСделки.*,
+	Ответственный.*,
+	Партнер.*,
+	Статус.*,
+	КолВоСделок.*,
+	Потенциал}
+ИЗ
+	(ВЫБРАТЬ
+		Сделки.Сделка КАК Сделка,
+		Этапы.Этап КАК Этап
+	ИЗ
+		Сделки КАК Сделки,
+		Этапы КАК Этапы) КАК ВЫигранныеСделки
+		ЛЕВОЕ СОЕДИНЕНИЕ Данные КАК Данные
+		ПО ВЫигранныеСделки.Сделка = Данные.Сделка
+			И ВЫигранныеСделки.Этап.РеквизитДопУпорядочивания &gt;= Данные.Этап.РеквизитДопУпорядочивания
+			И (Данные.СтатусНаЭтапе &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСделок.Выиграна))
+ГДЕ
+	(НЕ Данные.Сделка ЕСТЬ NULL )
+{ГДЕ
+	ВЫигранныеСделки.Сделка.*,
+	ВЫигранныеСделки.Этап.*,
+	(ЗНАЧЕНИЕ(Перечисление.СтатусыСделок.Выиграна)).* КАК СтатусНаЭтапе,
+	ВЫигранныеСделки.Сделка.ВидСделки.* КАК ВидСделки,
+	ВЫигранныеСделки.Сделка.Ответственный.* КАК Ответственный,
+	ВЫигранныеСделки.Сделка.Партнер.* КАК Партнер,
+	ВЫигранныеСделки.Сделка.Статус.* КАК Статус}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Данные.Сделка,
+	Данные.Этап,
+	Данные.СтатусНаЭтапе,
+	Данные.ВидСделки,
+	Данные.Ответственный,
+	Данные.Партнер,
+	Данные.Статус,
+	Данные.Сделка,
+	Данные.Сделка.ПотенциальнаяСуммаПродажи
+ИЗ
+	Данные КАК Данные
+ГДЕ
+	Данные.СтатусНаЭтапе &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СтатусыСделок.Выиграна)
+{ГДЕ
+	Данные.Сделка.*,
+	Данные.Этап.*,
+	Данные.СтатусНаЭтапе.* КАК СтатусНаЭтапе,
+	Данные.ВидСделки.*,
+	Данные.Ответственный.*,
+	Данные.Партнер.*,
+	Данные.Статус.*}</query>
+		<autoFillFields>false</autoFillFields>
+	</dataSet>
+	<totalField>
+		<dataPath>КолВоСделок</dataPath>
+		<expression>Количество(Различные КолВоСделок)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Потенциал</dataPath>
+		<expression>Сумма(Потенциал)</expression>
+	</totalField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Сегмент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Сегмент</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СегментыПартнеров</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.СегментыПартнеров.ПустаяСсылка</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Сегмент</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.СегментыПартнеров.ПустаяСсылка</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

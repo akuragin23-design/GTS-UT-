@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="7ff89c52-bb32-4396-bb5f-bd4ae7c092c5">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ШаблоныЭтикетокИЦенников" category="Object">
+				<xr:TypeId>9c82fa96-46c7-4752-84c2-d157d32f4ed2</xr:TypeId>
+				<xr:ValueId>021d7ed3-db50-4a10-85a0-b0fe4b719ab8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ШаблоныЭтикетокИЦенников" category="Ref">
+				<xr:TypeId>ee9bd872-0a49-4ce2-88de-1ed6a7473b53</xr:TypeId>
+				<xr:ValueId>ddd4c57b-9499-4504-a940-e4686e12aca4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ШаблоныЭтикетокИЦенников" category="Selection">
+				<xr:TypeId>63be6fb0-717d-439e-9d5f-ef089cccd227</xr:TypeId>
+				<xr:ValueId>9a2b32bb-a243-4101-8224-cb610d86c108</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ШаблоныЭтикетокИЦенников" category="List">
+				<xr:TypeId>37026721-1827-41cc-aacd-e0899934d7c7</xr:TypeId>
+				<xr:ValueId>0df29d92-432d-4911-91fa-c14f9af9b04a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ШаблоныЭтикетокИЦенников" category="Manager">
+				<xr:TypeId>07a99af0-ff44-4892-8856-5dc164e30523</xr:TypeId>
+				<xr:ValueId>6f0e7b70-b9c0-4c02-a1dd-3fd72de7a0e5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ШаблоныЭтикетокИЦенников</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f6ecc26c-bdc7-4d8e-81ef-5bbffd7ce8cf</ExtendedConfigurationObject>
+			<DescriptionLength>50</DescriptionLength>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="8984c3e7-2a43-42ef-9960-e65fd7246451">
+				<Properties>
+					<Name>асп_ВыводитьШККомплекта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выводить ШК Комплекта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>При включенной настройке, выводит штрихкод комплекта</v8:content>
+						</v8:item>
+					</ToolTip>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="54dbeba2-2d93-414a-813a-00c4af34f54d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ширина</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1c9a2211-fd8b-424d-9e60-a63fac496146</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2f971517-7218-45f9-9fc8-97981f53ca31">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДляЧего</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9f4cf9a7-e6f5-4ce1-812e-ce4aad80e33d</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e85d908b-2b34-4a7b-b935-b5eac99e5ff8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Высота</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0f979c2f-beb8-4472-b4f3-54baee0c6915</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="cdf1119d-f3cb-42a8-94f3-355289f18a8b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Назначение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>48f3820d-6bb4-4947-a3da-80eda8321fe7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.НазначенияШаблоновЭтикетокИЦенников</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="6019139b-97ff-495f-a84c-9daea79a50f9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РазмерЯчейки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ca37f26e-12e9-4006-8349-854905250561</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаРедактированияШаблонаЭтикетокИЦенников</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

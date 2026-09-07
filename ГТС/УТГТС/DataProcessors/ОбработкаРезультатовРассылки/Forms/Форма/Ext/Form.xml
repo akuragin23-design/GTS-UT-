@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ПутьКФайлу" id="1">
+			<DataPath>ПутьКФайлу</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="29"/>
+			<Events>
+				<Event name="StartChoice">ПутьКФайлуНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<Table name="ТаблицаСДанными" id="3">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ТаблицаСДанными</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаСДаннымиКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="ТаблицаСДаннымиКоманднаяПанель" id="5">
+				<ChildItems>
+					<Popup name="ПодменюЗаполнить" id="18">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заполнить...</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю заполнить</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ПодменюЗаполнитьРасширеннаяПодсказка" id="30"/>
+						<ChildItems>
+							<Button name="ТаблицаСДаннымиЗаполнитьEmailИзФайла" id="19">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗаполнитьEmailИзФайла</CommandName>
+								<ExtendedTooltip name="ТаблицаСДаннымиЗаполнитьEmailИзФайлаРасширеннаяПодсказка" id="31"/>
+							</Button>
+							<Button name="ТаблицаСДаннымиПодобратьПартнеровПоEmail" id="20">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПодобратьПартнеровПоEmail</CommandName>
+								<ExtendedTooltip name="ТаблицаСДаннымиПодобратьПартнеровПоEmailРасширеннаяПодсказка" id="32"/>
+							</Button>
+							<Button name="ТаблицаСДаннымиЗаполнитьEmailИПодобратьПартнеров" id="22">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ЗаполнитьEmailИПодобратьПартнеров</CommandName>
+								<ExtendedTooltip name="ТаблицаСДаннымиЗаполнитьEmailИПодобратьПартнеровРасширеннаяПодсказка" id="33"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаСДаннымиРасширеннаяПодсказка" id="34"/>
+			<SearchStringAddition name="ТаблицаСДаннымиСтрокаПоиска" id="35">
+				<AdditionSource>
+					<Item>ТаблицаСДанными</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСДаннымиСтрокаПоискаКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="ТаблицаСДаннымиСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаСДаннымиСостояниеПросмотра" id="38">
+				<AdditionSource>
+					<Item>ТаблицаСДанными</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСДаннымиСостояниеПросмотраКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="ТаблицаСДаннымиСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаСДаннымиУправлениеПоиском" id="41">
+				<AdditionSource>
+					<Item>ТаблицаСДанными</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСДаннымиУправлениеПоискомКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="ТаблицаСДаннымиУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаСДаннымиEMAIL" id="6">
+					<DataPath>ТаблицаСДанными.EMAIL</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСДаннымиEMAILКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ТаблицаСДаннымиEMAILРасширеннаяПодсказка" id="44"/>
+				</InputField>
+				<ColumnGroup name="ТаблицаСДаннымиГруппаКонтЛицо" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица с данными группа конт лицо</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица с данными группа конт лицо</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ТаблицаСДаннымиГруппаКонтЛицоРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="ТаблицаСДаннымиКонтактноеЛицо" id="8">
+							<DataPath>ТаблицаСДанными.КонтактноеЛицо</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>false</ChoiceButton>
+							<OpenButton>true</OpenButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ТаблицаСДаннымиКонтактноеЛицоКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="ТаблицаСДаннымиКонтактноеЛицоРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="StartChoice">ТаблицаСДаннымиКонтактноеЛицоНачалоВыбора</Event>
+								<Event name="Clearing">ТаблицаСДаннымиКонтактноеЛицоОчистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТаблицаСДаннымиEMAIL_КонтЛица" id="23">
+							<DataPath>ТаблицаСДанными.EMAIL_КонтЛица</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаСДаннымиEMAIL_КонтЛицаКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ТаблицаСДаннымиEMAIL_КонтЛицаРасширеннаяПодсказка" id="47"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ТаблицаСДаннымиГруппаПартнер" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица с данными группа партнер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица с данными группа партнер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ТаблицаСДаннымиГруппаПартнерРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="ТаблицаСДаннымиПартнер" id="10">
+							<DataPath>ТаблицаСДанными.Партнер</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>false</ChoiceButton>
+							<OpenButton>true</OpenButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ТаблицаСДаннымиПартнерКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ТаблицаСДаннымиПартнерРасширеннаяПодсказка" id="49"/>
+							<Events>
+								<Event name="StartChoice">ТаблицаСДаннымиПартнерНачалоВыбора</Event>
+								<Event name="Clearing">ТаблицаСДаннымиПартнерОчистка</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТаблицаСДаннымиEMAIL_Партнера" id="25">
+							<DataPath>ТаблицаСДанными.EMAIL_Партнера</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаСДаннымиEMAIL_ПартнераКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ТаблицаСДаннымиEMAIL_ПартнераРасширеннаяПодсказка" id="50"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
+				<CheckBoxField name="ТаблицаСДаннымиОбработано" id="12">
+					<DataPath>ТаблицаСДанными.Обработано</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаСДаннымиОбработаноКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ТаблицаСДаннымиОбработаноРасширеннаяПодсказка" id="51"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаВыполнитьОбработку" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выполнить обработку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа выполнить обработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВыполнитьОбработкуРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<InputField name="ВариантОбработки" id="14">
+					<DataPath>ВариантОбработки</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChooseType>false</ChooseType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Отказ от рассылки</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ОтказОтРассылки</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Не верный e-mail</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">НеВерныйEmail</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ВариантОбработкиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ВариантОбработкиРасширеннаяПодсказка" id="53"/>
+				</InputField>
+				<Button name="Обработать" id="21">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Обработать</CommandName>
+					<Font bold="true" kind="AutoFont"/>
+					<ExtendedTooltip name="ОбработатьРасширеннаяПодсказка" id="54"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбработкаРезультатовРассылки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПутьКФайлу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаСДанными" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица с данными</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="EMAIL" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>EMAIL</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КонтактноеЛицо" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контактное лицо</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.КонтактныеЛицаПартнеров</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Партнер" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Партнер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Обработано" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработано</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="EMAIL_КонтЛица" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>EMAIL конт. лица</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="EMAIL_Партнера" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>EMAIL партнера</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВариантОбработки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьEmailИзФайла" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить e-mail из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить email из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьEmailИзФайла</Action>
+		</Command>
+		<Command name="ПодобратьПартнеровПоEmail" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать партнеров по e-mail</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать партнеров по email</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодобратьПартнеровПоEmail</Action>
+		</Command>
+		<Command name="ЗаполнитьEmailИПодобратьПартнеров" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить e-mail и подобрать партнеров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить email и подобрать партнеров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьEmailИПодобратьПартнеров</Action>
+		</Command>
+		<Command name="Обработать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обработать</Action>
+		</Command>
+	</Commands>
+</Form>

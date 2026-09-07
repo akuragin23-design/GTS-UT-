@@ -1,0 +1,1345 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<Pages name="ГруппаСтраницы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<Page name="ГруппаОбщаяИнформация" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа общая информация</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ГруппаОбщаяИнформацияРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияЛоготип" id="20">
+							<Width>11</Width>
+							<Height>3</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация логотип</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>AutoSize</PictureSize>
+							<ContextMenu name="ДекорацияЛоготипКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ДекорацияЛоготипРасширеннаяПодсказка" id="22"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияОписание" id="17">
+							<Width>42</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>15</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;b&gt;Система быстрых платежей (СБП)&lt;/&gt; - это сервис Банка России, с помощью которого ваши покупатели могут оплачивать товары или услуги через свои мобильные банковские приложения.
+
+Почему Система быстрых платежей - это выгодно и удобно для бизнеса:
+ - низкие комиссии по сравнению с эквайрингом;
+ - деньги на ваш счет зачисляются за несколько секунд;
+ - не нужно приобретать эквайринговый терминал;
+ - сервис работает без выходных и праздников.
+
+&lt;link open:sbpDescription&gt;Подробнее о сервисе&lt;/&gt;&lt;link action:sbp&gt;.&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОписаниеКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ДекорацияОписаниеРасширеннаяПодсказка" id="19"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПодключениеКПорталу" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подключение к порталу</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПодключениеКПорталуРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьПоясненияПодключенияАвторизация" id="27">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Введите логин и пароль, которые вы используете на &lt;link action:openPortal&gt;Портале 1С:ИТС&lt;/&gt;.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьПоясненияПодключенияАвторизацияКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="НадписьПоясненияПодключенияАвторизацияExtendedTooltip" id="29"/>
+						</LabelDecoration>
+						<InputField name="ЛогинИПП" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логин</v8:content>
+								</v8:item>
+							</Title>
+							<Width>25</Width>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ЛогинИППКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ЛогинИППРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="ПарольИПП" id="33">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Введенные логин и пароль будут сохранены в программе для подключения ко всем сервисам Интернет-поддержки.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<Width>25</Width>
+							<PasswordMode>true</PasswordMode>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ПарольИППКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ПарольИППРасширеннаяПодсказка" id="35"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаВыборУчастника" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа выбор участника</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаВыборУчастникаРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьВыборУчастника" id="38">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите банк, через который будет выполняться прием оплат:</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьВыборУчастникаКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="НадписьВыборУчастникаРасширеннаяПодсказка" id="40"/>
+						</LabelDecoration>
+						<Table name="УчастникиСБП" id="41">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>6</MaxHeight>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<SearchStringLocation>CommandBar</SearchStringLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="УчастникиСБПКонтекстноеМеню" id="42"/>
+							<AutoCommandBar name="УчастникиСБПКоманднаяПанель" id="43"/>
+							<ExtendedTooltip name="УчастникиСБПРасширеннаяПодсказка" id="44"/>
+							<SearchStringAddition name="УчастникиСБПСтрокаПоиска" id="45">
+								<ToolTipRepresentation>Button</ToolTipRepresentation>
+								<AdditionSource>
+									<Item>УчастникиСБП</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<HorizontalStretch>true</HorizontalStretch>
+								<ContextMenu name="УчастникиСБПСтрокаПоискаКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="УчастникиСБПСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="УчастникиСБПСостояниеПросмотра" id="48">
+								<AdditionSource>
+									<Item>УчастникиСБП</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="УчастникиСБПСостояниеПросмотраКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="УчастникиСБПСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="УчастникиСБПУправлениеПоиском" id="51">
+								<AdditionSource>
+									<Item>УчастникиСБП</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="УчастникиСБПУправлениеПоискомКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="УчастникиСБПУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="УчастникиСБПБанк" id="54">
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="УчастникиСБПБанкКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="УчастникиСБПБанкРасширеннаяПодсказка" id="56"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаНастройкиУчастникаСБП" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки участника СБП</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаНастройкиУчастникаСБПРасширеннаяПодсказка" id="64"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПредупреждение" id="65">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа предупреждение</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ЦветФонаВнимание</BackColor>
+							<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="66"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияПредупреждение" id="67">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>50</MaxWidth>
+									<ContextMenu name="ДекорацияПредупреждениеКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="ДекорацияПредупреждениеРасширеннаяПодсказка" id="69"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<LabelDecoration name="ДекорацияПодсказка" id="116">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>50</MaxWidth>
+							<ContextMenu name="ДекорацияПодсказкаКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="ДекорацияПодсказкаРасширеннаяПодсказка" id="118"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаНастройкиПодключения" id="70">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки подключения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиПодключенияРасширеннаяПодсказка" id="71"/>
+						</UsualGroup>
+						<UsualGroup name="ГруппаФиксированныеНастройки" id="75">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа фиксированные настройки</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФиксированныеНастройкиРасширеннаяПодсказка" id="76"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаПользовательскоеСоглашение" id="85">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пользовательское соглашение</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПользовательскоеСоглашениеРасширеннаяПодсказка" id="86"/>
+									<ChildItems>
+										<CheckBoxField name="ПользовательскоеСоглашение" id="87">
+											<TitleLocation>None</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПользовательскоеСоглашениеКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="ПользовательскоеСоглашениеРасширеннаяПодсказка" id="89"/>
+										</CheckBoxField>
+										<LabelDecoration name="ДекорацияПользовательскоеСоглашение" id="90">
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Я согласен с условиями &lt;link open:userAgreement&gt;пользовательского соглашения&lt;/&gt;</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияПользовательскоеСоглашениеКонтекстноеМеню" id="91"/>
+											<ExtendedTooltip name="ДекорацияПользовательскоеСоглашениеРасширеннаяПодсказка" id="92"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПрикладныеНастройки" id="109">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа прикладные настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаПрикладныеНастройкиРасширеннаяПодсказка" id="110"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПодсказкаНастройки" id="119">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>50</MaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заполните &lt;link open:instrurtions&gt;настройки оплаты&lt;/&gt; для автоматического подбора параметров подключения в момент проведения платежа.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияПодсказкаНастройкиКонтекстноеМеню" id="120"/>
+							<ExtendedTooltip name="ДекорацияПодсказкаНастройкиРасширеннаяПодсказка" id="121"/>
+						</LabelDecoration>
+						<InputField name="Наименование" id="111">
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="113"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаШаблоныСообщений" id="122">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаблоны сообщений</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаШаблоныСообщенийРасширеннаяПодсказка" id="123"/>
+					<ChildItems>
+						<LabelDecoration name="ПодсказкаОписаниеШаблоновСообщений" id="124">
+							<Width>50</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>3</Height>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Можно выставлять счета для оплаты через СБП напрямую из программы 1С, используя шаблоны %1. При этом шаблоны будут заполняться автоматически на основании данных документов. </v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<ContextMenu name="ПодсказкаОписаниеШаблоновСообщенийКонтекстноеМеню" id="125"/>
+							<ExtendedTooltip name="ПодсказкаОписаниеШаблоновСообщенийРасширеннаяПодсказка" id="126">
+								<Width>70</Width>
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Можно выставлять счета для оплаты через Систему быстрых платежей по электронной почте напрямую из программы 1С, используя шаблоны писем. При этом письма будут заполняться автоматически на основании данных документов.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаШаблоныПисем" id="127">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Использование шаблонов писем</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШаблоныПисемРасширеннаяПодсказка" id="128"/>
+							<ChildItems>
+								<CheckBoxField name="СоздатьШаблоныПисемАвтоматически" id="129">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать шаблоны писем</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СоздатьШаблоныПисемАвтоматическиКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="СоздатьШаблоныПисемАвтоматическиРасширеннаяПодсказка" id="131">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>   Шаблоны позволяют выставлять счета на оплату через ЮKassa по эл. почте</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаВниманиеНетУчетнойЗаписиЭлектроннойПочты" id="132">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа внимание нет учетной записи электронной почты</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:ЦветФонаВниманиеБИП</BackColor>
+									<ExtendedTooltip name="ГруппаВниманиеНетУчетнойЗаписиЭлектроннойПочтыРасширеннаяПодсказка" id="133"/>
+									<ChildItems>
+										<LabelDecoration name="ВниманиеНетУчетнойЗаписиЭлектроннойПочтыНадпись" id="134">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Не обнаружена учетная запись эл. почты для отправки писем.
+</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+											<ContextMenu name="ВниманиеНетУчетнойЗаписиЭлектроннойПочтыНадписьКонтекстноеМеню" id="135"/>
+											<ExtendedTooltip name="ВниманиеНетУчетнойЗаписиЭлектроннойПочтыНадписьРасширеннаяПодсказка" id="136"/>
+										</LabelDecoration>
+										<Button name="СоздатьУчетнуюЗаписьЭлектроннойПочты" id="137">
+											<Type>UsualButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="СоздатьУчетнуюЗаписьЭлектроннойПочтыРасширеннаяПодсказка" id="138"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаШаблоныSMS" id="139">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шаблоны SMS</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШаблоныSMSРасширеннаяПодсказка" id="140"/>
+							<ChildItems>
+								<CheckBoxField name="СоздатьШаблоныSMSАвтоматически" id="141">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать шаблоны SMS</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СоздатьШаблоныSMSАвтоматическиКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="СоздатьШаблоныSMSАвтоматическиРасширеннаяПодсказка" id="143"/>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаВниманиеНеНастроенаОтправкаSMS" id="144">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа внимание нет учетной записи электронной почты</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:ЦветФонаВниманиеБИП</BackColor>
+									<ExtendedTooltip name="ГруппаВниманиеНеНастроенаОтправкаSMSРасширеннаяПодсказка" id="145"/>
+									<ChildItems>
+										<LabelDecoration name="ВниманиеНеНастроенаОтправкаSMS" id="146">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройка отправки SMS не выполнена.
+</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+											<ContextMenu name="ВниманиеНеНастроенаОтправкаSMSКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ВниманиеНеНастроенаОтправкаSMSРасширеннаяПодсказка" id="148"/>
+										</LabelDecoration>
+										<Button name="ВыполнитьНастройкуОтправкиSMS" id="149">
+											<Type>UsualButton</Type>
+											<CommandName>0</CommandName>
+											<ExtendedTooltip name="ВыполнитьНастройкуОтправкиSMSРасширеннаяПодсказка" id="150"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДлительнаяОперация" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа длительная операция</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ГруппаДлительнаяОперацияРасширеннаяПодсказка" id="94"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияДлительнаяОперация" id="95">
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация длительная операция</v8:content>
+								</v8:item>
+							</Title>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ДекорацияДлительнаяОперацияКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ДекорацияДлительнаяОперацияРасширеннаяПодсказка" id="97"/>
+						</PictureDecoration>
+						<LabelDecoration name="ДекорацияСостояние" id="98">
+							<HorizontalStretch>true</HorizontalStretch>
+							<SkipOnInput>false</SkipOnInput>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Текст сообщения&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<TitleHeight>1</TitleHeight>
+							<ContextMenu name="ДекорацияСостояниеКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="ДекорацияСостояниеРасширеннаяПодсказка" id="100"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРезультат" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРезультатНастройки" id="162">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа результат настройки</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРезультатНастройкиРасширеннаяПодсказка" id="163"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияКартинкаРезультат" id="103">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация картинка результат</v8:content>
+										</v8:item>
+									</Title>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияКартинкаРезультатКонтекстноеМеню" id="104"/>
+									<ExtendedTooltip name="ДекорацияКартинкаРезультатРасширеннаяПодсказка" id="105"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДекорацияОписаниеРезультата" id="106">
+									<Height>10</Height>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;&lt;Описание результат загрузки&gt;&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<ContextMenu name="ДекорацияОписаниеРезультатаКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="ДекорацияОписаниеРезультатаРасширеннаяПодсказка" id="108"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСозданыШаблоны" id="151">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа созданы шаблоны</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСозданыШаблоныРасширеннаяПодсказка" id="152"/>
+							<ChildItems>
+								<LabelDecoration name="СозданыШаблоныНадпись" id="156">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Были созданы предопределенные шаблоны.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СозданыШаблоныНадписьКонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="СозданыШаблоныНадписьРасширеннаяПодсказка" id="158"/>
+								</LabelDecoration>
+								<LabelDecoration name="ОткрытьФормуСпискаШаблоныСообщений" id="159">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Открыть</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОткрытьФормуСпискаШаблоныСообщенийКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ОткрытьФормуСпискаШаблоныСообщенийРасширеннаяПодсказка" id="161"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаКоманднаяПанель" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа командная панель</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Bottom</VerticalAlign>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<CommandBar name="КоманднаяПанельСлева" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель слева</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КоманднаяПанельСлеваРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Button name="Назад" id="5">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt; Назад</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="6"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<CommandBar name="КоманднаяПанельСправа" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель справа</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="КоманднаяПанельСправаРасширеннаяПодсказка" id="8"/>
+					<ChildItems>
+						<Button name="Далее" id="9">
+							<Type>CommandBarButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="ДалееРасширеннаяПодсказка" id="10"/>
+						</Button>
+						<Button name="Отмена" id="114">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="115"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+		</AutoCommandBar>
+		<ChildItems>
+			<Pages name="ГруппаСтраницы" id="13">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа страницы</v8:content>
+					</v8:item>
+				</Title>
+				<PagesRepresentation>None</PagesRepresentation>
+				<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="14"/>
+				<ChildItems>
+					<Page name="ГруппаОбщаяИнформация" id="15">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа общая информация</v8:content>
+							</v8:item>
+						</Title>
+						<Group>AlwaysHorizontal</Group>
+						<ExtendedTooltip name="ГруппаОбщаяИнформацияРасширеннаяПодсказка" id="16"/>
+						<ChildItems>
+							<PictureDecoration name="ДекорацияЛоготип" id="20">
+								<Width>11</Width>
+								<Height>3</Height>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Декорация логотип</v8:content>
+									</v8:item>
+								</Title>
+								<PictureSize>AutoSize</PictureSize>
+								<ContextMenu name="ДекорацияЛоготипКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ДекорацияЛоготипРасширеннаяПодсказка" id="22"/>
+							</PictureDecoration>
+							<LabelDecoration name="ДекорацияОписание" id="17">
+								<Width>42</Width>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Height>15</Height>
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>&lt;b&gt;Система быстрых платежей (СБП)&lt;/&gt; - это сервис Банка России, с помощью которого ваши покупатели могут оплачивать товары или услуги через свои мобильные банковские приложения.
+
+Почему Система быстрых платежей - это выгодно и удобно для бизнеса:
+ - низкие комиссии по сравнению с эквайрингом;
+ - деньги на ваш счет зачисляются за несколько секунд;
+ - не нужно приобретать эквайринговый терминал;
+ - сервис работает без выходных и праздников.
+
+&lt;link open:sbpDescription&gt;Подробнее о сервисе&lt;/&gt;&lt;link action:sbp&gt;.&lt;/&gt;</v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="ДекорацияОписаниеКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ДекорацияОписаниеРасширеннаяПодсказка" id="19"/>
+							</LabelDecoration>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаПодключениеКПорталу" id="25">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа подключение к порталу</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГруппаПодключениеКПорталуРасширеннаяПодсказка" id="26"/>
+						<ChildItems>
+							<LabelDecoration name="НадписьПоясненияПодключенияАвторизация" id="27">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Введите логин и пароль, которые вы используете на &lt;link action:openPortal&gt;Портале 1С:ИТС&lt;/&gt;.</v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="НадписьПоясненияПодключенияАвторизацияКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="НадписьПоясненияПодключенияАвторизацияExtendedTooltip" id="29"/>
+							</LabelDecoration>
+							<InputField name="ЛогинИПП" id="30">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Логин</v8:content>
+									</v8:item>
+								</Title>
+								<Width>25</Width>
+								<AutoMarkIncomplete>true</AutoMarkIncomplete>
+								<ContextMenu name="ЛогинИППКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="ЛогинИППРасширеннаяПодсказка" id="32"/>
+							</InputField>
+							<InputField name="ПарольИПП" id="33">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Пароль</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Введенные логин и пароль будут сохранены в программе для подключения ко всем сервисам Интернет-поддержки.</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+								<Width>25</Width>
+								<PasswordMode>true</PasswordMode>
+								<AutoMarkIncomplete>true</AutoMarkIncomplete>
+								<ContextMenu name="ПарольИППКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="ПарольИППРасширеннаяПодсказка" id="35"/>
+							</InputField>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаВыборУчастника" id="36">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа выбор участника</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГруппаВыборУчастникаРасширеннаяПодсказка" id="37"/>
+						<ChildItems>
+							<LabelDecoration name="НадписьВыборУчастника" id="38">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выберите банк, через который будет выполняться прием оплат:</v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="НадписьВыборУчастникаКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="НадписьВыборУчастникаРасширеннаяПодсказка" id="40"/>
+							</LabelDecoration>
+							<Table name="УчастникиСБП" id="41">
+								<Representation>List</Representation>
+								<ReadOnly>true</ReadOnly>
+								<AutoMaxHeight>false</AutoMaxHeight>
+								<MaxHeight>6</MaxHeight>
+								<Header>false</Header>
+								<HorizontalLines>false</HorizontalLines>
+								<VerticalLines>false</VerticalLines>
+								<AutoInsertNewRow>true</AutoInsertNewRow>
+								<EnableStartDrag>true</EnableStartDrag>
+								<EnableDrag>true</EnableDrag>
+								<SearchStringLocation>CommandBar</SearchStringLocation>
+								<RowFilter xsi:nil="true"/>
+								<ContextMenu name="УчастникиСБПКонтекстноеМеню" id="42"/>
+								<AutoCommandBar name="УчастникиСБПКоманднаяПанель" id="43"/>
+								<ExtendedTooltip name="УчастникиСБПРасширеннаяПодсказка" id="44"/>
+								<SearchStringAddition name="УчастникиСБПСтрокаПоиска" id="45">
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<AdditionSource>
+										<Item>УчастникиСБП</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="УчастникиСБПСтрокаПоискаКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="УчастникиСБПСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="УчастникиСБПСостояниеПросмотра" id="48">
+									<AdditionSource>
+										<Item>УчастникиСБП</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="УчастникиСБПСостояниеПросмотраКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="УчастникиСБПСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="УчастникиСБПУправлениеПоиском" id="51">
+									<AdditionSource>
+										<Item>УчастникиСБП</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="УчастникиСБПУправлениеПоискомКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="УчастникиСБПУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<InputField name="УчастникиСБПБанк" id="54">
+										<EditMode>EnterOnInput</EditMode>
+										<ContextMenu name="УчастникиСБПБанкКонтекстноеМеню" id="55"/>
+										<ExtendedTooltip name="УчастникиСБПБанкРасширеннаяПодсказка" id="56"/>
+									</InputField>
+								</ChildItems>
+							</Table>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаНастройкиУчастникаСБП" id="63">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа настройки участника СБП</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГруппаНастройкиУчастникаСБПРасширеннаяПодсказка" id="64"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаПредупреждение" id="65">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа предупреждение</v8:content>
+									</v8:item>
+								</Title>
+								<HorizontalStretch>true</HorizontalStretch>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<BackColor>style:ЦветФонаВнимание</BackColor>
+								<ExtendedTooltip name="ГруппаПредупреждениеРасширеннаяПодсказка" id="66"/>
+								<ChildItems>
+									<LabelDecoration name="ДекорацияПредупреждение" id="67">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>50</MaxWidth>
+										<ContextMenu name="ДекорацияПредупреждениеКонтекстноеМеню" id="68"/>
+										<ExtendedTooltip name="ДекорацияПредупреждениеРасширеннаяПодсказка" id="69"/>
+									</LabelDecoration>
+								</ChildItems>
+							</UsualGroup>
+							<LabelDecoration name="ДекорацияПодсказка" id="116">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<MaxWidth>50</MaxWidth>
+								<ContextMenu name="ДекорацияПодсказкаКонтекстноеМеню" id="117"/>
+								<ExtendedTooltip name="ДекорацияПодсказкаРасширеннаяПодсказка" id="118"/>
+							</LabelDecoration>
+							<UsualGroup name="ГруппаНастройкиПодключения" id="70">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа настройки подключения</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаНастройкиПодключенияРасширеннаяПодсказка" id="71"/>
+							</UsualGroup>
+							<UsualGroup name="ГруппаФиксированныеНастройки" id="75">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа фиксированные настройки</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаФиксированныеНастройкиРасширеннаяПодсказка" id="76"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаПользовательскоеСоглашение" id="85">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа пользовательское соглашение</v8:content>
+											</v8:item>
+										</Title>
+										<Group>AlwaysHorizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаПользовательскоеСоглашениеРасширеннаяПодсказка" id="86"/>
+										<ChildItems>
+											<CheckBoxField name="ПользовательскоеСоглашение" id="87">
+												<TitleLocation>None</TitleLocation>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ПользовательскоеСоглашениеКонтекстноеМеню" id="88"/>
+												<ExtendedTooltip name="ПользовательскоеСоглашениеРасширеннаяПодсказка" id="89"/>
+											</CheckBoxField>
+											<LabelDecoration name="ДекорацияПользовательскоеСоглашение" id="90">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Я согласен с условиями &lt;link open:userAgreement&gt;пользовательского соглашения&lt;/&gt;</v8:content>
+													</v8:item>
+												</Title>
+												<ContextMenu name="ДекорацияПользовательскоеСоглашениеКонтекстноеМеню" id="91"/>
+												<ExtendedTooltip name="ДекорацияПользовательскоеСоглашениеРасширеннаяПодсказка" id="92"/>
+											</LabelDecoration>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаПрикладныеНастройки" id="109">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа прикладные настройки</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГруппаПрикладныеНастройкиРасширеннаяПодсказка" id="110"/>
+						<ChildItems>
+							<LabelDecoration name="ДекорацияПодсказкаНастройки" id="119">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<MaxWidth>50</MaxWidth>
+								<HorizontalStretch>true</HorizontalStretch>
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заполните &lt;link open:instrurtions&gt;настройки оплаты&lt;/&gt; для автоматического подбора параметров подключения в момент проведения платежа.</v8:content>
+									</v8:item>
+								</Title>
+								<ContextMenu name="ДекорацияПодсказкаНастройкиКонтекстноеМеню" id="120"/>
+								<ExtendedTooltip name="ДекорацияПодсказкаНастройкиРасширеннаяПодсказка" id="121"/>
+							</LabelDecoration>
+							<InputField name="Наименование" id="111">
+								<AutoMarkIncomplete>true</AutoMarkIncomplete>
+								<ContextMenu name="НаименованиеКонтекстноеМеню" id="112"/>
+								<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="113"/>
+							</InputField>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаШаблоныСообщений" id="122">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа шаблоны сообщений</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГруппаШаблоныСообщенийРасширеннаяПодсказка" id="123"/>
+						<ChildItems>
+							<LabelDecoration name="ПодсказкаОписаниеШаблоновСообщений" id="124">
+								<Width>50</Width>
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Height>3</Height>
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Можно выставлять счета для оплаты через СБП напрямую из программы 1С, используя шаблоны %1. При этом шаблоны будут заполняться автоматически на основании данных документов. </v8:content>
+									</v8:item>
+								</Title>
+								<ToolTipRepresentation>None</ToolTipRepresentation>
+								<ContextMenu name="ПодсказкаОписаниеШаблоновСообщенийКонтекстноеМеню" id="125"/>
+								<ExtendedTooltip name="ПодсказкаОписаниеШаблоновСообщенийРасширеннаяПодсказка" id="126">
+									<Width>70</Width>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Можно выставлять счета для оплаты через Систему быстрых платежей по электронной почте напрямую из программы 1С, используя шаблоны писем. При этом письма будут заполняться автоматически на основании данных документов.</v8:content>
+										</v8:item>
+									</Title>
+								</ExtendedTooltip>
+							</LabelDecoration>
+							<UsualGroup name="ГруппаШаблоныПисем" id="127">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Использование шаблонов писем</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<VerticalAlign>Bottom</VerticalAlign>
+								<Behavior>Usual</Behavior>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаШаблоныПисемРасширеннаяПодсказка" id="128"/>
+								<ChildItems>
+									<CheckBoxField name="СоздатьШаблоныПисемАвтоматически" id="129">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Создать шаблоны писем</v8:content>
+											</v8:item>
+										</Title>
+										<TitleLocation>Right</TitleLocation>
+										<ToolTipRepresentation>None</ToolTipRepresentation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="СоздатьШаблоныПисемАвтоматическиКонтекстноеМеню" id="130"/>
+										<ExtendedTooltip name="СоздатьШаблоныПисемАвтоматическиРасширеннаяПодсказка" id="131">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>   Шаблоны позволяют выставлять счета на оплату через ЮKassa по эл. почте</v8:content>
+												</v8:item>
+											</Title>
+										</ExtendedTooltip>
+									</CheckBoxField>
+									<UsualGroup name="ГруппаВниманиеНетУчетнойЗаписиЭлектроннойПочты" id="132">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа внимание нет учетной записи электронной почты</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<BackColor>style:ЦветФонаВниманиеБИП</BackColor>
+										<ExtendedTooltip name="ГруппаВниманиеНетУчетнойЗаписиЭлектроннойПочтыРасширеннаяПодсказка" id="133"/>
+										<ChildItems>
+											<LabelDecoration name="ВниманиеНетУчетнойЗаписиЭлектроннойПочтыНадпись" id="134">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Не обнаружена учетная запись эл. почты для отправки писем.
+</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+												<ContextMenu name="ВниманиеНетУчетнойЗаписиЭлектроннойПочтыНадписьКонтекстноеМеню" id="135"/>
+												<ExtendedTooltip name="ВниманиеНетУчетнойЗаписиЭлектроннойПочтыНадписьРасширеннаяПодсказка" id="136"/>
+											</LabelDecoration>
+											<Button name="СоздатьУчетнуюЗаписьЭлектроннойПочты" id="137">
+												<Type>UsualButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="СоздатьУчетнуюЗаписьЭлектроннойПочтыРасширеннаяПодсказка" id="138"/>
+											</Button>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаШаблоныSMS" id="139">
+								<Visible>false</Visible>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа шаблоны SMS</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаШаблоныSMSРасширеннаяПодсказка" id="140"/>
+								<ChildItems>
+									<CheckBoxField name="СоздатьШаблоныSMSАвтоматически" id="141">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Создать шаблоны SMS</v8:content>
+											</v8:item>
+										</Title>
+										<TitleLocation>Right</TitleLocation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="СоздатьШаблоныSMSАвтоматическиКонтекстноеМеню" id="142"/>
+										<ExtendedTooltip name="СоздатьШаблоныSMSАвтоматическиРасширеннаяПодсказка" id="143"/>
+									</CheckBoxField>
+									<UsualGroup name="ГруппаВниманиеНеНастроенаОтправкаSMS" id="144">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа внимание нет учетной записи электронной почты</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<BackColor>style:ЦветФонаВниманиеБИП</BackColor>
+										<ExtendedTooltip name="ГруппаВниманиеНеНастроенаОтправкаSMSРасширеннаяПодсказка" id="145"/>
+										<ChildItems>
+											<LabelDecoration name="ВниманиеНеНастроенаОтправкаSMS" id="146">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Настройка отправки SMS не выполнена.
+</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+												<ContextMenu name="ВниманиеНеНастроенаОтправкаSMSКонтекстноеМеню" id="147"/>
+												<ExtendedTooltip name="ВниманиеНеНастроенаОтправкаSMSРасширеннаяПодсказка" id="148"/>
+											</LabelDecoration>
+											<Button name="ВыполнитьНастройкуОтправкиSMS" id="149">
+												<Type>UsualButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ВыполнитьНастройкуОтправкиSMSРасширеннаяПодсказка" id="150"/>
+											</Button>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаДлительнаяОперация" id="93">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа длительная операция</v8:content>
+							</v8:item>
+						</Title>
+						<Group>AlwaysHorizontal</Group>
+						<ExtendedTooltip name="ГруппаДлительнаяОперацияРасширеннаяПодсказка" id="94"/>
+						<ChildItems>
+							<PictureDecoration name="ДекорацияДлительнаяОперация" id="95">
+								<SkipOnInput>false</SkipOnInput>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Декорация длительная операция</v8:content>
+									</v8:item>
+								</Title>
+								<FileDragMode>AsFile</FileDragMode>
+								<ContextMenu name="ДекорацияДлительнаяОперацияКонтекстноеМеню" id="96"/>
+								<ExtendedTooltip name="ДекорацияДлительнаяОперацияРасширеннаяПодсказка" id="97"/>
+							</PictureDecoration>
+							<LabelDecoration name="ДекорацияСостояние" id="98">
+								<HorizontalStretch>true</HorizontalStretch>
+								<SkipOnInput>false</SkipOnInput>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>&lt;Текст сообщения&gt;</v8:content>
+									</v8:item>
+								</Title>
+								<GroupVerticalAlign>Center</GroupVerticalAlign>
+								<VerticalAlign>Center</VerticalAlign>
+								<TitleHeight>1</TitleHeight>
+								<ContextMenu name="ДекорацияСостояниеКонтекстноеМеню" id="99"/>
+								<ExtendedTooltip name="ДекорацияСостояниеРасширеннаяПодсказка" id="100"/>
+							</LabelDecoration>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаРезультат" id="101">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Группа результат</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="102"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаРезультатНастройки" id="162">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа результат настройки</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаРезультатНастройкиРасширеннаяПодсказка" id="163"/>
+								<ChildItems>
+									<PictureDecoration name="ДекорацияКартинкаРезультат" id="103">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Декорация картинка результат</v8:content>
+											</v8:item>
+										</Title>
+										<FileDragMode>AsFile</FileDragMode>
+										<ContextMenu name="ДекорацияКартинкаРезультатКонтекстноеМеню" id="104"/>
+										<ExtendedTooltip name="ДекорацияКартинкаРезультатРасширеннаяПодсказка" id="105"/>
+									</PictureDecoration>
+									<LabelDecoration name="ДекорацияОписаниеРезультата" id="106">
+										<Height>10</Height>
+										<HorizontalStretch>true</HorizontalStretch>
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>&lt;&lt;Описание результат загрузки&gt;&gt;</v8:content>
+											</v8:item>
+										</Title>
+										<GroupVerticalAlign>Center</GroupVerticalAlign>
+										<ContextMenu name="ДекорацияОписаниеРезультатаКонтекстноеМеню" id="107"/>
+										<ExtendedTooltip name="ДекорацияОписаниеРезультатаРасширеннаяПодсказка" id="108"/>
+									</LabelDecoration>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаСозданыШаблоны" id="151">
+								<Visible>false</Visible>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа созданы шаблоны</v8:content>
+									</v8:item>
+								</Title>
+								<HorizontalStretch>false</HorizontalStretch>
+								<Group>Horizontal</Group>
+								<HorizontalAlign>Right</HorizontalAlign>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаСозданыШаблоныРасширеннаяПодсказка" id="152"/>
+								<ChildItems>
+									<LabelDecoration name="СозданыШаблоныНадпись" id="156">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Были созданы предопределенные шаблоны.</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="СозданыШаблоныНадписьКонтекстноеМеню" id="157"/>
+										<ExtendedTooltip name="СозданыШаблоныНадписьРасширеннаяПодсказка" id="158"/>
+									</LabelDecoration>
+									<LabelDecoration name="ОткрытьФормуСпискаШаблоныСообщений" id="159">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Открыть</v8:content>
+											</v8:item>
+										</Title>
+										<Hyperlink>true</Hyperlink>
+										<ContextMenu name="ОткрытьФормуСпискаШаблоныСообщенийКонтекстноеМеню" id="160"/>
+										<ExtendedTooltip name="ОткрытьФормуСпискаШаблоныСообщенийРасширеннаяПодсказка" id="161"/>
+									</LabelDecoration>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+				</ChildItems>
+			</Pages>
+			<UsualGroup name="ГруппаКоманднаяПанель" id="1">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа командная панель</v8:content>
+					</v8:item>
+				</Title>
+				<Group>AlwaysHorizontal</Group>
+				<VerticalAlign>Bottom</VerticalAlign>
+				<Behavior>Usual</Behavior>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="2"/>
+				<ChildItems>
+					<CommandBar name="КоманднаяПанельСлева" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Командная панель слева</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="КоманднаяПанельСлеваРасширеннаяПодсказка" id="4"/>
+						<ChildItems>
+							<Button name="Назад" id="5">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>&lt; Назад</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="6"/>
+							</Button>
+						</ChildItems>
+					</CommandBar>
+					<CommandBar name="КоманднаяПанельСправа" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Командная панель справа</v8:content>
+							</v8:item>
+						</Title>
+						<HorizontalLocation>Right</HorizontalLocation>
+						<ExtendedTooltip name="КоманднаяПанельСправаРасширеннаяПодсказка" id="8"/>
+						<ChildItems>
+							<Button name="Далее" id="9">
+								<Type>CommandBarButton</Type>
+								<DefaultButton>true</DefaultButton>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ДалееРасширеннаяПодсказка" id="10"/>
+							</Button>
+							<Button name="Отмена" id="114">
+								<Type>CommandBarButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="115"/>
+							</Button>
+						</ChildItems>
+					</CommandBar>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

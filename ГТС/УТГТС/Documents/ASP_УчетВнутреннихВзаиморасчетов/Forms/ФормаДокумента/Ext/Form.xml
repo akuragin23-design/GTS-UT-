@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ДатаРасхода" id="31">
+			<DataPath>Объект.ДатаРасхода</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаРасходаКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ДатаРасходаРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="ПодразделениеПолучатель" id="7">
+			<DataPath>Объект.ПодразделениеПолучатель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеПолучательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПодразделениеПолучательРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">ПодразделениеПолучательПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ПровереноПолучателем" id="25">
+			<DataPath>Объект.ПровереноПолучателем</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПровереноПолучателемКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ПровереноПолучателемРасширеннаяПодсказка" id="27"/>
+			<Events>
+				<Event name="OnChange">ПровереноПолучателемПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="ПодразделениеПлательщик" id="10">
+			<DataPath>Объект.ПодразделениеПлательщик</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеПлательщикКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПодразделениеПлательщикРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="OnChange">ПодразделениеПлательщикПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ПровереноПлательщиком" id="22">
+			<DataPath>Объект.ПровереноПлательщиком</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПровереноПлательщикомКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПровереноПлательщикомРасширеннаяПодсказка" id="24"/>
+			<Events>
+				<Event name="OnChange">ПровереноПлательщикомПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="ДокументОснование" id="13">
+			<DataPath>Объект.ДокументОснование</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Сумма" id="16">
+			<DataPath>Объект.Сумма</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Комментарий" id="19">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<MaxHeight>6</MaxHeight>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Ответственный" id="28">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="30"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ASP_УчетВнутреннихВзаиморасчетов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

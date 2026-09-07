@@ -1,0 +1,556 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПервоначальноеЗаполнение" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПервоначальноеЗаполнение</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Первоначальное заполнение справочников</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаПервоначальноеЗаполнениеExtendedTooltip" id="3"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<InputField name="ДатаНачала" id="5">
+					<DataPath>ДатаНачала</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>с</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаНачалаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ДатаНачалаРасширеннаяПодсказка" id="7"/>
+				</InputField>
+				<InputField name="ДатаКонца" id="8">
+					<DataPath>ДатаКонца</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДатаКонцаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДатаКонцаРасширеннаяПодсказка" id="10"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ФормаЗапуститьРаспределениеПоСегментам" id="2">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<CommandName>Form.Command.ЗапуститьРаспределениеПоСегментам</CommandName>
+			<Picture>
+				<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="ФормаЗапуститьРаспределениеПоСегментамExtendedTooltip" id="4"/>
+		</Button>
+		<Button name="ФормаЗаполнитьДвиженияПоСегментам" id="23">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<CommandName>Form.Command.ЗаполнитьДвиженияПоСегментам</CommandName>
+			<Picture>
+				<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="ФормаЗаполнитьДвиженияПоСегментамРасширеннаяПодсказка" id="24"/>
+		</Button>
+		<CheckBoxField name="ТолькоБезДвижений" id="18">
+			<DataPath>ТолькоБезДвижений</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только документы без движений</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ТолькоБезДвиженийКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ТолькоБезДвиженийРасширеннаяПодсказка" id="20"/>
+		</CheckBoxField>
+		<Button name="РаспределитьПоСегментамИЗаполнитьДвижения" id="73">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<CommandName>Form.Command.РаспределитьПоСегментамИЗаполнитьДвижения</CommandName>
+			<Picture>
+				<xr:Ref>StdPicture.ExecuteTask</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ExtendedTooltip name="РаспределитьПоСегментамИЗаполнитьДвиженияРасширеннаяПодсказка" id="74"/>
+		</Button>
+		<PictureDecoration name="Декорация1" id="75">
+			<Width>3</Width>
+			<Height>2</Height>
+			<FileDragMode>AsFile</FileDragMode>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="76"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="77"/>
+		</PictureDecoration>
+		<UsualGroup name="Группа5" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка партнера</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>#0000FF</TitleTextColor>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<InputField name="ПартнерПроверка" id="29">
+					<DataPath>ПроверкаПартнер</DataPath>
+					<ContextMenu name="ПартнерПроверкаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПартнерПроверкаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ПроверкаПодразделение" id="55">
+					<DataPath>ПроверкаПодразделение</DataPath>
+					<ContextMenu name="ПроверкаПодразделениеКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ПроверкаПодразделениеРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ДатаПроверка" id="34">
+					<DataPath>ПроверкаДата</DataPath>
+					<ContextMenu name="ДатаПроверкаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДатаПроверкаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<Button name="ВыполнитьПроверку" id="32">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыполнитьПроверку</CommandName>
+					<ExtendedTooltip name="ВыполнитьПроверкуРасширеннаяПодсказка" id="33"/>
+				</Button>
+				<InputField name="ВсегоОплаченныхЗаказов" id="37">
+					<DataPath>ПроверкаВсегоОплаченныхЗаказов</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ВсегоОплаченныхЗаказовКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ВсегоОплаченныхЗаказовРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ОплаченныхЗаказовЗаГод" id="40">
+					<DataPath>ПроверкаОплаченныхЗаказовЗаГод</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ОплаченныхЗаказовЗаГодКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ОплаченныхЗаказовЗаГодРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ПроверкаДатаПервогоЗаказа" id="58">
+					<DataPath>ПроверкаДатаПервогоЗаказа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаДатаПервогоЗаказаКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ПроверкаДатаПервогоЗаказаРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ПроверкаДатаПоследнегоЗаказа" id="43">
+					<DataPath>ПроверкаДатаПоследнегоЗаказа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаДатаПоследнегоЗаказаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ПроверкаДатаПоследнегоЗаказаРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ПроверкаВремяСПервогоЗаказа" id="61">
+					<DataPath>ПроверкаВремяСПервогоЗаказа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаВремяСПервогоЗаказаКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ПроверкаВремяСПервогоЗаказаРасширеннаяПодсказка" id="63"/>
+				</InputField>
+				<InputField name="ПроверкаВремяСПоследнегоЗаказа" id="49">
+					<DataPath>ПроверкаВремяСПоследнегоЗаказа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаВремяСПоследнегоЗаказаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПроверкаВремяСПоследнегоЗаказаРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ПроверкаСреднийИнтервалМеждуЗаказами" id="46">
+					<DataPath>ПроверкаСреднийИнтервалМеждуЗаказами</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаСреднийИнтервалМеждуЗаказамиКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ПроверкаСреднийИнтервалМеждуЗаказамиРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ПроверкаКоличествоМесяцев" id="67">
+					<DataPath>ПроверкаКоличествоМесяцев</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаКоличествоМесяцевКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ПроверкаКоличествоМесяцевРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="ПроверкаОборотЗаГод" id="64">
+					<DataPath>ПроверкаОборотЗаГод</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаОборотЗаГодКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ПроверкаОборотЗаГодРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="ПроверкаСредняяСумма" id="70">
+					<DataPath>ПроверкаСредняяСумма</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаСредняяСуммаКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ПроверкаСредняяСуммаРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="ПроверкаОборот" id="52">
+					<DataPath>ПроверкаОборот</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="ПроверкаОборотКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ПроверкаОборотРасширеннаяПодсказка" id="54"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.сег_ПервоначальноеЗаполнениеСегментации</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДатаНачала" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаКонца" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата конца</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаполнятьДвижения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнять движения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТолькоБезДвижений" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только без движений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаПартнер" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаДата" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаВсегоОплаченныхЗаказов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего оплаченных заказов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаОплаченныхЗаказовЗаГод" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оплаченных заказов за год</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаДатаПоследнегоЗаказа" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата последнего заказа (за год)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаСреднийИнтервалМеждуЗаказами" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний интервал между заказами за год (дни)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаВремяСПоследнегоЗаказа" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время, прошедшее с последнего заказа (дни)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаОборот" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборот всего (в валюте упр.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаПодразделение" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаДатаПервогоЗаказа" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата первого заказа (за год)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаВремяСПервогоЗаказа" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время, прошедшее с первого заказа (дни)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаОборотЗаГод" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборот за год (в валюте упр.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаКоличествоМесяцев" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество месяцев (для расчета среднего оборота)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроверкаСредняяСумма" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средний оборот в месяц (за год, в валюте упр.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПервоначальноеЗаполнение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первоначальное заполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Первоначальное заполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПервоначальноеЗаполнение</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьРаспределениеПоСегментам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить распределение по сегментам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить распределение по сегментам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗапуститьРаспределениеПоСегментам</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьДвиженияПоСегментам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить движения по сегментам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить распределение по сегментам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДвиженияПоСегментам</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыполнитьПроверку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать показатели</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить проверку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПроверку</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="РаспределитьПоСегментамИЗаполнитьДвижения" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить по сегментам и заполнить движения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распределить по сегментам и заполнить движения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РаспределитьПоСегментамИЗаполнитьДвижения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

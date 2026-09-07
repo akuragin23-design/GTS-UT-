@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Подбор товаров из заказа</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПеренестиВДокумент" id="125">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<SkipOnInput>false</SkipOnInput>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ПеренестиВДокументРасширеннаяПодсказка" id="190"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаТовары" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТоварыРасширеннаяПодсказка" id="191"/>
+			<ChildItems>
+				<Table name="ТаблицаТоваров" id="8">
+					<Representation>List</Representation>
+					<SkipOnInput>false</SkipOnInput>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<HeightInTableRows>10</HeightInTableRows>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица товаров</v8:content>
+						</v8:item>
+					</Title>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаТоваровКонтекстноеМеню" id="9"/>
+					<AutoCommandBar name="ТаблицаТоваровКоманднаяПанель" id="10">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ТаблицаТоваровВыбратьТовары" id="126">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ТаблицаТоваровВыбратьТоварыРасширеннаяПодсказка" id="192"/>
+							</Button>
+							<Button name="ТаблицаТоваровИсключитьТовары" id="127">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ТаблицаТоваровИсключитьТоварыРасширеннаяПодсказка" id="193"/>
+							</Button>
+							<Button name="ТаблицаТоваровНайти" id="130">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ТаблицаТоваровНайтиРасширеннаяПодсказка" id="194"/>
+							</Button>
+							<Button name="ТаблицаТоваровОтменитьПоиск" id="131">
+								<Type>CommandBarButton</Type>
+								<SkipOnInput>false</SkipOnInput>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ТаблицаТоваровОтменитьПоискРасширеннаяПодсказка" id="195"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаТоваровРасширеннаяПодсказка" id="196"/>
+					<SearchStringAddition name="ТаблицаТоваровСтрокаПоиска" id="233">
+						<AdditionSource>
+							<Item>ТаблицаТоваров</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаТоваровСтрокаПоискаКонтекстноеМеню" id="234"/>
+						<ExtendedTooltip name="ТаблицаТоваровСтрокаПоискаРасширеннаяПодсказка" id="235"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаТоваровСостояниеПросмотра" id="236">
+						<AdditionSource>
+							<Item>ТаблицаТоваров</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<HorizontalLocation>Left</HorizontalLocation>
+						<ContextMenu name="ТаблицаТоваровСостояниеПросмотраКонтекстноеМеню" id="237"/>
+						<ExtendedTooltip name="ТаблицаТоваровСостояниеПросмотраРасширеннаяПодсказка" id="238"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаТоваровУправлениеПоиском" id="239">
+						<AdditionSource>
+							<Item>ТаблицаТоваров</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаТоваровУправлениеПоискомКонтекстноеМеню" id="240"/>
+						<ExtendedTooltip name="ТаблицаТоваровУправлениеПоискомРасширеннаяПодсказка" id="241"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="ТаблицаТоваровВыбран" id="132">
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТаблицаТоваровВыбранКонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="ТаблицаТоваровВыбранРасширеннаяПодсказка" id="197"/>
+						</CheckBoxField>
+						<PictureField name="ТаблицаТоваровИндексНабора" id="224">
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderPicture>
+								<xr:Ref>CommonPicture.Набор</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</HeaderPicture>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.Наборы</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="ТаблицаТоваровИндексНабораКонтекстноеМеню" id="225"/>
+							<ExtendedTooltip name="ТаблицаТоваровИндексНабораРасширеннаяПодсказка" id="226"/>
+						</PictureField>
+						<ColumnGroup name="ТаблицаТоваровТовар" id="177">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Таблица товаров товар</v8:content>
+								</v8:item>
+							</Title>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ТаблицаТоваровТоварРасширеннаяПодсказка" id="198"/>
+							<ChildItems>
+								<InputField name="ТаблицаТоваровНоменклатура" id="134">
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="ТаблицаТоваровНоменклатураКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ТаблицаТоваровНоменклатураРасширеннаяПодсказка" id="199"/>
+								</InputField>
+								<InputField name="ТаблицаТоваровХарактеристика" id="136">
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="ТаблицаТоваровХарактеристикаКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="ТаблицаТоваровХарактеристикаРасширеннаяПодсказка" id="200"/>
+								</InputField>
+								<InputField name="ТаблицаТоваровСерия" id="221">
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<ContextMenu name="ТаблицаТоваровСерияКонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="ТаблицаТоваровСерияРасширеннаяПодсказка" id="223"/>
+								</InputField>
+								<InputField name="ТаблицаТоваровНоменклатураНабора" id="227">
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаТоваровНоменклатураНабораКонтекстноеМеню" id="228"/>
+									<ExtendedTooltip name="ТаблицаТоваровНоменклатураНабораРасширеннаяПодсказка" id="229"/>
+								</InputField>
+								<InputField name="ТаблицаТоваровХарактеристикаНабора" id="230">
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаТоваровХарактеристикаНабораКонтекстноеМеню" id="231"/>
+									<ExtendedTooltip name="ТаблицаТоваровХарактеристикаНабораРасширеннаяПодсказка" id="232"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ТаблицаТоваровСодержание" id="186">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаТоваровСодержаниеКонтекстноеМеню" id="187"/>
+							<ExtendedTooltip name="ТаблицаТоваровСодержаниеРасширеннаяПодсказка" id="201"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровКоличествоУпаковок" id="140">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Количество</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>8</Width>
+							<ContextMenu name="ТаблицаТоваровКоличествоУпаковокКонтекстноеМеню" id="141"/>
+							<ExtendedTooltip name="ТаблицаТоваровКоличествоУпаковокРасширеннаяПодсказка" id="202"/>
+						</InputField>
+						<ColumnGroup name="ТаблицаТоваровЕдиницаИзмерения" id="172">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Упаковка, единица измерения</v8:content>
+								</v8:item>
+							</Title>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ТаблицаТоваровЕдиницаИзмеренияРасширеннаяПодсказка" id="203"/>
+							<ChildItems>
+								<InputField name="ТаблицаТоваровУпаковка" id="138">
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<Width>10</Width>
+									<ContextMenu name="ТаблицаТоваровУпаковкаКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ТаблицаТоваровУпаковкаРасширеннаяПодсказка" id="204"/>
+								</InputField>
+								<InputField name="ТаблицаТоваровНоменклатураЕдиницаИзмерения" id="173">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ед. изм.</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>8</Width>
+									<ContextMenu name="ТаблицаТоваровНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="174"/>
+									<ExtendedTooltip name="ТаблицаТоваровНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка" id="205"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ТаблицаТоваровВидЦены" id="146">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>16</Width>
+							<ContextMenu name="ТаблицаТоваровВидЦеныКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="ТаблицаТоваровВидЦеныРасширеннаяПодсказка" id="206"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровЦена" id="148">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<ContextMenu name="ТаблицаТоваровЦенаКонтекстноеМеню" id="149"/>
+							<ExtendedTooltip name="ТаблицаТоваровЦенаРасширеннаяПодсказка" id="207"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровПроцентАвтоматическойСкидки" id="164">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>6</Width>
+							<ContextMenu name="ТаблицаТоваровПроцентАвтоматическойСкидкиКонтекстноеМеню" id="165"/>
+							<ExtendedTooltip name="ТаблицаТоваровПроцентАвтоматическойСкидкиРасширеннаяПодсказка" id="208"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровСуммаАвтоматическойСкидки" id="160">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<ContextMenu name="ТаблицаТоваровСуммаАвтоматическойСкидкиКонтекстноеМеню" id="161"/>
+							<ExtendedTooltip name="ТаблицаТоваровСуммаАвтоматическойСкидкиРасширеннаяПодсказка" id="209"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровПроцентРучнойСкидки" id="162">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>% руч.</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>6</Width>
+							<ContextMenu name="ТаблицаТоваровПроцентРучнойСкидкиКонтекстноеМеню" id="163"/>
+							<ExtendedTooltip name="ТаблицаТоваровПроцентРучнойСкидкиРасширеннаяПодсказка" id="210"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровСуммаРучнойСкидки" id="158">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма руч.</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<ContextMenu name="ТаблицаТоваровСуммаРучнойСкидкиКонтекстноеМеню" id="159"/>
+							<ExtendedTooltip name="ТаблицаТоваровСуммаРучнойСкидкиРасширеннаяПодсказка" id="211"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровСумма" id="150">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<ContextMenu name="ТаблицаТоваровСуммаКонтекстноеМеню" id="151"/>
+							<ExtendedTooltip name="ТаблицаТоваровСуммаРасширеннаяПодсказка" id="212"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровСтавкаНДС" id="152">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ставка НДС</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ТаблицаТоваровСтавкаНДСКонтекстноеМеню" id="153"/>
+							<ExtendedTooltip name="ТаблицаТоваровСтавкаНДСРасширеннаяПодсказка" id="213"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровСуммаНДС" id="154">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма НДС</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<ContextMenu name="ТаблицаТоваровСуммаНДСКонтекстноеМеню" id="155"/>
+							<ExtendedTooltip name="ТаблицаТоваровСуммаНДСРасширеннаяПодсказка" id="214"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровСуммаСНДС" id="188">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>9</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ТаблицаТоваровСуммаСНДСКонтекстноеМеню" id="189"/>
+							<ExtendedTooltip name="ТаблицаТоваровСуммаСНДСРасширеннаяПодсказка" id="215"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровСклад" id="180">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<ContextMenu name="ТаблицаТоваровСкладКонтекстноеМеню" id="181"/>
+							<ExtendedTooltip name="ТаблицаТоваровСкладРасширеннаяПодсказка" id="216"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровПодразделение" id="242">
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаТоваровПодразделениеКонтекстноеМеню" id="243"/>
+							<ExtendedTooltip name="ТаблицаТоваровПодразделениеРасширеннаяПодсказка" id="244"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровДатаОтгрузки" id="178">
+							<EditMode>EnterOnInput</EditMode>
+							<Width>8</Width>
+							<ContextMenu name="ТаблицаТоваровДатаОтгрузкиКонтекстноеМеню" id="179"/>
+							<ExtendedTooltip name="ТаблицаТоваровДатаОтгрузкиРасширеннаяПодсказка" id="217"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровЗаказКлиента" id="182">
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<CellHyperlink>true</CellHyperlink>
+							<Width>22</Width>
+							<ContextMenu name="ТаблицаТоваровЗаказКлиентаКонтекстноеМеню" id="183"/>
+							<ExtendedTooltip name="ТаблицаТоваровЗаказКлиентаРасширеннаяПодсказка" id="218"/>
+						</InputField>
+						<InputField name="ТаблицаТоваровКодСтроки" id="156">
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>3</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ТаблицаТоваровКодСтрокиКонтекстноеМеню" id="157"/>
+							<ExtendedTooltip name="ТаблицаТоваровКодСтрокиРасширеннаяПодсказка" id="219"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="ВалютаДокумента" id="175">
+			<ContextMenu name="ВалютаДокументаКонтекстноеМеню" id="176"/>
+			<ExtendedTooltip name="ВалютаДокументаРасширеннаяПодсказка" id="220"/>
+		</LabelField>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<Title>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подбор товаров из заказа</v8:content>
+			</v8:item>
+		</Title>
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoTitle>false</AutoTitle>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<Button name="ПеренестиВДокумент" id="125">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<SkipOnInput>false</SkipOnInput>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ПеренестиВДокументРасширеннаяПодсказка" id="190"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаТовары" id="17">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Товары</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаТоварыРасширеннаяПодсказка" id="191"/>
+				<ChildItems>
+					<Table name="ТаблицаТоваров" id="8">
+						<Representation>List</Representation>
+						<SkipOnInput>false</SkipOnInput>
+						<ChangeRowSet>false</ChangeRowSet>
+						<ChangeRowOrder>false</ChangeRowOrder>
+						<HeightInTableRows>10</HeightInTableRows>
+						<HorizontalLines>false</HorizontalLines>
+						<VerticalLines>false</VerticalLines>
+						<AutoInsertNewRow>true</AutoInsertNewRow>
+						<InitialTreeView>ExpandAllLevels</InitialTreeView>
+						<EnableStartDrag>true</EnableStartDrag>
+						<EnableDrag>true</EnableDrag>
+						<FileDragMode>AsFile</FileDragMode>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таблица товаров</v8:content>
+							</v8:item>
+						</Title>
+						<RowFilter xsi:nil="true"/>
+						<ContextMenu name="ТаблицаТоваровКонтекстноеМеню" id="9"/>
+						<AutoCommandBar name="ТаблицаТоваровКоманднаяПанель" id="10">
+							<Autofill>false</Autofill>
+							<ChildItems>
+								<Button name="ТаблицаТоваровВыбратьТовары" id="126">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ТаблицаТоваровВыбратьТоварыРасширеннаяПодсказка" id="192"/>
+								</Button>
+								<Button name="ТаблицаТоваровИсключитьТовары" id="127">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ТаблицаТоваровИсключитьТоварыРасширеннаяПодсказка" id="193"/>
+								</Button>
+								<Button name="ТаблицаТоваровНайти" id="130">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ТаблицаТоваровНайтиРасширеннаяПодсказка" id="194"/>
+								</Button>
+								<Button name="ТаблицаТоваровОтменитьПоиск" id="131">
+									<Type>CommandBarButton</Type>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>0</CommandName>
+									<ExtendedTooltip name="ТаблицаТоваровОтменитьПоискРасширеннаяПодсказка" id="195"/>
+								</Button>
+							</ChildItems>
+						</AutoCommandBar>
+						<ExtendedTooltip name="ТаблицаТоваровРасширеннаяПодсказка" id="196"/>
+						<SearchStringAddition name="ТаблицаТоваровСтрокаПоиска" id="233">
+							<AdditionSource>
+								<Item>ТаблицаТоваров</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<ContextMenu name="ТаблицаТоваровСтрокаПоискаКонтекстноеМеню" id="234"/>
+							<ExtendedTooltip name="ТаблицаТоваровСтрокаПоискаРасширеннаяПодсказка" id="235"/>
+						</SearchStringAddition>
+						<ViewStatusAddition name="ТаблицаТоваровСостояниеПросмотра" id="236">
+							<AdditionSource>
+								<Item>ТаблицаТоваров</Item>
+								<Type>ViewStatusRepresentation</Type>
+							</AdditionSource>
+							<HorizontalLocation>Left</HorizontalLocation>
+							<ContextMenu name="ТаблицаТоваровСостояниеПросмотраКонтекстноеМеню" id="237"/>
+							<ExtendedTooltip name="ТаблицаТоваровСостояниеПросмотраРасширеннаяПодсказка" id="238"/>
+						</ViewStatusAddition>
+						<SearchControlAddition name="ТаблицаТоваровУправлениеПоиском" id="239">
+							<AdditionSource>
+								<Item>ТаблицаТоваров</Item>
+								<Type>SearchControl</Type>
+							</AdditionSource>
+							<ContextMenu name="ТаблицаТоваровУправлениеПоискомКонтекстноеМеню" id="240"/>
+							<ExtendedTooltip name="ТаблицаТоваровУправлениеПоискомРасширеннаяПодсказка" id="241"/>
+						</SearchControlAddition>
+						<ChildItems>
+							<CheckBoxField name="ТаблицаТоваровВыбран" id="132">
+								<TitleLocation>None</TitleLocation>
+								<EditMode>EnterOnInput</EditMode>
+								<CheckBoxType>Auto</CheckBoxType>
+								<ContextMenu name="ТаблицаТоваровВыбранКонтекстноеМеню" id="133"/>
+								<ExtendedTooltip name="ТаблицаТоваровВыбранРасширеннаяПодсказка" id="197"/>
+							</CheckBoxField>
+							<PictureField name="ТаблицаТоваровИндексНабора" id="224">
+								<TitleLocation>None</TitleLocation>
+								<EditMode>EnterOnInput</EditMode>
+								<HeaderPicture>
+									<xr:Ref>CommonPicture.Набор</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</HeaderPicture>
+								<ValuesPicture>
+									<xr:Ref>CommonPicture.Наборы</xr:Ref>
+									<xr:LoadTransparent>false</xr:LoadTransparent>
+								</ValuesPicture>
+								<FileDragMode>AsFile</FileDragMode>
+								<ContextMenu name="ТаблицаТоваровИндексНабораКонтекстноеМеню" id="225"/>
+								<ExtendedTooltip name="ТаблицаТоваровИндексНабораРасширеннаяПодсказка" id="226"/>
+							</PictureField>
+							<ColumnGroup name="ТаблицаТоваровТовар" id="177">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Таблица товаров товар</v8:content>
+									</v8:item>
+								</Title>
+								<Group>InCell</Group>
+								<ExtendedTooltip name="ТаблицаТоваровТоварРасширеннаяПодсказка" id="198"/>
+								<ChildItems>
+									<InputField name="ТаблицаТоваровНоменклатура" id="134">
+										<ReadOnly>true</ReadOnly>
+										<EditMode>EnterOnInput</EditMode>
+										<Width>10</Width>
+										<ContextMenu name="ТаблицаТоваровНоменклатураКонтекстноеМеню" id="135"/>
+										<ExtendedTooltip name="ТаблицаТоваровНоменклатураРасширеннаяПодсказка" id="199"/>
+									</InputField>
+									<InputField name="ТаблицаТоваровХарактеристика" id="136">
+										<ReadOnly>true</ReadOnly>
+										<EditMode>EnterOnInput</EditMode>
+										<Width>10</Width>
+										<ContextMenu name="ТаблицаТоваровХарактеристикаКонтекстноеМеню" id="137"/>
+										<ExtendedTooltip name="ТаблицаТоваровХарактеристикаРасширеннаяПодсказка" id="200"/>
+									</InputField>
+									<InputField name="ТаблицаТоваровСерия" id="221">
+										<ReadOnly>true</ReadOnly>
+										<EditMode>EnterOnInput</EditMode>
+										<Width>10</Width>
+										<ContextMenu name="ТаблицаТоваровСерияКонтекстноеМеню" id="222"/>
+										<ExtendedTooltip name="ТаблицаТоваровСерияРасширеннаяПодсказка" id="223"/>
+									</InputField>
+									<InputField name="ТаблицаТоваровНоменклатураНабора" id="227">
+										<UserVisible>
+											<xr:Common>false</xr:Common>
+										</UserVisible>
+										<ReadOnly>true</ReadOnly>
+										<EditMode>EnterOnInput</EditMode>
+										<ContextMenu name="ТаблицаТоваровНоменклатураНабораКонтекстноеМеню" id="228"/>
+										<ExtendedTooltip name="ТаблицаТоваровНоменклатураНабораРасширеннаяПодсказка" id="229"/>
+									</InputField>
+									<InputField name="ТаблицаТоваровХарактеристикаНабора" id="230">
+										<UserVisible>
+											<xr:Common>false</xr:Common>
+										</UserVisible>
+										<ReadOnly>true</ReadOnly>
+										<EditMode>EnterOnInput</EditMode>
+										<ContextMenu name="ТаблицаТоваровХарактеристикаНабораКонтекстноеМеню" id="231"/>
+										<ExtendedTooltip name="ТаблицаТоваровХарактеристикаНабораРасширеннаяПодсказка" id="232"/>
+									</InputField>
+								</ChildItems>
+							</ColumnGroup>
+							<InputField name="ТаблицаТоваровСодержание" id="186">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<ContextMenu name="ТаблицаТоваровСодержаниеКонтекстноеМеню" id="187"/>
+								<ExtendedTooltip name="ТаблицаТоваровСодержаниеРасширеннаяПодсказка" id="201"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровКоличествоУпаковок" id="140">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Количество</v8:content>
+									</v8:item>
+								</Title>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>8</Width>
+								<ContextMenu name="ТаблицаТоваровКоличествоУпаковокКонтекстноеМеню" id="141"/>
+								<ExtendedTooltip name="ТаблицаТоваровКоличествоУпаковокРасширеннаяПодсказка" id="202"/>
+							</InputField>
+							<ColumnGroup name="ТаблицаТоваровЕдиницаИзмерения" id="172">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Упаковка, единица измерения</v8:content>
+									</v8:item>
+								</Title>
+								<Group>InCell</Group>
+								<ExtendedTooltip name="ТаблицаТоваровЕдиницаИзмеренияРасширеннаяПодсказка" id="203"/>
+								<ChildItems>
+									<InputField name="ТаблицаТоваровУпаковка" id="138">
+										<ReadOnly>true</ReadOnly>
+										<EditMode>EnterOnInput</EditMode>
+										<ShowInHeader>false</ShowInHeader>
+										<Width>10</Width>
+										<ContextMenu name="ТаблицаТоваровУпаковкаКонтекстноеМеню" id="139"/>
+										<ExtendedTooltip name="ТаблицаТоваровУпаковкаРасширеннаяПодсказка" id="204"/>
+									</InputField>
+									<InputField name="ТаблицаТоваровНоменклатураЕдиницаИзмерения" id="173">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ед. изм.</v8:content>
+											</v8:item>
+										</Title>
+										<EditMode>EnterOnInput</EditMode>
+										<Width>8</Width>
+										<ContextMenu name="ТаблицаТоваровНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="174"/>
+										<ExtendedTooltip name="ТаблицаТоваровНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка" id="205"/>
+									</InputField>
+								</ChildItems>
+							</ColumnGroup>
+							<InputField name="ТаблицаТоваровВидЦены" id="146">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>16</Width>
+								<ContextMenu name="ТаблицаТоваровВидЦеныКонтекстноеМеню" id="147"/>
+								<ExtendedTooltip name="ТаблицаТоваровВидЦеныРасширеннаяПодсказка" id="206"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровЦена" id="148">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>9</Width>
+								<ContextMenu name="ТаблицаТоваровЦенаКонтекстноеМеню" id="149"/>
+								<ExtendedTooltip name="ТаблицаТоваровЦенаРасширеннаяПодсказка" id="207"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровПроцентАвтоматическойСкидки" id="164">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>6</Width>
+								<ContextMenu name="ТаблицаТоваровПроцентАвтоматическойСкидкиКонтекстноеМеню" id="165"/>
+								<ExtendedTooltip name="ТаблицаТоваровПроцентАвтоматическойСкидкиРасширеннаяПодсказка" id="208"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровСуммаАвтоматическойСкидки" id="160">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>9</Width>
+								<ContextMenu name="ТаблицаТоваровСуммаАвтоматическойСкидкиКонтекстноеМеню" id="161"/>
+								<ExtendedTooltip name="ТаблицаТоваровСуммаАвтоматическойСкидкиРасширеннаяПодсказка" id="209"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровПроцентРучнойСкидки" id="162">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>% руч.</v8:content>
+									</v8:item>
+								</Title>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>6</Width>
+								<ContextMenu name="ТаблицаТоваровПроцентРучнойСкидкиКонтекстноеМеню" id="163"/>
+								<ExtendedTooltip name="ТаблицаТоваровПроцентРучнойСкидкиРасширеннаяПодсказка" id="210"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровСуммаРучнойСкидки" id="158">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сумма руч.</v8:content>
+									</v8:item>
+								</Title>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>9</Width>
+								<ContextMenu name="ТаблицаТоваровСуммаРучнойСкидкиКонтекстноеМеню" id="159"/>
+								<ExtendedTooltip name="ТаблицаТоваровСуммаРучнойСкидкиРасширеннаяПодсказка" id="211"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровСумма" id="150">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>9</Width>
+								<ContextMenu name="ТаблицаТоваровСуммаКонтекстноеМеню" id="151"/>
+								<ExtendedTooltip name="ТаблицаТоваровСуммаРасширеннаяПодсказка" id="212"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровСтавкаНДС" id="152">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Ставка НДС</v8:content>
+									</v8:item>
+								</Title>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>9</Width>
+								<HorizontalStretch>false</HorizontalStretch>
+								<ContextMenu name="ТаблицаТоваровСтавкаНДСКонтекстноеМеню" id="153"/>
+								<ExtendedTooltip name="ТаблицаТоваровСтавкаНДСРасширеннаяПодсказка" id="213"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровСуммаНДС" id="154">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Сумма НДС</v8:content>
+									</v8:item>
+								</Title>
+								<HorizontalAlign>Left</HorizontalAlign>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>9</Width>
+								<ContextMenu name="ТаблицаТоваровСуммаНДСКонтекстноеМеню" id="155"/>
+								<ExtendedTooltip name="ТаблицаТоваровСуммаНДСРасширеннаяПодсказка" id="214"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровСуммаСНДС" id="188">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>9</Width>
+								<HorizontalStretch>false</HorizontalStretch>
+								<ContextMenu name="ТаблицаТоваровСуммаСНДСКонтекстноеМеню" id="189"/>
+								<ExtendedTooltip name="ТаблицаТоваровСуммаСНДСРасширеннаяПодсказка" id="215"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровСклад" id="180">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<DropListButton>false</DropListButton>
+								<ChoiceButton>true</ChoiceButton>
+								<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+								<ContextMenu name="ТаблицаТоваровСкладКонтекстноеМеню" id="181"/>
+								<ExtendedTooltip name="ТаблицаТоваровСкладРасширеннаяПодсказка" id="216"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровПодразделение" id="242">
+								<EditMode>EnterOnInput</EditMode>
+								<ContextMenu name="ТаблицаТоваровПодразделениеКонтекстноеМеню" id="243"/>
+								<ExtendedTooltip name="ТаблицаТоваровПодразделениеРасширеннаяПодсказка" id="244"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровДатаОтгрузки" id="178">
+								<EditMode>EnterOnInput</EditMode>
+								<Width>8</Width>
+								<ContextMenu name="ТаблицаТоваровДатаОтгрузкиКонтекстноеМеню" id="179"/>
+								<ExtendedTooltip name="ТаблицаТоваровДатаОтгрузкиРасширеннаяПодсказка" id="217"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровЗаказКлиента" id="182">
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<CellHyperlink>true</CellHyperlink>
+								<Width>22</Width>
+								<ContextMenu name="ТаблицаТоваровЗаказКлиентаКонтекстноеМеню" id="183"/>
+								<ExtendedTooltip name="ТаблицаТоваровЗаказКлиентаРасширеннаяПодсказка" id="218"/>
+							</InputField>
+							<InputField name="ТаблицаТоваровКодСтроки" id="156">
+								<UserVisible>
+									<xr:Common>false</xr:Common>
+								</UserVisible>
+								<ReadOnly>true</ReadOnly>
+								<EditMode>EnterOnInput</EditMode>
+								<Width>3</Width>
+								<HorizontalStretch>false</HorizontalStretch>
+								<ContextMenu name="ТаблицаТоваровКодСтрокиКонтекстноеМеню" id="157"/>
+								<ExtendedTooltip name="ТаблицаТоваровКодСтрокиРасширеннаяПодсказка" id="219"/>
+							</InputField>
+						</ChildItems>
+					</Table>
+				</ChildItems>
+			</UsualGroup>
+			<LabelField name="ВалютаДокумента" id="175">
+				<ContextMenu name="ВалютаДокументаКонтекстноеМеню" id="176"/>
+				<ExtendedTooltip name="ВалютаДокументаРасширеннаяПодсказка" id="220"/>
+			</LabelField>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

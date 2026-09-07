@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Распоряжение</dataPath>
+			<field>Распоряжение</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Серия</dataPath>
+			<field>Серия</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Показатель</dataPath>
+			<field>Показатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КодСтроки</dataPath>
+			<field>КодСтроки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументДвижения</dataPath>
+			<field>ДокументДвижения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ движения</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтгруженоКоличество</dataPath>
+			<field>ОтгруженоКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгружено количество</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтгруженоСумма</dataPath>
+			<field>ОтгруженоСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгружено сумма</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтгруженоСуммаНДС</dataPath>
+			<field>ОтгруженоСуммаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгружено сумма НДС</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеализованоКоличество</dataPath>
+			<field>РеализованоКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализовано количество</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеализованоСумма</dataPath>
+			<field>РеализованоСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализовано сумма</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РеализованоСуммаНДС</dataPath>
+			<field>РеализованоСуммаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Реализовано сумма НДС</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОформленоСчетовФактурКоличество</dataPath>
+			<field>ОформленоСчетовФактурКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформлено счетов фактур количество</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОформленоСчетовФактурСумма</dataPath>
+			<field>ОформленоСчетовФактурСумма</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформлено счетов фактур сумма</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОформленоСчетовФактурСуммаНДС</dataPath>
+			<field>ОформленоСчетовФактурСуммаНДС</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформлено счетов фактур сумма НДС</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:TypeId>48fa9d68-ae46-4d76-988a-88927f7a0ca6</v8:TypeId>
+			</valueType>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ТаблицаРегистра.Регистратор КАК ДокументДвижения,
+	ТаблицаРегистра.Распоряжение КАК Распоряжение,
+	ТаблицаРегистра.Номенклатура КАК Номенклатура,
+	ТаблицаРегистра.Характеристика КАК Характеристика,
+	ТаблицаРегистра.Серия КАК Серия,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Оформлено)
+					ТОГДА ТаблицаРегистра.КоличествоОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоКоличество,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Оформлено)
+					ТОГДА ТаблицаРегистра.СуммаОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоСумма,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Оформлено)
+					ТОГДА ТаблицаРегистра.СуммаНДСРеглОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоСуммаНДС,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОформленоПоВозвратам)
+					ТОГДА ТаблицаРегистра.КоличествоОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоПоВозвратамКоличество,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОформленоПоВозвратам)
+					ТОГДА ТаблицаРегистра.СуммаОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоПоВозвратамСумма,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОформленоПоВозвратам)
+					ТОГДА ТаблицаРегистра.СуммаНДСРеглОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоПоВозвратамСуммаНДС,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Отгружено)
+					ТОГДА ТаблицаРегистра.КоличествоОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОтгруженоКоличество,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Отгружено)
+					ТОГДА ТаблицаРегистра.СуммаОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОтгруженоСумма,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Отгружено)
+					ТОГДА ТаблицаРегистра.СуммаНДСРеглОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОтгруженоСуммаНДС,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.СписаноДоППС)
+					ТОГДА ТаблицаРегистра.КоличествоОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК СписаноДоППСКоличество,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.СписаноДоППС)
+					ТОГДА ТаблицаРегистра.СуммаОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК СписаноДоППССумма,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.СписаноДоППС)
+					ТОГДА ТаблицаРегистра.СуммаНДСРеглОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК СписаноДоППССуммаНДС,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОприходованоДоППС)
+					ТОГДА ТаблицаРегистра.КоличествоОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОприходованоДоППСКоличество,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОприходованоДоППС)
+					ТОГДА ТаблицаРегистра.СуммаОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОприходованоДоППССумма,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОприходованоДоППС)
+					ТОГДА ТаблицаРегистра.СуммаНДСРеглОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОприходованоДоППССуммаНДС,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОформленоСчетовФактур)
+					ТОГДА ТаблицаРегистра.КоличествоОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоСчетовФактурКоличество,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОформленоСчетовФактур)
+					ТОГДА ТаблицаРегистра.СуммаОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоСчетовФактурСумма,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.ОформленоСчетовФактур)
+					ТОГДА ТаблицаРегистра.СуммаНДСРеглОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК ОформленоСчетовФактурСуммаНДС,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Скорректировано)
+					ТОГДА ТаблицаРегистра.КоличествоОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК СкорректированоКоличество,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Скорректировано)
+					ТОГДА ТаблицаРегистра.СуммаОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК СкорректированоСумма,
+	ЕСТЬNULL(СУММА(ВЫБОР
+				КОГДА ТаблицаРегистра.Показатель = ЗНАЧЕНИЕ(Перечисление.ПоказателиРаспоряженийНаОтгрузкуИВозврат.Скорректировано)
+					ТОГДА ТаблицаРегистра.СуммаНДСРеглОборот
+				ИНАЧЕ 0
+			КОНЕЦ), 0) КАК СкорректированоСуммаНДС
+ПОМЕСТИТЬ втТаблицаРегистраРазвернутая
+ИЗ
+	РегистрНакопления.РаспоряженияНаОтгрузкуИВозврат.Обороты(, , Регистратор, Распоряжение В (&amp;МассивРаспоряжений)) КАК ТаблицаРегистра
+
+СГРУППИРОВАТЬ ПО
+	ТаблицаРегистра.Регистратор,
+	ТаблицаРегистра.Распоряжение,
+	ТаблицаРегистра.Номенклатура,
+	ТаблицаРегистра.Характеристика,
+	ТаблицаРегистра.Серия
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втТаблицаРегистраРазвернутая.Распоряжение КАК Распоряжение,
+	втТаблицаРегистраРазвернутая.ДокументДвижения КАК ДокументДвижения,
+	втТаблицаРегистраРазвернутая.Номенклатура КАК Номенклатура,
+	втТаблицаРегистраРазвернутая.Характеристика КАК Характеристика,
+	втТаблицаРегистраРазвернутая.Серия КАК Серия,
+	втТаблицаРегистраРазвернутая.ОтгруженоКоличество - втТаблицаРегистраРазвернутая.ОформленоПоВозвратамКоличество - втТаблицаРегистраРазвернутая.СписаноДоППСКоличество  + втТаблицаРегистраРазвернутая.ОприходованоДоППСКоличество КАК ОтгруженоКоличество,
+	втТаблицаРегистраРазвернутая.ОтгруженоСумма - втТаблицаРегистраРазвернутая.ОформленоПоВозвратамСумма - втТаблицаРегистраРазвернутая.СписаноДоППССумма + втТаблицаРегистраРазвернутая.ОприходованоДоППССумма КАК ОтгруженоСумма,
+	втТаблицаРегистраРазвернутая.ОтгруженоСуммаНДС - втТаблицаРегистраРазвернутая.ОформленоПоВозвратамСуммаНДС - втТаблицаРегистраРазвернутая.СписаноДоППССуммаНДС + втТаблицаРегистраРазвернутая.ОприходованоДоППССуммаНДС КАК ОтгруженоСуммаНДС,
+	втТаблицаРегистраРазвернутая.ОформленоКоличество + втТаблицаРегистраРазвернутая.СкорректированоКоличество КАК РеализованоКоличество,
+	втТаблицаРегистраРазвернутая.ОформленоСумма + втТаблицаРегистраРазвернутая.СкорректированоСумма КАК РеализованоСумма,
+	втТаблицаРегистраРазвернутая.ОформленоСуммаНДС + втТаблицаРегистраРазвернутая.СкорректированоСуммаНДС КАК РеализованоСуммаНДС,
+	втТаблицаРегистраРазвернутая.ОформленоСчетовФактурКоличество КАК ОформленоСчетовФактурКоличество,
+	втТаблицаРегистраРазвернутая.ОформленоСчетовФактурСумма КАК ОформленоСчетовФактурСумма,
+	втТаблицаРегистраРазвернутая.ОформленоСчетовФактурСуммаНДС КАК ОформленоСчетовФактурСуммаНДС
+ИЗ
+	втТаблицаРегистраРазвернутая КАК втТаблицаРегистраРазвернутая</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ОтгруженоКоличество</dataPath>
+		<expression>Сумма(ОтгруженоКоличество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтгруженоСумма</dataPath>
+		<expression>Сумма(ОтгруженоСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтгруженоСуммаНДС</dataPath>
+		<expression>Сумма(ОтгруженоСуммаНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОформленоСчетовФактурКоличество</dataPath>
+		<expression>Сумма(ОформленоСчетовФактурКоличество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОформленоСчетовФактурСумма</dataPath>
+		<expression>Сумма(ОформленоСчетовФактурСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОформленоСчетовФактурСуммаНДС</dataPath>
+		<expression>Сумма(ОформленоСчетовФактурСуммаНДС)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РеализованоКоличество</dataPath>
+		<expression>Сумма(РеализованоКоличество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РеализованоСумма</dataPath>
+		<expression>Сумма(РеализованоСумма)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РеализованоСуммаНДС</dataPath>
+		<expression>Сумма(РеализованоСуммаНДС)</expression>
+	</totalField>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>МассивРаспоряжений</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Массив распоряжений</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ПервичныйДокумент</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЗаявкаНаВозвратТоваровОтКлиента</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.КорректировкаРеализации</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЗаказКлиента</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ОтгрузкаТоваровКлиенту</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Документы отгрузки</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отгружено</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтгруженоКоличество</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Количество</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтгруженоСумма</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтгруженоСуммаНДС</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма НДС</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реализовано</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РеализованоКоличество</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Количество</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РеализованоСумма</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РеализованоСуммаНДС</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма НДС</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оформлено счетов-фактур</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОформленоСчетовФактурКоличество</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Количество</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОформленоСчетовФактурСумма</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОформленоСчетовФактурСуммаНДС</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма НДС</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МассивРаспоряжений</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Распоряжение</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ДокументДвижения</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>ДокументДвижения.Дата</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Номенклатура</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Характеристика</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Серия</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

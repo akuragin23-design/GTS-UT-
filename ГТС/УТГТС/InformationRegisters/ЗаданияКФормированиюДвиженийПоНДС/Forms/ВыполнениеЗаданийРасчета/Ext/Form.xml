@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗапуститьРасчетНДС" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗапуститьРасчетНДС</CommandName>
+				<ExtendedTooltip name="ФормаЗапуститьРасчетНДСРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Организация" id="3">
+			<DataPath>Организация</DataPath>
+			<ContextMenu name="КонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="РасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<InputField name="Период" id="6">
+			<DataPath>Период</DataPath>
+			<ContextMenu name="ПолеКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ПолеРасширеннаяПодсказка" id="8"/>
+		</InputField>
+		<LabelDecoration name="Описание" id="9">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;b&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;Период&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;нужно&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;выбирать&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;кратным&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;месяцу.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;
+&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;
+&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;Запустить&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;расчет&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;НДС&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;выполняет&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;операцию&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;закрытия&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;месяца&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;"Формирование&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; движений&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;по&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;НДС&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;"&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;по&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;всем&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;заданиям&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;из&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;регистра&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;по&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;указанной&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;организации&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;по&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;конец&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial, Verdana, sans-serif&gt;&lt;fontsize 10&gt;&lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;периода.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="11"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Организация" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗапуститьРасчетНДС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить расчет НДС</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗапуститьРасчетНДС</Action>
+		</Command>
+	</Commands>
+</Form>

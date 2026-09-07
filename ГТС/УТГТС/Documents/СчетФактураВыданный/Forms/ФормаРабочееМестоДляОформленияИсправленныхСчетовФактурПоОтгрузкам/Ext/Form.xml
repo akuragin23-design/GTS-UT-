@@ -1,0 +1,748 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Оформление исправленных/корректировочных счетов-фактур по отгрузкам клиентам</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СтраницаКОформлениюБыстрыеОтборы" id="124">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрые отборы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страница к оформлению быстрые отборы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СтраницаКОформлениюБыстрыеОтборыРасширеннаяПодсказка" id="125"/>
+			<ChildItems>
+				<InputField name="Организация" id="129">
+					<DataPath>Организация</DataPath>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="131"/>
+					<Events>
+						<Event name="OnChange">ОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Контрагент" id="126">
+					<DataPath>Контрагент</DataPath>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="128"/>
+					<Events>
+						<Event name="OnChange">КонтрагентПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСчетаФактурыКОформлению" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа счета фактуры к оформлению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа счета фактуры к оформлению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСчетаФактурыКОформлениюРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Table name="РаспоряженияНаОформленияСчетовФактур" id="55">
+					<Representation>Tree</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<InitialTreeView>ExpandAllLevels</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>РаспоряженияНаОформленияСчетовФактур</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+					</CommandSet>
+					<ContextMenu name="РаспоряженияНаОформленияСчетовФактурКонтекстноеМеню" id="56"/>
+					<AutoCommandBar name="РаспоряженияНаОформленияСчетовФактурКоманднаяПанель" id="57">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ФормаОформитьИсправленныйСчетФактуру" id="49">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОформитьИсправленныйСчетФактуру</CommandName>
+								<ExtendedTooltip name="ФормаОформитьИсправленныйСчетФактуруРасширеннаяПодсказка" id="50"/>
+							</Button>
+							<Button name="ФормаОформитьКорректировочныйСчетФактуру" id="51">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОформитьКорректировочныйСчетФактуру</CommandName>
+								<ExtendedTooltip name="ФормаОформитьКорректировочныйСчетФактуруРасширеннаяПодсказка" id="52"/>
+							</Button>
+							<Button name="ФормаДокументыОтгрузки" id="53">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДокументыОтгрузки</CommandName>
+								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="ФормаДокументыОтгрузкиРасширеннаяПодсказка" id="54"/>
+							</Button>
+							<Button name="РаспоряженияНаОформленияСчетовФактурОбновить" id="141">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.Обновить</CommandName>
+								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурОбновитьРасширеннаяПодсказка" id="142"/>
+							</Button>
+							<Button name="РаспоряженияНаОформленияСчетовФактурИзменитьФорму" id="149">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+								<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурИзменитьФормуРасширеннаяПодсказка" id="150"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурРасширеннаяПодсказка" id="58"/>
+					<SearchStringAddition name="РаспоряженияНаОформленияСчетовФактурСтрокаПоиска" id="59">
+						<AdditionSource>
+							<Item>РаспоряженияНаОформленияСчетовФактур</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСтрокаПоискаКонтекстноеМеню" id="60"/>
+						<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСтрокаПоискаРасширеннаяПодсказка" id="61"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РаспоряженияНаОформленияСчетовФактурСостояниеПросмотра" id="62">
+						<AdditionSource>
+							<Item>РаспоряженияНаОформленияСчетовФактур</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСостояниеПросмотраКонтекстноеМеню" id="63"/>
+						<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСостояниеПросмотраРасширеннаяПодсказка" id="64"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РаспоряженияНаОформленияСчетовФактурУправлениеПоиском" id="65">
+						<AdditionSource>
+							<Item>РаспоряженияНаОформленияСчетовФактур</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РаспоряженияНаОформленияСчетовФактурУправлениеПоискомКонтекстноеМеню" id="66"/>
+						<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурУправлениеПоискомРасширеннаяПодсказка" id="67"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">РаспоряженияНаОформленияСчетовФактурВыбор</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="РаспоряженияНаОформленияСчетовФактурРаспоряжение" id="98">
+							<DataPath>РаспоряженияНаОформленияСчетовФактур.Распоряжение</DataPath>
+							<ContextMenu name="РаспоряженияНаОформленияСчетовФактурРаспоряжениеКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурРаспоряжениеРасширеннаяПодсказка" id="100"/>
+						</LabelField>
+						<InputField name="РаспоряженияНаОформленияСчетовФактурКонтрагент" id="146">
+							<DataPath>РаспоряженияНаОформленияСчетовФактур.Контрагент</DataPath>
+							<ContextMenu name="РаспоряженияНаОформленияСчетовФактурКонтрагентКонтекстноеМеню" id="147"/>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурКонтрагентРасширеннаяПодсказка" id="148"/>
+						</InputField>
+						<InputField name="РаспоряженияНаОформленияСчетовФактурОрганизация" id="143">
+							<DataPath>РаспоряженияНаОформленияСчетовФактур.Организация</DataPath>
+							<ContextMenu name="РаспоряженияНаОформленияСчетовФактурОрганизацияКонтекстноеМеню" id="144"/>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурОрганизацияРасширеннаяПодсказка" id="145"/>
+						</InputField>
+						<LabelField name="РаспоряженияНаОформленияСчетовФактурНоменклатура" id="92">
+							<DataPath>РаспоряженияНаОформленияСчетовФактур.Номенклатура</DataPath>
+							<ContextMenu name="РаспоряженияНаОформленияСчетовФактурНоменклатураКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурНоменклатураРасширеннаяПодсказка" id="94"/>
+						</LabelField>
+						<LabelField name="РаспоряженияНаОформленияСчетовФактурХарактеристика" id="113">
+							<DataPath>РаспоряженияНаОформленияСчетовФактур.Характеристика</DataPath>
+							<ContextMenu name="РаспоряженияНаОформленияСчетовФактурХарактеристикаКонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурХарактеристикаРасширеннаяПодсказка" id="115"/>
+						</LabelField>
+						<InputField name="РаспоряженияНаОформленияСчетовФактурКодСтроки" id="151">
+							<DataPath>РаспоряженияНаОформленияСчетовФактур.КодСтроки</DataPath>
+							<ContextMenu name="РаспоряженияНаОформленияСчетовФактурКодСтрокиКонтекстноеМеню" id="152"/>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурКодСтрокиРасширеннаяПодсказка" id="153"/>
+						</InputField>
+						<ColumnGroup name="РаспоряженияНаОформленияСчетовФактурГруппаОтгружено" id="116">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отгружено</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Распоряжения на оформления счетов фактур группа отгружено</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурГруппаОтгруженоРасширеннаяПодсказка" id="117"/>
+							<ChildItems>
+								<LabelField name="РаспоряженияНаОформленияСчетовФактурКоличествоОтгружено" id="77">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.КоличествоОтгружено</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество</v8:content>
+										</v8:item>
+									</Title>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурКоличествоОтгруженоКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурКоличествоОтгруженоРасширеннаяПодсказка" id="79"/>
+								</LabelField>
+								<LabelField name="РаспоряженияНаОформленияСчетовФактурСуммаОтгружено" id="104">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.СуммаОтгружено</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма</v8:content>
+										</v8:item>
+									</Title>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСуммаОтгруженоКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСуммаОтгруженоРасширеннаяПодсказка" id="106"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="РаспоряженияНаОформленияСчетовФактурГруппаОтраженоВСчетахФактурах" id="118">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отражено в счетах-фактурах</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Распоряжения на оформления счетов фактур группа отражено в счетах фактурах</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурГруппаОтраженоВСчетахФактурахРасширеннаяПодсказка" id="119"/>
+							<ChildItems>
+								<LabelField name="РаспоряженияНаОформленияСчетовФактурКоличествоОформлено" id="80">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.КоличествоОформлено</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество</v8:content>
+										</v8:item>
+									</Title>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурКоличествоОформленоКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурКоличествоОформленоРасширеннаяПодсказка" id="82"/>
+								</LabelField>
+								<LabelField name="РаспоряженияНаОформленияСчетовФактурСуммаОформлено" id="107">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.СуммаОформлено</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма</v8:content>
+										</v8:item>
+									</Title>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСуммаОформленоКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСуммаОформленоРасширеннаяПодсказка" id="109"/>
+								</LabelField>
+								<InputField name="РаспоряженияНаОформленияСчетовФактурСуммаНДСОформлено" id="132">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.СуммаНДСОформлено</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСуммаНДСОформленоКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСуммаНДСОформленоРасширеннаяПодсказка" id="134"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="РаспоряженияНаОформленияСчетовФактурГруппаРеализовано" id="120">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реализовано</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Распоряжения на оформления счетов фактур группа реализовано</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурГруппаРеализованоРасширеннаяПодсказка" id="121"/>
+							<ChildItems>
+								<LabelField name="РаспоряженияНаОформленияСчетовФактурКоличествоРеализовано" id="83">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.КоличествоРеализовано</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество</v8:content>
+										</v8:item>
+									</Title>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурКоличествоРеализованоКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурКоличествоРеализованоРасширеннаяПодсказка" id="85"/>
+								</LabelField>
+								<LabelField name="РаспоряженияНаОформленияСчетовФактурСуммаРеализовано" id="110">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.СуммаРеализовано</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма</v8:content>
+										</v8:item>
+									</Title>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСуммаРеализованоКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСуммаРеализованоРасширеннаяПодсказка" id="112"/>
+								</LabelField>
+								<InputField name="РаспоряженияНаОформленияСчетовФактурСуммаНДСРеализовано" id="135">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.СуммаНДСРеализовано</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСуммаНДСРеализованоКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСуммаНДСРеализованоРасширеннаяПодсказка" id="137"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="РаспоряженияНаОформленияСчетовФактурГруппаКОтражениюВСчетахФактурах" id="122">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>К отражению в счетах-фактурах</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Распоряжения на оформления счетов фактур группа к отражению в счетах фактурах</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowInHeader>true</ShowInHeader>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурГруппаКОтражениюВСчетахФактурахРасширеннаяПодсказка" id="123"/>
+							<ChildItems>
+								<LabelField name="РаспоряженияНаОформленияСчетовФактурКоличествоКОформлению" id="74">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.КоличествоКОформлению</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Количество</v8:content>
+										</v8:item>
+									</Title>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурКоличествоКОформлениюКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурКоличествоКОформлениюРасширеннаяПодсказка" id="76"/>
+								</LabelField>
+								<LabelField name="РаспоряженияНаОформленияСчетовФактурСуммаКОформлению" id="101">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.СуммаКОформлению</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сумма</v8:content>
+										</v8:item>
+									</Title>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСуммаКОформлениюКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСуммаКОформлениюРасширеннаяПодсказка" id="103"/>
+								</LabelField>
+								<InputField name="РаспоряженияНаОформленияСчетовФактурСуммаНДСКОформлению" id="138">
+									<DataPath>РаспоряженияНаОформленияСчетовФактур.СуммаНДСКОформлению</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+									<Width>10</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РаспоряженияНаОформленияСчетовФактурСуммаНДСКОформлениюКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="РаспоряженияНаОформленияСчетовФактурСуммаНДСКОформлениюРасширеннаяПодсказка" id="140"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="РаспоряженияНаОформленияСчетовФактур" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распоряжения на оформления счетов фактур</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Распоряжение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распоряжение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказКлиента</v8:Type>
+						<v8:Type>cfg:DocumentRef.ОтгрузкаТоваровКлиенту</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоКОформлению" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаКОформлению" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="КоличествоРеализовано" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаРеализовано" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="КоличествоОтгружено" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОтгружено" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="КоличествоОформлено" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СуммаОформлено" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="СуммаНДСРеализовано" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма НДС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="СуммаНДСОформлено" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма НДС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="СуммаНДСКОформлению" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма НДС</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Организация" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Контрагент" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КодСтроки" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Организация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Контрагент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Месяц" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьПодключаемоеОборудование" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать подключаемое оборудование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Распоряжение" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Распоряжение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДокументыОтгрузки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документы отгрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьДокументыПоРаспоряжению</Action>
+		</Command>
+		<Command name="ОформитьИсправленныйСчетФактуру" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить исправленный счет-фактуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить исправленный счет-фактуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьИсправленныйСчетФактуру</Action>
+		</Command>
+		<Command name="ОформитьКорректировочныйСчетФактуру" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить корректировочный счет-фактуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить корректировочный счет-фактуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьКорректировочныйСчетФактуру</Action>
+		</Command>
+		<Command name="Обновить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Запрос</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДилерскийСегмент</dataPath>
+			<field>ДилерскийСегмент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дилерский сегмент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МаркетинговыйСегмент</dataPath>
+			<field>МаркетинговыйСегмент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маркетинговый сегмент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОборотныйСегмент</dataPath>
+			<field>ОборотныйСегмент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборотный сегмент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СегментПоЧастотеЗаказов</dataPath>
+			<field>СегментПоЧастотеЗаказов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сегмент по частоте заказов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Партнер</dataPath>
+			<field>Партнер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Партнер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Менеджер</dataPath>
+			<field>Менеджер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Менеджер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регион</dataPath>
+			<field>Регион</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регион</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СегментНоменклатуры</dataPath>
+			<field>СегментНоменклатуры</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сегмент номенклатуры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АналитикаУчетаНоменклатуры</dataPath>
+			<field>АналитикаУчетаНоменклатуры</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АналитикаУчетаПоПартнерам</dataPath>
+			<field>АналитикаУчетаПоПартнерам</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЗапасов</dataPath>
+			<field>ВидЗапасов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказКлиента</dataPath>
+			<field>ЗаказКлиента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЗапасов</dataPath>
+			<field>ТипЗапасов</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьПродажиПоСегменту</dataPath>
+			<field>ЕстьПродажиПоСегменту</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть продажи по сегменту</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Почта</dataPath>
+			<field>Почта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>E-mail</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Телефон</dataPath>
+			<field>Телефон</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефон</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактноеЛицо</dataPath>
+			<field>КонтактноеЛицо</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контактное лицо</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	Сегменты.Номенклатура,
+	Сегменты.Характеристика,
+	ИСТИНА КАК ИспользуетсяОтборПоСегментуНоменклатуры,
+	Сегменты.Сегмент КАК СегментНоменклатуры
+ПОМЕСТИТЬ ОтборПоСегментуНоменклатуры
+ИЗ
+	РегистрСведений.НоменклатураСегмента КАК Сегменты
+{ГДЕ
+	Сегменты.Сегмент.* КАК СегментНоменклатуры,
+	Сегменты.Номенклатура.* КАК Номенклатура,
+	Сегменты.Характеристика.* КАК Характеристика}
+
+ИНДЕКСИРОВАТЬ ПО
+	Сегменты.Номенклатура,
+	Сегменты.Характеристика,
+	ИспользуетсяОтборПоСегментуНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Партнеры.Ссылка КАК Партнер,
+	Партнеры.ОсновнойМенеджер КАК Менеджер,
+	Партнеры.БизнесРегион КАК Регион,
+	МАКСИМУМ(КонтактныеЛица.Лицо) КАК КонтактноеЛицо,
+	МАКСИМУМ(КИ1.Представление) КАК Почта,
+	МАКСИМУМ(КИ2.Представление) КАК Телефон,
+	Сегменты.Подразделение КАК Подразделение,
+	Сегменты.ДилерскийСегмент,
+	Сегменты.МаркетинговыйСегмент,
+	Сегменты.ОборотныйСегмент,
+	Сегменты.СегментПоЧастотеЗаказов,
+	ВыручкаИСебестоимостьПродажОбороты.ЕстьПродажиПоСегменту,
+	ВыручкаИСебестоимостьПродажОбороты.Номенклатура,
+	ВыручкаИСебестоимостьПродажОбороты.СегментНоменклатуры
+ИЗ
+	Справочник.Партнеры КАК Партнеры
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ап_СегментацияСгрупированные.Партнер КАК Партнер,
+			ап_СегментацияСгрупированные.Подразделение КАК Подразделение,
+			МАКСИМУМ(ап_СегментацияСгрупированные.ДилерскийСегмент) КАК ДилерскийСегмент,
+			МАКСИМУМ(ап_СегментацияСгрупированные.МаркетинговыйСегмент) КАК МаркетинговыйСегмент,
+			МАКСИМУМ(ап_СегментацияСгрупированные.ОборотныйСегмент) КАК ОборотныйСегмент,
+			МАКСИМУМ(ап_СегментацияСгрупированные.СегментПоЧастотеЗаказов) КАК СегментПоЧастотеЗаказов
+		ИЗ
+			(ВЫБРАТЬ
+				ап_СегментацияДетализация.Партнер КАК Партнер,
+				ап_СегментацияДетализация.Подразделение КАК Подразделение,
+				ВЫБОР
+					КОГДА ап_СегментацияДетализация.Сегмент В ИЕРАРХИИ (ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ДилерскийСегмент))
+						ТОГДА ВЫБОР
+								КОГДА &amp;РсДилерскийСегмент
+									ТОГДА ап_СегментацияДетализация.Сегмент
+								ИНАЧЕ ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ПустаяСсылка)
+							КОНЕЦ
+					ИНАЧЕ ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ПустаяСсылка)
+				КОНЕЦ КАК ДилерскийСегмент,
+				ВЫБОР
+					КОГДА ап_СегментацияДетализация.Сегмент В ИЕРАРХИИ (ЗНАЧЕНИЕ(Справочник.сег_Сегменты.МаркетинговыйСегмент))
+						ТОГДА ВЫБОР
+								КОГДА &amp;РсМаркетинговыйСегмент
+									ТОГДА ап_СегментацияДетализация.Сегмент
+								ИНАЧЕ ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ПустаяСсылка)
+							КОНЕЦ
+					ИНАЧЕ ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ПустаяСсылка)
+				КОНЕЦ КАК МаркетинговыйСегмент,
+				ВЫБОР
+					КОГДА ап_СегментацияДетализация.Сегмент В ИЕРАРХИИ (ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ОборотныйСегмент))
+						ТОГДА ВЫБОР
+								КОГДА &amp;РсОборотныйСегмент
+									ТОГДА ап_СегментацияДетализация.Сегмент
+								ИНАЧЕ ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ПустаяСсылка)
+							КОНЕЦ
+					ИНАЧЕ ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ПустаяСсылка)
+				КОНЕЦ КАК ОборотныйСегмент,
+				ВЫБОР
+					КОГДА ап_СегментацияДетализация.Сегмент В ИЕРАРХИИ (ЗНАЧЕНИЕ(Справочник.сег_Сегменты.СегментПоЧастотеЗаказов))
+						ТОГДА ВЫБОР
+								КОГДА &amp;РсСегментПоЧастотеЗаказов
+									ТОГДА ап_СегментацияДетализация.Сегмент
+								ИНАЧЕ ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ПустаяСсылка)
+							КОНЕЦ
+					ИНАЧЕ ЗНАЧЕНИЕ(Справочник.сег_Сегменты.ПустаяСсылка)
+				КОНЕЦ КАК СегментПоЧастотеЗаказов
+			ИЗ
+				РегистрСведений.сег_СегментацияКонтрагентов.СрезПоследних КАК ап_СегментацияДетализация) КАК ап_СегментацияСгрупированные
+		
+		СГРУППИРОВАТЬ ПО
+			ап_СегментацияСгрупированные.Партнер,
+			ап_СегментацияСгрупированные.Подразделение) КАК Сегменты
+		ПО (Сегменты.Партнер = Партнеры.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КонтактныеЛицаПартнеров.Владелец КАК Владелец,
+			КонтактныеЛицаПартнеров.Ссылка КАК Лицо
+		ИЗ
+			Справочник.КонтактныеЛицаПартнеров КАК КонтактныеЛицаПартнеров) КАК КонтактныеЛица
+		ПО (КонтактныеЛица.Владелец = Партнеры.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			Выручка.АналитикаУчетаПоПартнерам.Партнер КАК Партнер,
+			ИСТИНА КАК ЕстьПродажиПоСегменту,
+			ВЫБОР
+				КОГДА &amp;ИспользуетсяОтборПоСегментуНоменклатуры = ИСТИНА
+					ТОГДА Выручка.АналитикаУчетаНоменклатуры.Номенклатура
+				ИНАЧЕ NULL
+			КОНЕЦ КАК Номенклатура,
+			ВЫБОР
+				КОГДА &amp;ИспользуетсяОтборПоСегментуНоменклатуры = ИСТИНА
+					ТОГДА ОтборПоСегментуНоменклатуры.СегментНоменклатуры
+				ИНАЧЕ NULL
+			КОНЕЦ КАК СегментНоменклатуры
+		ИЗ
+			РегистрНакопления.ВыручкаИСебестоимостьПродаж.Обороты КАК Выручка
+				ЛЕВОЕ СОЕДИНЕНИЕ ОтборПоСегментуНоменклатуры КАК ОтборПоСегментуНоменклатуры
+				ПО Выручка.АналитикаУчетаНоменклатуры.Номенклатура = ОтборПоСегментуНоменклатуры.Номенклатура
+		{ГДЕ
+			((Выручка.АналитикаУчетаНоменклатуры.Номенклатура, Выручка.АналитикаУчетаНоменклатуры.Характеристика) В
+					(ВЫБРАТЬ
+						ОтборПоСегментуНоменклатуры.Номенклатура,
+						ОтборПоСегментуНоменклатуры.Характеристика
+					ИЗ
+						ОтборПоСегментуНоменклатуры
+					ГДЕ
+						ОтборПоСегментуНоменклатуры.ИспользуетсяОтборПоСегментуНоменклатуры = &amp;ИспользуетсяОтборПоСегментуНоменклатуры))}) КАК ВыручкаИСебестоимостьПродажОбороты
+		ПО Партнеры.Ссылка = ВыручкаИСебестоимостьПродажОбороты.Партнер
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КИ.Ссылка КАК Ссылка,
+			КИ.Представление КАК Представление
+		ИЗ
+			Справочник.Партнеры.КонтактнаяИнформация КАК КИ
+		ГДЕ
+			КИ.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.АдресЭлектроннойПочты)
+			И КИ.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.EmailПартнера)) КАК КИ1
+		ПО Партнеры.Ссылка = КИ1.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			КИ.Ссылка КАК Ссылка,
+			КИ.Представление КАК Представление
+		ИЗ
+			Справочник.Партнеры.КонтактнаяИнформация КАК КИ
+		ГДЕ
+			КИ.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.Телефон)
+			И КИ.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ТелефонПартнера)) КАК КИ2
+		ПО Партнеры.Ссылка = КИ2.Ссылка
+{ГДЕ
+	(ВЫБОР
+			КОГДА &amp;ИспользуетсяОтборПоСегментуНоменклатуры
+				ТОГДА ВыручкаИСебестоимостьПродажОбороты.ЕстьПродажиПоСегменту
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ)}
+
+СГРУППИРОВАТЬ ПО
+	Партнеры.Ссылка,
+	Партнеры.ОсновнойМенеджер,
+	Партнеры.БизнесРегион,
+	Сегменты.Подразделение,
+	Сегменты.ДилерскийСегмент,
+	Сегменты.МаркетинговыйСегмент,
+	Сегменты.ОборотныйСегмент,
+	Сегменты.СегментПоЧастотеЗаказов,
+	ВыручкаИСебестоимостьПродажОбороты.ЕстьПродажиПоСегменту,
+	ВыручкаИСебестоимостьПродажОбороты.Номенклатура,
+	ВыручкаИСебестоимостьПродажОбороты.СегментНоменклатуры</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ИспользуетсяОтборПоСегментуНоменклатуры</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Используется отбор по сегменту номенклатуры</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>РсДилерскийСегмент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Рс-дилерский сегмент</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>РсМаркетинговыйСегмент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Рс-маркетинговый сегмент</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>РсОборотныйСегмент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Рс-оборотный сегмент</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>РсСегментПоЧастотеЗаказов</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Рс-сегмент по частоте заказов</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Почта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДилерскийСегмент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонтактноеЛицо</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МаркетинговыйСегмент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Менеджер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОборотныйСегмент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Партнер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Регион</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СегментПоЧастотеЗаказов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Телефон</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>6f5b50ae-a514-4415-9117-02691361404e</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ДилерскийСегмент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>a745d7df-f1f5-47c5-baeb-ede70a500f92</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">МаркетинговыйСегмент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>298a2cfe-4f51-4ce1-95f3-08fbe12b637c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СегментПоЧастотеЗаказов</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>cc8b685a-ea8b-4f0a-b464-e08eb15335f7</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ОборотныйСегмент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>bcfcaa78-09b2-4093-957d-a0aaf5a6e9ae</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Регион</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>4871c3d1-94cc-44ff-b3fc-e7a792cd6b34</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Партнер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>6a85aacd-df3d-4d70-8f71-89df4b788598</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Менеджер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>cd64ebf9-23af-49f4-897a-9074dbb2624c</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СегментНоменклатуры</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>fca47948-b20f-424f-ada4-9e06a00feec2</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>ff1e2890-27a3-40cb-89f0-176ea9cb61e4</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>6bc7171b-5f93-4b3a-b095-46801778dc10</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ИспользуетсяОтборПоСегментуНоменклатуры</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>22dd45be-3b1e-44c2-a0c8-7954dd8b7453</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РсДилерскийСегмент</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>9c8496b8-6998-4f55-b59a-14c0195a6af6</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Выводить Дилерский сегмент</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РсМаркетинговыйСегмент</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>63ef1b40-21aa-4b97-afbd-a52bd1654116</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Выводить маркетинговый сегмент</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РсОборотныйСегмент</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>e2394c66-0027-43ba-942c-226cf5b03777</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="xs:string">Выводить Оборотный сегмент</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Партнер</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Партнер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КонтактноеЛицо</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Телефон</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Почта</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Подразделение</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДилерскийСегмент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>МаркетинговыйСегмент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СегментПоЧастотеЗаказов</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОборотныйСегмент</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Регион</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Менеджер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СегментНоменклатуры</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

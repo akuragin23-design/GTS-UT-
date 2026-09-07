@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SettingsStorage>SettingsStorage.ХранилищеВариантовОтчетов</SettingsStorage>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="СписокИзменитьФорму" id="64">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<ExtendedTooltip name="СписокИзменитьФормуРасширеннаяПодсказка" id="69"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="61">
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<InputField name="ВидыРаботСервиса" id="59">
+					<DataPath>ВидыРаботСервиса</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ContextMenu name="ВидыРаботСервисаКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ВидыРаботСервисаРасширеннаяПодсказка" id="66"/>
+					<Events>
+						<Event name="OnChange">ВидыРаботСервисаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СтатусыСервисныхЗаданий" id="57">
+					<DataPath>СтатусыСервисныхЗаданий</DataPath>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="СтатусыСервисныхЗаданийКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="СтатусыСервисныхЗаданийРасширеннаяПодсказка" id="67"/>
+					<Events>
+						<Event name="OnChange">СтатусыСервисныхЗаданийПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Менеджер1" id="62">
+					<DataPath>Менеджер</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Менеджер</v8:content>
+						</v8:item>
+					</Title>
+					<Width>20</Width>
+					<ContextMenu name="Менеджер1КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="Менеджер1РасширеннаяПодсказка" id="68"/>
+					<Events>
+						<Event name="OnChange">Менеджер1ПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="8">
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="10">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="70"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="71">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="72"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="73"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="74">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="75"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="76"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="77">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="78"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="79"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Дата1" id="11">
+					<DataPath>Список.Date</DataPath>
+					<ContextMenu name="Дата1КонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="Дата1РасширеннаяПодсказка" id="80"/>
+				</LabelField>
+				<LabelField name="Номер1" id="13">
+					<DataPath>Список.Number</DataPath>
+					<ContextMenu name="Номер1КонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="Номер1РасширеннаяПодсказка" id="81"/>
+				</LabelField>
+				<LabelField name="ДатаЗавершенияРабот" id="106">
+					<DataPath>Список.ДатаЗавершенияРабот</DataPath>
+					<ContextMenu name="ДатаЗавершенияРаботКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ДатаЗавершенияРаботРасширеннаяПодсказка" id="108"/>
+				</LabelField>
+				<LabelField name="ВидРаботы" id="15">
+					<DataPath>Список.ВидРаботы</DataPath>
+					<ContextMenu name="ВидРаботыКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="ВидРаботыРасширеннаяПодсказка" id="82"/>
+				</LabelField>
+				<LabelField name="ВидРемонтаОбслуживания" id="103">
+					<DataPath>Список.ВидРемонтаОбслуживания</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид ремонта/ТО</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВидРемонтаОбслуживанияКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="ВидРемонтаОбслуживанияРасширеннаяПодсказка" id="105"/>
+				</LabelField>
+				<LabelField name="МестоВыполненияРабот" id="109">
+					<DataPath>Список.МестоВыполненияРабот</DataPath>
+					<ContextMenu name="МестоВыполненияРаботКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="МестоВыполненияРаботРасширеннаяПодсказка" id="111"/>
+				</LabelField>
+				<LabelField name="Контрагент" id="17">
+					<DataPath>Список.Контрагент</DataPath>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="83"/>
+				</LabelField>
+				<LabelField name="Контакты" id="19">
+					<DataPath>Список.Контакты</DataPath>
+					<ContextMenu name="КонтактыКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="КонтактыРасширеннаяПодсказка" id="84"/>
+				</LabelField>
+				<LabelField name="ПричинаОбращения" id="21">
+					<DataPath>Список.ПричинаОбращения</DataPath>
+					<ContextMenu name="ПричинаОбращенияКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ПричинаОбращенияРасширеннаяПодсказка" id="85"/>
+				</LabelField>
+				<LabelField name="ДатаВыдачи" id="23">
+					<DataPath>Список.ДатаВыдачи</DataPath>
+					<ContextMenu name="ДатаВыдачиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДатаВыдачиРасширеннаяПодсказка" id="86"/>
+				</LabelField>
+				<LabelField name="ЗатраченноеВремя" id="25">
+					<DataPath>Список.ЗатраченноеВремя</DataPath>
+					<ContextMenu name="ЗатраченноеВремяКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ЗатраченноеВремяРасширеннаяПодсказка" id="87"/>
+				</LabelField>
+				<LabelField name="ВремяНаДорогу" id="27">
+					<DataPath>Список.ВремяНаДорогу</DataPath>
+					<ContextMenu name="ВремяНаДорогуКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ВремяНаДорогуРасширеннаяПодсказка" id="88"/>
+				</LabelField>
+				<LabelField name="Комментарий" id="29">
+					<DataPath>Список.Комментарий</DataPath>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="89"/>
+				</LabelField>
+				<LabelField name="ДокументОснование" id="31">
+					<DataPath>Список.ДокументОснование</DataPath>
+					<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ДокументОснованиеРасширеннаяПодсказка" id="90"/>
+				</LabelField>
+				<CheckBoxField name="НаличиеГарантии" id="33">
+					<DataPath>Список.НаличиеГарантии</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НаличиеГарантииКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="НаличиеГарантииРасширеннаяПодсказка" id="91"/>
+				</CheckBoxField>
+				<LabelField name="Менеджер" id="35">
+					<DataPath>Список.Менеджер</DataPath>
+					<ContextMenu name="МенеджерКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="92"/>
+				</LabelField>
+				<LabelField name="Партнер" id="37">
+					<DataPath>Список.Партнер</DataPath>
+					<ContextMenu name="ПартнерКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="93"/>
+				</LabelField>
+				<LabelField name="Склад" id="39">
+					<DataPath>Список.Склад</DataPath>
+					<ContextMenu name="СкладКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="94"/>
+				</LabelField>
+				<LabelField name="ДатаПлановойГотовности" id="41">
+					<DataPath>Список.ДатаПлановойГотовности</DataPath>
+					<ContextMenu name="ДатаПлановойГотовностиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДатаПлановойГотовностиРасширеннаяПодсказка" id="95"/>
+				</LabelField>
+				<LabelField name="КомментарийМенеджера" id="43">
+					<DataPath>Список.КомментарийМенеджера</DataPath>
+					<ContextMenu name="КомментарийМенеджераКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="КомментарийМенеджераРасширеннаяПодсказка" id="96"/>
+				</LabelField>
+				<LabelField name="МенеджерСервис" id="45">
+					<DataPath>Список.МенеджерСервис</DataPath>
+					<ContextMenu name="МенеджерСервисКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="МенеджерСервисРасширеннаяПодсказка" id="97"/>
+				</LabelField>
+				<LabelField name="ДатаИВремяОтправкиЗадания" id="47">
+					<DataPath>Список.ДатаИВремяОтправкиЗадания</DataPath>
+					<ContextMenu name="ДатаИВремяОтправкиЗаданияКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ДатаИВремяОтправкиЗаданияРасширеннаяПодсказка" id="98"/>
+				</LabelField>
+				<LabelField name="СтатусЗаданияСервису" id="49">
+					<DataPath>Список.СтатусЗаданияСервису</DataPath>
+					<ContextMenu name="СтатусЗаданияСервисуКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="СтатусЗаданияСервисуРасширеннаяПодсказка" id="99"/>
+				</LabelField>
+				<LabelField name="ДатаПолученияСервисом" id="51">
+					<DataPath>Список.ДатаПолученияСервисом</DataPath>
+					<ContextMenu name="ДатаПолученияСервисомКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ДатаПолученияСервисомРасширеннаяПодсказка" id="100"/>
+				</LabelField>
+				<LabelField name="ДатаПланируемойГотовности" id="53">
+					<DataPath>Список.ДатаПланируемойГотовности</DataPath>
+					<ContextMenu name="ДатаПланируемойГотовностиКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ДатаПланируемойГотовностиРасширеннаяПодсказка" id="101"/>
+				</LabelField>
+				<LabelField name="ДатаВремяГотовности" id="55">
+					<DataPath>Список.ДатаВремяГотовности</DataPath>
+					<ContextMenu name="ДатаВремяГотовностиКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ДатаВремяГотовностиРасширеннаяПодсказка" id="102"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ОперацииОтделаСервиса</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СтатусыСервисныхЗаданий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы сервисных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусыЗаданийСервиса</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидыРаботСервиса" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды работ сервиса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыРаботСервиса</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Менеджер" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Менеджер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

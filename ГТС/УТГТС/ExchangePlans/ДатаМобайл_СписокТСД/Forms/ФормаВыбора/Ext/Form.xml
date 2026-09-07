@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>ТСД</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<ChoiceMode>true</ChoiceMode>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="8"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="грКодДокументов" id="41">
+					<ExtendedTooltip name="грКодДокументовРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<LabelField name="Код" id="20">
+							<DataPath>Список.Код</DataPath>
+							<ContextMenu name="КодКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="22"/>
+						</LabelField>
+						<LabelField name="Документов" id="29">
+							<DataPath>Список.Документов</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Незавершенных документов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДокументовКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ДокументовРасширеннаяПодсказка" id="31"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="грНаименованиеПользователь" id="43">
+					<ExtendedTooltip name="грНаименованиеПользовательРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<LabelField name="Наименование" id="23">
+							<DataPath>Список.Наименование</DataPath>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="25"/>
+						</LabelField>
+						<LabelField name="ТекущийПользователь" id="26">
+							<DataPath>Список.ТекущийПользователь</DataPath>
+							<ContextMenu name="ТекущийПользовательКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ТекущийПользовательРасширеннаяПодсказка" id="28"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="грДатаАвторизацииДатаЗагрузки" id="45">
+					<ExtendedTooltip name="грДатаАвторизацииДатаЗагрузкиРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<LabelField name="ДатаПоследнейАвторизацииПользователя" id="32">
+							<DataPath>Список.ДатаПоследнейАвторизацииПользователя</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Последняя авторизация</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДатаПоследнейАвторизацииПользователяКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="ДатаПоследнейАвторизацииПользователяРасширеннаяПодсказка" id="34"/>
+						</LabelField>
+						<LabelField name="ДатаПоследнейЗагрузкиСправочников" id="35">
+							<DataPath>Список.ДатаПоследнейЗагрузкиСправочников</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Последняя загрузка справочников</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДатаПоследнейЗагрузкиСправочниковКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ДатаПоследнейЗагрузкиСправочниковРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="Описание" id="38">
+					<DataPath>Список.Описание</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="40"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ДатаМобайл_ДокументыТСД.ТСД КАК ТСД,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ДатаМобайл_ДокументыТСД.Ссылка) КАК Документов
+ПОМЕСТИТЬ ДанныеДокументов
+ИЗ
+	Справочник.ДатаМобайл_ДокументыТСД КАК ДатаМобайл_ДокументыТСД
+ГДЕ
+	НЕ ДатаМобайл_ДокументыТСД.ТСД = ЗНАЧЕНИЕ(ПланОбмена.ДатаМобайл_СписокТСД.ПустаяСсылка)
+	И ДатаМобайл_ДокументыТСД.ДатаЗавершения = ДАТАВРЕМЯ(1, 1, 1)
+	И НЕ ДатаМобайл_ДокументыТСД.ПометкаУдаления
+
+СГРУППИРОВАТЬ ПО
+	ДатаМобайл_ДокументыТСД.ТСД
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПланОбменаДатаМобайл_СписокТСД.Ссылка КАК Ссылка,
+	ПланОбменаДатаМобайл_СписокТСД.Код КАК Код,
+	ПланОбменаДатаМобайл_СписокТСД.Наименование КАК Наименование,
+	ЗначенияУзлаОбменаТСД1.Значение КАК ТекущийПользователь,
+	ЗначенияУзлаОбменаТСД2.Значение КАК ДатаПоследнейЗагрузкиСправочников,
+	ЗначенияУзлаОбменаТСД3.Значение КАК ДатаПоследнейАвторизацииПользователя,
+	ДанныеДокументов.Документов КАК Документов,
+	ПланОбменаДатаМобайл_СписокТСД.Описание
+ИЗ
+	ПланОбмена.ДатаМобайл_СписокТСД КАК ПланОбменаДатаМобайл_СписокТСД
+		ЛЕВОЕ СОЕДИНЕНИЕ ДанныеДокументов КАК ДанныеДокументов
+		ПО ПланОбменаДатаМобайл_СписокТСД.Ссылка = ДанныеДокументов.ТСД
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатаМобайл_ЗначенияУзлаОбменаТСД КАК ЗначенияУзлаОбменаТСД1
+		ПО ПланОбменаДатаМобайл_СписокТСД.Ссылка = ЗначенияУзлаОбменаТСД1.ТСД
+			И (ЗначенияУзлаОбменаТСД1.ТипЗначения = "ТекущийПользователь")
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатаМобайл_ЗначенияУзлаОбменаТСД КАК ЗначенияУзлаОбменаТСД2
+		ПО ПланОбменаДатаМобайл_СписокТСД.Ссылка = ЗначенияУзлаОбменаТСД2.ТСД
+			И (ЗначенияУзлаОбменаТСД2.ТипЗначения = "ДатаПоследнейЗагрузкиСправочников")
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатаМобайл_ЗначенияУзлаОбменаТСД КАК ЗначенияУзлаОбменаТСД3
+		ПО ПланОбменаДатаМобайл_СписокТСД.Ссылка = ЗначенияУзлаОбменаТСД3.ТСД
+			И (ЗначенияУзлаОбменаТСД3.ТипЗначения = "ДатаПоследнейАвторизацииПользователя")</QueryText>
+				<MainTable>ExchangePlan.ДатаМобайл_СписокТСД</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,508 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.data-mobile.ru">
+	<objectType name="DMArt">
+		<property name="DMArtName" type="xs:string"/>
+		<property name="DMArtID" type="xs:string"/>
+		<property name="DMArtAttr1" type="xs:string"/>
+		<property name="DMArtAttr2" type="xs:string"/>
+		<property name="DMArtPrice" type="xs:decimal"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMBarcodeList" type="d3p1:DMBarcode" lowerBound="0" upperBound="-1"/>
+		<property name="DMisMark" type="xs:boolean"/>
+		<property name="DMArtAttr3" type="xs:string"/>
+		<property name="DMArtAttr4" type="xs:string"/>
+		<property name="DMArtAttr5" type="xs:string"/>
+		<property name="DMArtAttr6" type="xs:string"/>
+		<property name="DMArtAttr7" type="xs:string"/>
+		<property name="DMArtAttr8" type="xs:string"/>
+		<property name="DMArtAttr9" type="xs:string"/>
+		<property name="DMArtAttr10" type="xs:string"/>
+		<property name="DMUseSN" type="xs:boolean"/>
+		<property name="DMWeightTask" type="xs:decimal" lowerBound="0" nillable="true"/>
+		<property name="DMMarkType" type="xs:int" lowerBound="0" nillable="true" default="0"/>
+		<property name="DMMeasureType" type="xs:int" lowerBound="0" nillable="true"/>
+		<property name="DMRest" type="xs:decimal" lowerBound="0" nillable="true"/>
+		<property name="Params" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMArtList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMArt" type="d3p1:DMArt" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMArtQueryInfo">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMArtQueryItem" type="d3p1:DMArtQueryItem" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMArtQueryItem">
+		<property name="DMArtName" type="xs:string"/>
+		<property name="DMArtID" type="xs:string"/>
+		<property name="DMArtPrice" type="xs:decimal"/>
+		<property name="DMArtAttr1" type="xs:string"/>
+		<property name="DMArtAttr2" type="xs:string"/>
+		<property name="DMMeasureName" type="xs:string"/>
+		<property name="DMMeasureK" type="xs:decimal"/>
+		<property name="DMTaskQnt" type="xs:decimal"/>
+		<property name="DMLimitQnt" type="xs:decimal"/>
+		<property name="DMArtAttr3" type="xs:string"/>
+		<property name="DMArtAttr4" type="xs:string"/>
+		<property name="DMArtAttr5" type="xs:string"/>
+		<property name="DMArtAttr6" type="xs:string"/>
+		<property name="DMArtAttr7" type="xs:string"/>
+		<property name="DMArtAttr8" type="xs:string"/>
+		<property name="DMArtAttr9" type="xs:string"/>
+		<property name="DMArtAttr10" type="xs:string"/>
+		<property name="DMUseSN" type="xs:boolean"/>
+		<property name="DMBarcodeUseSN" type="xs:int"/>
+		<property name="DMSN" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMMarkType" type="xs:int" lowerBound="0" nillable="true" default="0"/>
+		<property name="DMMeasureType" type="xs:int" lowerBound="0" nillable="true"/>
+		<property name="Params" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMBarcode">
+		<property name="DMBarcode" type="xs:string"/>
+		<property name="DMMeasureName" type="xs:string"/>
+		<property name="DMMeasureK" type="xs:decimal"/>
+		<property name="DMisMark" type="xs:boolean"/>
+		<property name="DMUseSN" type="xs:int"/>
+	</objectType>
+	<objectType name="DMCell">
+		<property name="DMCellName" type="xs:string"/>
+		<property name="DMBarcode" type="xs:string"/>
+		<property name="DMTaskQnt" type="xs:decimal"/>
+		<property name="DMLimitQnt" type="xs:decimal"/>
+	</objectType>
+	<objectType name="DMCellList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMCell" type="d3p1:DMCell" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMClient">
+		<property name="DMName" type="xs:string"/>
+		<property name="DMClientID" type="xs:string"/>
+		<property name="DMBarcode" type="xs:string"/>
+	</objectType>
+	<objectType name="DMClientList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMClient" type="d3p1:DMClient" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMDocHead">
+		<property name="DMDocOutID" type="xs:string"/>
+		<property name="DMNumber" type="xs:string"/>
+		<property name="DMDate" type="xs:dateTime"/>
+		<property name="DMComment" type="xs:string"/>
+		<property name="DMBarcode" type="xs:string"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMTemplate" type="d3p1:DMTemplate" nillable="true"/>
+		<property name="DMisMark" type="xs:boolean"/>
+		<property name="DMisLoaded" type="xs:boolean"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMClient" type="d3p1:DMClient"/>
+		<property name="DMClientSelectDate" type="xs:dateTime" nillable="true"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMWarehouse" type="d3p1:DMWarehouse" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMWarehouse2" type="d3p1:DMWarehouse" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMSteps" type="d3p1:DMDocStepList" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Params" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMDocList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMDocHead" type="d3p1:DMDocHead" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMDocRec" ordered="true">
+		<property name="DMBarcode" type="xs:string"/>
+		<property name="DMSN" type="xs:string"/>
+		<property name="DMCell" type="xs:string"/>
+		<property name="DMArtID" type="xs:string"/>
+		<property name="DMPackID" type="xs:string"/>
+		<property name="DMQuant" type="xs:decimal"/>
+		<property name="DMArtName" type="xs:string"/>
+		<property name="DMLimit" type="xs:decimal"/>
+		<property name="DMPDFBarcode" type="xs:string" nillable="true"/>
+		<property name="DMDataMatrixBarcode" type="xs:string" nillable="true"/>
+		<property name="DMDateBottling" type="xs:string" nillable="true"/>
+		<property name="DMRowID" type="xs:int" nillable="true"/>
+		<property name="DMDecodedPDFBarcode" type="xs:string"/>
+		<property name="DMBlankA" type="xs:string"/>
+		<property name="DMBlankB" type="xs:string"/>
+		<property name="DMRFIDTagID" type="xs:string"/>
+		<property name="DMChangedPrice" type="xs:decimal" nillable="true"/>
+		<property name="DMBoxPackID" type="xs:string"/>
+		<property name="DMTable" type="xs:string"/>
+		<property name="DMArtEgaisID" type="xs:string"/>
+		<property name="DMPrice" type="xs:decimal" nillable="true"/>
+		<property name="DMDate" type="xs:dateTime" nillable="true"/>
+		<property name="DMGroupId" type="xs:string" nillable="true"/>
+		<property name="DMWeightTask" type="xs:decimal" lowerBound="0" nillable="true"/>
+		<property name="DMPalletID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Params" type="xs:string"/>
+	</objectType>
+	<objectType name="DMDocRows">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMDocRow" type="d3p1:DMDocRec" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMNewDataStruct">
+		<property name="DMClearArts" type="xs:boolean"/>
+		<property name="DMClearCells" type="xs:boolean"/>
+		<property name="DMClearTemplates" type="xs:boolean"/>
+		<property name="DMClearUsers" type="xs:boolean"/>
+		<property name="DMClearDocs" type="xs:boolean"/>
+		<property name="DMClearClients" type="xs:boolean"/>
+		<property name="DMClearUnits" type="xs:boolean"/>
+		<property name="DMClearEgaisArts" type="xs:boolean"/>
+		<property name="DMClearWarehouses" type="xs:boolean"/>
+		<property name="DMClearEgaisMarks" type="xs:boolean"/>
+		<property name="DMClearSteps" type="xs:boolean"/>
+		<property name="DMNewArts" type="xs:boolean"/>
+		<property name="DMNewCells" type="xs:boolean"/>
+		<property name="DMNewTemplates" type="xs:boolean"/>
+		<property name="DMNewUsers" type="xs:boolean"/>
+		<property name="DMNewDocs" type="xs:boolean"/>
+		<property name="DMNewClients" type="xs:boolean"/>
+		<property name="DMNewUnits" type="xs:boolean"/>
+		<property name="DMNewEgaisArts" type="xs:boolean"/>
+		<property name="DMClearTemplates_EGAIS" type="xs:boolean"/>
+		<property name="DMNewTemplates_EGAIS" type="xs:boolean"/>
+		<property name="DMNewWarehouses" type="xs:boolean"/>
+		<property name="DMNewEgaisMarks" type="xs:boolean"/>
+		<property name="DMNewSteps" type="xs:boolean"/>
+		<property name="DMNeedCheckFTP" type="xs:boolean"/>
+		<property name="DMNewBarcodeTemplates" type="xs:boolean"/>
+		<property name="DMClearBarcodeTemplates" type="xs:boolean"/>
+		<property name="DMNewArtMarks" type="xs:boolean"/>
+		<property name="DMClearArtMarks" type="xs:boolean"/>
+		<property name="DMNewSNTypes" type="xs:boolean"/>
+		<property name="DMClearSNTypes" type="xs:boolean"/>
+	</objectType>
+	<objectType name="DMTemplate">
+		<property name="DMTemplateID" type="xs:int"/>
+		<property name="DMIsMark" type="xs:boolean"/>
+		<property name="DMTemplateName" type="xs:string"/>
+		<property name="DMEnableNew" type="xs:boolean"/>
+		<property name="DMLoadArtsWithRows" type="xs:boolean"/>
+		<property name="DMLoadRowsOnOpen" type="xs:boolean"/>
+		<property name="DMDisableManualChangeClient" type="xs:boolean"/>
+		<property name="DMDisableReaderChangeClient" type="xs:boolean"/>
+		<property name="DMreaderTrack1Use" type="xs:boolean"/>
+		<property name="DMreaderTrack2Use" type="xs:boolean"/>
+		<property name="DMreaderTrack3Use" type="xs:boolean"/>
+		<property name="DMnewPackOnWS" type="xs:int"/>
+		<property name="DMuseBCTemplates" type="xs:boolean"/>
+		<property name="DMuseSelectLogAsInsertTask" type="xs:boolean"/>
+		<property name="DMonUploadIncorrectDoc" type="xs:int"/>
+		<property name="DMonUploadIncorrectDocOption" type="xs:int" lowerBound="0" nillable="true"/>
+		<property name="DMuseArt_Insert" type="xs:boolean"/>
+		<property name="DMuseAllBarcode" type="xs:boolean"/>
+		<property name="DMuse_Select" type="xs:boolean"/>
+		<property name="DMonArtScan_Select" type="xs:int"/>
+		<property name="DMonTaskQty_Select" type="xs:int"/>
+		<property name="DMonLimitQty_Select" type="xs:int"/>
+		<property name="DMuseCell_Select" type="xs:int"/>
+		<property name="DMuseSN_Select" type="xs:int"/>
+		<property name="DMusePack_Select" type="xs:int"/>
+		<property name="DMuseCellOnTask_Select" type="xs:boolean"/>
+		<property name="DMuseSNOnTask_Select" type="xs:boolean"/>
+		<property name="DMquantEnable_Select" type="xs:boolean"/>
+		<property name="DMenterToCommit_Select" type="xs:boolean"/>
+		<property name="DMwriteRecordToWS_Select" type="xs:boolean"/>
+		<property name="DMuse_Insert" type="xs:boolean"/>
+		<property name="DMonArtScan_Insert" type="xs:int"/>
+		<property name="DMonTaskQty_Insert" type="xs:int"/>
+		<property name="DMonLimitQty_Insert" type="xs:int"/>
+		<property name="DMuseCell_Insert" type="xs:int"/>
+		<property name="DMuseSN_Insert" type="xs:int"/>
+		<property name="DMusePack_Insert" type="xs:int"/>
+		<property name="DMuseCellOnTask_Insert" type="xs:boolean"/>
+		<property name="DMuseSNOnTask_Insert" type="xs:boolean"/>
+		<property name="DMquantEnable_Insert" type="xs:boolean"/>
+		<property name="DMenterToCommit_Insert" type="xs:boolean"/>
+		<property name="DMwriteRecordToWS_Insert" type="xs:boolean"/>
+		<property name="DMPrintLabel_Insert" type="xs:int"/>
+		<property name="DMPrintLabel_Select" type="xs:int"/>
+		<property name="DMonNewArt" type="xs:int"/>
+		<property name="DMoneArtReplaceMode" type="xs:boolean"/>
+		<property name="DMuniquebarcodedoc" type="xs:boolean"/>
+		<property name="DMMultiDoc" type="xs:boolean"/>
+		<property name="DMMultiDocSound" type="xs:boolean"/>
+		<property name="DMMultiDocTimeout" type="xs:int"/>
+		<property name="DMEnterCell_Select" type="xs:int"/>
+		<property name="DMEnterCell_Insert" type="xs:int"/>
+		<property name="UsePhotofixationSelect" type="xs:boolean"/>
+		<property name="UsePhotofixationInsert" type="xs:boolean"/>
+		<property name="DMUseEgais" type="xs:boolean"/>
+		<property name="DMUseDataMatrixBarcode" type="xs:int"/>
+		<property name="DMUseDateBottling" type="xs:boolean"/>
+		<property name="DMEnterPDF417Barcode" type="xs:int"/>
+		<property name="DMEgaisCompare" type="xs:boolean"/>
+		<property name="DMUseBlankA" type="xs:int"/>
+		<property name="DMUseBlankB" type="xs:int"/>
+		<property name="DMGetCellsListFromServerSelect" type="xs:boolean"/>
+		<property name="DMGetCellsListFromServerInsert" type="xs:boolean"/>
+		<property name="DMUseCheckMark" type="xs:boolean"/>
+		<property name="DMIsUniqueSNSelect" type="xs:boolean"/>
+		<property name="DMIsUniqueSNInsert" type="xs:boolean"/>
+		<property name="DMEgaisVersion" type="xs:int"/>
+		<property name="DMGetDateBottlingFromServer" type="xs:boolean"/>
+		<property name="DMUseOnlineArtsCatalog" type="xs:boolean"/>
+		<property name="DMAlertNewDoc" type="xs:boolean" lowerBound="0"/>
+		<property name="DMUseMark" type="xs:boolean" lowerBound="0"/>
+		<property name="DMNoScanArts" type="xs:boolean" lowerBound="0"/>
+		<property name="DMNoScanCells" type="xs:boolean" lowerBound="0"/>
+		<property name="DMSNType_Insert" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMSNRules_Insert" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMSNNotNull_Insert" type="xs:boolean" lowerBound="0"/>
+		<property name="DMFullyCell_Insert" type="xs:boolean" lowerBound="0"/>
+		<property name="DMSNNotNull_Select" type="xs:boolean" lowerBound="0"/>
+		<property name="DMFullyCell_Select" type="xs:boolean" lowerBound="0"/>
+		<property name="DMSNType_Select" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMSNRules_Select" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMDeleteLeftTaskQty" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMViewSettings" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMLabels" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMMark_NeedEanScan" type="xs:int" lowerBound="0" nillable="true"/>
+		<property name="DMMark_EanIsGtin" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMMark_AdditionalSearchByMC" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMFormsWithArt" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMUserbooksOnline" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMMark_IsOnlyMarkArt" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMMark_ArtMarkEnterType" type="xs:int" lowerBound="0" nillable="true"/>
+		<property name="DMCanPackSkip" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Params" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMTemplateList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMTemplate" type="d3p1:DMTemplate" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMUser">
+		<property name="DMLogin" type="xs:string"/>
+		<property name="DMName" type="xs:string"/>
+		<property name="DMPass" type="xs:string"/>
+		<property name="DMIsAdmin" type="xs:boolean"/>
+		<property name="DMEnableEditArts" type="xs:boolean"/>
+	</objectType>
+	<objectType name="DMUserList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMUser" type="d3p1:DMUser" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMArtQueryItemUPL">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMArt" type="d3p1:DMArt"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMBarcode" type="d3p1:DMBarcode"/>
+		<property name="DMQty" type="xs:decimal"/>
+		<property name="DMSN" type="xs:string"/>
+		<property name="DMCell" type="xs:string"/>
+		<property name="DMPack" type="xs:string"/>
+		<property name="DMBoxPack" type="xs:string"/>
+		<property name="DMPDFBarcode" type="xs:string"/>
+		<property name="DMDecodedPDFBarcode" type="xs:string"/>
+		<property name="DMDataMatrixBarcode" type="xs:string"/>
+		<property name="DMDateBottling" type="xs:string"/>
+		<property name="DMBlankA" type="xs:string"/>
+		<property name="DMBlankB" type="xs:string"/>
+		<property name="DMIsCompared" type="xs:boolean" nillable="true"/>
+		<property name="DMPallet" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMMeasureType" type="xs:int" lowerBound="0" nillable="true"/>
+		<property name="Params" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMArtQueryInfoUPL">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMArtQueryItemUPL" type="d3p1:DMArtQueryItemUPL" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMUnit">
+		<property name="DMUnitID" type="xs:string"/>
+		<property name="DMUnitName" type="xs:string"/>
+	</objectType>
+	<objectType name="DMUnitList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMUnit" type="d3p1:DMUnit" lowerBound="1" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMArtEgaisList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMArtEgais" type="d3p1:DMArtEgais" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMArtEgais">
+		<property name="ArtID" type="xs:string"/>
+		<property name="ArtName" type="xs:string"/>
+		<property name="Barcode" type="xs:string"/>
+		<property name="Manufacturer" type="xs:string"/>
+		<property name="Importer" type="xs:string"/>
+		<property name="Capacity" type="xs:decimal"/>
+		<property name="PercentAlco" type="xs:decimal"/>
+		<property name="TypeAlco" type="xs:string"/>
+		<property name="DMIsCompared" type="xs:boolean"/>
+		<property name="DMBoxKF" type="xs:decimal"/>
+		<property name="DMIsNeedBlankA" type="xs:boolean"/>
+		<property name="DMIsNeedBlankB" type="xs:boolean"/>
+		<property name="DMIsNeedDateBottling" type="xs:boolean"/>
+		<property name="DMSN" type="xs:string"/>
+	</objectType>
+	<objectType name="DMMarkEgaisList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMMarkEgais" type="d3p1:DMMarkEgais" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMMarkEgais">
+		<property name="ArtID" type="xs:string"/>
+		<property name="Mark" type="xs:string"/>
+		<property name="Box" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Pallet" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMAttrs">
+		<property name="DMAttr1" type="xs:string"/>
+		<property name="DMAttr2" type="xs:string"/>
+		<property name="DMAttr3" type="xs:string"/>
+		<property name="DMAttr4" type="xs:string"/>
+		<property name="DMAttr5" type="xs:string"/>
+		<property name="DMAttr6" type="xs:string"/>
+		<property name="DMAttr7" type="xs:string"/>
+		<property name="DMAttr8" type="xs:string"/>
+		<property name="DMAttr9" type="xs:string"/>
+		<property name="DMAttr10" type="xs:string"/>
+	</objectType>
+	<objectType name="DMDocsIDs">
+		<property name="DMDocID" type="xs:string" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMTemplateList_EGAIS">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMTemplate_EGAIS" type="d3p1:DMTemplate_EGAIS" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMTemplate_EGAIS">
+		<property name="DMTemplateID" type="xs:int"/>
+		<property name="DMIsMark" type="xs:boolean"/>
+		<property name="DMTemplateName" type="xs:string"/>
+		<property name="DMEnableNew" type="xs:boolean"/>
+		<property name="DMLoadArtsWithRows" type="xs:boolean"/>
+		<property name="DMLoadRowsOnOpen" type="xs:boolean"/>
+		<property name="DMnewPackOnWS" type="xs:boolean"/>
+		<property name="DMonUploadIncorrectDoc" type="xs:int"/>
+		<property name="DMonArtScan_Select" type="xs:int"/>
+		<property name="DMonTaskQty_Select" type="xs:int"/>
+		<property name="DMuseSN_Select" type="xs:int"/>
+		<property name="DMusePack_Select" type="xs:int"/>
+		<property name="DMwriteRecordToWS_Select" type="xs:boolean"/>
+		<property name="DMisNeedScanPDF" type="xs:boolean"/>
+		<property name="DMisNeedScanDataMatrix" type="xs:boolean"/>
+		<property name="DMisNeedScanEAN" type="xs:boolean"/>
+		<property name="DMisNeedScanBox" type="xs:boolean"/>
+		<property name="DMonTaskType" type="xs:int"/>
+		<property name="DMonNewArt" type="xs:int"/>
+		<property name="DMMultiDoc" type="xs:boolean" nillable="true"/>
+		<property name="DMMultiDocSound" type="xs:boolean" nillable="true"/>
+		<property name="DMMultiDocTimeout" type="xs:int" nillable="true"/>
+		<property name="DMquantEnable_Select" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMenterToCommit_Select" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMEgaisCompare" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="DMSelectiveCheck" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMDocHead_EGAIS">
+		<property name="DMDocOutID" type="xs:string"/>
+		<property name="DMNumber" type="xs:string"/>
+		<property name="DMDate" type="xs:dateTime"/>
+		<property name="DMComment" type="xs:string"/>
+		<property name="DMBarcode" type="xs:string"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMTemplate_EGAIS" type="d3p1:DMTemplate_EGAIS" nillable="true"/>
+		<property name="DMisMark" type="xs:boolean"/>
+		<property name="DMisLoaded" type="xs:boolean"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMClient" type="d3p1:DMClient"/>
+		<property name="DMClientSelectDate" type="xs:dateTime" nillable="true"/>
+		<property name="DMisQuarantine" type="xs:boolean"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMWarehouse" type="d3p1:DMWarehouse" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMDocList_EGAIS">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMDocHead_EGAIS" type="d3p1:DMDocHead_EGAIS" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMImageList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMImage" type="d3p1:DMImage" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMImage">
+		<property name="DMArtID" type="xs:string"/>
+		<property name="DMImageID" type="xs:string"/>
+		<property name="DMImageData" type="xs:base64Binary"/>
+	</objectType>
+	<objectType name="DMDateList">
+		<property name="DMDate" type="xs:dateTime" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMLog">
+		<property name="DMLogDate" type="xs:dateTime"/>
+		<property name="DMLogType" type="xs:int"/>
+		<property name="DMLogData" type="xs:string"/>
+		<property name="DMLogUserName" type="xs:string"/>
+		<property name="DMDocOutID" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMDocRec" type="d3p1:DMDocRec" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMLogList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMLog" type="d3p1:DMLog" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMWarehouse">
+		<property name="DMWarehouseName" type="xs:string"/>
+		<property name="DMWarehouseID" type="xs:string"/>
+	</objectType>
+	<objectType name="DMWarehouseList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMWarehouse" type="d3p1:DMWarehouse" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMCellArtList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMCellArt" type="d3p1:DMCellArt" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMCellArt">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMArt" type="d3p1:DMArt"/>
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMBarcode" type="d3p1:DMBarcode"/>
+		<property name="DMQty" type="xs:decimal"/>
+		<property name="DMSN" type="xs:string"/>
+		<property name="DMCell" type="xs:string"/>
+		<property name="DMPack" type="xs:string"/>
+		<property name="DMBoxPack" type="xs:string"/>
+		<property name="DMPallet" type="xs:string"/>
+		<property name="DMPDFBarcode" type="xs:string"/>
+		<property name="DMDecodedPDFBarcode" type="xs:string"/>
+		<property name="DMDataMatrixBarcode" type="xs:string"/>
+		<property name="DMDateBottling" type="xs:string"/>
+		<property name="DMBlankA" type="xs:string"/>
+		<property name="DMBlankB" type="xs:string"/>
+		<property name="DMIsCompared" type="xs:boolean" nillable="true"/>
+		<property name="DMMeasureType" type="xs:int" lowerBound="0" nillable="true"/>
+		<property name="Params" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMDocStep">
+		<property name="DMDocId" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMTemplateId" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="DMStepId" type="xs:string"/>
+		<property name="DMSortNumber" type="xs:string"/>
+		<property name="DMCheckFill" type="xs:boolean"/>
+		<property name="DMIsDocArg" type="xs:int"/>
+	</objectType>
+	<objectType name="DMStep">
+		<property name="DMStepId" type="xs:string"/>
+		<property name="DMStepName" type="xs:string"/>
+		<property name="DMDataType" type="xs:string"/>
+		<property name="DMParentId" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMUserBookElement">
+		<property name="DMUserBookElementId" type="xs:string"/>
+		<property name="DMUserBookElementName" type="xs:string"/>
+		<property name="DMStepId" type="xs:string"/>
+		<property name="Barcode" type="xs:string"/>
+	</objectType>
+	<objectType name="DMDocStepList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMDocStep" type="d3p1:DMDocStep" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMStepList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMStep" type="d3p1:DMStep" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMUserBooksList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMUserBookElement" type="d3p1:DMUserBookElement" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMStepValue">
+		<property name="DMStepId" type="xs:string"/>
+		<property name="DMValue" type="xs:string"/>
+		<property name="DMDocId" type="xs:string"/>
+		<property name="DMRowId" type="xs:string"/>
+		<property name="DMArtId" type="xs:string"/>
+	</objectType>
+	<objectType name="DMStepValueList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMStepValue" type="d3p1:DMStepValue" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMMarkList">
+		<property xmlns:d3p1="http://www.data-mobile.ru" name="DMMark" type="d3p1:DMMark" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="DMMark">
+		<property name="ArtID" type="xs:string"/>
+		<property name="Mark" type="xs:string"/>
+		<property name="Box" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Pallet" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Coef" type="xs:decimal" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="DMOnEgaisArtScanResponse">
+		<property name="ArtID" type="xs:string"/>
+		<property name="ArtName" type="xs:string"/>
+		<property name="Barcode" type="xs:string"/>
+		<property name="Manufacturer" type="xs:string"/>
+		<property name="Importer" type="xs:string"/>
+		<property name="Capacity" type="xs:decimal"/>
+		<property name="PercentAlco" type="xs:decimal"/>
+		<property name="TypeAlco" type="xs:string"/>
+		<property name="DMIsCompared" type="xs:boolean"/>
+		<property name="DMBoxKF" type="xs:decimal"/>
+		<property name="DMIsNeedBlankA" type="xs:boolean"/>
+		<property name="DMIsNeedBlankB" type="xs:boolean"/>
+		<property name="DMIsNeedDateBottling" type="xs:boolean"/>
+		<property name="DMSN" type="xs:string"/>
+		<property name="DMIsRegistered" type="xs:boolean"/>
+	</objectType>
+</package>

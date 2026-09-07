@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Поиск по телефону</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="35">
+			<Height>1</Height>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<LabelDecoration name="ПоискПоТелефону" id="37">
+					<TextColor>style:ГруппаВариантовОтчетовЦвет</TextColor>
+					<Font faceName="MS Shell Dlg" height="14" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск по телефону</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПоискПоТелефонуКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ПоискПоТелефонуРасширеннаяПодсказка" id="39"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация2" id="40">
+			<Width>50</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<Font ref="sys:DefaultGUIFont" faceName="MS Shell Dlg" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ищет по номеру телефона, в том числе по частям. Рекомендуемый формат - без кода страны 7 или 8ки.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="42"/>
+		</LabelDecoration>
+		<UsualGroup name="Группа1" id="4">
+			<TitleFont ref="sys:DefaultGUIFont" faceName="MS Shell Dlg" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="16"/>
+			<ChildItems>
+				<InputField name="СтрокаПоиска" id="1">
+					<DataPath>СтрокаПоиска</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Найти</v8:content>
+						</v8:item>
+					</Title>
+					<Font ref="sys:DefaultGUIFont" faceName="MS Shell Dlg" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="СтрокаПоискаExtendedTooltip" id="17"/>
+				</InputField>
+				<Button name="Найти" id="3">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<Width>7</Width>
+					<Height>1</Height>
+					<CommandName>Form.Command.Найти</CommandName>
+					<Font faceName="MS Shell Dlg" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+					<ExtendedTooltip name="НайтиExtendedTooltip" id="18"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Результаты" id="5">
+			<Width>91</Width>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.Результаты</DataPath>
+			<Font faceName="MS Shell Dlg" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РезультатыКонтекстноеМеню" id="6"/>
+			<AutoCommandBar name="РезультатыКоманднаяПанель" id="7">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РезультатыExtendedTooltip" id="19"/>
+			<SearchStringAddition name="РезультатыSearchString" id="20">
+				<AdditionSource>
+					<Item>Результаты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РезультатыSearchStringContextMenu" id="21"/>
+				<ExtendedTooltip name="РезультатыSearchStringExtendedTooltip" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РезультатыViewStatus" id="23">
+				<AdditionSource>
+					<Item>Результаты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РезультатыViewStatusContextMenu" id="24"/>
+				<ExtendedTooltip name="РезультатыViewStatusExtendedTooltip" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РезультатыSearchControl" id="26">
+				<AdditionSource>
+					<Item>Результаты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РезультатыSearchControlContextMenu" id="27"/>
+				<ExtendedTooltip name="РезультатыSearchControlExtendedTooltip" id="28"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">РезультатыВыбор</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="РезультатыТелефон" id="10">
+					<DataPath>Объект.Результаты.Телефон</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>23</Width>
+					<Font ref="sys:DefaultGUIFont" faceName="MS Shell Dlg" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<ContextMenu name="РезультатыТелефонКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="РезультатыТелефонExtendedTooltip" id="29"/>
+				</InputField>
+				<InputField name="РезультатыТипТелефона" id="12">
+					<DataPath>Объект.Результаты.ТипТелефона</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>24</Width>
+					<ContextMenu name="РезультатыТипТелефонаКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="РезультатыТипТелефонаExtendedTooltip" id="30"/>
+				</InputField>
+				<InputField name="РезультатыВладелец" id="14">
+					<DataPath>Объект.Результаты.Владелец</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>40</Width>
+					<ChoiceButton>false</ChoiceButton>
+					<ClearButton>false</ClearButton>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<TextEdit>false</TextEdit>
+					<ChoiceListButton>false</ChoiceListButton>
+					<ContextMenu name="РезультатыВладелецКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="РезультатыВладелецExtendedTooltip" id="31"/>
+				</InputField>
+				<InputField name="РезультатыТипВладельца" id="43">
+					<DataPath>Объект.Результаты.ТипВладельца</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<Width>24</Width>
+					<ContextMenu name="РезультатыТипВладельцаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="РезультатыТипВладельцаРасширеннаяПодсказка" id="45"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПоискПоТелефону</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СтрокаПоиска" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка поиска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Найти" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьПоиск</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

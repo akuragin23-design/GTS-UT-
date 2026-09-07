@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаДействияСоСписком" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действия со списком</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа действия со списком</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДействияСоСпискомРасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<Button name="Обновить" id="53">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.Refresh</CommandName>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="54"/>
+				</Button>
+				<Button name="Найти" id="55">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.Find</CommandName>
+					<ExtendedTooltip name="НайтиРасширеннаяПодсказка" id="56"/>
+				</Button>
+				<Button name="ОтменитьПоиск" id="59">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.CancelSearch</CommandName>
+					<ExtendedTooltip name="ОтменитьПоискРасширеннаяПодсказка" id="60"/>
+				</Button>
+				<Button name="НастройкаСписка" id="61">
+					<Type>UsualButton</Type>
+					<CommandName>Form.StandardCommand.ListSettings</CommandName>
+					<ExtendedTooltip name="НастройкаСпискаРасширеннаяПодсказка" id="62"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="30"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="31">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="33"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="34">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="35"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="36"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="37">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="38"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="39"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="Selection">СписокВыбор</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="Группа2" id="29">
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<LabelField name="ДатаВремяНачала" id="16">
+							<DataPath>Список.ДатаВремяНачала</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начало</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДатаВремяНачалаКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ДатаВремяНачалаРасширеннаяПодсказка" id="41"/>
+						</LabelField>
+						<LabelField name="ДатаВремяОкончания" id="18">
+							<DataPath>Список.ДатаВремяОкончания</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Окончание</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДатаВремяОкончанияКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ДатаВремяОкончанияРасширеннаяПодсказка" id="42"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="Группа1" id="28">
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<LabelField name="НомерТелефонаС" id="10">
+							<DataPath>Список.НомерТелефонаС</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ContextMenu name="НомерТелефонаСКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="НомерТелефонаСРасширеннаяПодсказка" id="44"/>
+						</LabelField>
+						<LabelField name="НомерТелефонаНа" id="12">
+							<DataPath>Список.НомерТелефонаНа</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ContextMenu name="НомерТелефонаНаКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="НомерТелефонаНаРасширеннаяПодсказка" id="45"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<LabelField name="Продолжительность" id="14">
+					<DataPath>Список.Продолжительность</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность, сек</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПродолжительностьКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПродолжительностьРасширеннаяПодсказка" id="46"/>
+				</LabelField>
+				<LabelField name="НаправлениеЗвонка" id="20">
+					<DataPath>Список.НаправлениеЗвонка</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаправлениеЗвонкаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="НаправлениеЗвонкаРасширеннаяПодсказка" id="47"/>
+				</LabelField>
+				<LabelField name="ПутьКФайлу" id="22">
+					<DataPath>Список.ПутьКФайлу</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись разговора</v8:content>
+						</v8:item>
+					</Title>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+				<LabelField name="Партнер" id="6">
+					<DataPath>Список.Партнер</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ПартнерКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="49"/>
+				</LabelField>
+				<LabelField name="Контрагент" id="24">
+					<DataPath>Список.Контрагент</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КонтрагентКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="50"/>
+				</LabelField>
+				<LabelField name="КонтактноеЛицоПартнера" id="26">
+					<DataPath>Список.КонтактноеЛицоПартнера</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="КонтактноеЛицоПартнераКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="КонтактноеЛицоПартнераРасширеннаяПодсказка" id="51"/>
+				</LabelField>
+				<InputField name="Сделка" id="63">
+					<DataPath>Список.Сделка</DataPath>
+					<ContextMenu name="СделкаКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="СделкаРасширеннаяПодсказка" id="65"/>
+				</InputField>
+				<LabelField name="Пользователь" id="8">
+					<DataPath>Список.Пользователь</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.ПростыеЗвонки_ИсторияЗвонков</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НаправлениеЗвонка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.НаправлениеЗвонка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Входящий</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НаправлениеЗвонка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.НаправлениеЗвонка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Исходящий</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПутьКФайлу</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Список.ПутьКФайлу</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:string"/>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">auto</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="true" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Прослушать</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>

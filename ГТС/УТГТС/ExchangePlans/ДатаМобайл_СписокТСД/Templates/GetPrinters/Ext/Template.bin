@@ -1,0 +1,2 @@
+@echo off
+%SystemRoot%\System32\WindowsPowerShell\v1.0\PowerShell.exe -ExecutionPolicy ByPass -command "get-WmiObject -class Win32_printer | ft name " > %1

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<FunctionalOption uuid="9785d74f-2daa-4184-add6-ae3c223cbc54">
+		<Properties>
+			<Name>ИспользоватьПодакцизныеТовары</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать подакцизные товары</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Location>Constant.ИспользоватьПодакцизныеТовары</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>AccumulationRegister.ВыручкаИСебестоимостьПродаж.Resource.СуммаАкцизаРегл</xr:Object>
+				<xr:Object>AccumulationRegister.ВыручкаИСебестоимостьПродаж.Resource.СуммаАкцизаУпр</xr:Object>
+				<xr:Object>Document.ВозвратТоваровМеждуОрганизациями.TabularSection.ВидыЗапасов.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.ВозвратТоваровОтКлиента.Attribute.ПодразделениеПроизводства</xr:Object>
+				<xr:Object>Document.ВнутреннееПотребление.TabularSection.ВидыЗапасов.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.ВозвратТоваровМеждуОрганизациями.Attribute.ОблагаетсяАкцизом</xr:Object>
+				<xr:Object>Document.ВводОстатковТоваров.Attribute.ОблагаетсяАкцизом</xr:Object>
+				<xr:Object>Document.ВводОстатковТоваров.Attribute.ПодразделениеПроизводства</xr:Object>
+				<xr:Object>Document.ВозвратТоваровМеждуОрганизациями.Attribute.ПодразделениеПроизводства</xr:Object>
+				<xr:Object>Document.ВозвратТоваровОтКлиента.Attribute.ОблагаетсяАкцизом</xr:Object>
+				<xr:Object>Document.ВозвратТоваровОтКлиента.TabularSection.ВидыЗапасов.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.ЗаявлениеОВвозеТоваров.TabularSection.Товары.Attribute.ЕдиницаИзмеренияАкциза</xr:Object>
+				<xr:Object>Document.КорректировкаРеализации.TabularSection.ВидыЗапасовОприходование.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.КорректировкаРеализации.Attribute.ПодразделениеПроизводства</xr:Object>
+				<xr:Object>Document.ТаможеннаяДекларацияИмпорт.TabularSection.Разделы.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.ПередачаТоваровМеждуОрганизациями.TabularSection.ВидыЗапасов.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.ОприходованиеИзлишковТоваров.Attribute.ПодразделениеПроизводства</xr:Object>
+				<xr:Object>Document.КорректировкаРеализации.Attribute.ОблагаетсяАкцизом</xr:Object>
+				<xr:Object>Document.ПрочееОприходованиеТоваров.Attribute.ПодразделениеПроизводства</xr:Object>
+				<xr:Object>Document.КорректировкаРеализации.TabularSection.ВидыЗапасовСписание.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.ОприходованиеИзлишковТоваров.Attribute.ОблагаетсяАкцизом</xr:Object>
+				<xr:Object>Document.ТаможеннаяДекларацияИмпорт.TabularSection.Товары.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.ПрочееОприходованиеТоваров.Attribute.ОблагаетсяАкцизом</xr:Object>
+				<xr:Object>Document.СписаниеНедостачТоваров.TabularSection.ВидыЗапасов.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.РеализацияТоваровУслуг.TabularSection.ВидыЗапасов.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Catalog.КатегорииПодакцизныхТоваров</xr:Object>
+				<xr:Object>Catalog.ВидыЗапасов.Attribute.ПодразделениеПроизводства</xr:Object>
+				<xr:Object>Catalog.ВидыЗапасов.Attribute.ОблагаетсяАкцизом</xr:Object>
+				<xr:Object>InformationRegister.УчетнаяПолитикаФинансовогоУчета.Resource.ИмпортируетПодакцизныйТовар</xr:Object>
+				<xr:Object>InformationRegister.УчетнаяПолитикаФинансовогоУчета.Resource.ПроизводитПодакцизныйТовар</xr:Object>
+				<xr:Object>InformationRegister.КатегорииПодакцизныхТоваров</xr:Object>
+				<xr:Object>InformationRegister.СтавкиКатегорийПодакцизныхТоваров</xr:Object>
+				<xr:Object>AccumulationRegister.ДвиженияПоАкцизам</xr:Object>
+				<xr:Object>Enum.ВидыОперацийСПодакцизнымТоваром</xr:Object>
+				<xr:Object>Report.НачисленныеСуммыАкцизов</xr:Object>
+				<xr:Object>Document.СчетФактураВыданный.TabularSection.Товары.Attribute.ОблагаетсяАкцизом</xr:Object>
+				<xr:Object>Document.СчетФактураВыданный.TabularSection.Товары.Attribute.СуммаАкциза</xr:Object>
+				<xr:Object>Document.СчетФактураВыданный.TabularSection.Товары.Attribute.СуммаАкцизаУвеличение</xr:Object>
+				<xr:Object>Document.СчетФактураВыданный.TabularSection.Товары.Attribute.СуммаАкцизаУменьшение</xr:Object>
+				<xr:Object>DataProcessor.ЗаполнениеКатегорийПодакцизныхТоваров</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Партнер" id="7">
+			<DataPath>Объект.Партнер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПартнерКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Контрагент" id="10">
+			<DataPath>Объект.Контрагент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Менеджер" id="13">
+			<DataPath>Объект.Менеджер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="МенеджерКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ОсновнойСклад" id="16">
+			<DataPath>Объект.ОсновнойСклад</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ОсновнойСкладКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОсновнойСкладРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ТелефонМенеджера" id="19">
+			<DataPath>Объект.ТелефонМенеджера</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТелефонМенеджераКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ТелефонМенеджераРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ПочтаМенеджера" id="22">
+			<DataPath>Объект.ПочтаМенеджера</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПочтаМенеджераКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПочтаМенеджераРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ВидВалютнойЦены" id="37">
+			<DataPath>Объект.ВидВалютнойЦены</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВидВалютнойЦеныКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ВидВалютнойЦеныРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="Лимит" id="25">
+			<DataPath>Объект.Лимит</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЛимитКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ЛимитРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ЛимитРезерва" id="28">
+			<DataPath>Объект.ЛимитРезерва</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЛимитРезерваКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ЛимитРезерваРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="ИНН" id="31">
+			<DataPath>Объект.ИНН</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИННКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="КонтрагентЮрНаименование" id="34">
+			<DataPath>Объект.КонтрагентЮрНаименование</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КонтрагентЮрНаименованиеКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="КонтрагентЮрНаименованиеРасширеннаяПодсказка" id="36"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ASP_ЛКПКонтрагенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

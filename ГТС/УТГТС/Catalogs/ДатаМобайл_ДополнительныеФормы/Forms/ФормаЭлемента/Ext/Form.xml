@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ТипДанных" id="10">
+			<DataPath>Объект.ТипДанных</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ТипДанныхКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТипДанныхРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="StartChoice">ТипДанныхНачалоВыбора</Event>
+				<Event name="ChoiceProcessing">ТипДанныхОбработкаВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Порядок" id="13">
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ПорядокКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<Table name="Ограничения" id="16">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Ограничения</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ОграниченияКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="ОграниченияКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="ОграниченияРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="ОграниченияСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>Ограничения</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОграниченияСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ОграниченияСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ОграниченияСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>Ограничения</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ОграниченияСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ОграниченияСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ОграниченияУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>Ограничения</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ОграниченияУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ОграниченияУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ОграниченияНомерСтроки" id="29">
+					<DataPath>Объект.Ограничения.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ОграниченияНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОграниченияНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="ОграниченияЗначения" id="32">
+					<DataPath>Объект.Ограничения.Значения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+					<AutoMarkIncomplete>true</AutoMarkIncomplete>
+					<ContextMenu name="ОграниченияЗначенияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ОграниченияЗначенияРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="StartChoice">ОграниченияЗначенияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ДатаМобайл_ДополнительныеФормы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

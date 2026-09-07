@@ -1,0 +1,1301 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновная" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа основная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="135"/>
+			<ChildItems>
+				<Pages name="ГруппаСтраницы" id="107">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>TabsOnTop</PagesRepresentation>
+					<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="136"/>
+					<ChildItems>
+						<Page name="ГруппаСтраницаОсновные" id="108">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные настройки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страница основные</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ГруппаСтраницаОсновныеРасширеннаяПодсказка" id="137"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЛево" id="37">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="138"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаПоляНастройки" id="1">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройка подключения</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа поля настройки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>34</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="ГруппаПоляНастройкиРасширеннаяПодсказка" id="139"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаНастройки" id="44">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа настройки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа настройки</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="140"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНастройкиЗаголовки" id="45">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа настройки заголовки</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа настройки заголовки</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНастройкиЗаголовкиРасширеннаяПодсказка" id="141"/>
+															<ChildItems>
+																<LabelDecoration name="Декорация5" id="47">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Сервер АТС:</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="Декорация5КонтекстноеМеню" id="48"/>
+																	<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="142"/>
+																</LabelDecoration>
+																<LabelDecoration name="Декорация6" id="49">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Пароль:</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="Декорация6КонтекстноеМеню" id="50"/>
+																	<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="143"/>
+																</LabelDecoration>
+																<LabelDecoration name="Декорация7" id="51">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Состояние:</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="Декорация7КонтекстноеМеню" id="52"/>
+																	<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="144"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНастройкиЗначения" id="46">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа настройки заголовки</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа настройки заголовки</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНастройкиЗначенияРасширеннаяПодсказка" id="145"/>
+															<ChildItems>
+																<InputField name="СерверАТС" id="2">
+																	<DataPath>СерверАТС</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Сервер АТС </v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ContextMenu name="СерверАТСКонтекстноеМеню" id="3"/>
+																	<ExtendedTooltip name="СерверАТСРасширеннаяПодсказка" id="146"/>
+																	<Events>
+																		<Event name="OnChange">СерверАТСПриИзменении</Event>
+																	</Events>
+																</InputField>
+																<InputField name="Пароль" id="4">
+																	<DataPath>Пароль</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<PasswordMode>true</PasswordMode>
+																	<ContextMenu name="ПарольКонтекстноеМеню" id="5"/>
+																	<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="147"/>
+																	<Events>
+																		<Event name="OnChange">ПарольПриИзменении</Event>
+																	</Events>
+																</InputField>
+																<LabelField name="Состояние" id="6">
+																	<DataPath>Состояние</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<ContextMenu name="СостояниеКонтекстноеМеню" id="7"/>
+																	<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="148"/>
+																</LabelField>
+																<UsualGroup name="ГруппаКнопок" id="8">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа кнопок</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа кнопок</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Horizontal</Group>
+																	<Behavior>Usual</Behavior>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="149"/>
+																	<ChildItems>
+																		<Button name="Подключиться" id="9">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.Подключиться</CommandName>
+																			<ExtendedTooltip name="ПодключитьсяРасширеннаяПодсказка" id="150"/>
+																		</Button>
+																		<Button name="Отключиться" id="10">
+																			<Type>UsualButton</Type>
+																			<CommandName>Form.Command.Отключиться</CommandName>
+																			<ExtendedTooltip name="ОтключитьсяРасширеннаяПодсказка" id="151"/>
+																		</Button>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаДругиеНастройки" id="38">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Другие настройки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа другие настройки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>34</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="ГруппаДругиеНастройкиРасширеннаяПодсказка" id="152"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаГоризонтальная" id="71">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа горизонтальная</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа горизонтальная</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="153"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация10" id="73">
+															<Width>1</Width>
+															<ContextMenu name="Декорация10КонтекстноеМеню" id="74"/>
+															<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="154"/>
+														</LabelDecoration>
+														<UsualGroup name="ГруппаФлажков" id="72">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа флажков</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа флажков</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаФлажковРасширеннаяПодсказка" id="155"/>
+															<ChildItems>
+																<UsualGroup name="ГруппаФлажок1" id="57">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа флажок</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа флажок</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Height>2</Height>
+																	<Group>Horizontal</Group>
+																	<Behavior>Usual</Behavior>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаФлажок1РасширеннаяПодсказка" id="156"/>
+																	<ChildItems>
+																		<LabelDecoration name="Декорация8" id="60">
+																			<Width>32</Width>
+																			<Height>2</Height>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Создавать документ "Телефонный звонок"</v8:content>
+																				</v8:item>
+																			</Title>
+																			<VerticalAlign>Top</VerticalAlign>
+																			<ContextMenu name="Декорация8КонтекстноеМеню" id="61"/>
+																			<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="157"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="ГруппаФлажок2" id="64">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа флажок</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа флажок</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Height>2</Height>
+																	<Group>Horizontal</Group>
+																	<Behavior>Usual</Behavior>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаФлажок2РасширеннаяПодсказка" id="158"/>
+																	<ChildItems>
+																		<LabelDecoration name="НадписьПоказыватьСозданныйТелефонныйЗвонок" id="67">
+																			<Width>32</Width>
+																			<Height>2</Height>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Показывать созданный документ "Телефонный звонок"</v8:content>
+																				</v8:item>
+																			</Title>
+																			<VerticalAlign>Top</VerticalAlign>
+																			<ContextMenu name="НадписьПоказыватьСозданныйТелефонныйЗвонокКонтекстноеМеню" id="68"/>
+																			<ExtendedTooltip name="НадписьПоказыватьСозданныйТелефонныйЗвонокРасширеннаяПодсказка" id="159"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</UsualGroup>
+																<UsualGroup name="ГруппаФлажок" id="41">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа флажок</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Группа флажок</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Horizontal</Group>
+																	<Behavior>Usual</Behavior>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="ГруппаФлажокРасширеннаяПодсказка" id="160"/>
+																	<ChildItems>
+																		<LabelDecoration name="Декорация4" id="42">
+																			<Width>32</Width>
+																			<Height>2</Height>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Показывать уведомление при исходящем звонке на неизвестный номер</v8:content>
+																				</v8:item>
+																			</Title>
+																			<VerticalAlign>Top</VerticalAlign>
+																			<ContextMenu name="Декорация4КонтекстноеМеню" id="43"/>
+																			<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="161"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаОПрограмме" id="11">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>О программе</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа о программе</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>40</Width>
+									<Height>14</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="ГруппаОПрограммеРасширеннаяПодсказка" id="162"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаЛоготип" id="17">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа логотип</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа логотип</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>29</Width>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЛоготипРасширеннаяПодсказка" id="163"/>
+											<ChildItems>
+												<PictureDecoration name="ПростыеЗвонкиЛоготип" id="13">
+													<Width>2</Width>
+													<Height>1</Height>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Простые звонки логотип</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.ПростыеЗвонки_Логотип</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="ПростыеЗвонкиЛоготипКонтекстноеМеню" id="14"/>
+													<ExtendedTooltip name="ПростыеЗвонкиЛоготипРасширеннаяПодсказка" id="164"/>
+												</PictureDecoration>
+												<LabelDecoration name="ПростыеЗвонкиИмя" id="15">
+													<Width>30</Width>
+													<Height>2</Height>
+													<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Простые звонки</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Top</VerticalAlign>
+													<ContextMenu name="ПростыеЗвонкиИмяКонтекстноеМеню" id="16"/>
+													<ExtendedTooltip name="ПростыеЗвонкиИмяРасширеннаяПодсказка" id="165"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаВерсияМодуля" id="75">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа версия модуля</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа версия модуля</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВерсияМодуляРасширеннаяПодсказка" id="166"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВерсияМодуляВаша" id="76">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа версия модуля ваша</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа версия модуля ваша</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВерсияМодуляВашаРасширеннаяПодсказка" id="167"/>
+													<ChildItems>
+														<LabelDecoration name="Версия1СПодписьВаша" id="77">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>     Ваша версия модуля 1С:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Версия1СПодписьВашаКонтекстноеМеню" id="78"/>
+															<ExtendedTooltip name="Версия1СПодписьВашаРасширеннаяПодсказка" id="168"/>
+														</LabelDecoration>
+														<LabelField name="Версия1С" id="53">
+															<DataPath>Версия1С</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ContextMenu name="Версия1СКонтекстноеМеню" id="54"/>
+															<ExtendedTooltip name="Версия1СРасширеннаяПодсказка" id="169"/>
+														</LabelField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВерсияМодуляАктуальная" id="79">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа версия модуля ваша</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа версия модуля ваша</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВерсияМодуляАктуальнаяРасширеннаяПодсказка" id="170"/>
+													<ChildItems>
+														<LabelDecoration name="Версия1СПодписьАктуальная" id="80">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>     Доступно обновление:   </v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Версия1СПодписьАктуальнаяКонтекстноеМеню" id="81"/>
+															<ExtendedTooltip name="Версия1СПодписьАктуальнаяРасширеннаяПодсказка" id="171"/>
+														</LabelDecoration>
+														<LabelField name="АктуальнаяВерсия1С" id="82">
+															<DataPath>АктуальнаяВерсия1С</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<Width>4</Width>
+															<ContextMenu name="АктуальнаяВерсия1СКонтекстноеМеню" id="83"/>
+															<ExtendedTooltip name="АктуальнаяВерсия1СРасширеннаяПодсказка" id="172"/>
+														</LabelField>
+														<LabelDecoration name="Версия1ССкачать" id="84">
+															<Width>12</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Скачать</v8:content>
+																</v8:item>
+															</Title>
+															<Hyperlink>true</Hyperlink>
+															<ContextMenu name="Версия1ССкачатьКонтекстноеМеню" id="85"/>
+															<ExtendedTooltip name="Версия1ССкачатьРасширеннаяПодсказка" id="173"/>
+															<Events>
+																<Event name="Click">Версия1ССкачатьНажатие</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ВерсияМодуляУстановленаПоследняя" id="86">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>     Установлена последняя версия модуля 1С</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ВерсияМодуляУстановленаПоследняяКонтекстноеМеню" id="87"/>
+													<ExtendedTooltip name="ВерсияМодуляУстановленаПоследняяРасширеннаяПодсказка" id="174"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<LabelDecoration name="Декорация1" id="22">
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="175"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаВерсияКомпоненты" id="88">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа версия модуля</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа версия модуля</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВерсияКомпонентыРасширеннаяПодсказка" id="176"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВерсияКомпонентыВаша" id="89">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа версия модуля ваша</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа версия модуля ваша</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВерсияКомпонентыВашаРасширеннаяПодсказка" id="177"/>
+													<ChildItems>
+														<LabelDecoration name="ВерсияКомпонентыПодписьВаша" id="90">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>     Ваша версия Active X:    </v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ВерсияКомпонентыПодписьВашаКонтекстноеМеню" id="91"/>
+															<ExtendedTooltip name="ВерсияКомпонентыПодписьВашаРасширеннаяПодсказка" id="178"/>
+														</LabelDecoration>
+														<LabelField name="ВерсияActiveX" id="103">
+															<DataPath>ВерсияActiveX</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ContextMenu name="ВерсияActiveXКонтекстноеМеню" id="104"/>
+															<ExtendedTooltip name="ВерсияActiveXРасширеннаяПодсказка" id="179"/>
+														</LabelField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВерсияКомпонентыАктуальная" id="94">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа версия модуля ваша</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа версия модуля ваша</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВерсияКомпонентыАктуальнаяРасширеннаяПодсказка" id="180"/>
+													<ChildItems>
+														<LabelDecoration name="ВерсияКомпонентыПодписьАктуальная" id="95">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>     Доступно обновление:   </v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ВерсияКомпонентыПодписьАктуальнаяКонтекстноеМеню" id="96"/>
+															<ExtendedTooltip name="ВерсияКомпонентыПодписьАктуальнаяРасширеннаяПодсказка" id="181"/>
+														</LabelDecoration>
+														<LabelField name="АктуальнаяВерсияActiveX" id="105">
+															<DataPath>АктуальнаяВерсияActiveX</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ContextMenu name="АктуальнаяВерсияActiveXКонтекстноеМеню" id="106"/>
+															<ExtendedTooltip name="АктуальнаяВерсияActiveXРасширеннаяПодсказка" id="182"/>
+														</LabelField>
+														<LabelDecoration name="ВерсияКомпонентыСкачать" id="99">
+															<Width>12</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Скачать</v8:content>
+																</v8:item>
+															</Title>
+															<Hyperlink>true</Hyperlink>
+															<ContextMenu name="ВерсияКомпонентыСкачатьКонтекстноеМеню" id="100"/>
+															<ExtendedTooltip name="ВерсияКомпонентыСкачатьРасширеннаяПодсказка" id="183"/>
+															<Events>
+																<Event name="Click">ВерсияКомпонентыСкачатьНажатие</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ВерсияКомпонентыУстановленаПоследняя" id="101">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>     Установлена последняя версия Active X</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ВерсияКомпонентыУстановленаПоследняяКонтекстноеМеню" id="102"/>
+													<ExtendedTooltip name="ВерсияКомпонентыУстановленаПоследняяРасширеннаяПодсказка" id="184"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+										<LabelDecoration name="Декорация2" id="28">
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="185"/>
+										</LabelDecoration>
+										<LabelField name="Сайт" id="31">
+											<DataPath>Сайт</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>     Сайт</v8:content>
+												</v8:item>
+											</Title>
+											<Hiperlink>true</Hiperlink>
+											<TextColor>style:FormTextColor</TextColor>
+											<ContextMenu name="СайтКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="СайтРасширеннаяПодсказка" id="186"/>
+											<Events>
+												<Event name="Click">СайтНажатие</Event>
+											</Events>
+										</LabelField>
+										<LabelField name="ТехническаяПоддержка" id="33">
+											<DataPath>ТехническаяПоддержка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>     Техническая поддержка</v8:content>
+												</v8:item>
+											</Title>
+											<Hiperlink>true</Hiperlink>
+											<TextColor>style:FormTextColor</TextColor>
+											<ContextMenu name="ТехническаяПоддержкаКонтекстноеМеню" id="34"/>
+											<ExtendedTooltip name="ТехническаяПоддержкаРасширеннаяПодсказка" id="187"/>
+											<Events>
+												<Event name="Click">ТехническаяПоддержкаНажатие</Event>
+											</Events>
+										</LabelField>
+										<LabelDecoration name="Декорация3" id="35">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>     © ООО "Ведисофт", 2013</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация3КонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="188"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+						<Page name="ГруппаСтраницаДополнительные" id="109">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страница дополнительные</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаСтраницаДополнительныеРасширеннаяПодсказка" id="189"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация9" id="125">
+									<Width>70</Width>
+									<TextColor>#8B8568</TextColor>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отображение окон вызова-----------------------------------------------------------------------------------------------</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация9КонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="190"/>
+								</LabelDecoration>
+								<InputField name="ПоказыватьОкноВходящегоВызова" id="110">
+									<DataPath>ПоказыватьОкноВходящегоВызова</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      Показывать окно входящего вызова</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПоказыватьОкноВходящегоВызоваКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="ПоказыватьОкноВходящегоВызоваРасширеннаяПодсказка" id="191"/>
+									<Events>
+										<Event name="StartChoice">ДополнительнаяНастройкаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПоказыватьОкноИсходящегоВызова" id="112">
+									<DataPath>ПоказыватьОкноИсходящегоВызова</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      Показывать окно исходящего вызова</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПоказыватьОкноИсходящегоВызоваКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="ПоказыватьОкноИсходящегоВызоваРасширеннаяПодсказка" id="192"/>
+									<Events>
+										<Event name="StartChoice">ДополнительнаяНастройкаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="Декорация11" id="127">
+									<Width>70</Width>
+									<TextColor>#8B8568</TextColor>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создание документа "Телефонный звонок"----------------------------------------------------------------------</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="193"/>
+								</LabelDecoration>
+								<InputField name="СоздаватьВходящееСобытиеЗвонок" id="115">
+									<DataPath>СоздаватьВходящееСобытиеЗвонок</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      Создавать входящий документ звонок</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="СоздаватьВходящееСобытиеЗвонокКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="СоздаватьВходящееСобытиеЗвонокРасширеннаяПодсказка" id="194"/>
+									<Events>
+										<Event name="StartChoice">ДополнительнаяНастройкаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="СоздаватьИсходящееСобытиеЗвонок" id="117">
+									<DataPath>СоздаватьИсходящееСобытиеЗвонок</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      Создавать исходящий документ звонок</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="СоздаватьИсходящееСобытиеЗвонокКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="СоздаватьИсходящееСобытиеЗвонокРасширеннаяПодсказка" id="195"/>
+									<Events>
+										<Event name="StartChoice">ДополнительнаяНастройкаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ПоказыватьСозданноеСобытиеЗвонок" id="119">
+									<DataPath>ПоказыватьСозданноеСобытиеЗвонок</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      Показывать созданный документ звонок</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="ПоказыватьСозданноеСобытиеЗвонокКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="ПоказыватьСозданноеСобытиеЗвонокРасширеннаяПодсказка" id="196"/>
+									<Events>
+										<Event name="StartChoice">ДополнительнаяНастройкаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="Декорация12" id="129">
+									<Width>70</Width>
+									<TextColor>#8B8568</TextColor>
+									<Font ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Прочие-----------------------------------------------------------------------------------------------------------------------------</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация12КонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="197"/>
+								</LabelDecoration>
+								<InputField name="СохранятьИсториюЗвонков" id="121">
+									<DataPath>СохранятьИсториюЗвонков</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      Сохранять историю звонков в журнале "Простые звонки"</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="СохранятьИсториюЗвонковКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="СохранятьИсториюЗвонковРасширеннаяПодсказка" id="198"/>
+									<Events>
+										<Event name="StartChoice">ДополнительнаяНастройкаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="КоличествоПоследнихЦифрНомера" id="133">
+									<DataPath>КоличествоПоследнихЦифрНомера</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>      Количество последних цифр номера для определения звонившего</v8:content>
+										</v8:item>
+									</Title>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="КоличествоПоследнихЦифрНомераКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="КоличествоПоследнихЦифрНомераРасширеннаяПодсказка" id="199"/>
+									<Events>
+										<Event name="OnChange">КоличествоПоследнихЦифрНомераПриИзменении</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаОтображениеОконВызова" id="114">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отображение окон вызова</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отображение окон вызова</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтображениеОконВызоваРасширеннаяПодсказка" id="200"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация13" id="131">
+											<Width>1</Width>
+											<ContextMenu name="Декорация13КонтекстноеМеню" id="132"/>
+											<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="201"/>
+										</LabelDecoration>
+										<CheckBoxField name="ИспользоватьАвтоматическуюПереадресацию" id="123">
+											<DataPath>ИспользоватьАвтоматическуюПереадресацию</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ИспользоватьАвтоматическуюПереадресациюКонтекстноеМеню" id="124"/>
+											<ExtendedTooltip name="ИспользоватьАвтоматическуюПереадресациюРасширеннаяПодсказка" id="202"/>
+											<Events>
+												<Event name="OnChange">ДополнительнаяНастройкаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СерверАТС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер АТС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пароль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Состояние" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сайт" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сайт</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТехническаяПоддержка" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техническая поддержка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Версия1С" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия1 С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияActiveX" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия active X</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АктуальнаяВерсия1С" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуальная версия1 С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АктуальнаяВерсияActiveX" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуальная версия active X</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьОкноВходящегоВызова" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать окно входящего вызова</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьОкноИсходящегоВызова" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать окно исходящего вызова</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СоздаватьВходящееСобытиеЗвонок" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать входящее событие звонок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СоздаватьИсходящееСобытиеЗвонок" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создавать исходящее событие звонок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьСозданноеСобытиеЗвонок" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать созданное событие звонок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СохранятьИсториюЗвонков" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранять историю звонков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьАвтоматическуюПереадресацию" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать автоматическую переадресацию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПоследнихЦифрНомера" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество последних цифр номера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Подключиться" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Подключиться</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отключиться" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключиться</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключиться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отключиться</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

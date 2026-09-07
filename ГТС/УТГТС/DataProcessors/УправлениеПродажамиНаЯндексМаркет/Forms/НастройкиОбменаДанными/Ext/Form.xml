@@ -1,0 +1,1348 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Настройки обмена данными с  маркетплейсом Яндекс.Маркет</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСохранитьНастройки" id="634">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СохранитьНастройки</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьНастройкиРасширеннаяПодсказка" id="635"/>
+			</Button>
+			<Button name="ФормаНазад" id="371">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Назад</CommandName>
+				<ExtendedTooltip name="ФормаНазадРасширеннаяПодсказка" id="372"/>
+			</Button>
+			<Button name="ФормаДалее" id="369">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Далее</CommandName>
+				<ExtendedTooltip name="ФормаДалееРасширеннаяПодсказка" id="370"/>
+			</Button>
+			<Button name="ФормаЗакрыть" id="126">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Close</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="127"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовокГоризонтальная" id="140">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок горизонтальная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа организация горизонтальная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокГоризонтальнаяРасширеннаяПодсказка" id="141"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияЛоготип" id="16">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация логотип</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<Picture>
+						<xr:Abs>Picture.png</xr:Abs>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияЛоготипКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДекорацияЛоготипРасширеннаяПодсказка" id="18">
+						<MaxWidth>70</MaxWidth>
+					</ExtendedTooltip>
+				</PictureDecoration>
+				<UsualGroup name="Группа26" id="492">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа26РасширеннаяПодсказка" id="493"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация3" id="636">
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="637"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="638"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация28" id="489">
+							<Width>50</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Для успешной синхронизации данных о товарах, ценах и остатков товаров на складах заполните настройки интеграции</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация28КонтекстноеМеню" id="490"/>
+							<ExtendedTooltip name="Декорация28РасширеннаяПодсказка" id="491"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="265">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<Width>55</Width>
+			<Height>33</Height>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="266"/>
+			<Events>
+				<Event name="OnCurrentPageChange">СтраницыПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="СтраницаСопоставлениеДанных" id="382">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сопоставление данных и публикация товаров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница сопоставление данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСопоставлениеДанныхРасширеннаяПодсказка" id="383"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация4" id="639">
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="640"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="641"/>
+						</LabelDecoration>
+						<UsualGroup name="Группа14" id="416">
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="417"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация16" id="418">
+									<Width>2</Width>
+									<Picture>
+										<xr:Ref>CommonPicture.Этап1СинийБЭД</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация16КонтекстноеМеню" id="419"/>
+									<ExtendedTooltip name="Декорация16РасширеннаяПодсказка" id="420"/>
+								</PictureDecoration>
+								<UsualGroup name="Группа15" id="421">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="422"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация17" id="423">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Укажите источник информации о категории товара: </v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация17КонтекстноеМеню" id="424"/>
+											<ExtendedTooltip name="Декорация17РасширеннаяПодсказка" id="425"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа16" id="426">
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="427"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация18" id="428">
+													<Width>2</Width>
+													<ContextMenu name="Декорация18КонтекстноеМеню" id="429"/>
+													<ExtendedTooltip name="Декорация18РасширеннаяПодсказка" id="430"/>
+												</LabelDecoration>
+												<InputField name="ИсточникКатегории" id="431">
+													<DataPath>ИсточникКатегории</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Информация из источника категории используется для описания товара при подготовке к выгрузке на маркетплейс.</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ContextMenu name="ИсточникКатегорииКонтекстноеМеню" id="432"/>
+													<ExtendedTooltip name="ИсточникКатегорииРасширеннаяПодсказка" id="433"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа8" id="384">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="385"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация10" id="386">
+									<Visible>false</Visible>
+									<Width>2</Width>
+									<Picture>
+										<xr:Ref>CommonPicture.Этап2СинийБЭД</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация10КонтекстноеМеню" id="387"/>
+									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="388"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа23" id="470">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="Группа23РасширеннаяПодсказка" id="471"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация25" id="472">
+									<Width>2</Width>
+									<Picture>
+										<xr:Ref>CommonPicture.Этап2СинийБЭД</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация25КонтекстноеМеню" id="473"/>
+									<ExtendedTooltip name="Декорация25РасширеннаяПодсказка" id="474"/>
+								</PictureDecoration>
+								<UsualGroup name="Группа24" id="475">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа24РасширеннаяПодсказка" id="476"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация27" id="480">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройте расписание выгрузки данных товарного каталога:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация27КонтекстноеМеню" id="481"/>
+											<ExtendedTooltip name="Декорация27РасширеннаяПодсказка" id="482"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа25" id="483">
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа25РасширеннаяПодсказка" id="484"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация26" id="477">
+													<Width>2</Width>
+													<ContextMenu name="Декорация26КонтекстноеМеню" id="478"/>
+													<ExtendedTooltip name="Декорация26РасширеннаяПодсказка" id="479"/>
+												</LabelDecoration>
+												<UsualGroup name="Группа35" id="587">
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа35РасширеннаяПодсказка" id="588"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация11" id="652">
+															<Width>50</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Регламентные задания для синхронизации данных о товаров в системе с данными товарного каталого Яндекс.Маркет включаются автоматически при включении опции "Продавать через Яндекс.Маркет" в разделе "Интеграция с маркетплейсами". В данном разделев в случае необходимости возможно изменить расписание выгрузки данных, настроенное по-умолчанию, или отключить задания.</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Декорация11КонтекстноеМеню" id="653"/>
+															<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="654"/>
+														</LabelDecoration>
+														<LabelDecoration name="Декорация12" id="655">
+															<Visible>false</Visible>
+															<ContextMenu name="Декорация12КонтекстноеМеню" id="656"/>
+															<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="657"/>
+														</LabelDecoration>
+														<Button name="ОткрытьРасписаниеВыгрузкиТоварногоКаталога" id="485">
+															<Type>Hyperlink</Type>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<CommandName>Form.Command.ОткрытьРасписаниеПолученияРекомендованныхСвязей</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расписание получения рекомендованных связей товаров</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+															<ExtendedTooltip name="ОткрытьРасписаниеВыгрузкиТоварногоКаталогаРасширеннаяПодсказка" id="486">
+																<Width>50</Width>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<Title formatted="false">
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Регламентное задание предназначено для получения рекомендованных связей данных о товаре в системе с данными Яндекс.Маркет. Обрабатывает товары в статусе "Новый".</v8:content>
+																	</v8:item>
+																</Title>
+															</ExtendedTooltip>
+														</Button>
+														<Button name="ОткрытьРасписаниеОтправкиНаМодерациюСвязейТоваров" id="645">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.ОткрытьРасписаниеОтправкиНаМодерациюСвязейТоваров</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расписание отправки на модерацию связей товаров</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+															<ExtendedTooltip name="ОткрытьРасписаниеОтправкиНаМодерациюСвязейТоваровРасширеннаяПодсказка" id="646">
+																<Width>50</Width>
+																<Title formatted="false">
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Регламентное задание предназначено для отправки на модерацию в Яндекс.Маркет данных об утвержденнных связях и для отправки данных о новых товарах, для которых не подобрана рекомендация.</v8:content>
+																	</v8:item>
+																</Title>
+															</ExtendedTooltip>
+														</Button>
+														<Button name="ОткрытьРасписаниеПолученияСтатусовМодерации" id="647">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.ОткрытьРасписаниеПолученияСтатусовМодерации</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расписание получения статусов модерации связей товаров</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+															<ExtendedTooltip name="ОткрытьРасписаниеПолученияСтатусовМодерацииРасширеннаяПодсказка" id="648">
+																<Width>50</Width>
+																<Title formatted="false">
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Регламентное задание предназначено для получения статусов модерации связей товаров</v8:content>
+																	</v8:item>
+																</Title>
+															</ExtendedTooltip>
+														</Button>
+														<LabelDecoration name="Декорация6" id="649">
+															<ContextMenu name="Декорация6КонтекстноеМеню" id="650"/>
+															<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="651"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройкиОбновленияЦен" id="267">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление цен</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройки обновления цен</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкиОбновленияЦенРасширеннаяПодсказка" id="268"/>
+					<ChildItems>
+						<UsualGroup name="Группа3Валюта" id="558">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа3 валюта</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа3 валюта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3ВалютаРасширеннаяПодсказка" id="559"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация5" id="642">
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="643"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="644"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВидыЦен" id="19">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа виды цен</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидыЦенРасширеннаяПодсказка" id="20"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияЭтап2" id="21">
+									<Width>2</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация этап2</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.Этап1СинийБЭД</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияЭтап2КонтекстноеМеню" id="22"/>
+									<ExtendedTooltip name="ДекорацияЭтап2РасширеннаяПодсказка" id="23"/>
+								</PictureDecoration>
+								<UsualGroup name="ГруппаВидыЦенВертикальная1" id="24">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа виды цен вертикальная 1</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВидыЦенВертикальная1РасширеннаяПодсказка" id="25"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация14" id="672">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Укажите виды цен для выгрузки цен на площадку маркетплейса:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация14КонтекстноеМеню" id="673"/>
+											<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="674"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа2" id="675">
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="676"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация15" id="677">
+													<Width>2</Width>
+													<ContextMenu name="Декорация15КонтекстноеМеню" id="678"/>
+													<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="679"/>
+												</LabelDecoration>
+												<InputField name="ЦенаПродажи" id="669">
+													<DataPath>ЦенаПродажи</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ToolTipRepresentation>Button</ToolTipRepresentation>
+													<ContextMenu name="ЦенаПродажиКонтекстноеМеню" id="670"/>
+													<ExtendedTooltip name="ЦенаПродажиРасширеннаяПодсказка" id="671">
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Данный вид цены будет использоваться для установки цены продажи на площадке, а также как описательное свойство товара при первоначальном получении рекомендаций для создания связи данных товара с описанием товара на площадке. Если параметр не задан, обновлять цены на площадке будет невозможно, но возможно создавать связи товаров.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаВидыЦенГоризонтальная" id="41">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа виды цен горизонтальная</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВидыЦенГоризонтальнаяРасширеннаяПодсказка" id="42"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОтступ2" id="43">
+													<Visible>false</Visible>
+													<Width>2</Width>
+													<ContextMenu name="ДекорацияОтступ2КонтекстноеМеню" id="44"/>
+													<ExtendedTooltip name="ДекорацияОтступ2РасширеннаяПодсказка" id="45"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа17" id="436">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="437"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация19" id="438">
+									<Width>2</Width>
+									<Picture>
+										<xr:Ref>CommonPicture.Этап2СинийБЭД</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация19КонтекстноеМеню" id="439"/>
+									<ExtendedTooltip name="Декорация19РасширеннаяПодсказка" id="440"/>
+								</PictureDecoration>
+								<UsualGroup name="Группа18" id="441">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="442"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация20" id="443">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройте расписание выгрузки цен товаров на площадку маркетплейса:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация20КонтекстноеМеню" id="444"/>
+											<ExtendedTooltip name="Декорация20РасширеннаяПодсказка" id="445"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа19" id="446">
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="447"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация21" id="448">
+													<Width>2</Width>
+													<ContextMenu name="Декорация21КонтекстноеМеню" id="449"/>
+													<ExtendedTooltip name="Декорация21РасширеннаяПодсказка" id="450"/>
+												</LabelDecoration>
+												<Button name="ОткрытьРасписаниеВыгрузкиЦен" id="451">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ОткрытьРасписаниеВыгрузкиЦен</CommandName>
+													<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+													<ExtendedTooltip name="ОткрытьРасписаниеВыгрузкиЦенРасширеннаяПодсказка" id="452">
+														<Width>50</Width>
+														<AutoMaxWidth>false</AutoMaxWidth>
+													</ExtendedTooltip>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа20" id="453">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="454"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация22" id="455">
+									<Width>2</Width>
+									<Picture>
+										<xr:Ref>CommonPicture.Этап3СинийБЭД</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация22КонтекстноеМеню" id="456"/>
+									<ExtendedTooltip name="Декорация22РасширеннаяПодсказка" id="457"/>
+								</PictureDecoration>
+								<UsualGroup name="Группа21" id="458">
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа21РасширеннаяПодсказка" id="459"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация23" id="460">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Настройте виды цен для интеграции с Яндекс.Маркет:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="Декорация23КонтекстноеМеню" id="461"/>
+											<ExtendedTooltip name="Декорация23РасширеннаяПодсказка" id="462"/>
+										</LabelDecoration>
+										<UsualGroup name="Группа22" id="465">
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа22РасширеннаяПодсказка" id="466"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация24" id="467">
+													<Width>2</Width>
+													<ContextMenu name="Декорация24КонтекстноеМеню" id="468"/>
+													<ExtendedTooltip name="Декорация24РасширеннаяПодсказка" id="469"/>
+												</LabelDecoration>
+												<UsualGroup name="Группа27" id="494">
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа27РасширеннаяПодсказка" id="495"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация29" id="680">
+															<Width>50</Width>
+															<TextColor>style:ПоясняющийТекст</TextColor>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Для работы с Яндекс.Маркет в системе необходимо заполнить данные по видам загруженных рекомендованных цен, а также ввести вид цен для установки цены продажи на площадке</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="Декорация29КонтекстноеМеню" id="681"/>
+															<ExtendedTooltip name="Декорация29РасширеннаяПодсказка" id="682"/>
+														</LabelDecoration>
+														<Button name="ПрайсЛист" id="613">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.ОткрытьВидыЦен</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.Catalog</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Заполнить виды цен
+</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>Button</ToolTipRepresentation>
+															<ExtendedTooltip name="ПрайсЛистРасширеннаяПодсказка" id="614">
+																<Width>50</Width>
+																<AutoMaxWidth>false</AutoMaxWidth>
+																<Title formatted="false">
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Перейдите в справочник Виды цен, заполните данные по видам рекомендованных цен. Для этого необходимо создать новые элементы справочника со способом задания цены "Загружается из Яндекс.Маркет" и выбрать тип рекомендованной цены:
+ - Минимальная цена продажи (самая низкая цена из предложенных партнерами Маркета, и по ней товар продается сейчас). 
+ - Рекомендованная цена (цена, которая привлекает покупателей). 
+ - Минимальная среди всех предложений товара (самая низкая цена среди всех предложений товара на Маркете).
+ - Максимальная без скидки (максимальная цена товара без скидки (старая цена), при которой он может быть показан со скидкой). 
+ - Максимальная для показов(максимальная цена товара, которая обеспечивает показы на Маркете).</v8:content>
+																	</v8:item>
+																</Title>
+															</ExtendedTooltip>
+														</Button>
+														<Button name="ОткрытьРасписаниеОбновленияЦен" id="658">
+															<Type>Hyperlink</Type>
+															<CommandName>Form.Command.ОткрытьРасписаниеОбновленияЦен</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расписание автообновления цен</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+															<ExtendedTooltip name="ОткрытьРасписаниеОбновленияЦенРасширеннаяПодсказка" id="659">
+																<Title formatted="false">
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Необходимо настроить расписание автообновления загружаемых рекомендованных цен</v8:content>
+																	</v8:item>
+																</Title>
+															</ExtendedTooltip>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройкиОбменаОстатками" id="269">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление остатков товаров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройки обмена остатками</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкиОбменаОстаткамиРасширеннаяПодсказка" id="270"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация13" id="666">
+							<ContextMenu name="Декорация13КонтекстноеМеню" id="667"/>
+							<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="668"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаНастройкиСкладов" id="546">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки складов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройки складов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНастройкиСкладовРасширеннаяПодсказка" id="547"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСклады" id="334">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа склады</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа склады</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСкладыРасширеннаяПодсказка" id="335"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация7" id="336">
+											<Width>2</Width>
+											<Picture>
+												<xr:Ref>CommonPicture.Этап1СинийБЭД</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация7КонтекстноеМеню" id="337"/>
+											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="338"/>
+										</PictureDecoration>
+										<UsualGroup name="ГруппаСкладыВертикальная" id="339">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа склады вертикальная</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа склады вертикальная</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСкладыВертикальнаяРасширеннаяПодсказка" id="340"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация8" id="363">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройте соответствие данных о  складах:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация8КонтекстноеМеню" id="364"/>
+													<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="365"/>
+												</LabelDecoration>
+												<UsualGroup name="Группа7" id="377">
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="378"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация2" id="379">
+															<Width>2</Width>
+															<ContextMenu name="Декорация2КонтекстноеМеню" id="380"/>
+															<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="381"/>
+														</LabelDecoration>
+														<UsualGroup name="Группа1" id="519">
+															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="520"/>
+															<ChildItems>
+																<LabelDecoration name="Декорация1" id="516">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<TextColor>style:ПоясняющийТекст</TextColor>
+																	<Font ref="style:NormalTextFont" kind="StyleItem"/>
+																	<Title formatted="true">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Зарегистрируйте склады, с которых будет осуществляться отгрузка на склад Яндекс.Маркет при работе по модели FBS (Фулфилмент силами продавца) в &lt;link https://partner.market.yandex.ru/&gt;личном кабинете&lt;/&gt; ("Логистика" &gt;&gt; "Склады" &gt;&gt; "ID склада на маркетплейсе"). В таблице ниже заполните идентификаторы складов по данным Яндекс.Маркет.
+</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="Декорация1КонтекстноеМеню" id="517"/>
+																	<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="518"/>
+																</LabelDecoration>
+																<UsualGroup name="Группа3" id="375">
+																	<Group>Vertical</Group>
+																	<Behavior>Collapsible</Behavior>
+																	<Collapsed>true</Collapsed>
+																	<Representation>None</Representation>
+																	<ShowTitle>false</ShowTitle>
+																	<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="376"/>
+																	<ChildItems>
+																		<Table name="ТаблицаСкладов" id="341">
+																			<Representation>List</Representation>
+																			<HeightInTableRows>5</HeightInTableRows>
+																			<AutoInsertNewRow>true</AutoInsertNewRow>
+																			<EnableStartDrag>true</EnableStartDrag>
+																			<EnableDrag>true</EnableDrag>
+																			<DataPath>ТаблицаСкладов</DataPath>
+																			<RowFilter xsi:nil="true"/>
+																			<ContextMenu name="ТаблицаСкладовКонтекстноеМеню" id="342"/>
+																			<AutoCommandBar name="ТаблицаСкладовКоманднаяПанель" id="343">
+																				<Autofill>false</Autofill>
+																				<ChildItems>
+																					<Button name="ТаблицаСкладовДобавить" id="662">
+																						<Type>CommandBarButton</Type>
+																						<Representation>Picture</Representation>
+																						<CommandName>Form.Item.ТаблицаСкладов.StandardCommand.Add</CommandName>
+																						<ExtendedTooltip name="ТаблицаСкладовДобавитьРасширеннаяПодсказка" id="663"/>
+																					</Button>
+																					<Button name="ТаблицаСкладовУдалить" id="664">
+																						<Type>CommandBarButton</Type>
+																						<Representation>Picture</Representation>
+																						<CommandName>Form.Item.ТаблицаСкладов.StandardCommand.Delete</CommandName>
+																						<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+																						<ExtendedTooltip name="ТаблицаСкладовУдалитьРасширеннаяПодсказка" id="665"/>
+																					</Button>
+																				</ChildItems>
+																			</AutoCommandBar>
+																			<ExtendedTooltip name="ТаблицаСкладовРасширеннаяПодсказка" id="344"/>
+																			<SearchStringAddition name="ТаблицаСкладовСтрокаПоиска" id="345">
+																				<AdditionSource>
+																					<Item>ТаблицаСкладов</Item>
+																					<Type>SearchStringRepresentation</Type>
+																				</AdditionSource>
+																				<ContextMenu name="ТаблицаСкладовСтрокаПоискаКонтекстноеМеню" id="346"/>
+																				<ExtendedTooltip name="ТаблицаСкладовСтрокаПоискаРасширеннаяПодсказка" id="347"/>
+																			</SearchStringAddition>
+																			<ViewStatusAddition name="ТаблицаСкладовСостояниеПросмотра" id="348">
+																				<AdditionSource>
+																					<Item>ТаблицаСкладов</Item>
+																					<Type>ViewStatusRepresentation</Type>
+																				</AdditionSource>
+																				<ContextMenu name="ТаблицаСкладовСостояниеПросмотраКонтекстноеМеню" id="349"/>
+																				<ExtendedTooltip name="ТаблицаСкладовСостояниеПросмотраРасширеннаяПодсказка" id="350"/>
+																			</ViewStatusAddition>
+																			<SearchControlAddition name="ТаблицаСкладовУправлениеПоиском" id="351">
+																				<AdditionSource>
+																					<Item>ТаблицаСкладов</Item>
+																					<Type>SearchControl</Type>
+																				</AdditionSource>
+																				<ContextMenu name="ТаблицаСкладовУправлениеПоискомКонтекстноеМеню" id="352"/>
+																				<ExtendedTooltip name="ТаблицаСкладовУправлениеПоискомРасширеннаяПодсказка" id="353"/>
+																			</SearchControlAddition>
+																			<ChildItems>
+																				<InputField name="ТаблицаСкладовСклад" id="360">
+																					<DataPath>ТаблицаСкладов.Склад1С</DataPath>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Склад</v8:content>
+																						</v8:item>
+																					</Title>
+																					<EditMode>EnterOnInput</EditMode>
+																					<Width>20</Width>
+																					<ChoiceFoldersAndItems>FoldersAndItems</ChoiceFoldersAndItems>
+																					<ContextMenu name="ТаблицаСкладовСкладКонтекстноеМеню" id="361"/>
+																					<ExtendedTooltip name="ТаблицаСкладовСкладРасширеннаяПодсказка" id="362"/>
+																				</InputField>
+																				<InputField name="ТаблицаСкладовИдентификаторСклада" id="354">
+																					<DataPath>ТаблицаСкладов.ИдентификаторСкладаМаркетплейса</DataPath>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>ID склада на Яндекс.Маркет</v8:content>
+																						</v8:item>
+																					</Title>
+																					<EditMode>EnterOnInput</EditMode>
+																					<ContextMenu name="ТаблицаСкладовИдентификаторСкладаКонтекстноеМеню" id="355"/>
+																					<ExtendedTooltip name="ТаблицаСкладовИдентификаторСкладаРасширеннаяПодсказка" id="356"/>
+																				</InputField>
+																				<InputField name="ТаблицаСкладовНаименованиеСклада" id="357">
+																					<DataPath>ТаблицаСкладов.НаименованиеСкладаМаркетплейса</DataPath>
+																					<Visible>false</Visible>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Склад</v8:content>
+																						</v8:item>
+																					</Title>
+																					<EditMode>EnterOnInput</EditMode>
+																					<Width>20</Width>
+																					<ContextMenu name="ТаблицаСкладовНаименованиеСкладаКонтекстноеМеню" id="358"/>
+																					<ExtendedTooltip name="ТаблицаСкладовНаименованиеСкладаРасширеннаяПодсказка" id="359"/>
+																				</InputField>
+																			</ChildItems>
+																		</Table>
+																		<LabelDecoration name="Декорация9" id="366">
+																			<Visible>false</Visible>
+																			<Title formatted="false">
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>&lt;Описание склада&gt;</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ContextMenu name="Декорация9КонтекстноеМеню" id="367"/>
+																			<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="368"/>
+																		</LabelDecoration>
+																	</ChildItems>
+																</UsualGroup>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаРегЗаданиеВыгрузкиОстатков" id="499">
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа рег задание выгрузки остатков</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаРегЗаданиеВыгрузкиОстатковРасширеннаяПодсказка" id="500"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация30" id="501">
+											<Width>2</Width>
+											<Picture>
+												<xr:Ref>CommonPicture.Этап2СинийБЭД</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация30КонтекстноеМеню" id="502"/>
+											<ExtendedTooltip name="Декорация30РасширеннаяПодсказка" id="503"/>
+										</PictureDecoration>
+										<UsualGroup name="Группа29" id="504">
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа29РасширеннаяПодсказка" id="505"/>
+											<ChildItems>
+												<LabelDecoration name="Декорация31" id="506">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Настройте расписание обновления остатков товаров:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация31КонтекстноеМеню" id="507"/>
+													<ExtendedTooltip name="Декорация31РасширеннаяПодсказка" id="508"/>
+												</LabelDecoration>
+												<UsualGroup name="Группа30" id="509">
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа30РасширеннаяПодсказка" id="510"/>
+													<ChildItems>
+														<LabelDecoration name="Декорация32" id="511">
+															<Width>2</Width>
+															<ContextMenu name="Декорация32КонтекстноеМеню" id="512"/>
+															<ExtendedTooltip name="Декорация32РасширеннаяПодсказка" id="513"/>
+														</LabelDecoration>
+														<UsualGroup name="Группа28" id="553">
+															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа28РасширеннаяПодсказка" id="554"/>
+															<ChildItems>
+																<LabelDecoration name="Декорация40" id="622">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<TextColor>style:ПоясняющийТекст</TextColor>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Регламентное задание предназначено для определения расписания выгрузки остатков товаров на складах</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="Декорация40КонтекстноеМеню" id="623"/>
+																	<ExtendedTooltip name="Декорация40РасширеннаяПодсказка" id="624">
+																		<Title formatted="false">
+																			<v8:item>
+																				<v8:lang>ru</v8:lang>
+																				<v8:content>Определение расписания выгрузки остатков товаров на складах</v8:content>
+																			</v8:item>
+																		</Title>
+																	</ExtendedTooltip>
+																</LabelDecoration>
+																<Button name="ОткрытьРасписаниеВыгрузкиОстатков" id="632">
+																	<Type>Hyperlink</Type>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<CommandName>Form.Command.ОткрытьРасписаниеВыгрузкиОстатковТоваров</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Расписание выгрузки остатков товаров</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ОткрытьРасписаниеВыгрузкиОстатковРасширеннаяПодсказка" id="633"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="УчетнаяЗапись" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.УчетныеЗаписиМаркетплейсов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТоварыХранятсяНаСкладахПлощадки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары хранятся на складах площадки маркетплейса (FBO)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТоварыХранятсяНаСобственныхСкладах" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Товары хранятся на собственных складах (FBS, RealFBS)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаСкладов" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица складов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторСкладаМаркетплейса" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор склада маркетплейса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеСкладаМаркетплейса" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Собственный склад, созданный на Ozon</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Склад1С" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Склад / Группа складов 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИсточникКатегории" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источник категории</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ИсточникиКатегорийДляМаркетплейса</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦенаПродажи" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена продажи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Далее" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее &gt;&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Далее</Action>
+		</Command>
+		<Command name="Назад" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;&lt; Назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Назад</Action>
+		</Command>
+		<Command name="ОткрытьРасписаниеВыгрузкиЦен" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание выгрузки цен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для указанных выше видов цен настраивается расписание выгрузки цен. От периодичности выполнения выгрузки зависит актуальность цен продажи на площадке маркетплейса.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРасписаниеВыгрузкиЦен</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьРасписаниеВыгрузкиОстатковТоваров" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание выгрузки актуальных остатков на площадку маркетплейса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настраивается расписание обновления остатков товаров - выгрузки остатков на маркетплейс и загруки остатков с маркетплейса. От периодичности выгрузки остатков товаров зависит актуальность остатков на меркетплейсе.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРасписаниеВыгрузкиОстатковТоваров</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьРасписаниеОбновленияЦен" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание автообновления цен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Необходимо настроить расписание обновления цен, в которое должны входить виды цен из списка загружаемых видов цен. От периодичности выполнения загрузки зависит актуальность цен для контроля. </v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРасписаниеОбновленияЦен</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СохранитьНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="ОткрытьВидыЦен" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть виды цен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть виды цен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВидыЦен</Action>
+		</Command>
+		<Command name="ОткрытьРасписаниеОтправкиНаМодерациюСвязейТоваров" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расписание отправки на модерацию связей товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расписание отправки на модерацию связей товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРасписаниеОтправкиНаМодерациюСвязейТоваров</Action>
+		</Command>
+		<Command name="ОткрытьРасписаниеПолученияСтатусовМодерации" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расписание получения статусов модерации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расписание получения статусов модерации связей товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРасписаниеПолученияСтатусовМодерации</Action>
+		</Command>
+		<Command name="ОткрытьРасписаниеПолученияРекомендованныхСвязей" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расписание получения рекомендованных связей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть расписание получения рекомендованных связей товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРасписаниеПолученияРекомендованныхСвязей</Action>
+		</Command>
+	</Commands>
+</Form>

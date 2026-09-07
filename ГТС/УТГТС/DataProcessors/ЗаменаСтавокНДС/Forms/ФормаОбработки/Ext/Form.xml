@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Замена ставок НДС</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация13" id="132">
+			<ContextMenu name="Декорация13КонтекстноеМеню" id="133"/>
+			<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="134"/>
+		</LabelDecoration>
+		<UsualGroup name="Отборы" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОтборыРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="ТекущаяСтавка" id="16">
+					<DataPath>ТекущаяСтавка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ставку</v8:content>
+						</v8:item>
+					</Title>
+					<Width>5</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>10</MaxWidth>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущаяСтавкаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ТекущаяСтавкаРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">ТекущаяСтавкаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Период" id="19">
+					<DataPath>Период</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>с</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">ПериодПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="НоваяСтавка" id="13">
+					<DataPath>НоваяСтавка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>заменить на</v8:content>
+						</v8:item>
+					</Title>
+					<Width>15</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>15</MaxWidth>
+					<MultiLine>false</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НоваяСтавкаКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="НоваяСтавкаРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="СтранаРегистрации" id="126">
+					<DataPath>СтранаРегистрации</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтранаРегистрацииКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="СтранаРегистрацииРасширеннаяПодсказка" id="128"/>
+					<Events>
+						<Event name="OnChange">СтранаРегистрацииПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="ФормаЗаменитьВезде" id="9">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.Command.ЗаменитьВезде</CommandName>
+					<ExtendedTooltip name="ФормаЗаменитьВездеРасширеннаяПодсказка" id="10"/>
+				</Button>
+				<Button name="Обновить" id="170">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>3</MaxWidth>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="171"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ИзмененияНСИ" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменения НСИ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменения НСИ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИзмененияНСИРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<LabelDecoration name="Декорация12" id="123">
+					<ContextMenu name="Декорация12КонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="125"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаНоменклатура" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа номенклатура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНоменклатураРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНоменклатураКоманда" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа номенклатура команда</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа номенклатура команда</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНоменклатураКомандаРасширеннаяПодсказка" id="59"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаменаСтавокНоменклатура" id="138">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="ДекорацияЗаменаСтавокНоменклатураКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокНоменклатураРасширеннаяПодсказка" id="140"/>
+								</LabelDecoration>
+								<PictureDecoration name="ДекорацияЗаменаСтавокУспешноНоменклатура" id="135">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация замена ставок успешно номенклатура</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияЗаменаСтавокУспешноНоменклатураКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокУспешноНоменклатураРасширеннаяПодсказка" id="137"/>
+								</PictureDecoration>
+								<LabelDecoration name="Номенклатура" id="24">
+									<Width>35</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Font ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номенклатура</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НоменклатураКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="26"/>
+								</LabelDecoration>
+								<Button name="ЗаменитьНоменклатура" id="11">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ЗаменитьВНоменклатуре</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заменить ставку</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаменитьНоменклатураРасширеннаяПодсказка" id="12"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДанныеНоменклатура" id="98">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные номенклатура</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные номенклатура</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДанныеНоменклатураРасширеннаяПодсказка" id="99"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация7" id="100">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="101"/>
+									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="102"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДанныеНоменклатура" id="60">
+									<Title formatted="true"/>
+									<ContextMenu name="ДанныеНоменклатураКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ДанныеНоменклатураРасширеннаяПодсказка" id="62"/>
+									<Events>
+										<Event name="URLProcessing">ДанныеНоменклатураОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаВидыНоменклатуры" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа виды номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа виды номенклатуры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВидыНоменклатурыРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВидыНоменклатурыКоманда" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа виды номенклатуры команда</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа виды номенклатуры команда</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидыНоменклатурыКомандаРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаменаСтавокВидыНоменклатуры" id="86">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="ДекорацияЗаменаСтавокВидыНоменклатурыКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокВидыНоменклатурыРасширеннаяПодсказка" id="88"/>
+								</LabelDecoration>
+								<PictureDecoration name="ДекорацияЗаменаСтавокУспешноВидыНоменклатуры" id="141">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация замена ставок успешно виды номенклатуры</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияЗаменаСтавокУспешноВидыНоменклатурыКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокУспешноВидыНоменклатурыРасширеннаяПодсказка" id="143"/>
+								</PictureDecoration>
+								<LabelDecoration name="ВидыНоменклатуры" id="27">
+									<Width>35</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Font ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды номенклатуры</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВидыНоменклатурыКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="ВидыНоменклатурыРасширеннаяПодсказка" id="29"/>
+								</LabelDecoration>
+								<Button name="ЗаменитьВидыНоменклатуры" id="1">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ЗаменитьВВидеНоменклатуры</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заменить ставку</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаменитьВидыНоменклатурыРасширеннаяПодсказка" id="2"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДанныеВидыНоменклатуры" id="103">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные виды номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные виды номенклатуры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДанныеВидыНоменклатурыРасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация8" id="105">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="Декорация8КонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="107"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДанныеВидыНоменклатуры" id="65">
+									<Title formatted="true"/>
+									<ContextMenu name="ДанныеВидыНоменклатурыКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ДанныеВидыНоменклатурыРасширеннаяПодсказка" id="67"/>
+									<Events>
+										<Event name="URLProcessing">ДанныеВидыНоменклатурыОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДоговорыКонтрагентов" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договоры контрагентов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договоры контрагентов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДоговорыКонтрагентовРасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДоговорыКоманда" id="68">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа договоры команда</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа договоры команда</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДоговорыКомандаРасширеннаяПодсказка" id="69"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаменаСтавокДоговорыКонтрагентов" id="89">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="ДекорацияЗаменаСтавокДоговорыКонтрагентовКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокДоговорыКонтрагентовРасширеннаяПодсказка" id="91"/>
+								</LabelDecoration>
+								<PictureDecoration name="ДекорацияЗаменаСтавокУспешноДоговорыКонтрагентов" id="144">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация замена ставок успешно договоры контрагентов</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияЗаменаСтавокУспешноДоговорыКонтрагентовКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокУспешноДоговорыКонтрагентовРасширеннаяПодсказка" id="146"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДоговорыСКонтрагентами" id="30">
+									<Width>35</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Font ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Договоры с контрагентами</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоговорыСКонтрагентамиКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ДоговорыСКонтрагентамиРасширеннаяПодсказка" id="32"/>
+								</LabelDecoration>
+								<Button name="ЗаменитьДоговорыКонтрагентов" id="7">
+									<Type>Hyperlink</Type>
+									<Width>15</Width>
+									<CommandName>Form.Command.ЗаменитьВДоговорахСКонтрагентами</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заменить ставку</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаменитьДоговорыКонтрагентовРасширеннаяПодсказка" id="8"/>
+								</Button>
+								<Button name="ПерейтиДокументы" id="172">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьСписокДокументы</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перейти</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПерейтиДокументыРасширеннаяПодсказка" id="173"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДанныеДоговорыКонтрагентов" id="108">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные договоры контрагентов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные договоры контрагентов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДанныеДоговорыКонтрагентовРасширеннаяПодсказка" id="109"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация3" id="110">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="112"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДанныеДоговорыКонтрагентов" id="70">
+									<Width>50</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true"/>
+									<ContextMenu name="ДанныеДоговорыКонтрагентовКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="ДанныеДоговорыКонтрагентовРасширеннаяПодсказка" id="72"/>
+									<Events>
+										<Event name="URLProcessing">ДанныеДоговорыКонтрагентовОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="ПредупреждениеАренда" id="174">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После изменения ставки НДС в договорах субаренды и передачи в аренду введите документ "Изменение условий передачи в аренду"</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПредупреждениеАрендаКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ПредупреждениеАрендаРасширеннаяПодсказка" id="176"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДоговорыМеждуОрганизациями" id="53">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договоры между организациями</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договоры между организациями</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДоговорыМеждуОрганизациямиРасширеннаяПодсказка" id="54"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДоговорыМеждуОрганизациямиКоманда" id="78">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа договоры между организациями команда</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа договоры между организациями команда</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДоговорыМеждуОрганизациямиКомандаРасширеннаяПодсказка" id="79"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаменаСтавокДоговорыМеждуОрганизациями" id="156">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="ДекорацияЗаменаСтавокДоговорыМеждуОрганизациямиКонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокДоговорыМеждуОрганизациямиРасширеннаяПодсказка" id="158"/>
+								</LabelDecoration>
+								<PictureDecoration name="ДекорацияЗаменаСтавокУспешноДоговорыМеждуОрганизациями" id="159">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация замена ставок успешно договоры между организациями</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияЗаменаСтавокУспешноДоговорыМеждуОрганизациямиКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокУспешноДоговорыМеждуОрганизациямиРасширеннаяПодсказка" id="161"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДоговорыМеждуОрганизациями" id="33">
+									<Width>35</Width>
+									<Font ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Договоры между организациями</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоговорыМеждуОрганизациямиКонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="ДоговорыМеждуОрганизациямиРасширеннаяПодсказка" id="35"/>
+								</LabelDecoration>
+								<Button name="ЗаменитьДоговорыМеждуОрганизациями" id="5">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ЗаменитьВДоговорахМеждуОрганизациями</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заменить ставку</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗаменитьДоговорыМеждуОрганизациямиРасширеннаяПодсказка" id="6"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДанныеДоговорыМеждуОрганизациями" id="118">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные договоры между организациями</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные договоры между организациями</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДанныеДоговорыМеждуОрганизациямиРасширеннаяПодсказка" id="119"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация11" id="120">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="121"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="122"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДанныеДоговорыМеждуорганизациями" id="80">
+									<Title formatted="true"/>
+									<ContextMenu name="ДанныеДоговорыМеждуорганизациямиКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДанныеДоговорыМеждуорганизациямиРасширеннаяПодсказка" id="82"/>
+									<Events>
+										<Event name="URLProcessing">ДанныеДоговорыМеждуорганизациямиОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДоговорыАренды" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договоры аренды</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа договоры аренды</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДоговорыАрендыРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДоговорыАрендыКоманда" id="73">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа договоры аренды команда</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа договоры аренды команда</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДоговорыАрендыКомандаРасширеннаяПодсказка" id="74"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияЗаменаСтавокДоговорыАренды" id="162">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="ДекорацияЗаменаСтавокДоговорыАрендыКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокДоговорыАрендыРасширеннаяПодсказка" id="164"/>
+								</LabelDecoration>
+								<PictureDecoration name="ДекорацияЗаменаСтавокУспешноДоговорыАренды" id="165">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<Height>1</Height>
+									<VerticalStretch>false</VerticalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация замена ставок успешно договоры аренды</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ВыполненоУспешно</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияЗаменаСтавокУспешноДоговорыАрендыКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ДекорацияЗаменаСтавокУспешноДоговорыАрендыРасширеннаяПодсказка" id="167"/>
+								</PictureDecoration>
+								<LabelDecoration name="ДоговорыАренды" id="36">
+									<Width>51</Width>
+									<Font ref="style:NormalTextFont" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Договоры аренды</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДоговорыАрендыКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ДоговорыАрендыРасширеннаяПодсказка" id="38"/>
+								</LabelDecoration>
+								<Button name="ПерейтиДоговорыАренды" id="168">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьСписокДоговорыАренды</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перейти</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПерейтиДоговорыАрендыРасширеннаяПодсказка" id="169"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДанныеДоговорыАренды" id="113">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные договоры аренды</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные договоры аренды</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДанныеДоговорыАрендыРасширеннаяПодсказка" id="114"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация10" id="115">
+									<Width>3</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>3</MaxWidth>
+									<ContextMenu name="Декорация10КонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="117"/>
+								</LabelDecoration>
+								<LabelDecoration name="ДанныеДоговорыАренды" id="75">
+									<Width>50</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true"/>
+									<ContextMenu name="ДанныеДоговорыАрендыКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ДанныеДоговорыАрендыРасширеннаяПодсказка" id="77"/>
+									<Events>
+										<Event name="URLProcessing">ДанныеДоговорыАрендыОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+								<LabelDecoration name="Предупреждение" id="129">
+									<TextColor>style:ПоясняющийТекст</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для изменения ставки НДС введите документ "Изменение условий договора аренды"</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПредупреждениеКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ПредупреждениеРасширеннаяПодсказка" id="131"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ЗаменаСтавокНДС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТекущаяСтавка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая ставка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтавкиНДС</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>ТекущаяСтавка</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НоваяСтавка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новая ставка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтавкиНДС</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>НоваяСтавка</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Период" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Период</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="СтранаРегистрации" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страна регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтраныМира</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>СтранаРегистрации</Field>
+			</Save>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьМногострановойУчет</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="УспешноНоменклатура" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Успешно номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УспешноДоговорыКонтрагентов" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Успешно договоры контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УспешноДоговорыАренды" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Успешно договоры аренды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УспешноДоговорыМеждуОрганизациями" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Успешно договоры между организациями</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УспешноВидыНоменклатуры" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Успешно виды номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаменитьВезде" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить везде</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить везде</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьВезде</Action>
+		</Command>
+		<Command name="ЗаменитьВНоменклатуре" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить в номенклатуре</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить в номенклатуре</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьВНоменклатуре</Action>
+		</Command>
+		<Command name="ЗаменитьВВидеНоменклатуры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить в виде номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить в виде номенклатуры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьВВидеНоменклатуры</Action>
+		</Command>
+		<Command name="ЗаменитьВДоговорахСКонтрагентами" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить в договорах с контрагентами</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить в договорах с контрагентами</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьВДоговорахСКонтрагентами</Action>
+		</Command>
+		<Command name="ОткрытьСписокДоговорыАренды" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список договоры аренды</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список договоры аренды</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокДоговорыАренды</Action>
+		</Command>
+		<Command name="ЗаменитьВДоговорахМеждуОрганизациями" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить в договорах между организациями</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить в договорах между организациями</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаменитьВДоговорахМеждуОрганизациями</Action>
+		</Command>
+		<Command name="Обновить" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="ОткрытьСписокДокументы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписокДокументы</Action>
+		</Command>
+	</Commands>
+</Form>

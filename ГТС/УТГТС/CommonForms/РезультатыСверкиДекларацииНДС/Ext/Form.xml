@@ -1,0 +1,2747 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРезультатСоСверкой" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа результат со сверкой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа результат со сверкой</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРезультатСоСверкойРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРезультат" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>70</Width>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<SpreadSheetDocumentField name="Результат" id="5">
+							<DataPath>Результат</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<ContextMenu name="РезультатКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="7"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРезультатСверки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат сверки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа результат сверки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>30</Width>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРезультатСверкиРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<Button name="ИзменитьВидимостьСверки" id="10">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<Width>3</Width>
+							<CommandName>Form.Command.ИзменитьВидимостьСверки</CommandName>
+							<Picture>
+								<xr:Ref>CommonPicture.СтрелкаВправо</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ИзменитьВидимостьСверкиРасширеннаяПодсказка" id="11"/>
+						</Button>
+						<UsualGroup name="ГруппаИтогиСверки" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итоги сверки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа итоги сверки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>20</Width>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаИтогиСверкиРасширеннаяПодсказка" id="13"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЗаголовок" id="14">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа заголовок</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа заголовок</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="15"/>
+									<ChildItems>
+										<LabelDecoration name="ТекстРезультатСверки" id="16">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Результат сверки сервисом 1С:Сверка 2.0 счетов-фактур с контрагентами</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ТекстРезультатСверкиКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ТекстРезультатСверкиРасширеннаяПодсказка" id="18"/>
+										</LabelDecoration>
+										<Button name="ЗакрытьПанельСверки" id="19">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ЗакрытьПанельСверки</CommandName>
+											<ShapeRepresentation>None</ShapeRepresentation>
+											<ExtendedTooltip name="ЗакрытьПанельСверкиРасширеннаяПодсказка" id="20"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИтогиСверкиРаздел8" id="21">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Раздел 8 (Книга покупок)</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итоги сверки раздел8</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ExtendedTooltip name="ГруппаИтогиСверкиРаздел8РасширеннаяПодсказка" id="22"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСверкаБезОшибокРаздел8" id="23">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка без ошибок раздел8</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка без ошибок раздел8</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСверкаБезОшибокРаздел8РасширеннаяПодсказка" id="24"/>
+											<ChildItems>
+												<LabelDecoration name="ТекстСверкаВыполненаРаздел8" id="25">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сверка счетов-фактур с продавцами выполнена.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ТекстСверкаВыполненаРаздел8КонтекстноеМеню" id="26"/>
+													<ExtendedTooltip name="ТекстСверкаВыполненаРаздел8РасширеннаяПодсказка" id="27"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаСверкаБезОшибокТекстРаздел8" id="403">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Расхождений не обнаружено</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без ошибок текст раздел8</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаБезОшибокТекстРаздел8РасширеннаяПодсказка" id="404"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаСверкаБезОшибокРаздел8" id="405">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка сверка без ошибок раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="КартинкаСверкаБезОшибокРаздел8КонтекстноеМеню" id="406"/>
+															<ExtendedTooltip name="КартинкаСверкаБезОшибокРаздел8РасширеннаяПодсказка" id="407"/>
+														</PictureDecoration>
+														<LabelDecoration name="ТекстСверкаБезОшибокРаздел8" id="408">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расхождений не обнаружено</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ТекстСверкаБезОшибокРаздел8КонтекстноеМеню" id="409"/>
+															<ExtendedTooltip name="ТекстСверкаБезОшибокРаздел8РасширеннаяПодсказка" id="410"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСверкаСРасхождениямиРаздел8" id="28">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка с расхождениями раздел8</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка с расхождениями раздел8</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСверкаСРасхождениямиРаздел8РасширеннаяПодсказка" id="29"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаСверкиРасхожденияРаздел8" id="30">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки расхождения раздел8</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки расхождения раздел8</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиРасхожденияРаздел8РасширеннаяПодсказка" id="31"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаРасхожденияраздел8" id="32">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхожденияраздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхожденияраздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаРасхожденияраздел8РасширеннаяПодсказка" id="33"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияРасхожденияРаздел8" id="34">
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация расхождения раздел8</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияРасхожденияРаздел8КонтекстноеМеню" id="35"/>
+																	<ExtendedTooltip name="ДекорацияРасхожденияРаздел8РасширеннаяПодсказка" id="36"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстРасхожденияРаздел8" id="37">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>С расхождениями</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстРасхожденияРаздел8КонтекстноеМеню" id="38"/>
+																	<ExtendedTooltip name="ТекстРасхожденияРаздел8РасширеннаяПодсказка" id="39"/>
+																	<Events>
+																		<Event name="Click">ТекстРасхожденияРаздел8Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаРасхожденияРасшифровкаРаздел8" id="40">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения расшифровка раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения расшифровка раздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаРасхожденияРасшифровкаРаздел8РасширеннаяПодсказка" id="41"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ1Раздел8" id="42">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ1Раздел8КонтекстноеМеню" id="43"/>
+																	<ExtendedTooltip name="ДекорацияОтступ1Раздел8РасширеннаяПодсказка" id="44"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстРасхожденияРасшифровкаРаздел8" id="45">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст расхождения расшифровка раздел8</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстРасхожденияРасшифровкаРаздел8КонтекстноеМеню" id="46"/>
+																	<ExtendedTooltip name="ТекстРасхожденияРасшифровкаРаздел8РасширеннаяПодсказка" id="47"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкиНеОтраженоУКонтрагентаРаздел8" id="48">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки не отражено у контрагента раздел8</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки не отражено у контрагента раздел8</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиНеОтраженоУКонтрагентаРаздел8РасширеннаяПодсказка" id="49"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНеОтраженоУКонтрагентаРаздел8" id="56">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено у контрагента раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено у контрагента раздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеОтраженоУКонтрагентаРаздел8РасширеннаяПодсказка" id="57"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНеОтраженоРаздел8" id="50">
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка не отражено раздел8</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНеОтраженоРаздел8КонтекстноеМеню" id="51"/>
+																	<ExtendedTooltip name="КартинкаНеОтраженоРаздел8РасширеннаяПодсказка" id="52"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНеОтраженоРаздел8" id="53">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не отражены у продавцов</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНеОтраженоРаздел8КонтекстноеМеню" id="54"/>
+																	<ExtendedTooltip name="ТекстНеОтраженоРаздел8РасширеннаяПодсказка" id="55"/>
+																	<Events>
+																		<Event name="Click">ТекстНеОтраженоРаздел8Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНеОтраженоРасшифровкаРаздел8" id="58">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено расшифровка раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено расшифровка раздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеОтраженоРасшифровкаРаздел8РасширеннаяПодсказка" id="59"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ2Раздел8" id="60">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ2Раздел8КонтекстноеМеню" id="61"/>
+																	<ExtendedTooltip name="ДекорацияОтступ2Раздел8РасширеннаяПодсказка" id="62"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстНеОтраженоРасшифровкаРаздел8" id="63">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст не отражено расшифровка раздел8</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстНеОтраженоРасшифровкаРаздел8КонтекстноеМеню" id="64"/>
+																	<ExtendedTooltip name="ТекстНеОтраженоРасшифровкаРаздел8РасширеннаяПодсказка" id="65"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкаНеСверялисьРаздел8" id="66">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка не сверялись раздел8</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка не сверялись раздел8</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаНеСверялисьРаздел8РасширеннаяПодсказка" id="67"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНеСверялисьРаздел8" id="68">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверялись раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверялись раздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеСверялисьРаздел8РасширеннаяПодсказка" id="69"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНеСверилисьРаздел8" id="70">
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка не сверились раздел8</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleYellow</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНеСверилисьРаздел8КонтекстноеМеню" id="71"/>
+																	<ExtendedTooltip name="КартинкаНеСверилисьРаздел8РасширеннаяПодсказка" id="72"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНеСверялисьРаздел8" id="73">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не сверились</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНеСверялисьРаздел8КонтекстноеМеню" id="74"/>
+																	<ExtendedTooltip name="ТекстНеСверялисьРаздел8РасширеннаяПодсказка" id="75"/>
+																	<Events>
+																		<Event name="Click">ТекстНеСверялисьРаздел8Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНеСверилисьРасшифровкаРаздел8" id="76">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверились расшифровка раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверились расшифровка раздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеСверилисьРасшифровкаРаздел8РасширеннаяПодсказка" id="77"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ3Раздел8" id="78">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ3Раздел8КонтекстноеМеню" id="79"/>
+																	<ExtendedTooltip name="ДекорацияОтступ3Раздел8РасширеннаяПодсказка" id="80"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстНеСверилисьРасшифровкаРаздел8" id="81">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст не сверились расшифровка раздел8</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстНеСверилисьРасшифровкаРаздел8КонтекстноеМеню" id="82"/>
+																	<ExtendedTooltip name="ТекстНеСверилисьРасшифровкаРаздел8РасширеннаяПодсказка" id="83"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаПочемуНеСверилисьРаздел8" id="84">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа почему не сверились раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа почему не сверились раздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаПочемуНеСверилисьРаздел8РасширеннаяПодсказка" id="85"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ4раздел8" id="86">
+																	<Width>1</Width>
+																	<Height>2</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ4раздел8КонтекстноеМеню" id="87"/>
+																	<ExtendedTooltip name="ДекорацияОтступ4раздел8РасширеннаяПодсказка" id="88"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстПочемуНеСверилисьРаздел8" id="89">
+																	<Height>2</Height>
+																	<Title formatted="true">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Продавцы не подключены к сервису
+1С:Сверка 2.0.</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстПочемуНеСверилисьРаздел8КонтекстноеМеню" id="90"/>
+																	<ExtendedTooltip name="ТекстПочемуНеСверилисьРаздел8РасширеннаяПодсказка" id="91"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкаБезРасхожденийРаздел8" id="92">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без расхождений раздел8</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без расхождений раздел8</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаБезРасхожденийРаздел8РасширеннаяПодсказка" id="93"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаБезРасхожденийРаздел8" id="94">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений раздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБезРасхожденийРаздел8РасширеннаяПодсказка" id="95"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаБезРасхожденийРаздел8" id="96">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка без расхождений раздел8</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаБезРасхожденийРаздел8КонтекстноеМеню" id="97"/>
+																	<ExtendedTooltip name="КартинкаБезРасхожденийРаздел8РасширеннаяПодсказка" id="98"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстБезРасхожденийРаздел8" id="99">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Без расхождений</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстБезРасхожденийРаздел8КонтекстноеМеню" id="100"/>
+																	<ExtendedTooltip name="ТекстБезРасхожденийРаздел8РасширеннаяПодсказка" id="101"/>
+																	<Events>
+																		<Event name="Click">ТекстБезРасхожденийРаздел8Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаБезРасхожденийРасшифровкаРаздел8" id="102">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений расшифровка раздел8</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений расшифровка раздел8</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБезРасхожденийРасшифровкаРаздел8РасширеннаяПодсказка" id="103"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ5раздел8" id="104">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ5раздел8КонтекстноеМеню" id="105"/>
+																	<ExtendedTooltip name="ДекорацияОтступ5раздел8РасширеннаяПодсказка" id="106"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстБезРасхожденийРасшифровкараздел8" id="107">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст без расхождений расшифровкараздел8</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстБезРасхожденийРасшифровкараздел8КонтекстноеМеню" id="108"/>
+																	<ExtendedTooltip name="ТекстБезРасхожденийРасшифровкараздел8РасширеннаяПодсказка" id="109"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИтогиСверкиРаздел8_Прил1" id="110">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Раздел 8. Прил. 1 (Доп. листы книги покупок)</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итоги сверки раздел8 прил1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ExtendedTooltip name="ГруппаИтогиСверкиРаздел8_Прил1РасширеннаяПодсказка" id="111"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСверкаБезОшибокРаздел8_Прил1" id="112">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка без ошибок раздел8 прил1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка без ошибок раздел8 прил1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСверкаБезОшибокРаздел8_Прил1РасширеннаяПодсказка" id="113"/>
+											<ChildItems>
+												<LabelDecoration name="ТекстСверкаВыполненаРаздел8_Прил1" id="114">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сверка счетов фактур с продавцами выполнена.</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ТекстСверкаВыполненаРаздел8_Прил1КонтекстноеМеню" id="115"/>
+													<ExtendedTooltip name="ТекстСверкаВыполненаРаздел8_Прил1РасширеннаяПодсказка" id="116"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаСверкаБезОшибокТекстРаздел8_Прил1" id="411">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без ошибок текст раздел8 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без ошибок текст раздел8 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаБезОшибокТекстРаздел8_Прил1РасширеннаяПодсказка" id="412"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаСверкаБезОшибокРаздел8_Прил1" id="413">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка сверка без ошибок раздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="КартинкаСверкаБезОшибокРаздел8_Прил1КонтекстноеМеню" id="414"/>
+															<ExtendedTooltip name="КартинкаСверкаБезОшибокРаздел8_Прил1РасширеннаяПодсказка" id="415"/>
+														</PictureDecoration>
+														<LabelDecoration name="ТекстСверкаБезОшибокРаздел8_Прил1" id="416">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расхождений не обнаружено</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ТекстСверкаБезОшибокРаздел8_Прил1КонтекстноеМеню" id="417"/>
+															<ExtendedTooltip name="ТекстСверкаБезОшибокРаздел8_Прил1РасширеннаяПодсказка" id="418"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСверкаСРасхождениямиРаздел8_Прил1" id="117">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка с расхождениями раздел8 прил1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка с расхождениями раздел8 прил1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСверкаСРасхождениямиРаздел8_Прил1РасширеннаяПодсказка" id="118"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаСверкиРасхожденияРаздел8_Прил1" id="119">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки расхождения раздел8 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки расхождения раздел8 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиРасхожденияРаздел8_Прил1РасширеннаяПодсказка" id="120"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаРасхожденияРаздел8_Прил1" id="121">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения раздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения раздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаРасхожденияРаздел8_Прил1РасширеннаяПодсказка" id="122"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияРасхожденияРаздел8_Прил1" id="123">
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация расхождения раздел8 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияРасхожденияРаздел8_Прил1КонтекстноеМеню" id="124"/>
+																	<ExtendedTooltip name="ДекорацияРасхожденияРаздел8_Прил1РасширеннаяПодсказка" id="125"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстРасхожденияРаздел8_Прил1" id="126">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>С расхождениями</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстРасхожденияРаздел8_Прил1КонтекстноеМеню" id="127"/>
+																	<ExtendedTooltip name="ТекстРасхожденияРаздел8_Прил1РасширеннаяПодсказка" id="128"/>
+																	<Events>
+																		<Event name="Click">ТекстРасхожденияРаздел8_Прил1Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаРасхождениеРасшифровкараздел8_Прил1" id="129">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождение расшифровкараздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождение расшифровкараздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаРасхождениеРасшифровкараздел8_Прил1РасширеннаяПодсказка" id="130"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ1Раздел8_Прил1" id="131">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ1Раздел8_Прил1КонтекстноеМеню" id="132"/>
+																	<ExtendedTooltip name="ДекорацияОтступ1Раздел8_Прил1РасширеннаяПодсказка" id="133"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстРасхожденияРасшифровкаРаздел8_Прил1" id="134">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст расхождения расшифровка раздел8 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстРасхожденияРасшифровкаРаздел8_Прил1КонтекстноеМеню" id="135"/>
+																	<ExtendedTooltip name="ТекстРасхожденияРасшифровкаРаздел8_Прил1РасширеннаяПодсказка" id="136"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкиНеОтраженоУКонтрагентаРаздел8_Прил1" id="137">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки не отражено у контрагента раздел8 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки не отражено у контрагента раздел8 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиНеОтраженоУКонтрагентаРаздел8_Прил1РасширеннаяПодсказка" id="138"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНеОтраженоУКонтрагентаРаздел8_Прил1" id="139">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено у контрагента раздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено у контрагента раздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеОтраженоУКонтрагентаРаздел8_Прил1РасширеннаяПодсказка" id="140"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНеОтраженоРаздел8_Прил1" id="141">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка не отражено раздел8 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНеОтраженоРаздел8_Прил1КонтекстноеМеню" id="142"/>
+																	<ExtendedTooltip name="КартинкаНеОтраженоРаздел8_Прил1РасширеннаяПодсказка" id="143"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНеОтраженоРаздел8_Прил1" id="144">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не отражены у продавцов</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНеОтраженоРаздел8_Прил1КонтекстноеМеню" id="145"/>
+																	<ExtendedTooltip name="ТекстНеОтраженоРаздел8_Прил1РасширеннаяПодсказка" id="146"/>
+																	<Events>
+																		<Event name="Click">ТекстНеОтраженоРаздел8_Прил1Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНеОтраженоРасшифровкаРаздел8_Прил1" id="147">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено расшифровка раздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено расшифровка раздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеОтраженоРасшифровкаРаздел8_Прил1РасширеннаяПодсказка" id="148"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ2Раздел8_Прил1" id="149">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ2Раздел8_Прил1КонтекстноеМеню" id="150"/>
+																	<ExtendedTooltip name="ДекорацияОтступ2Раздел8_Прил1РасширеннаяПодсказка" id="151"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстНеОтраженоРасшифровкРаздел8_Прил1" id="152">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст не отражено расшифровк раздел8 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстНеОтраженоРасшифровкРаздел8_Прил1КонтекстноеМеню" id="153"/>
+																	<ExtendedTooltip name="ТекстНеОтраженоРасшифровкРаздел8_Прил1РасширеннаяПодсказка" id="154"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкаНеСверялисьРаздел8_Прил1" id="155">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка не сверялись раздел8 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка не сверялись раздел8 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаНеСверялисьРаздел8_Прил1РасширеннаяПодсказка" id="156"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНеСверялисьРаздел8_Прил1" id="157">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверялись раздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверялись раздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеСверялисьРаздел8_Прил1РасширеннаяПодсказка" id="158"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНеСверилисьРаздел8_Прил1" id="159">
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка не сверились раздел8 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleYellow</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНеСверилисьРаздел8_Прил1КонтекстноеМеню" id="160"/>
+																	<ExtendedTooltip name="КартинкаНеСверилисьРаздел8_Прил1РасширеннаяПодсказка" id="161"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНеСверялисьРаздел8_Прил1" id="162">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не сверились</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНеСверялисьРаздел8_Прил1КонтекстноеМеню" id="163"/>
+																	<ExtendedTooltip name="ТекстНеСверялисьРаздел8_Прил1РасширеннаяПодсказка" id="164"/>
+																	<Events>
+																		<Event name="Click">ТекстНеСверялисьРаздел8_Прил1Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНеСверилисьРасшифровкараздел8_Прил1" id="165">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверились расшифровкараздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверились расшифровкараздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеСверилисьРасшифровкараздел8_Прил1РасширеннаяПодсказка" id="166"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ3раздел8_Прил1" id="167">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ3раздел8_Прил1КонтекстноеМеню" id="168"/>
+																	<ExtendedTooltip name="ДекорацияОтступ3раздел8_Прил1РасширеннаяПодсказка" id="169"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстНеСверилисьРасшифровкаРаздел8_Прил1" id="170">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст не сверились расшифровка раздел8 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстНеСверилисьРасшифровкаРаздел8_Прил1КонтекстноеМеню" id="171"/>
+																	<ExtendedTooltip name="ТекстНеСверилисьРасшифровкаРаздел8_Прил1РасширеннаяПодсказка" id="172"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаПочемуНеСверилисьРаздел8_Прил1" id="173">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа почему не сверились раздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа почему не сверились раздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаПочемуНеСверилисьРаздел8_Прил1РасширеннаяПодсказка" id="174"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ4Раздел8_Прил1" id="175">
+																	<Width>1</Width>
+																	<Height>2</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ4Раздел8_Прил1КонтекстноеМеню" id="176"/>
+																	<ExtendedTooltip name="ДекорацияОтступ4Раздел8_Прил1РасширеннаяПодсказка" id="177"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстПочемуНеСверилисьРаздел8_Прил1" id="178">
+																	<Height>2</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Продавцы не подключены к сервису
+1С:Сверка 2.0.</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстПочемуНеСверилисьРаздел8_Прил1КонтекстноеМеню" id="179"/>
+																	<ExtendedTooltip name="ТекстПочемуНеСверилисьРаздел8_Прил1РасширеннаяПодсказка" id="180"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкаБезРасхожденийРаздел8_Прил1" id="181">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без расхождений раздел8 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без расхождений раздел8 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаБезРасхожденийРаздел8_Прил1РасширеннаяПодсказка" id="182"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаБезРасхожденийраздел8_Прил1" id="183">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхожденийраздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхожденийраздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБезРасхожденийраздел8_Прил1РасширеннаяПодсказка" id="184"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаБезРасхожденийРаздел8_Прил1" id="185">
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка без расхождений раздел8 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаБезРасхожденийРаздел8_Прил1КонтекстноеМеню" id="186"/>
+																	<ExtendedTooltip name="КартинкаБезРасхожденийРаздел8_Прил1РасширеннаяПодсказка" id="187"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстБезРасхожденийРаздел8_Прил1" id="188">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Без расхождений</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстБезРасхожденийРаздел8_Прил1КонтекстноеМеню" id="189"/>
+																	<ExtendedTooltip name="ТекстБезРасхожденийРаздел8_Прил1РасширеннаяПодсказка" id="190"/>
+																	<Events>
+																		<Event name="Click">ТекстБезРасхожденийРаздел8_Прил1Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаБезРасхожденийРасшифровкаРаздел8_Прил1" id="191">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений расшифровка раздел8 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений расшифровка раздел8 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБезРасхожденийРасшифровкаРаздел8_Прил1РасширеннаяПодсказка" id="192"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ5Раздел8_Прил1" id="193">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ5Раздел8_Прил1КонтекстноеМеню" id="194"/>
+																	<ExtendedTooltip name="ДекорацияОтступ5Раздел8_Прил1РасширеннаяПодсказка" id="195"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстБезРасхожденийРасшифровкаРаздел8_Прил1" id="196">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст без расхождений расшифровка раздел8 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстБезРасхожденийРасшифровкаРаздел8_Прил1КонтекстноеМеню" id="197"/>
+																	<ExtendedTooltip name="ТекстБезРасхожденийРасшифровкаРаздел8_Прил1РасширеннаяПодсказка" id="198"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИтогиСверкиРаздел9" id="199">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Раздел 9 (Книга продаж)</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итоги сверки раздел9</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ExtendedTooltip name="ГруппаИтогиСверкиРаздел9РасширеннаяПодсказка" id="200"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСверкаБезОшибокРаздел9" id="201">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка без ошибок раздел9</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка без ошибок раздел9</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСверкаБезОшибокРаздел9РасширеннаяПодсказка" id="202"/>
+											<ChildItems>
+												<LabelDecoration name="ТекстСверкаВыполненаРаздел9" id="203">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сверка счетов-фактур с покупателями выполнена.
+</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ТекстСверкаВыполненаРаздел9КонтекстноеМеню" id="204"/>
+													<ExtendedTooltip name="ТекстСверкаВыполненаРаздел9РасширеннаяПодсказка" id="205"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаСверкаБезОшибокТекстРаздел9" id="398">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без ошибок текст раздел9</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без ошибок текст раздел9</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаБезОшибокТекстРаздел9РасширеннаяПодсказка" id="399"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаСверкаБезОшибокРаздел9" id="395">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка сверка без ошибок раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="КартинкаСверкаБезОшибокРаздел9КонтекстноеМеню" id="396"/>
+															<ExtendedTooltip name="КартинкаСверкаБезОшибокРаздел9РасширеннаяПодсказка" id="397"/>
+														</PictureDecoration>
+														<LabelDecoration name="ТекстСверкаБезОшибокРаздел9" id="400">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расхождений не обнаружено</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ТекстСверкаБезОшибокРаздел9КонтекстноеМеню" id="401"/>
+															<ExtendedTooltip name="ТекстСверкаБезОшибокРаздел9РасширеннаяПодсказка" id="402"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСверкаСРасхождениямиРаздел9" id="206">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка с расхождениями раздел9</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка с расхождениями раздел9</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСверкаСРасхождениямиРаздел9РасширеннаяПодсказка" id="207"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаСверкиРасхожденияРаздел9" id="208">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки расхождения раздел9</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки расхождения раздел9</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиРасхожденияРаздел9РасширеннаяПодсказка" id="209"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаРасхожденияРаздел9" id="210">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаРасхожденияРаздел9РасширеннаяПодсказка" id="211"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияРасхожденияРаздел9" id="212">
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация расхождения раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияРасхожденияРаздел9КонтекстноеМеню" id="213"/>
+																	<ExtendedTooltip name="ДекорацияРасхожденияРаздел9РасширеннаяПодсказка" id="214"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстРасхожденияРаздел9" id="215">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>С расхождениями</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстРасхожденияРаздел9КонтекстноеМеню" id="216"/>
+																	<ExtendedTooltip name="ТекстРасхожденияРаздел9РасширеннаяПодсказка" id="217"/>
+																	<Events>
+																		<Event name="Click">ТекстРасхожденияРаздел9Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаРасхожденияРасшифровкаРаздел9" id="218">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения расшифровка раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения расшифровка раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаРасхожденияРасшифровкаРаздел9РасширеннаяПодсказка" id="219"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ1Раздел9" id="220">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ1Раздел9КонтекстноеМеню" id="221"/>
+																	<ExtendedTooltip name="ДекорацияОтступ1Раздел9РасширеннаяПодсказка" id="222"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстРасхожденияРасшифровкаРаздел9" id="223">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст расхождения расшифровка раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстРасхожденияРасшифровкаРаздел9КонтекстноеМеню" id="224"/>
+																	<ExtendedTooltip name="ТекстРасхожденияРасшифровкаРаздел9РасширеннаяПодсказка" id="225"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкиНеОтраженоУКонтрагентаРаздел9" id="226">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки не отражено у контрагента раздел9</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки не отражено у контрагента раздел9</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиНеОтраженоУКонтрагентаРаздел9РасширеннаяПодсказка" id="227"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНеОтраженоУКонтрагентаРаздел9" id="228">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено у контрагента раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено у контрагента раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеОтраженоУКонтрагентаРаздел9РасширеннаяПодсказка" id="229"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНеОтраженоРаздел9" id="230">
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка не отражено раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНеОтраженоРаздел9КонтекстноеМеню" id="231"/>
+																	<ExtendedTooltip name="КартинкаНеОтраженоРаздел9РасширеннаяПодсказка" id="232"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНеОтраженоРаздел9" id="233">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не отражены у покупателей</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНеОтраженоРаздел9КонтекстноеМеню" id="234"/>
+																	<ExtendedTooltip name="ТекстНеОтраженоРаздел9РасширеннаяПодсказка" id="235"/>
+																	<Events>
+																		<Event name="Click">ТекстНеОтраженоРаздел9Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНеОтраженоРасшифровкаРаздел9" id="236">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено расшифровка раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено расшифровка раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеОтраженоРасшифровкаРаздел9РасширеннаяПодсказка" id="237"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ2Раздел9" id="238">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ2Раздел9КонтекстноеМеню" id="239"/>
+																	<ExtendedTooltip name="ДекорацияОтступ2Раздел9РасширеннаяПодсказка" id="240"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстНеОтраженоРасшифровкаРаздел9" id="241">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст не отражено расшифровка раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстНеОтраженоРасшифровкаРаздел9КонтекстноеМеню" id="242"/>
+																	<ExtendedTooltip name="ТекстНеОтраженоРасшифровкаРаздел9РасширеннаяПодсказка" id="243"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкиНетВОрганизациираздел9" id="244">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки нет в организациираздел9</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки нет в организациираздел9</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиНетВОрганизациираздел9РасширеннаяПодсказка" id="245"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНетВОрганизацииРаздел9" id="246">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа нет в организации раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа нет в организации раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНетВОрганизацииРаздел9РасширеннаяПодсказка" id="247"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНетВОрганизацииРаздел9" id="248">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка нет в организации раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНетВОрганизацииРаздел9КонтекстноеМеню" id="249"/>
+																	<ExtendedTooltip name="КартинкаНетВОрганизацииРаздел9РасширеннаяПодсказка" id="250"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНетВОрганизацииРаздел9" id="251">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не отражены в организации</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНетВОрганизацииРаздел9КонтекстноеМеню" id="252"/>
+																	<ExtendedTooltip name="ТекстНетВОрганизацииРаздел9РасширеннаяПодсказка" id="253"/>
+																	<Events>
+																		<Event name="Click">ТекстНетВОрганизацииРаздел9Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНетВОрганизацииРасшифровкаРаздел9" id="254">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа нет в организации расшифровка раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа нет в организации расшифровка раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Height>1</Height>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНетВОрганизацииРасшифровкаРаздел9РасширеннаяПодсказка" id="255"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ3раздел9" id="256">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ3раздел9КонтекстноеМеню" id="257"/>
+																	<ExtendedTooltip name="ДекорацияОтступ3раздел9РасширеннаяПодсказка" id="258"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстРасшифровкаНетВОрганизацииРаздел9" id="259">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст расшифровка нет в организации раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстРасшифровкаНетВОрганизацииРаздел9КонтекстноеМеню" id="260"/>
+																	<ExtendedTooltip name="ТекстРасшифровкаНетВОрганизацииРаздел9РасширеннаяПодсказка" id="261"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкаНеСверялисьРаздел9" id="262">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка не сверялись раздел9</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка не сверялись раздел9</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаНеСверялисьРаздел9РасширеннаяПодсказка" id="263"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНеСверялисьРаздел9" id="264">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверялись раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверялись раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеСверялисьРаздел9РасширеннаяПодсказка" id="265"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНеСверилисьРаздел9" id="266">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка не сверились раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleYellow</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНеСверилисьРаздел9КонтекстноеМеню" id="267"/>
+																	<ExtendedTooltip name="КартинкаНеСверилисьРаздел9РасширеннаяПодсказка" id="268"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНеСверялисьРаздел9" id="269">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не сверились</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНеСверялисьРаздел9КонтекстноеМеню" id="270"/>
+																	<ExtendedTooltip name="ТекстНеСверялисьРаздел9РасширеннаяПодсказка" id="271"/>
+																	<Events>
+																		<Event name="Click">ТекстНеСверялисьРаздел9Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНеСверилисьРасшифровкаРаздел9" id="272">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверились расшифровка раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверились расшифровка раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеСверилисьРасшифровкаРаздел9РасширеннаяПодсказка" id="273"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ4Раздел9" id="274">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ4Раздел9КонтекстноеМеню" id="275"/>
+																	<ExtendedTooltip name="ДекорацияОтступ4Раздел9РасширеннаяПодсказка" id="276"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстНеСверилисьРасшифровкаРаздел9" id="277">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст не сверились расшифровка раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстНеСверилисьРасшифровкаРаздел9КонтекстноеМеню" id="278"/>
+																	<ExtendedTooltip name="ТекстНеСверилисьРасшифровкаРаздел9РасширеннаяПодсказка" id="279"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаПочемуНеСверилисьРаздел9" id="280">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа почему не сверились раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа почему не сверились раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаПочемуНеСверилисьРаздел9РасширеннаяПодсказка" id="281"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ5раздел9" id="282">
+																	<Width>1</Width>
+																	<Height>2</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ5раздел9КонтекстноеМеню" id="283"/>
+																	<ExtendedTooltip name="ДекорацияОтступ5раздел9РасширеннаяПодсказка" id="284"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстПочемуНеСверилисьРаздел9" id="285">
+																	<Height>2</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Покупатели не подключены к сервису
+1С:Сверка 2.0.</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстПочемуНеСверилисьРаздел9КонтекстноеМеню" id="286"/>
+																	<ExtendedTooltip name="ТекстПочемуНеСверилисьРаздел9РасширеннаяПодсказка" id="287"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкаБезРасхожденийРаздел9" id="288">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без расхождений раздел9</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без расхождений раздел9</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаБезРасхожденийРаздел9РасширеннаяПодсказка" id="289"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаБезРасхожденийРаздел9" id="290">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБезРасхожденийРаздел9РасширеннаяПодсказка" id="291"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаБезРасхожденийРаздел9" id="292">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка без расхождений раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаБезРасхожденийРаздел9КонтекстноеМеню" id="293"/>
+																	<ExtendedTooltip name="КартинкаБезРасхожденийРаздел9РасширеннаяПодсказка" id="294"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстБезРасхожденийРаздел9" id="295">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Без расхождений</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстБезРасхожденийРаздел9КонтекстноеМеню" id="296"/>
+																	<ExtendedTooltip name="ТекстБезРасхожденийРаздел9РасширеннаяПодсказка" id="297"/>
+																	<Events>
+																		<Event name="Click">ТекстБезРасхожденийРаздел9Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаБезРасхожденийРасшифровкаРаздел9" id="298">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений расшифровка раздел9</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений расшифровка раздел9</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБезРасхожденийРасшифровкаРаздел9РасширеннаяПодсказка" id="299"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ6Раздел9" id="300">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ6Раздел9КонтекстноеМеню" id="301"/>
+																	<ExtendedTooltip name="ДекорацияОтступ6Раздел9РасширеннаяПодсказка" id="302"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстБезРасхожденийРасшифровкаРаздел9" id="303">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст без расхождений расшифровка раздел9</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстБезРасхожденийРасшифровкаРаздел9КонтекстноеМеню" id="304"/>
+																	<ExtendedTooltip name="ТекстБезРасхожденийРасшифровкаРаздел9РасширеннаяПодсказка" id="305"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаИтогиСверкиРаздел9_Прил1" id="306">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Раздел 9. Прил. 1 (Доп. листы книги продаж)</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итоги сверки раздел9 прил1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ExtendedTooltip name="ГруппаИтогиСверкиРаздел9_Прил1РасширеннаяПодсказка" id="307"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСверкаБезОшибокРаздел9_Прил1" id="308">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка без ошибок раздел9 прил1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка без ошибок раздел9 прил1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСверкаБезОшибокРаздел9_Прил1РасширеннаяПодсказка" id="309"/>
+											<ChildItems>
+												<LabelDecoration name="ТекстСверкаВыполненаРаздел9_Прил1" id="310">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сверка счетов фактур с покупателями выполнена</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ТекстСверкаВыполненаРаздел9_Прил1КонтекстноеМеню" id="311"/>
+													<ExtendedTooltip name="ТекстСверкаВыполненаРаздел9_Прил1РасширеннаяПодсказка" id="312"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаСверкаБезОшибокТекстРаздел9_Прил1" id="419">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без ошибок текст раздел9 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без ошибок текст раздел9 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаБезОшибокТекстРаздел9_Прил1РасширеннаяПодсказка" id="420"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаСверкаБезОшибокРаздел9_Прил1" id="421">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка сверка без ошибок раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="КартинкаСверкаБезОшибокРаздел9_Прил1КонтекстноеМеню" id="422"/>
+															<ExtendedTooltip name="КартинкаСверкаБезОшибокРаздел9_Прил1РасширеннаяПодсказка" id="423"/>
+														</PictureDecoration>
+														<LabelDecoration name="ТекстСверкаБезОшибокРаздел9_Прил1" id="424">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Расхождений не обнаружено</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ТекстСверкаБезОшибокРаздел9_Прил1КонтекстноеМеню" id="425"/>
+															<ExtendedTooltip name="ТекстСверкаБезОшибокРаздел9_Прил1РасширеннаяПодсказка" id="426"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСверкаСРасхождениямиРаздел9_Прил1" id="313">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка с расхождениями раздел9 прил1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа сверка с расхождениями раздел9 прил1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСверкаСРасхождениямиРаздел9_Прил1РасширеннаяПодсказка" id="314"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаСверкиРасхожденияРаздел9_Прил1" id="315">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки расхождения раздел9 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки расхождения раздел9 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиРасхожденияРаздел9_Прил1РасширеннаяПодсказка" id="316"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаРасхожденияРаздел9_Прил1" id="317">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаРасхожденияРаздел9_Прил1РасширеннаяПодсказка" id="318"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияРасхожденияРаздел9_Прил1" id="319">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация расхождения раздел9 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияРасхожденияРаздел9_Прил1КонтекстноеМеню" id="320"/>
+																	<ExtendedTooltip name="ДекорацияРасхожденияРаздел9_Прил1РасширеннаяПодсказка" id="321"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстРасхожденияРаздел9_Прил1" id="322">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>С расхождениями</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстРасхожденияРаздел9_Прил1КонтекстноеМеню" id="323"/>
+																	<ExtendedTooltip name="ТекстРасхожденияРаздел9_Прил1РасширеннаяПодсказка" id="324"/>
+																	<Events>
+																		<Event name="Click">ТекстРасхожденияРаздел9_Прил1Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаРасхожденияРасшифровкаРаздел9_Прил1" id="325">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения расшифровка раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа расхождения расшифровка раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаРасхожденияРасшифровкаРаздел9_Прил1РасширеннаяПодсказка" id="326"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ1Раздел9_Прил1" id="327">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ1Раздел9_Прил1КонтекстноеМеню" id="328"/>
+																	<ExtendedTooltip name="ДекорацияОтступ1Раздел9_Прил1РасширеннаяПодсказка" id="329"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстРасхожденияРасшифровкаРаздел9_Прил1" id="330">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст расхождения расшифровка раздел9 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстРасхожденияРасшифровкаРаздел9_Прил1КонтекстноеМеню" id="331"/>
+																	<ExtendedTooltip name="ТекстРасхожденияРасшифровкаРаздел9_Прил1РасширеннаяПодсказка" id="332"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкиНеОтраженоУКонтрагентаРаздел9_Прил1" id="333">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки не отражено у контрагента раздел9 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверки не отражено у контрагента раздел9 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкиНеОтраженоУКонтрагентаРаздел9_Прил1РасширеннаяПодсказка" id="334"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНеОтраженоУКонтрагентаРаздел9_Прил1" id="335">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено у контрагента раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено у контрагента раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеОтраженоУКонтрагентаРаздел9_Прил1РасширеннаяПодсказка" id="336"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНеОтраженоРаздел9_Прил1" id="337">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка не отражено раздел9 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleRed</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНеОтраженоРаздел9_Прил1КонтекстноеМеню" id="338"/>
+																	<ExtendedTooltip name="КартинкаНеОтраженоРаздел9_Прил1РасширеннаяПодсказка" id="339"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНеОтраженоРаздел9_Прил1" id="340">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не отражены у покупателей</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНеОтраженоРаздел9_Прил1КонтекстноеМеню" id="341"/>
+																	<ExtendedTooltip name="ТекстНеОтраженоРаздел9_Прил1РасширеннаяПодсказка" id="342"/>
+																	<Events>
+																		<Event name="Click">ТекстНеОтраженоРаздел9_Прил1Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНеОтраженоРасшифровкаРаздел9_Прил1" id="343">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено расшифровка раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не отражено расшифровка раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеОтраженоРасшифровкаРаздел9_Прил1РасширеннаяПодсказка" id="344"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ2Раздел9_Прил1" id="345">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ2Раздел9_Прил1КонтекстноеМеню" id="346"/>
+																	<ExtendedTooltip name="ДекорацияОтступ2Раздел9_Прил1РасширеннаяПодсказка" id="347"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстНеОтраженоРасшифровкаРаздел9_Прил1" id="348">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст не отражено расшифровка раздел9 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстНеОтраженоРасшифровкаРаздел9_Прил1КонтекстноеМеню" id="349"/>
+																	<ExtendedTooltip name="ТекстНеОтраженоРасшифровкаРаздел9_Прил1РасширеннаяПодсказка" id="350"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкаНеСверялисьРаздел9_Прил1" id="351">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка не сверялись раздел9 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка не сверялись раздел9 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаНеСверялисьРаздел9_Прил1РасширеннаяПодсказка" id="352"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаНеСверялисьРаздел9_Прил1" id="353">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверялись раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверялись раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеСверялисьРаздел9_Прил1РасширеннаяПодсказка" id="354"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаНеСверилисьРаздел9_Прил1" id="355">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка не сверились раздел9 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleYellow</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаНеСверилисьРаздел9_Прил1КонтекстноеМеню" id="356"/>
+																	<ExtendedTooltip name="КартинкаНеСверилисьРаздел9_Прил1РасширеннаяПодсказка" id="357"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстНеСверялисьРаздел9_Прил1" id="358">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Не сверились</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстНеСверялисьРаздел9_Прил1КонтекстноеМеню" id="359"/>
+																	<ExtendedTooltip name="ТекстНеСверялисьРаздел9_Прил1РасширеннаяПодсказка" id="360"/>
+																	<Events>
+																		<Event name="Click">ТекстНеСверялисьРаздел9_Прил1Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаНеСверилисьРасшифровкаРаздел9_Прил1" id="361">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверились расшифровка раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа не сверились расшифровка раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаНеСверилисьРасшифровкаРаздел9_Прил1РасширеннаяПодсказка" id="362"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ3Раздел9_Прил1" id="363">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ3Раздел9_Прил1КонтекстноеМеню" id="364"/>
+																	<ExtendedTooltip name="ДекорацияОтступ3Раздел9_Прил1РасширеннаяПодсказка" id="365"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстНеСверилисьРасшифровкаРаздел9_Прил1" id="366">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст не сверились расшифровка раздел9 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстНеСверилисьРасшифровкаРаздел9_Прил1КонтекстноеМеню" id="367"/>
+																	<ExtendedTooltip name="ТекстНеСверилисьРасшифровкаРаздел9_Прил1РасширеннаяПодсказка" id="368"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаПочемуНеСверилисьРаздел9_Прил1" id="369">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа почему не сверились раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа почему не сверились раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаПочемуНеСверилисьРаздел9_Прил1РасширеннаяПодсказка" id="370"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ4Раздел9_Прил1" id="371">
+																	<Width>1</Width>
+																	<Height>2</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ4Раздел9_Прил1КонтекстноеМеню" id="372"/>
+																	<ExtendedTooltip name="ДекорацияОтступ4Раздел9_Прил1РасширеннаяПодсказка" id="373"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстПочемуНеСверилисьРаздел9_Прил1" id="374">
+																	<Height>2</Height>
+																	<Title formatted="true">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Покупатели не подключены к сервису
+1С:Сверка 2.0.</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстПочемуНеСверилисьРаздел9_Прил1КонтекстноеМеню" id="375"/>
+																	<ExtendedTooltip name="ТекстПочемуНеСверилисьРаздел9_Прил1РасширеннаяПодсказка" id="376"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСверкаБезРасхожденийРаздел9_Прил1" id="377">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без расхождений раздел9 прил1</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа сверка без расхождений раздел9 прил1</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСверкаБезРасхожденийРаздел9_Прил1РасширеннаяПодсказка" id="378"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаБезРасхожденийРаздел9_Прил1" id="379">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБезРасхожденийРаздел9_Прил1РасширеннаяПодсказка" id="380"/>
+															<ChildItems>
+																<PictureDecoration name="КартинкаБезРасхожденийРаздел9_Прил1" id="381">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Картинка без расхождений раздел9 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Picture>
+																		<xr:Ref>StdPicture.AppearanceCircleGreen</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="КартинкаБезРасхожденийРаздел9_Прил1КонтекстноеМеню" id="382"/>
+																	<ExtendedTooltip name="КартинкаБезРасхожденийРаздел9_Прил1РасширеннаяПодсказка" id="383"/>
+																</PictureDecoration>
+																<LabelDecoration name="ТекстБезРасхожденийРаздел9_Прил1" id="384">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Без расхождений</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ТекстБезРасхожденийРаздел9_Прил1КонтекстноеМеню" id="385"/>
+																	<ExtendedTooltip name="ТекстБезРасхожденийРаздел9_Прил1РасширеннаяПодсказка" id="386"/>
+																	<Events>
+																		<Event name="Click">ТекстБезРасхожденийРаздел9_Прил1Нажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаБезРасхожденийРасшифровкаРаздел9_Прил1" id="387">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений расшифровка раздел9 прил1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа без расхождений расшифровка раздел9 прил1</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБезРасхожденийРасшифровкаРаздел9_Прил1РасширеннаяПодсказка" id="388"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияОтступ5Раздел9_Прил1" id="389">
+																	<Width>1</Width>
+																	<Height>1</Height>
+																	<HorizontalStretch>false</HorizontalStretch>
+																	<ContextMenu name="ДекорацияОтступ5Раздел9_Прил1КонтекстноеМеню" id="390"/>
+																	<ExtendedTooltip name="ДекорацияОтступ5Раздел9_Прил1РасширеннаяПодсказка" id="391"/>
+																</LabelDecoration>
+																<LabelDecoration name="ТекстБезРасхожденийРасшифровкаРаздел9_Прил1" id="392">
+																	<Height>1</Height>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Текст без расхождений расшифровка раздел9 прил1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ТекстБезРасхожденийРасшифровкаРаздел9_Прил1КонтекстноеМеню" id="393"/>
+																	<ExtendedTooltip name="ТекстБезРасхожденийРасшифровкаРаздел9_Прил1РасширеннаяПодсказка" id="394"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Результат" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРезультатаСверки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата сверки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицыСверки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы сверки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СтраницыРазделов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы разделов</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="АдресСтраницРазделов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес страниц разделов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользуетсяСервисСверкиРасчетов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется сервис сверки расчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеДляСверкиДеклараций" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные для сверки деклараций</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ОтображатьСверку" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать сверку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИзменитьВидимостьСверки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить видимость сверки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить видимость сверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьВидимостьСверки</Action>
+		</Command>
+		<Command name="ЗакрытьПанельСверки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть панель сверки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть панель сверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьПанельСверки</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="АдресРезультатаСверки">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="Заголовок">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СтраницыРаздела">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="ДанныеДляСверкиДеклараций">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>

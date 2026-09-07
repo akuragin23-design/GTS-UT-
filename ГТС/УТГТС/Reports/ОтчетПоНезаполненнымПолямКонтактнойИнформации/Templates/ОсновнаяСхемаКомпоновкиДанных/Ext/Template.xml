@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объект</dataPath>
+			<field>Объект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидКИ</dataPath>
+			<field>ВидКИ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид конт. информации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>БизнесРегион</dataPath>
+			<field>БизнесРегион</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Менеджер</dataPath>
+			<field>Менеджер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВложенныйЗапрос.ВидКИ КАК ВидКИ,
+	ВложенныйЗапрос.Объект КАК Объект,
+	ВложенныйЗапрос.БизнесРегион КАК БизнесРегион,
+	ВложенныйЗапрос.Менеджер КАК Менеджер,
+	ВложенныйЗапрос.Подразделение КАК Подразделение
+ИЗ
+	(ВЫБРАТЬ
+		Партнеры.Ссылка КАК Объект,
+		ВидыКонтактнойИнформации.Ссылка КАК ВидКИ,
+		Партнеры.БизнесРегион КАК БизнесРегион,
+		Партнеры.ОсновнойМенеджер КАК Менеджер,
+		Партнеры.ОсновнойМенеджер.Подразделение КАК Подразделение
+	ИЗ
+		Справочник.ВидыКонтактнойИнформации КАК ВидыКонтактнойИнформации,
+		Справочник.Партнеры КАК Партнеры
+	ГДЕ
+		ВидыКонтактнойИнформации.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.СправочникПартнеры)
+		И Партнеры.Клиент
+		И (НЕ Партнеры.ПометкаУдаления)) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Партнеры.КонтактнаяИнформация КАК ПартнерыКонтактнаяИнформация
+		ПО ВложенныйЗапрос.Объект = ПартнерыКонтактнаяИнформация.Ссылка
+			И ВложенныйЗапрос.ВидКИ = ПартнерыКонтактнаяИнформация.Вид
+ГДЕ
+	ВЫБОР
+			КОГДА ПартнерыКонтактнаяИнформация.Вид ЕСТЬ NULL 
+				ТОГДА ИСТИНА
+			ИНАЧЕ ВЫБОР
+					КОГДА ПартнерыКонтактнаяИнформация.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.АдресЭлектроннойПочты)
+						ТОГДА (НЕ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО "%@%")
+					ИНАЧЕ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО ""
+							ИЛИ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО "Нет"
+							ИЛИ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО "нет"
+							ИЛИ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО "НЕТ"
+							ИЛИ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО "не указан"
+							ИЛИ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО "НЕ УКАЗАН"
+							ИЛИ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО "Не указан"
+							ИЛИ ПартнерыКонтактнаяИнформация.Представление ПОДОБНО "НЕ указан"
+				КОНЕЦ
+		КОНЕЦ
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВложенныйЗапрос.ВидКИ,
+	ВложенныйЗапрос.Объект,
+	ВложенныйЗапрос.БизнесРегион,
+	ВложенныйЗапрос.Менеджер,
+	ВложенныйЗапрос.Подразделение
+ИЗ
+	(ВЫБРАТЬ
+		КонтактныеЛицаПартнеров.Ссылка КАК Объект,
+		ВидыКонтактнойИнформации.Ссылка КАК ВидКИ,
+		КонтактныеЛицаПартнеров.Владелец.БизнесРегион КАК БизнесРегион,
+		КонтактныеЛицаПартнеров.Владелец.ОсновнойМенеджер КАК Менеджер,
+		КонтактныеЛицаПартнеров.Владелец.ОсновнойМенеджер.Подразделение КАК Подразделение
+	ИЗ
+		Справочник.КонтактныеЛицаПартнеров КАК КонтактныеЛицаПартнеров,
+		Справочник.ВидыКонтактнойИнформации КАК ВидыКонтактнойИнформации
+	ГДЕ
+		ВидыКонтактнойИнформации.Родитель = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.СправочникКонтактныеЛицаПартнеров)
+		И (НЕ КонтактныеЛицаПартнеров.ПометкаУдаления)
+		И (НЕ КонтактныеЛицаПартнеров.Владелец.ПометкаУдаления)) КАК ВложенныйЗапрос
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.КонтактныеЛицаПартнеров.КонтактнаяИнформация КАК КонтактныеЛицаПартнеровКонтактнаяИнформация
+		ПО ВложенныйЗапрос.Объект = КонтактныеЛицаПартнеровКонтактнаяИнформация.Ссылка
+			И ВложенныйЗапрос.ВидКИ = КонтактныеЛицаПартнеровКонтактнаяИнформация.Вид
+ГДЕ
+	ВЫБОР
+			КОГДА КонтактныеЛицаПартнеровКонтактнаяИнформация.Вид ЕСТЬ NULL 
+				ТОГДА ИСТИНА
+			ИНАЧЕ ВЫБОР
+					КОГДА КонтактныеЛицаПартнеровКонтактнаяИнформация.Тип = ЗНАЧЕНИЕ(Перечисление.ТипыКонтактнойИнформации.АдресЭлектроннойПочты)
+						ТОГДА (НЕ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО "%@%")
+					ИНАЧЕ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО ""
+							ИЛИ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО "Нет"
+							ИЛИ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО "нет"
+							ИЛИ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО "НЕТ"
+							ИЛИ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО "не указан"
+							ИЛИ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО "НЕ УКАЗАН"
+							ИЛИ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО "Не указан"
+							ИЛИ КонтактныеЛицаПартнеровКонтактнаяИнформация.Представление ПОДОБНО "НЕ указан"
+				КОНЕЦ
+		КОНЕЦ</query>
+	</dataSet>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ВидКИ</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:userSettingID>cd7d195e-be6c-4da2-835b-f184de1395d6</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">БизнесРегион</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.БизнесРегионы.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>8fae1cb7-f991-4786-8eac-87a4d0b2a2f5</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Менеджер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Пользователи.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>24ecdeff-c5fb-49ce-8a39-d4dd09ca7ea9</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Подразделение</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.СтруктураПредприятия.ПустаяСсылка</dcsset:right>
+					<dcsset:userSettingID>26ef3400-5014-4828-9927-da424234e671</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Море</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет по незаполненным контактным данным клиентов и их контактных лиц</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ВидКИ</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>БизнесРегион</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Подразделение</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Менеджер</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Объект</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Объект.Владелец</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
